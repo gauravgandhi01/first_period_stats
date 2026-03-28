@@ -1,5 +1,4 @@
 cache/
-live/
 __pycache__/
 *.json
 key.txt 
