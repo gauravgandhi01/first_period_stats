@@ -1379,8 +1379,12 @@ def _normalize_logo_key(value):
 
 
 def _build_team_logo_map(dataset, script_dir):
-    logos_dir = script_dir.parent / "NHL Logos"
-    if not logos_dir.exists():
+    logos_dir_candidates = [
+        script_dir / "NHL Logos",
+        script_dir.parent / "NHL Logos",
+    ]
+    logos_dir = next((p for p in logos_dir_candidates if p.exists() and p.is_dir()), None)
+    if logos_dir is None:
         return {}
 
     best_by_name = {}
