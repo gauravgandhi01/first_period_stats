@@ -183,17 +183,6 @@ def auto_commit_and_push_outputs(
     repo_dir = repo_dir.resolve()
     _run_git(repo_dir, ["rev-parse", "--is-inside-work-tree"], quiet=quiet, dry_run=False)
 
-    # Avoid accidentally committing unrelated pre-staged work.
-    staged_check = subprocess.run(
-        ["git", "-C", str(repo_dir), "diff", "--cached", "--quiet"],
-        capture_output=True,
-        text=True,
-    )
-    if staged_check.returncode == 1:
-        raise RuntimeError("Git index has pre-staged changes; refusing auto-commit to avoid mixing work.")
-    if staged_check.returncode not in (0, 1):
-        raise RuntimeError("Unable to inspect git staged state.")
-
     _ensure_ssh_remote(repo_dir, remote, quiet=quiet, dry_run=dry_run)
 
     relative_paths = []
@@ -211,6 +200,26 @@ def auto_commit_and_push_outputs(
         if not quiet:
             print("No repo-local output files found to stage for git push.")
         return
+
+    # Allow stale staged output files from a previous failed run, but still
+    # block unrelated staged work from being mixed into this auto-commit.
+    staged_names_raw = _run_git(
+        repo_dir,
+        ["diff", "--cached", "--name-only"],
+        quiet=True,
+        dry_run=False,
+    ).stdout
+    staged_names = [line.strip() for line in staged_names_raw.splitlines() if line.strip()]
+    if staged_names:
+        allowed = set(relative_paths)
+        unrelated = sorted({path for path in staged_names if path not in allowed})
+        if unrelated:
+            raise RuntimeError(
+                "Git index has pre-staged changes outside auto-output set; "
+                f"refusing auto-commit: {', '.join(unrelated)}"
+            )
+        if not quiet:
+            print("Git index already has staged output changes; continuing.")
 
     _run_git(repo_dir, ["add", "--", *relative_paths], quiet=quiet, dry_run=dry_run)
 

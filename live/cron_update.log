@@ -54,3 +54,63 @@ Traceback (most recent call last):
   File "/Users/ggandhi001/nhl_tools/firstperiodstats/update_starting_goalie_sheet.py", line 193, in auto_commit_and_push_outputs
     raise RuntimeError("Git index has pre-staged changes; refusing auto-commit to avoid mixing work.")
 RuntimeError: Git index has pre-staged changes; refusing auto-commit to avoid mixing work.
+/Users/ggandhi001/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/ggandhi001/Library/Python/3.9/lib/python/site-packages/requests/__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+[2026-03-28T20:40:00+00:00] update_starting_goalie_sheet start
+Target date: 2026-03-28
+Output dir: /Users/ggandhi001/nhl_tools/firstperiodstats/live
+Loaded cached projection dataset.
+Daily slate: 15/15 games projected from https://www.dailyfaceoff.com/starting-goalies/2026-03-28 (2026-03-28)
+Live games: 1 | 1P graded: 3 (OVER 2 / UNDER 1)
+Daily slate warnings: 3
+Loaded cached projection dataset.
+Daily slate: 15/15 games projected from https://www.dailyfaceoff.com/starting-goalies/2026-03-28 (2026-03-28)
+Live games: 1 | 1P graded: 3 (OVER 2 / UNDER 1)
+Daily slate warnings: 3
+$ git -C /Users/ggandhi001/nhl_tools/firstperiodstats rev-parse --is-inside-work-tree
+$ git -C /Users/ggandhi001/nhl_tools/firstperiodstats remote get-url origin
+$ git -C /Users/ggandhi001/nhl_tools/firstperiodstats add -- live/daily_slate_latest.json live/daily_slate_latest.csv live/daily_slate_latest.meta.json index.html
+Traceback (most recent call last):
+  File "/Users/ggandhi001/nhl_tools/firstperiodstats/update_starting_goalie_sheet.py", line 418, in <module>
+    raise SystemExit(main())
+  File "/Users/ggandhi001/nhl_tools/firstperiodstats/update_starting_goalie_sheet.py", line 389, in main
+    auto_commit_and_push_outputs(
+  File "/Users/ggandhi001/nhl_tools/firstperiodstats/update_starting_goalie_sheet.py", line 215, in auto_commit_and_push_outputs
+    _run_git(repo_dir, ["add", "--", *relative_paths], quiet=quiet, dry_run=dry_run)
+  File "/Users/ggandhi001/nhl_tools/firstperiodstats/update_starting_goalie_sheet.py", line 144, in _run_git
+    raise RuntimeError(f"Git command failed: {' '.join(cmd)} | {detail}")
+RuntimeError: Git command failed: git -C /Users/ggandhi001/nhl_tools/firstperiodstats add -- live/daily_slate_latest.json live/daily_slate_latest.csv live/daily_slate_latest.meta.json index.html | The following paths are ignored by one of your .gitignore files:
+live/daily_slate_latest.json
+live/daily_slate_latest.meta.json
+hint: Use -f if you really want to add them.
+hint: Turn this message off by running
+hint: "git config advice.addIgnoredFile false"
+/Users/ggandhi001/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/ggandhi001/Library/Python/3.9/lib/python/site-packages/requests/__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+[2026-03-28T20:45:00+00:00] update_starting_goalie_sheet start
+Target date: 2026-03-28
+Output dir: /Users/ggandhi001/nhl_tools/firstperiodstats/live
+Loaded cached projection dataset.
+Daily slate: 15/15 games projected from https://www.dailyfaceoff.com/starting-goalies/2026-03-28 (2026-03-28)
+Live games: 1 | 1P graded: 3 (OVER 2 / UNDER 1)
+Daily slate warnings: 3
+Loaded cached projection dataset.
+Daily slate: 15/15 games projected from https://www.dailyfaceoff.com/starting-goalies/2026-03-28 (2026-03-28)
+Live games: 1 | 1P graded: 3 (OVER 2 / UNDER 1)
+Daily slate warnings: 3
+$ git -C /Users/ggandhi001/nhl_tools/firstperiodstats rev-parse --is-inside-work-tree
+$ git -C /Users/ggandhi001/nhl_tools/firstperiodstats remote get-url origin
+Git index already has staged output changes; continuing.
+$ git -C /Users/ggandhi001/nhl_tools/firstperiodstats add -- live/daily_slate_latest.json live/daily_slate_latest.csv live/daily_slate_latest.meta.json index.html
+$ git -C /Users/ggandhi001/nhl_tools/firstperiodstats commit -m 'auto: update firstperiodstats outputs for 2026-03-28 (2026-03-28 20:45:01 UTC)'
+$ git -C /Users/ggandhi001/nhl_tools/firstperiodstats rev-parse --abbrev-ref HEAD
+$ git -C /Users/ggandhi001/nhl_tools/firstperiodstats push origin main
+Wrote: /Users/ggandhi001/nhl_tools/firstperiodstats/live/daily_slate_latest.json
+Wrote: /Users/ggandhi001/nhl_tools/firstperiodstats/live/daily_slate_latest.csv
+Wrote: /Users/ggandhi001/nhl_tools/firstperiodstats/live/daily_slate_latest.meta.json
+Updated dashboard: /Users/ggandhi001/nhl_tools/firstperiodstats/index.html
+[2026-03-28T20:45:02+00:00] update_starting_goalie_sheet complete

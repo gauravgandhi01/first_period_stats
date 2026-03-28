@@ -1,5 +1,7 @@
 cache/
 __pycache__/
 *.json
+!live/daily_slate_latest.json
+!live/daily_slate_latest.meta.json
 key.txt 
 projecs.code-workspace
