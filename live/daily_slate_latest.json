@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-03-28",
-  "pulled_at_utc": "2026-03-28T23:40:01+00:00",
+  "pulled_at_utc": "2026-03-28T23:45:01+00:00",
   "target_date": "2026-03-28",
   "games": [
     {
@@ -294,10 +294,10 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025021156,
-        "state_code": "CRIT",
-        "state_label": "Live",
+        "state_code": "FINAL",
+        "state_label": "Final",
         "period": 3,
-        "clock": "00:59",
+        "clock": "00:00",
         "in_intermission": false,
         "away_score": 6,
         "home_score": 3,
@@ -522,8 +522,8 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025021158,
-        "state_code": "CRIT",
-        "state_label": "Live",
+        "state_code": "FINAL",
+        "state_label": "Final",
         "period": 3,
         "clock": "00:00",
         "in_intermission": false,
@@ -601,7 +601,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 3,
-        "clock": "16:26",
+        "clock": "12:00",
         "in_intermission": false,
         "away_score": 2,
         "home_score": 1,
@@ -677,7 +677,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "05:49",
+        "clock": "03:54",
         "in_intermission": false,
         "away_score": 1,
         "home_score": 0,
@@ -767,7 +767,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "03:58",
+        "clock": "02:08",
         "in_intermission": false,
         "away_score": 0,
         "home_score": 0,
@@ -857,7 +857,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "07:16",
+        "clock": "04:48",
         "in_intermission": false,
         "away_score": 1,
         "home_score": 1,
@@ -905,8 +905,8 @@
       "home": {
         "team_name_feed": "Detroit Red Wings",
         "goalie_name_feed": "John Gibson",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-03-28T23:42:43.387Z",
         "team_id": 17,
         "team_abbrev": "DET",
         "team_name": "Detroit Red Wings",
@@ -1248,10 +1248,10 @@
     "projectable_games": 15,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 27,
-      "Unconfirmed": 3
+      "Confirmed": 28,
+      "Unconfirmed": 2
     },
-    "live_games": 6,
+    "live_games": 4,
     "first_period_graded_games": 8,
     "first_period_over_games": 4,
     "first_period_under_games": 4,
