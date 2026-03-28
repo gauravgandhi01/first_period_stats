@@ -11,7 +11,7 @@ Example manual run:
   python3 update_starting_goalie_sheet.py
 
 Example crontab (every 5 minutes):
-  */5 * * * * /usr/bin/python3 /Users/ggandhi001/nhl_tools/firstperiodstats/update_starting_goalie_sheet.py >> /Users/ggandhi001/nhl_tools/firstperiodstats/live/cron_update.log 2>&1
+  */5 * * * * /usr/bin/python3 /Users/ggandhi001/nhl_tools/firstperiodstats/update_starting_goalie_sheet.py --odds-refresh-minutes 30 >> /Users/ggandhi001/nhl_tools/firstperiodstats/live/cron_update.log 2>&1
 """
 
 import argparse
@@ -161,6 +161,17 @@ def parse_args():
         action="store_true",
         help="Force rebuild the base projection dataset from APIs (normally cached).",
     )
+    parser.add_argument(
+        "--odds-refresh-minutes",
+        type=float,
+        default=30.0,
+        help="Minimum minutes between odds refresh pulls (goalie/status scraping still runs every execution).",
+    )
+    parser.add_argument(
+        "--force-refresh-odds",
+        action="store_true",
+        help="Ignore odds cache for this run and force a new odds pull.",
+    )
     parser.add_argument("--quiet", action="store_true", help="Reduce stdout logging.")
     return parser.parse_args()
 
@@ -192,6 +203,8 @@ def main():
                 dataset,
                 date_str=target_date,
                 verbose=not args.quiet,
+                odds_cache_max_age_seconds=max(0, int((args.odds_refresh_minutes or 0) * 60)),
+                force_refresh_odds=args.force_refresh_odds,
             )
 
             rows = [flatten_game_row(game) for game in slate_payload.get("games", [])]
@@ -211,6 +224,8 @@ def main():
                 "first_period_over_games": slate_payload.get("meta", {}).get("first_period_over_games", 0),
                 "first_period_under_games": slate_payload.get("meta", {}).get("first_period_under_games", 0),
                 "status_counts": slate_payload.get("meta", {}).get("status_counts", {}),
+                "odds_refresh_minutes": args.odds_refresh_minutes,
+                "force_refresh_odds": bool(args.force_refresh_odds),
             }
             write_json(latest_meta_path, meta)
 

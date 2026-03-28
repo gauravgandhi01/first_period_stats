@@ -20,7 +20,9 @@ Outputs:
 import argparse
 import json
 import math
+import os
 import re
+import time
 import unicodedata
 from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -50,6 +52,7 @@ GOALIE_FORM_FULL_WEIGHT_GAMES = 5.0
 
 # Model blend/constraints.
 POISSON_WEIGHT = 0.75
+LEAGUE_O15_ANCHOR_WEIGHT = 0.18
 GOALIE_FACTOR_MIN = 0.75
 GOALIE_FACTOR_MAX = 1.30
 TEMPO_FACTOR_MIN = 0.85
@@ -84,6 +87,19 @@ NHL_LIVE_STATE_MAP = {
     "OFF": "Final",
     "FINAL": "Final",
 }
+
+# Odds API (market dampening)
+ODDS_API_BASE_URL = "https://api.the-odds-api.com/v4"
+ODDS_API_DEFAULT_REGIONS = "us,us2"
+ODDS_API_TIMEOUT = 30
+ODDS_API_MARKET_KEY_P1_TOTALS = "totals_p1"
+# Keep odds refresh less frequent than starter/status scraping by default.
+ODDS_API_CACHE_MAX_AGE_SECONDS = 30 * 60
+ODDS_API_EVENT_REQUEST_SLEEP_SECONDS = 0.28
+ODDS_API_EVENT_MAX_RETRIES = 3
+ODDS_MARKET_DAMPEN_BASE_WEIGHT = 0.45
+ODDS_MARKET_DAMPEN_PER_BOOK_WEIGHT = 0.07
+ODDS_MARKET_DAMPEN_MAX_WEIGHT = 0.85
 
 
 def normalize_text(value):
@@ -122,9 +138,140 @@ def fmt_american(odds):
     return str(odds)
 
 
+def _clean_api_key(value):
+    text = str(value or "").strip().strip('"').strip("'").strip()
+    return text or None
+
+
+def _dedupe_keep_order(values):
+    out = []
+    seen = set()
+    for value in values:
+        clean = _clean_api_key(value)
+        if not clean:
+            continue
+        if clean in seen:
+            continue
+        seen.add(clean)
+        out.append(clean)
+    return out
+
+
+def _read_odds_api_keys():
+    env_key = _clean_api_key(os.getenv("THE_ODDS_API_KEY"))
+    if env_key:
+        return [env_key]
+
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    collected = []
+
+    # Primary: key.json with either {"api_keys":[...]} or a single-key field.
+    key_json_path = os.path.join(script_dir, "key.json")
+    try:
+        with open(key_json_path, "r", encoding="utf-8") as f:
+            payload = json.load(f)
+        if isinstance(payload, list):
+            collected.extend(payload)
+        elif isinstance(payload, dict):
+            if isinstance(payload.get("api_keys"), list):
+                collected.extend(payload.get("api_keys") or [])
+            for field in ("the_odds_api_key", "odds_api_key", "api_key", "key"):
+                value = payload.get(field)
+                if isinstance(value, str):
+                    collected.append(value)
+    except (OSError, ValueError, TypeError):
+        pass
+
+    # Backward-compatible fallback.
+    key_txt_path = os.path.join(script_dir, "key.txt")
+    try:
+        with open(key_txt_path, "r", encoding="utf-8") as f:
+            value = f.read()
+            if value:
+                collected.append(value)
+    except OSError:
+        pass
+
+    return _dedupe_keep_order(collected)
+
+
+def american_to_implied_prob(odds):
+    value = float(odds)
+    if value < 0:
+        return (-value) / ((-value) + 100.0)
+    if value > 0:
+        return 100.0 / (value + 100.0)
+    raise ValueError("American odds cannot be 0.")
+
+
+def median(values):
+    if not values:
+        return None
+    ordered = sorted(float(v) for v in values)
+    n = len(ordered)
+    mid = n // 2
+    if n % 2 == 1:
+        return ordered[mid]
+    return (ordered[mid - 1] + ordered[mid]) / 2.0
+
+
+def _extract_totals_market_from_bookmaker(bookmaker, target_point=1.5):
+    markets = bookmaker.get("markets") or []
+    best = None
+    for market in markets:
+        if not isinstance(market, dict):
+            continue
+        if market.get("key") != ODDS_API_MARKET_KEY_P1_TOTALS:
+            continue
+
+        by_point = defaultdict(dict)
+        for outcome in market.get("outcomes") or []:
+            if not isinstance(outcome, dict):
+                continue
+            name = str(outcome.get("name") or "").strip().lower()
+            if name not in {"over", "under"}:
+                continue
+            point = outcome.get("point")
+            price = outcome.get("price")
+            if point is None or price is None:
+                continue
+            try:
+                point_f = float(point)
+                price_f = float(price)
+            except (TypeError, ValueError):
+                continue
+            by_point[point_f][name] = price_f
+
+        for point, prices in by_point.items():
+            if "over" not in prices or "under" not in prices:
+                continue
+            candidate = {
+                "point": point,
+                "over_price": prices["over"],
+                "under_price": prices["under"],
+                "last_update": market.get("last_update"),
+            }
+            if best is None:
+                best = candidate
+                continue
+            current_dist = abs(candidate["point"] - target_point)
+            best_dist = abs(best["point"] - target_point)
+            if current_dist < best_dist:
+                best = candidate
+    return best
+
+
 def pair_key(team_id_a, team_id_b):
     low, high = sorted((int(team_id_a), int(team_id_b)))
     return f"{low}_{high}"
+
+
+def is_fanduel_bookmaker(bookmaker_key, bookmaker_title):
+    key = str(bookmaker_key or "").strip().lower()
+    if key == "fanduel":
+        return True
+    normalized_title = re.sub(r"[^a-z0-9]+", "", str(bookmaker_title or "").lower())
+    return "fanduel" in normalized_title
 
 
 def assign_competition_ranks(rows, metric_key, rank_key, reverse=False):
@@ -964,6 +1111,216 @@ def fetch_nhl_daily_game_status(date_str=None, timeout=NHL_SCORE_TIMEOUT):
     }
 
 
+def fetch_daily_market_totals_p1(
+    dataset,
+    date_str=None,
+    target_team_pairs=None,
+    verbose=True,
+    max_age_seconds=None,
+    force_refresh=False,
+):
+    api_keys = _read_odds_api_keys()
+    if not api_keys:
+        return {
+            "source_url": None,
+            "target_date": date_str or datetime.now(DFO_ET_TZ).strftime("%Y-%m-%d"),
+            "by_team_pair": {},
+            "warnings": ["THE_ODDS_API_KEY/key.json not found; market dampening disabled."],
+        }
+
+    target_date = date_str or datetime.now(DFO_ET_TZ).strftime("%Y-%m-%d")
+    cache_key = f"oddsapi_totals_p1_{target_date}"
+    cache_max_age = ODDS_API_CACHE_MAX_AGE_SECONDS if max_age_seconds is None else max(0, int(max_age_seconds))
+    if not force_refresh:
+        cached = hybrid._cache_get(cache_key, max_age_seconds=cache_max_age)
+        if cached is not None and isinstance(cached, dict):
+            return cached
+
+    teams_by_id, _ = index_dataset(dataset)
+    warnings = []
+    by_team_pair = {}
+    events_url = f"{ODDS_API_BASE_URL}/sports/icehockey_nhl/events"
+    events_response = None
+    active_api_key = None
+    for candidate_key in api_keys:
+        candidate_response = requests.get(
+            events_url,
+            params={"api_key": candidate_key},
+            timeout=ODDS_API_TIMEOUT,
+        )
+        if candidate_response.status_code == 200:
+            events_response = candidate_response
+            active_api_key = candidate_key
+            break
+        if candidate_response.status_code in {401, 403, 429}:
+            continue
+        events_response = candidate_response
+        break
+
+    if events_response is None or events_response.status_code != 200:
+        status_code = events_response.status_code if events_response is not None else "no_response"
+        text_preview = (events_response.text[:220] if events_response is not None else "")
+        return {
+            "source_url": events_url,
+            "target_date": target_date,
+            "by_team_pair": {},
+            "warnings": [f"Odds API events request failed ({status_code}): {text_preview}"],
+        }
+
+    events = events_response.json()
+    if not isinstance(events, list):
+        return {
+            "source_url": events_url,
+            "target_date": target_date,
+            "by_team_pair": {},
+            "warnings": ["Odds API events response shape unexpected."],
+        }
+
+    target_pairs_set = set(str(p) for p in (target_team_pairs or []))
+
+    for event in events:
+        if not isinstance(event, dict):
+            continue
+
+        commence_time = str(event.get("commence_time") or "")
+        if commence_time:
+            # Keep only same-date ET events to match daily slate.
+            try:
+                event_dt_utc = datetime.fromisoformat(commence_time.replace("Z", "+00:00")).astimezone(DFO_ET_TZ)
+                if event_dt_utc.strftime("%Y-%m-%d") != target_date:
+                    continue
+            except ValueError:
+                pass
+
+        away_name = event.get("away_team") or ""
+        home_name = event.get("home_team") or ""
+        try:
+            team_away = resolve_team_for_daily_feed(away_name, teams_by_id)
+            team_home = resolve_team_for_daily_feed(home_name, teams_by_id)
+        except ValueError:
+            continue
+
+        pair = pair_key(team_away["team_id"], team_home["team_id"])
+        if target_pairs_set and pair not in target_pairs_set:
+            continue
+
+        event_id = event.get("id")
+        if not event_id:
+            continue
+
+        event_odds_url = f"{ODDS_API_BASE_URL}/sports/icehockey_nhl/events/{event_id}/odds"
+        event_odds_response = None
+        key_candidates = [active_api_key] + [k for k in api_keys if k != active_api_key]
+        for attempt, candidate_key in enumerate(key_candidates[: max(1, ODDS_API_EVENT_MAX_RETRIES)]):
+            if ODDS_API_EVENT_REQUEST_SLEEP_SECONDS > 0:
+                time.sleep(ODDS_API_EVENT_REQUEST_SLEEP_SECONDS)
+            event_odds_response = requests.get(
+                event_odds_url,
+                params={
+                    "api_key": candidate_key,
+                    "regions": ODDS_API_DEFAULT_REGIONS,
+                    "markets": ODDS_API_MARKET_KEY_P1_TOTALS,
+                    "oddsFormat": "american",
+                    "dateFormat": "iso",
+                },
+                timeout=ODDS_API_TIMEOUT,
+            )
+            if event_odds_response.status_code == 200:
+                active_api_key = candidate_key
+                break
+            if event_odds_response.status_code in {401, 403, 429}:
+                if event_odds_response.status_code == 429:
+                    time.sleep(0.8 * (attempt + 1))
+                continue
+            break
+        if event_odds_response is None:
+            continue
+        if event_odds_response.status_code != 200:
+            if event_odds_response.status_code == 429:
+                warnings.append("Odds API frequency limit hit; market dampening may be partial.")
+                continue
+            warnings.append(
+                f"{away_name} at {home_name}: odds request failed ({event_odds_response.status_code})"
+            )
+            continue
+
+        payload = event_odds_response.json()
+        bookmaker_rows = payload.get("bookmakers") or []
+        entries = []
+        for bookmaker in bookmaker_rows:
+            if not isinstance(bookmaker, dict):
+                continue
+            extracted = _extract_totals_market_from_bookmaker(bookmaker, target_point=1.5)
+            if not extracted:
+                continue
+            try:
+                over_imp = american_to_implied_prob(extracted["over_price"])
+                under_imp = american_to_implied_prob(extracted["under_price"])
+                over_novig = over_imp / max(over_imp + under_imp, 1e-9)
+            except (ValueError, ZeroDivisionError):
+                continue
+            entries.append(
+                {
+                    "bookmaker_key": bookmaker.get("key"),
+                    "bookmaker_title": bookmaker.get("title"),
+                    "point": extracted["point"],
+                    "over_price": extracted["over_price"],
+                    "under_price": extracted["under_price"],
+                    "over_no_vig_prob": over_novig,
+                    "last_update": extracted.get("last_update"),
+                }
+            )
+
+        if not entries:
+            continue
+
+        over_probs = [row["over_no_vig_prob"] for row in entries]
+        points = [row["point"] for row in entries]
+        fanduel = next(
+            (
+                row
+                for row in entries
+                if is_fanduel_bookmaker(row.get("bookmaker_key"), row.get("bookmaker_title"))
+            ),
+            None,
+        )
+        by_team_pair[pair] = {
+            "event_id": event_id,
+            "source_url": event_odds_url,
+            "book_count": len(entries),
+            "consensus_point": median(points),
+            "consensus_over_no_vig_prob": median(over_probs),
+            "fanduel": {
+                "bookmaker_key": fanduel.get("bookmaker_key"),
+                "bookmaker_title": fanduel.get("bookmaker_title"),
+                "point": fanduel.get("point"),
+                "over_price": fanduel.get("over_price"),
+                "under_price": fanduel.get("under_price"),
+                "over_no_vig_prob": fanduel.get("over_no_vig_prob"),
+                "last_update": fanduel.get("last_update"),
+            }
+            if fanduel
+            else None,
+            "bookmakers": entries,
+        }
+
+    result = {
+        "source_url": events_url,
+        "target_date": target_date,
+        "by_team_pair": by_team_pair,
+        "warnings": warnings,
+        "cache_max_age_seconds": cache_max_age,
+        "fetched_at": datetime.now().isoformat(timespec="seconds"),
+    }
+    hybrid._cache_set(cache_key, result)
+    if verbose:
+        print(
+            f"Odds API totals_p1 market rows: {len(by_team_pair)} mapped games "
+            f"(target date {target_date}, warnings {len(warnings)})"
+        )
+    return result
+
+
 def resolve_team_for_daily_feed(team_name, teams_by_id):
     normalized = normalize_text(team_name)
     alias_by_normalized = {
@@ -988,7 +1345,13 @@ def resolve_goalie_for_daily_feed(goalie_name, team_goalies):
     return team_goalies[0], "fallback_top_sample"
 
 
-def build_daily_projection_slate(dataset, date_str=None, verbose=True):
+def build_daily_projection_slate(
+    dataset,
+    date_str=None,
+    verbose=True,
+    odds_cache_max_age_seconds=None,
+    force_refresh_odds=False,
+):
     teams_by_id, goalies_by_team = index_dataset(dataset)
     league = dataset["league"]
 
@@ -996,11 +1359,35 @@ def build_daily_projection_slate(dataset, date_str=None, verbose=True):
     warnings = []
     projected_games = []
     live_status_by_pair = {}
+    market_by_pair = {}
+    target_pairs = set()
+    for game in feed.get("games", []):
+        away_name = game.get("away_team_name") or ""
+        home_name = game.get("home_team_name") or ""
+        try:
+            team_away = resolve_team_for_daily_feed(away_name, teams_by_id)
+            team_home = resolve_team_for_daily_feed(home_name, teams_by_id)
+            target_pairs.add(pair_key(team_away["team_id"], team_home["team_id"]))
+        except ValueError:
+            continue
     try:
         live_payload = fetch_nhl_daily_game_status(date_str=feed.get("target_date"))
         live_status_by_pair = live_payload.get("by_team_pair", {})
     except Exception as exc:
         warnings.append(f"NHL live status unavailable: {exc}")
+    try:
+        market_payload = fetch_daily_market_totals_p1(
+            dataset,
+            date_str=feed.get("target_date"),
+            target_team_pairs=target_pairs,
+            verbose=verbose,
+            max_age_seconds=odds_cache_max_age_seconds,
+            force_refresh=force_refresh_odds,
+        )
+        market_by_pair = market_payload.get("by_team_pair", {})
+        warnings.extend(market_payload.get("warnings", []))
+    except Exception as exc:
+        warnings.append(f"Odds API market pull unavailable: {exc}")
 
     for game in feed["games"]:
         away_name = game.get("away_team_name") or "Unknown Away"
@@ -1045,6 +1432,31 @@ def build_daily_projection_slate(dataset, date_str=None, verbose=True):
         live_status = live_status_by_pair.get(tuple(sorted((team_away["team_id"], team_home["team_id"]))))
         if live_status:
             row["game_status"] = live_status
+        market_key = pair_key(team_away["team_id"], team_home["team_id"])
+        market_totals = market_by_pair.get(market_key)
+        if market_totals:
+            fanduel_market = market_totals.get("fanduel") or None
+            if fanduel_market is None:
+                for bookmaker_row in market_totals.get("bookmakers") or []:
+                    if is_fanduel_bookmaker(bookmaker_row.get("bookmaker_key"), bookmaker_row.get("bookmaker_title")):
+                        fanduel_market = bookmaker_row
+                        break
+            row["market_totals_p1"] = {
+                "book_count": market_totals.get("book_count", 0),
+                "consensus_point": market_totals.get("consensus_point"),
+                "consensus_over_no_vig_prob": market_totals.get("consensus_over_no_vig_prob"),
+                "fanduel": {
+                    "bookmaker_key": fanduel_market.get("bookmaker_key"),
+                    "bookmaker_title": fanduel_market.get("bookmaker_title"),
+                    "point": fanduel_market.get("point"),
+                    "over_price": fanduel_market.get("over_price"),
+                    "under_price": fanduel_market.get("under_price"),
+                    "over_no_vig_prob": fanduel_market.get("over_no_vig_prob"),
+                    "last_update": fanduel_market.get("last_update"),
+                }
+                if fanduel_market
+                else None,
+            }
 
         away_goalies = goalies_by_team.get(team_away["team_id"], [])
         home_goalies = goalies_by_team.get(team_home["team_id"], [])
@@ -1063,6 +1475,22 @@ def build_daily_projection_slate(dataset, date_str=None, verbose=True):
             row["notes"].append(f"Home starter fallback used: {home_goalie['name']}")
 
         result = project_matchup(team_away, team_home, away_goalie, home_goalie, league)
+        model_prob_over = result["probability_over_1p_1_5"]
+        market_prob_over = (market_totals or {}).get("consensus_over_no_vig_prob") if market_totals else None
+        book_count = int((market_totals or {}).get("book_count") or 0)
+        dampening_weight = 0.0
+        final_prob_over = model_prob_over
+        if market_prob_over is not None:
+            dampening_weight = clamp(
+                ODDS_MARKET_DAMPEN_BASE_WEIGHT + (ODDS_MARKET_DAMPEN_PER_BOOK_WEIGHT * book_count),
+                ODDS_MARKET_DAMPEN_BASE_WEIGHT,
+                ODDS_MARKET_DAMPEN_MAX_WEIGHT,
+            )
+            final_prob_over = clamp(
+                ((1.0 - dampening_weight) * model_prob_over) + (dampening_weight * float(market_prob_over)),
+                PROB_MIN,
+                PROB_MAX,
+            )
 
         h2h_games = head_to_head_games(dataset, team_away, team_home)
         h2h_count = len(h2h_games)
@@ -1100,11 +1528,15 @@ def build_daily_projection_slate(dataset, date_str=None, verbose=True):
             }
         )
         row["projection"] = {
-            "prob_over_1p_1_5": result["probability_over_1p_1_5"],
-            "prob_under_1p_1_5": result["probability_under_1p_1_5"],
-            "over_american_odds": result["over_american_odds"],
-            "under_american_odds": result["under_american_odds"],
+            "prob_over_1p_1_5": final_prob_over,
+            "prob_under_1p_1_5": 1.0 - final_prob_over,
+            "over_american_odds": probability_to_american(final_prob_over),
+            "under_american_odds": probability_to_american(1.0 - final_prob_over),
             "lambda_total": result["lambda_total"],
+            "model_prob_over_1p_1_5_raw": model_prob_over,
+            "market_prob_over_1p_1_5_consensus": market_prob_over,
+            "market_book_count": book_count,
+            "market_dampening_weight": dampening_weight,
         }
         row["trends"] = {
             "away_team_l5_l10_l15_o15": format_team_o15(team_away),
@@ -1136,6 +1568,11 @@ def build_daily_projection_slate(dataset, date_str=None, verbose=True):
         for g in projected_games
         if (g.get("game_status") or {}).get("first_period_total_result") == "UNDER"
     )
+    market_games_with_data = sum(
+        1
+        for g in projected_games
+        if ((g.get("projection") or {}).get("market_prob_over_1p_1_5_consensus")) is not None
+    )
 
     payload = {
         "source_url": feed["source_url"],
@@ -1152,6 +1589,7 @@ def build_daily_projection_slate(dataset, date_str=None, verbose=True):
             "first_period_graded_games": first_period_graded,
             "first_period_over_games": first_period_over,
             "first_period_under_games": first_period_under,
+            "market_games_with_data": market_games_with_data,
         },
     }
 
@@ -1358,7 +1796,15 @@ def project_matchup(team_away, team_home, away_goalie, home_goalie, league):
         TEAM_FORM_FULL_WEIGHT_GAMES,
     )
     empirical_prob = 0.5 * (away_empirical_rate + home_empirical_rate)
-    final_prob = clamp((POISSON_WEIGHT * poisson_prob) + ((1.0 - POISSON_WEIGHT) * empirical_prob), PROB_MIN, PROB_MAX)
+    base_prob = clamp((POISSON_WEIGHT * poisson_prob) + ((1.0 - POISSON_WEIGHT) * empirical_prob), PROB_MIN, PROB_MAX)
+    league_o15_prob = float(league.get("game_2plus_pct", 0.0))
+    if league_o15_prob <= 0:
+        league_o15_prob = poisson_prob_at_least_two(league_combined_rate)
+    final_prob = clamp(
+        ((1.0 - LEAGUE_O15_ANCHOR_WEIGHT) * base_prob) + (LEAGUE_O15_ANCHOR_WEIGHT * league_o15_prob),
+        PROB_MIN,
+        PROB_MAX,
+    )
 
     over_odds = probability_to_american(final_prob)
     under_odds = probability_to_american(1.0 - final_prob)
@@ -1405,6 +1851,9 @@ def project_matchup(team_away, team_home, away_goalie, home_goalie, league):
             "tempo_factor": tempo_factor,
             "poisson_prob": poisson_prob,
             "empirical_prob": empirical_prob,
+            "base_prob_pre_league_anchor": base_prob,
+            "league_o15_prob": league_o15_prob,
+            "league_anchor_weight": LEAGUE_O15_ANCHOR_WEIGHT,
             "away_empirical_rate": away_empirical_rate,
             "home_empirical_rate": home_empirical_rate,
             "away_empirical_weight": away_empirical_weight,

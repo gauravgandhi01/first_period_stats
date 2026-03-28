@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Build a self-contained interactive HTML dashboard for 1P O1.5 projections.
+Build a self-contained interactive HTML dashboard for NHL 1P O1.5 trends.
 
 The dashboard embeds a snapshot of the dataset produced by project_1p_two_plus.py,
 so it can be opened directly in a browser as a single file.
@@ -21,7 +21,7 @@ HTML_TEMPLATE = """<!doctype html>
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>NHL 1P O1.5 Interactive Dashboard</title>
+  <title>NHL 1P Interactive Dashboard</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -459,6 +459,32 @@ HTML_TEMPLATE = """<!doctype html>
       flex-wrap: wrap;
     }
 
+    .slate-title .team-logo.small {
+      width: 36px;
+      height: 36px;
+    }
+
+    .team-rank-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 18px;
+      height: 18px;
+      padding: 0 4px;
+      border-radius: 999px;
+      border: 1px solid #d1caba;
+      background: #fff;
+      color: #4d5a65;
+      font-size: 0.6rem;
+      font-weight: 800;
+      line-height: 1;
+      flex: 0 0 auto;
+    }
+
+    .team-rank-icon.good { color: var(--good); background: var(--good-bg); border-color: #bce7d3; }
+    .team-rank-icon.warn { color: var(--warn); background: var(--warn-bg); border-color: #f4d497; }
+    .team-rank-icon.bad { color: var(--bad); background: var(--bad-bg); border-color: #f2b7b7; }
+
     .slate-state-row {
       display: flex;
       flex-wrap: wrap;
@@ -524,9 +550,9 @@ HTML_TEMPLATE = """<!doctype html>
 <body>
   <div class="shell">
     <section class="hero">
-      <h1>NHL 1P O1.5 Matchup Dashboard</h1>
+      <h1>NHL 1P Matchup Dashboard</h1>
       <p>
-        Pick teams and projected starters to view fair O1.5 probability/odds plus empirical trends. By Gaurav Gandhi.
+        Pick teams and projected starters to view FanDuel 1P lines plus empirical trends. By Gaurav Gandhi.
         Data timestamp: <span id="generatedAt"></span>
       </p>
     </section>
@@ -567,16 +593,16 @@ HTML_TEMPLATE = """<!doctype html>
 
         <section class="kpis">
           <article class="card">
-            <div class="kpi-title">Projected O1.5 Probability</div>
-            <div id="kpiProb" class="kpi-value">--</div>
+            <div class="kpi-title">FanDuel 1P Total</div>
+            <div id="kpiFdPoint" class="kpi-value mono">--</div>
           </article>
           <article class="card">
-            <div class="kpi-title">Fair Over 1.5 Odds</div>
-            <div id="kpiOverOdds" class="kpi-value mono">--</div>
+            <div class="kpi-title">FanDuel Over</div>
+            <div id="kpiFdOverOdds" class="kpi-value mono">--</div>
           </article>
           <article class="card">
-            <div class="kpi-title">Fair Under 1.5 Odds</div>
-            <div id="kpiUnderOdds" class="kpi-value mono">--</div>
+            <div class="kpi-title">FanDuel Under</div>
+            <div id="kpiFdUnderOdds" class="kpi-value mono">--</div>
           </article>
           <article class="card">
             <div class="kpi-title">H2H O1.5 Rate</div>
@@ -613,7 +639,6 @@ HTML_TEMPLATE = """<!doctype html>
 
   <script>
     const DATASET = __DATASET_JSON__;
-    const CONFIG = __CONFIG_JSON__;
     const DAILY_SLATE = __DAILY_SLATE_JSON__;
     const TEAM_LOGOS = __TEAM_LOGOS_JSON__;
     const WINDOWS = [5, 10, 15, 20];
@@ -680,25 +705,6 @@ HTML_TEMPLATE = """<!doctype html>
       }
     }
 
-    function clamp(v, lo, hi) { return Math.max(lo, Math.min(hi, v)); }
-    function stabilizedRate(rawRate, sampleGames, priorRate, priorGames) {
-      const denom = sampleGames + priorGames;
-      if (denom <= 0) return priorRate;
-      return ((rawRate * sampleGames) + (priorRate * priorGames)) / denom;
-    }
-    function blendWithRecent(seasonValue, recentValue, recentGames, baseWeight, fullWeightGames) {
-      const fw = fullWeightGames > 0 ? fullWeightGames : 1.0;
-      const w = baseWeight * clamp(recentGames / fw, 0, 1);
-      return ((1 - w) * seasonValue) + (w * recentValue);
-    }
-    function poissonAtLeastTwo(lambdaValue) {
-      return 1 - Math.exp(-lambdaValue) * (1 + lambdaValue);
-    }
-    function probabilityToAmerican(prob) {
-      const p = clamp(prob, 1e-6, 1 - 1e-6);
-      if (p >= 0.5) return -Math.round((p / (1 - p)) * 100);
-      return Math.round(((1 - p) / p) * 100);
-    }
     function fmtAmerican(odds) { return odds > 0 ? `+${odds}` : `${odds}`; }
     function pairKey(a, b) {
       const low = Math.min(Number(a), Number(b));
@@ -718,6 +724,12 @@ HTML_TEMPLATE = """<!doctype html>
     function clsForGaPg(v) { return v <= 0.82 ? "good" : (v <= 1.08 ? "warn" : "bad"); }
     function clsForAllow2(v) { return v <= 0.18 ? "good" : (v <= 0.32 ? "warn" : "bad"); }
     function clsForSv(v) { return v >= 91 ? "good" : (v >= 88.5 ? "warn" : "bad"); }
+    function rankIconMarkup(teamId) {
+      const rank = teamRankById.get(Number(teamId));
+      if (!rank || !totalTeams) return "";
+      const rankClass = clsForRank(rank, totalTeams);
+      return `<span class="team-rank-icon ${rankClass}" title="Season Rank #${rank}/${totalTeams}">#${rank}</span>`;
+    }
     function normalizeStatus(status) {
       const s = (status || "").trim().toLowerCase();
       if (!s) return "Unconfirmed";
@@ -862,84 +874,38 @@ HTML_TEMPLATE = """<!doctype html>
       return "Rank n/a";
     }
 
-    function projectMatchup(awayTeam, homeTeam, awayGoalie, homeGoalie) {
-      const leagueGoalRate = DATASET.league.team_goal_rate;
-      const leagueCombinedRate = DATASET.league.combined_rate > 0 ? DATASET.league.combined_rate : leagueGoalRate * 2;
-      const leagueGoalieGaRate = DATASET.league.goalie_ga_rate > 0 ? DATASET.league.goalie_ga_rate : leagueGoalRate;
+    function fmtMarketPoint(point) {
+      const value = Number(point);
+      if (!Number.isFinite(value)) return "n/a";
+      if (Math.abs(value - Math.round(value)) < 1e-9) return `${Math.round(value)}.0`;
+      return value.toFixed(1);
+    }
 
-      const awayOffSeason = stabilizedRate(awayTeam.gf_pg, awayTeam.games, leagueGoalRate, CONFIG.team_prior_games);
-      const homeOffSeason = stabilizedRate(homeTeam.gf_pg, homeTeam.games, leagueGoalRate, CONFIG.team_prior_games);
-      const awayDefSeason = stabilizedRate(awayTeam.ga_pg, awayTeam.games, leagueGoalRate, CONFIG.team_prior_games);
-      const homeDefSeason = stabilizedRate(homeTeam.ga_pg, homeTeam.games, leagueGoalRate, CONFIG.team_prior_games);
-
-      const awayOff = blendWithRecent(
-        awayOffSeason, awayTeam.recent_gf_pg ?? awayOffSeason, awayTeam.recent_games ?? 0,
-        CONFIG.team_form_base_weight, CONFIG.team_form_full_weight_games
-      );
-      const homeOff = blendWithRecent(
-        homeOffSeason, homeTeam.recent_gf_pg ?? homeOffSeason, homeTeam.recent_games ?? 0,
-        CONFIG.team_form_base_weight, CONFIG.team_form_full_weight_games
-      );
-      const awayDef = blendWithRecent(
-        awayDefSeason, awayTeam.recent_ga_pg ?? awayDefSeason, awayTeam.recent_games ?? 0,
-        CONFIG.team_form_base_weight, CONFIG.team_form_full_weight_games
-      );
-      const homeDef = blendWithRecent(
-        homeDefSeason, homeTeam.recent_ga_pg ?? homeDefSeason, homeTeam.recent_games ?? 0,
-        CONFIG.team_form_base_weight, CONFIG.team_form_full_weight_games
-      );
-
-      const awayGoalieSeason = stabilizedRate(awayGoalie.ga_pg, awayGoalie.games, leagueGoalieGaRate, CONFIG.goalie_prior_games);
-      const homeGoalieSeason = stabilizedRate(homeGoalie.ga_pg, homeGoalie.games, leagueGoalieGaRate, CONFIG.goalie_prior_games);
-      const awayGoalieBlend = blendWithRecent(
-        awayGoalieSeason, awayGoalie.recent_ga_pg ?? awayGoalieSeason, awayGoalie.recent_games ?? 0,
-        CONFIG.goalie_form_base_weight, CONFIG.goalie_form_full_weight_games
-      );
-      const homeGoalieBlend = blendWithRecent(
-        homeGoalieSeason, homeGoalie.recent_ga_pg ?? homeGoalieSeason, homeGoalie.recent_games ?? 0,
-        CONFIG.goalie_form_base_weight, CONFIG.goalie_form_full_weight_games
-      );
-
-      const awayGoalieFactor = clamp(awayGoalieBlend / Math.max(awayDef, 1e-6), CONFIG.goalie_factor_min, CONFIG.goalie_factor_max);
-      const homeGoalieFactor = clamp(homeGoalieBlend / Math.max(homeDef, 1e-6), CONFIG.goalie_factor_min, CONFIG.goalie_factor_max);
-
-      const lambdaAway = 0.5 * (awayOff + homeDef) * homeGoalieFactor;
-      const lambdaHome = 0.5 * (homeOff + awayDef) * awayGoalieFactor;
-
-      const awayTempo = awayTeam.combined_pg / Math.max(leagueCombinedRate, 1e-6);
-      const homeTempo = homeTeam.combined_pg / Math.max(leagueCombinedRate, 1e-6);
-      const tempoFactor = clamp(Math.sqrt(Math.max(awayTempo, 1e-6) * Math.max(homeTempo, 1e-6)), CONFIG.tempo_factor_min, CONFIG.tempo_factor_max);
-
-      const lambdaTotal = (lambdaAway + lambdaHome) * tempoFactor;
-      const poissonProb = poissonAtLeastTwo(lambdaTotal);
-
-      const awayEmp = blendWithRecent(
-        awayTeam.games_2plus_pct,
-        awayTeam.recent_2plus_pct ?? awayTeam.games_2plus_pct,
-        awayTeam.recent_games ?? 0,
-        CONFIG.team_form_base_weight,
-        CONFIG.team_form_full_weight_games
-      );
-      const homeEmp = blendWithRecent(
-        homeTeam.games_2plus_pct,
-        homeTeam.recent_2plus_pct ?? homeTeam.games_2plus_pct,
-        homeTeam.recent_games ?? 0,
-        CONFIG.team_form_base_weight,
-        CONFIG.team_form_full_weight_games
-      );
-      const empiricalProb = 0.5 * (awayEmp + homeEmp);
-      const finalProb = clamp(
-        (CONFIG.poisson_weight * poissonProb) + ((1 - CONFIG.poisson_weight) * empiricalProb),
-        CONFIG.prob_min,
-        CONFIG.prob_max
-      );
-
+    function fanDuelLineFromGame(game) {
+      const market = (game || {}).market_totals_p1 || {};
+      const fanduel = market.fanduel || null;
+      if (!fanduel) return null;
+      const over = Number(fanduel.over_price);
+      const under = Number(fanduel.under_price);
+      if (!Number.isFinite(over) || !Number.isFinite(under)) return null;
+      const point = Number(fanduel.point);
       return {
-        prob: finalProb,
-        overOdds: probabilityToAmerican(finalProb),
-        underOdds: probabilityToAmerican(1 - finalProb),
-        h2hGames: DATASET.h2h_games.filter(g => g.pair_key === pairKey(awayTeam.team_id, homeTeam.team_id))
+        point: Number.isFinite(point) ? point : 1.5,
+        overOdds: over,
+        underOdds: under,
+        updatedAt: fanduel.last_update || null
       };
+    }
+
+    function findSlateGameForPair(teamIdA, teamIdB) {
+      const key = pairKey(teamIdA, teamIdB);
+      for (const game of slateGames) {
+        const awayId = Number(((game || {}).away || {}).team_id);
+        const homeId = Number(((game || {}).home || {}).team_id);
+        if (!Number.isFinite(awayId) || !Number.isFinite(homeId)) continue;
+        if (pairKey(awayId, homeId) === key) return game;
+      }
+      return null;
     }
 
     function populateTeams() {
@@ -1012,7 +978,7 @@ HTML_TEMPLATE = """<!doctype html>
       document.getElementById(elId).innerHTML = `
         <h3 class="section-title"><span class="team-ident">${teamLogoTag(team.abbrev, team.name, true)}<span>${team.abbrev} Team Form</span></span></h3>
         <div class="small">
-          <span class="tag ${rankClass}">2+ Goal-Game Rank #${rank}/${totalTeams}</span>
+          <span class="tag ${rankClass}">Rank #${rank}/${totalTeams}</span>
           &nbsp;Season O1.5: ${team.games_2plus_combined}/${team.games} (${pct(team.games_2plus_pct)})
         </div>
         <table>
@@ -1145,7 +1111,7 @@ HTML_TEMPLATE = """<!doctype html>
 
     function selectSlateGame(index) {
       const game = slateGames[index];
-      if (!game || !game.projection) return;
+      if (!game) return;
 
       const away = game.away || {};
       const home = game.home || {};
@@ -1179,10 +1145,12 @@ HTML_TEMPLATE = """<!doctype html>
       const meta = DAILY_SLATE.meta || {};
       const overTag = `<span class="tag good">OVER ${meta.first_period_over_games || 0}</span>`;
       const underTag = `<span class="tag bad">UNDER ${meta.first_period_under_games || 0}</span>`;
+      const lineSourceTag = `<span class="tag warn">Lines: FanDuel (1P 1.5)</span>`;
 
       slateMetaEl.innerHTML = `
         ${overTag}
         ${underTag}
+        ${lineSourceTag}
       `;
 
       const orderedSlateEntries = slateGames
@@ -1204,12 +1172,17 @@ HTML_TEMPLATE = """<!doctype html>
             const idx = entry.idx;
             const away = game.away || {};
             const home = game.home || {};
-            const available = !!game.projection;
-            const projection = game.projection || {};
+            const available = (
+              Number.isFinite(Number(away.team_id)) &&
+              Number.isFinite(Number(home.team_id)) &&
+              Number.isFinite(Number(away.goalie_id)) &&
+              Number.isFinite(Number(home.goalie_id))
+            );
             const trend = game.trends || {};
-            const prob = available ? Number(projection.prob_over_1p_1_5 || 0) : null;
-            const overOdds = available ? fmtAmerican(Number(projection.over_american_odds || 0)) : "--";
-            const underOdds = available ? fmtAmerican(Number(projection.under_american_odds || 0)) : "--";
+            const fanDuelLine = fanDuelLineFromGame(game);
+            const fanDuelOddsText = fanDuelLine
+              ? `O ${fmtAmerican(fanDuelLine.overOdds)} / U ${fmtAmerican(fanDuelLine.underOdds)}`
+              : "--";
             const h2hText = (trend.h2h_games && trend.h2h_o15_pct !== null && trend.h2h_o15_pct !== undefined)
               ? `H2H O1.5 ${pct(Number(trend.h2h_o15_pct))} (${trend.h2h_o15_hits}/${trend.h2h_games})`
               : "H2H O1.5 n/a";
@@ -1218,8 +1191,6 @@ HTML_TEMPLATE = """<!doctype html>
             const rowStatusTier = gameStatusTier(game);
             const awayGoalieName = away.goalie_name || away.goalie_name_feed || "TBD";
             const homeGoalieName = home.goalie_name || home.goalie_name_feed || "TBD";
-            const awayLabel = away.team_abbrev || away.team_name_feed || "AWY";
-            const homeLabel = home.team_abbrev || home.team_name_feed || "HME";
             const rowClasses = [
               "slate-item",
               `status-row-${rowStatusTier}`,
@@ -1232,9 +1203,9 @@ HTML_TEMPLATE = """<!doctype html>
               <button type="button" class="${rowClasses}" data-slate-index="${idx}" ${available ? "" : "disabled"}>
                 <div class="slate-matchup">
                   <div class="slate-title">
-                    <span class="team-ident">${teamLogoTag(away.team_abbrev, away.team_name || away.team_name_feed, true)}<span>${escapeHtml(awayLabel)}</span></span>
+                    <span class="team-ident">${teamLogoTag(away.team_abbrev, away.team_name || away.team_name_feed, true)}${rankIconMarkup(away.team_id)}</span>
                     <span class="small">at</span>
-                    <span class="team-ident">${teamLogoTag(home.team_abbrev, home.team_name || home.team_name_feed, true)}<span>${escapeHtml(homeLabel)}</span></span>
+                    <span class="team-ident">${teamLogoTag(home.team_abbrev, home.team_name || home.team_name_feed, true)}${rankIconMarkup(home.team_id)}</span>
                   </div>
                   ${gameStateChips ? `<div class="slate-state-row">${gameStateChips}</div>` : ""}
                 </div>
@@ -1244,8 +1215,7 @@ HTML_TEMPLATE = """<!doctype html>
                   <div class="slate-trend">${escapeHtml(h2hText)}</div>
                 </div>
                 <div class="slate-proj">
-                  ${available ? `<span class="tag ${clsForO15(prob)}">O1.5 ${pct(prob)}</span>` : `<span class="tag bad">No projection</span>`}
-                  <div class="mono">O ${overOdds} / U ${underOdds}</div>
+                  <div class="mono">${escapeHtml(fanDuelOddsText)}</div>
                 </div>
               </button>`;
           }).join("")}
@@ -1280,16 +1250,24 @@ HTML_TEMPLATE = """<!doctype html>
       }
       errorBox.style.display = "none";
 
-      const projection = projectMatchup(awayTeam, homeTeam, awayGoalie, homeGoalie);
-      document.getElementById("kpiProb").innerHTML = `<span class="tag ${clsForO15(projection.prob)}">${pct(projection.prob)}</span>`;
-      document.getElementById("kpiOverOdds").textContent = fmtAmerican(projection.overOdds);
-      document.getElementById("kpiUnderOdds").textContent = fmtAmerican(projection.underOdds);
+      const slateGameForPair = findSlateGameForPair(awayTeam.team_id, homeTeam.team_id);
+      const fanDuelLine = fanDuelLineFromGame(slateGameForPair);
+      document.getElementById("kpiFdPoint").textContent = fanDuelLine
+        ? fmtMarketPoint(fanDuelLine.point)
+        : "--";
+      document.getElementById("kpiFdOverOdds").textContent = fanDuelLine
+        ? fmtAmerican(fanDuelLine.overOdds)
+        : "--";
+      document.getElementById("kpiFdUnderOdds").textContent = fanDuelLine
+        ? fmtAmerican(fanDuelLine.underOdds)
+        : "--";
 
       renderTeamCard("awayTeamCard", awayTeam);
       renderTeamCard("homeTeamCard", homeTeam);
       renderGoalieCard("awayGoalieCard", awayTeam, awayGoalie);
       renderGoalieCard("homeGoalieCard", homeTeam, homeGoalie);
-      renderH2H(awayTeam, homeTeam, projection.h2hGames);
+      const h2hGames = DATASET.h2h_games.filter(g => g.pair_key === pairKey(awayTeam.team_id, homeTeam.team_id));
+      renderH2H(awayTeam, homeTeam, h2hGames);
     }
 
     function onTeamChange(teamEl, goalieEl) {
@@ -1334,7 +1312,16 @@ HTML_TEMPLATE = """<!doctype html>
       });
 
       renderSlate();
-      const firstPlayableIndex = slateGames.findIndex(g => !!g.projection);
+      const firstPlayableIndex = slateGames.findIndex(g => {
+        const away = (g || {}).away || {};
+        const home = (g || {}).home || {};
+        return (
+          Number.isFinite(Number(away.team_id)) &&
+          Number.isFinite(Number(home.team_id)) &&
+          Number.isFinite(Number(away.goalie_id)) &&
+          Number.isFinite(Number(home.goalie_id))
+        );
+      });
       if (firstPlayableIndex >= 0) {
         selectSlateGame(firstPlayableIndex);
         return;
@@ -1464,28 +1451,15 @@ def build_dashboard_html(force_refresh=False, output_path=None, slate_date=None)
             },
         }
 
-    config = {
-        "team_prior_games": proj.TEAM_PRIOR_GAMES,
-        "goalie_prior_games": proj.GOALIE_PRIOR_GAMES,
-        "team_form_base_weight": proj.TEAM_FORM_BASE_WEIGHT,
-        "goalie_form_base_weight": proj.GOALIE_FORM_BASE_WEIGHT,
-        "team_form_full_weight_games": proj.TEAM_FORM_FULL_WEIGHT_GAMES,
-        "goalie_form_full_weight_games": proj.GOALIE_FORM_FULL_WEIGHT_GAMES,
-        "poisson_weight": proj.POISSON_WEIGHT,
-        "goalie_factor_min": proj.GOALIE_FACTOR_MIN,
-        "goalie_factor_max": proj.GOALIE_FACTOR_MAX,
-        "tempo_factor_min": proj.TEMPO_FACTOR_MIN,
-        "tempo_factor_max": proj.TEMPO_FACTOR_MAX,
-        "prob_min": proj.PROB_MIN,
-        "prob_max": proj.PROB_MAX,
-    }
+    daily_slate_for_html = json.loads(json.dumps(daily_slate))
+    for game in daily_slate_for_html.get("games", []):
+        if isinstance(game, dict):
+            game.pop("projection", None)
 
     html = HTML_TEMPLATE.replace(
         "__DATASET_JSON__", json.dumps(dataset, ensure_ascii=False, separators=(",", ":"))
     ).replace(
-        "__CONFIG_JSON__", json.dumps(config, ensure_ascii=False, separators=(",", ":"))
-    ).replace(
-        "__DAILY_SLATE_JSON__", json.dumps(daily_slate, ensure_ascii=False, separators=(",", ":"))
+        "__DAILY_SLATE_JSON__", json.dumps(daily_slate_for_html, ensure_ascii=False, separators=(",", ":"))
     ).replace(
         "__TEAM_LOGOS_JSON__", json.dumps(team_logos, ensure_ascii=False, separators=(",", ":"))
     )
