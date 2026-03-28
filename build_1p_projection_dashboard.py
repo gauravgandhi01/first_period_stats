@@ -416,12 +416,18 @@ HTML_TEMPLATE = """<!doctype html>
       box-shadow: 0 8px 18px rgba(19, 79, 88, 0.14);
     }
 
+    .slate-item.state-scheduled {
+      background: transparent;
+    }
+
     .slate-item.state-live {
+      background: rgba(66, 53, 53, 0.18);
       border-color: #e4a9a9;
       box-shadow: 0 7px 16px rgba(154, 35, 35, 0.1);
     }
 
     .slate-item.state-final {
+      background: rgba(64, 72, 60, 0.18);
       border-color: #b7d9c0;
     }
 
@@ -430,7 +436,6 @@ HTML_TEMPLATE = """<!doctype html>
     .slate-item.status-row-unconfirmed,
     .slate-item.status-row-unknown {
       background: transparent;
-      border-color: #d3ccbe;
     }
 
     .slate-item.unavailable {
@@ -806,6 +811,12 @@ HTML_TEMPLATE = """<!doctype html>
       return "state-scheduled";
     }
 
+    function gameHasStarted(game) {
+      const code = String((((game || {}).game_status || {}).state_code || "")).toUpperCase();
+      if (!code) return false;
+      return !["FUT", "PRE"].includes(code);
+    }
+
     function renderGameStateChips(game) {
       const gameStatus = (game || {}).game_status || {};
       const code = String(gameStatus.state_code || "").toUpperCase();
@@ -816,9 +827,7 @@ HTML_TEMPLATE = """<!doctype html>
       let stateText = label;
       if (code === "LIVE" || code === "CRIT") {
         const period = Number(gameStatus.period || 0);
-        const clock = String(gameStatus.clock || "").trim();
         if (period > 0) stateText += ` P${period}`;
-        if (clock) stateText += ` ${clock}`;
       }
       const stateClass = (code === "LIVE" || code === "CRIT") ? "bad" : ((code === "OFF" || code === "FINAL") ? "good" : "warn");
       chips.push(`<span class="tag ${stateClass}">${escapeHtml(stateText)}</span>`);
@@ -1184,9 +1193,23 @@ HTML_TEMPLATE = """<!doctype html>
         ${statusChips}
       `;
 
+      const orderedSlateEntries = slateGames
+        .map((game, idx) => ({ game, idx }))
+        .sort((a, b) => {
+          const aStarted = gameHasStarted(a.game);
+          const bStarted = gameHasStarted(b.game);
+          if (aStarted !== bStarted) return aStarted ? 1 : -1;
+          const aTime = String(a.game.game_time_utc || a.game.game_time_et || "");
+          const bTime = String(b.game.game_time_utc || b.game.game_time_et || "");
+          if (aTime !== bTime) return aTime.localeCompare(bTime);
+          return a.idx - b.idx;
+        });
+
       slateListEl.innerHTML = `
         <div class="slate-list">
-          ${slateGames.map((game, idx) => {
+          ${orderedSlateEntries.map((entry) => {
+            const game = entry.game;
+            const idx = entry.idx;
             const away = game.away || {};
             const home = game.home || {};
             const available = !!game.projection;
