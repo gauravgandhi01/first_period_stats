@@ -459,13 +459,6 @@ HTML_TEMPLATE = """<!doctype html>
       flex-wrap: wrap;
     }
 
-    .slate-time {
-      font-size: 0.7rem;
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-    }
-
     .slate-state-row {
       display: flex;
       flex-wrap: wrap;
@@ -498,21 +491,6 @@ HTML_TEMPLATE = """<!doctype html>
       line-height: 1.25;
     }
 
-    .slate-cta {
-      align-self: center;
-      justify-self: end;
-      font-size: 0.66rem;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: #2f6e78;
-      font-weight: 700;
-      border: 1px solid #b8d7dd;
-      border-radius: 999px;
-      padding: 4px 7px;
-      background: #ebf6f8;
-      white-space: nowrap;
-    }
-
     .slate-inline-note {
       margin-top: 8px;
       color: var(--muted);
@@ -540,7 +518,6 @@ HTML_TEMPLATE = """<!doctype html>
       .grid-two { grid-template-columns: 1fr; }
       button { grid-column: span 2; }
       .slate-item { grid-template-columns: 1fr; gap: 8px; }
-      .slate-cta { justify-self: start; }
     }
   </style>
 </head>
@@ -549,7 +526,7 @@ HTML_TEMPLATE = """<!doctype html>
     <section class="hero">
       <h1>NHL 1P O1.5 Matchup Dashboard</h1>
       <p>
-        Pick teams and projected starters to view fair O1.5 probability/odds plus empirical trends.
+        Pick teams and projected starters to view fair O1.5 probability/odds plus empirical trends. By Gaurav Gandhi.
         Data timestamp: <span id="generatedAt"></span>
       </p>
     </section>
@@ -817,20 +794,46 @@ HTML_TEMPLATE = """<!doctype html>
       return !["FUT", "PRE"].includes(code);
     }
 
-    function renderGameStateChips(game) {
+    function formatSlateGameTime(game) {
+      const gameObj = game || {};
+      const etRaw = String(gameObj.game_time_et || "").trim();
+      if (etRaw) {
+        const match = etRaw.match(/(\\d{1,2}:\\d{2}\\s*[AP]M)/i);
+        if (match && match[1]) return match[1].toUpperCase().replace(/^0/, "");
+      }
+
+      const utcRaw = String(gameObj.game_time_utc || "").trim();
+      if (utcRaw) {
+        const parsed = new Date(utcRaw);
+        if (!Number.isNaN(parsed.getTime())) {
+          return parsed.toLocaleTimeString("en-US", {
+            hour: "numeric",
+            minute: "2-digit",
+            hour12: true,
+            timeZone: "America/New_York",
+          });
+        }
+      }
+
+      return "Time TBD";
+    }
+
+    function renderGameStateChips(game, gameTimeText) {
       const gameStatus = (game || {}).game_status || {};
       const code = String(gameStatus.state_code || "").toUpperCase();
       const label = String(gameStatus.state_label || code || "").trim();
-      if (!label) return "";
 
       const chips = [];
-      let stateText = label;
       if (code === "LIVE" || code === "CRIT") {
+        let stateText = label || "Live";
         const period = Number(gameStatus.period || 0);
         if (period > 0) stateText += ` P${period}`;
+        chips.push(`<span class="tag bad">${escapeHtml(stateText)}</span>`);
+      } else if (code === "OFF" || code === "FINAL") {
+        chips.push(`<span class="tag good">${escapeHtml(label || "Final")}</span>`);
+      } else {
+        chips.push(`<span class="tag warn">${escapeHtml(gameTimeText || "Time TBD")}</span>`);
       }
-      const stateClass = (code === "LIVE" || code === "CRIT") ? "bad" : ((code === "OFF" || code === "FINAL") ? "good" : "warn");
-      chips.push(`<span class="tag ${stateClass}">${escapeHtml(stateText)}</span>`);
 
       if (gameStatus.first_period_complete && gameStatus.first_period_total_result) {
         const result = String(gameStatus.first_period_total_result || "").toUpperCase();
@@ -1174,23 +1177,12 @@ HTML_TEMPLATE = """<!doctype html>
       }
 
       const meta = DAILY_SLATE.meta || {};
-      const statusCounts = meta.status_counts || {};
-      const statusChips = Object.keys(statusCounts).sort().map(status => {
-        return `<span class="status-pill ${statusClass(status)}"><span class="status-dot ${statusClass(status)}"></span>${escapeHtml(status)}: ${statusCounts[status]}</span>`;
-      }).join("");
-      const liveTag = `<span class="tag ${(meta.live_games || 0) > 0 ? "bad" : "warn"}">Live ${meta.live_games || 0}</span>`;
-      const gradedTag = `<span class="tag good">1P Graded ${meta.first_period_graded_games || 0}</span>`;
       const overTag = `<span class="tag good">OVER ${meta.first_period_over_games || 0}</span>`;
       const underTag = `<span class="tag bad">UNDER ${meta.first_period_under_games || 0}</span>`;
 
       slateMetaEl.innerHTML = `
-        <span class="tag good">Date ${escapeHtml(DAILY_SLATE.target_date || "n/a")}</span>
-        <span class="tag ${meta.failed_games > 0 ? "warn" : "good"}">Projected ${meta.projectable_games || 0}/${meta.total_games || slateGames.length}</span>
-        ${liveTag}
-        ${gradedTag}
         ${overTag}
         ${underTag}
-        ${statusChips}
       `;
 
       const orderedSlateEntries = slateGames
@@ -1221,8 +1213,8 @@ HTML_TEMPLATE = """<!doctype html>
             const h2hText = (trend.h2h_games && trend.h2h_o15_pct !== null && trend.h2h_o15_pct !== undefined)
               ? `H2H O1.5 ${pct(Number(trend.h2h_o15_pct))} (${trend.h2h_o15_hits}/${trend.h2h_games})`
               : "H2H O1.5 n/a";
-            const gameTime = game.game_time_et || game.game_time_utc || "Time TBD";
-            const gameStateChips = renderGameStateChips(game);
+            const gameTimeText = formatSlateGameTime(game);
+            const gameStateChips = renderGameStateChips(game, gameTimeText);
             const rowStatusTier = gameStatusTier(game);
             const awayGoalieName = away.goalie_name || away.goalie_name_feed || "TBD";
             const homeGoalieName = home.goalie_name || home.goalie_name_feed || "TBD";
@@ -1235,7 +1227,6 @@ HTML_TEMPLATE = """<!doctype html>
               available ? "" : "unavailable",
               activeSlateIndex === idx ? "active" : ""
             ].join(" ").trim();
-            const cta = available ? `<span class="slate-cta">View Details</span>` : `<span class="slate-cta">Unavailable</span>`;
 
             return `
               <button type="button" class="${rowClasses}" data-slate-index="${idx}" ${available ? "" : "disabled"}>
@@ -1245,7 +1236,6 @@ HTML_TEMPLATE = """<!doctype html>
                     <span class="small">at</span>
                     <span class="team-ident">${teamLogoTag(home.team_abbrev, home.team_name || home.team_name_feed, true)}<span>${escapeHtml(homeLabel)}</span></span>
                   </div>
-                  <div class="slate-time">${escapeHtml(gameTime)}</div>
                   ${gameStateChips ? `<div class="slate-state-row">${gameStateChips}</div>` : ""}
                 </div>
                 <div class="slate-goalies">
@@ -1257,7 +1247,6 @@ HTML_TEMPLATE = """<!doctype html>
                   ${available ? `<span class="tag ${clsForO15(prob)}">O1.5 ${pct(prob)}</span>` : `<span class="tag bad">No projection</span>`}
                   <div class="mono">O ${overOdds} / U ${underOdds}</div>
                 </div>
-                ${cta}
               </button>`;
           }).join("")}
         </div>
