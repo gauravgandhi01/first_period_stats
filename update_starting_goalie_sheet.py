@@ -12,12 +12,18 @@ Example manual run:
 
 Example crontab (every 5 minutes):
   */5 * * * * /usr/bin/python3 /Users/ggandhi001/nhl_tools/firstperiodstats/update_starting_goalie_sheet.py --odds-refresh-minutes 30 >> /Users/ggandhi001/nhl_tools/firstperiodstats/live/cron_update.log 2>&1
+
+Example crontab with git auto-push over SSH:
+  */5 * * * * /usr/bin/python3 /Users/ggandhi001/nhl_tools/firstperiodstats/update_starting_goalie_sheet.py --odds-refresh-minutes 90 --git-auto-push --git-remote origin >> /Users/ggandhi001/nhl_tools/firstperiodstats/live/cron_update.log 2>&1
 """
 
 import argparse
 import csv
 import json
 import os
+import re
+import shlex
+import subprocess
 from contextlib import contextmanager
 from datetime import datetime
 from pathlib import Path
@@ -124,6 +130,118 @@ def write_csv(path, rows):
             writer.writerow(row)
 
 
+def _run_git(repo_dir: Path, args, *, quiet=False, dry_run=False):
+    cmd = ["git", "-C", str(repo_dir), *args]
+    if not quiet:
+        print("$ " + " ".join(shlex.quote(part) for part in cmd))
+    if dry_run:
+        return subprocess.CompletedProcess(cmd, 0, "", "")
+    completed = subprocess.run(cmd, capture_output=True, text=True)
+    if completed.returncode != 0:
+        stderr = (completed.stderr or "").strip()
+        stdout = (completed.stdout or "").strip()
+        detail = stderr or stdout or f"exit {completed.returncode}"
+        raise RuntimeError(f"Git command failed: {' '.join(cmd)} | {detail}")
+    return completed
+
+
+def _github_https_to_ssh(url: str):
+    text = str(url or "").strip()
+    if text.startswith("git@") or text.startswith("ssh://"):
+        return text
+    match = re.match(r"^https?://github\.com/([^/]+)/([^/]+?)(?:\.git)?/?$", text)
+    if not match:
+        return None
+    owner = match.group(1)
+    repo = match.group(2)
+    return f"git@github.com:{owner}/{repo}.git"
+
+
+def _ensure_ssh_remote(repo_dir: Path, remote: str, *, quiet=False, dry_run=False):
+    remote_url = _run_git(repo_dir, ["remote", "get-url", remote], quiet=quiet, dry_run=False).stdout.strip()
+    ssh_url = _github_https_to_ssh(remote_url)
+    if not ssh_url:
+        raise RuntimeError(
+            f"Remote '{remote}' URL is not SSH and could not be auto-converted: {remote_url}"
+        )
+    if ssh_url == remote_url:
+        return ssh_url
+    _run_git(repo_dir, ["remote", "set-url", remote, ssh_url], quiet=quiet, dry_run=dry_run)
+    return ssh_url
+
+
+def auto_commit_and_push_outputs(
+    repo_dir: Path,
+    output_paths,
+    target_date: str,
+    *,
+    remote="origin",
+    branch=None,
+    quiet=False,
+    dry_run=False,
+):
+    repo_dir = repo_dir.resolve()
+    _run_git(repo_dir, ["rev-parse", "--is-inside-work-tree"], quiet=quiet, dry_run=False)
+
+    # Avoid accidentally committing unrelated pre-staged work.
+    staged_check = subprocess.run(
+        ["git", "-C", str(repo_dir), "diff", "--cached", "--quiet"],
+        capture_output=True,
+        text=True,
+    )
+    if staged_check.returncode == 1:
+        raise RuntimeError("Git index has pre-staged changes; refusing auto-commit to avoid mixing work.")
+    if staged_check.returncode not in (0, 1):
+        raise RuntimeError("Unable to inspect git staged state.")
+
+    _ensure_ssh_remote(repo_dir, remote, quiet=quiet, dry_run=dry_run)
+
+    relative_paths = []
+    for output_path in output_paths:
+        path_obj = Path(output_path).resolve()
+        if not path_obj.exists():
+            continue
+        try:
+            rel = path_obj.relative_to(repo_dir)
+        except ValueError:
+            continue
+        relative_paths.append(rel.as_posix())
+
+    if not relative_paths:
+        if not quiet:
+            print("No repo-local output files found to stage for git push.")
+        return
+
+    _run_git(repo_dir, ["add", "--", *relative_paths], quiet=quiet, dry_run=dry_run)
+
+    staged_after_add = subprocess.run(
+        ["git", "-C", str(repo_dir), "diff", "--cached", "--quiet"],
+        capture_output=True,
+        text=True,
+    )
+    if staged_after_add.returncode == 0:
+        if not quiet:
+            print("No output changes to commit.")
+        return
+    if staged_after_add.returncode not in (0, 1):
+        raise RuntimeError("Unable to inspect staged diff after git add.")
+
+    commit_stamp = datetime.now(UTC_TZ).strftime("%Y-%m-%d %H:%M:%S UTC")
+    commit_msg = f"auto: update firstperiodstats outputs for {target_date} ({commit_stamp})"
+    _run_git(repo_dir, ["commit", "-m", commit_msg], quiet=quiet, dry_run=dry_run)
+
+    push_branch = branch
+    if not push_branch:
+        push_branch = _run_git(repo_dir, ["rev-parse", "--abbrev-ref", "HEAD"], quiet=quiet, dry_run=False).stdout.strip()
+    if not push_branch or push_branch == "HEAD":
+        raise RuntimeError("Detached HEAD detected. Provide --git-branch for auto-push.")
+
+    push_args = ["push", remote, push_branch]
+    if dry_run:
+        push_args.insert(1, "--dry-run")
+    _run_git(repo_dir, push_args, quiet=quiet, dry_run=dry_run)
+
+
 @contextmanager
 def lock_file(lock_path: Path):
     lock_path.parent.mkdir(parents=True, exist_ok=True)
@@ -171,6 +289,30 @@ def parse_args():
         "--force-refresh-odds",
         action="store_true",
         help="Ignore odds cache for this run and force a new odds pull.",
+    )
+    parser.add_argument(
+        "--git-auto-push",
+        action="store_true",
+        help="Commit changed output files and push to remote via SSH after update.",
+    )
+    parser.add_argument(
+        "--git-remote",
+        default="origin",
+        help="Git remote name for auto-push.",
+    )
+    parser.add_argument(
+        "--git-branch",
+        help="Git branch to push (defaults to current branch).",
+    )
+    parser.add_argument(
+        "--git-repo-dir",
+        default=str(Path(__file__).resolve().parent),
+        help="Path to git repository root (or a directory inside it) for auto-push.",
+    )
+    parser.add_argument(
+        "--git-dry-run",
+        action="store_true",
+        help="Show git commit/push commands without making changes.",
     )
     parser.add_argument("--quiet", action="store_true", help="Reduce stdout logging.")
     return parser.parse_args()
@@ -234,6 +376,24 @@ def main():
                     force_refresh=False,
                     output_path=args.dashboard_path,
                     slate_date=target_date,
+                )
+
+            if args.git_auto_push:
+                tracked_outputs = [
+                    latest_json_path,
+                    latest_csv_path,
+                    latest_meta_path,
+                ]
+                if not args.skip_dashboard:
+                    tracked_outputs.append(Path(args.dashboard_path))
+                auto_commit_and_push_outputs(
+                    repo_dir=Path(args.git_repo_dir),
+                    output_paths=tracked_outputs,
+                    target_date=target_date,
+                    remote=args.git_remote,
+                    branch=args.git_branch,
+                    quiet=args.quiet,
+                    dry_run=args.git_dry_run,
                 )
 
     except RuntimeError as exc:

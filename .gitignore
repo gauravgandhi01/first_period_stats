@@ -3,3 +3,4 @@ live/
 __pycache__/
 *.json
 key.txt 
+projecs.code-workspace
