@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-03-29",
-  "pulled_at_utc": "2026-03-29T20:55:00+00:00",
+  "pulled_at_utc": "2026-03-29T21:00:00+00:00",
   "target_date": "2026-03-29",
   "games": [
     {
@@ -373,8 +373,8 @@
       "home": {
         "team_name_feed": "New Jersey Devils",
         "goalie_name_feed": "Jake Allen",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-03-29T20:54:50.903Z",
         "team_id": 1,
         "team_abbrev": "NJD",
         "team_name": "New Jersey Devils",
@@ -463,8 +463,8 @@
       "home": {
         "team_name_feed": "Philadelphia Flyers",
         "goalie_name_feed": "Samuel Ersson",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-03-29T20:56:01.382Z",
         "team_id": 4,
         "team_abbrev": "PHI",
         "team_name": "Philadelphia Flyers",
@@ -536,9 +536,8 @@
     "projectable_games": 6,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 9,
-      "Likely": 1,
-      "Unconfirmed": 2
+      "Confirmed": 11,
+      "Likely": 1
     },
     "live_games": 0,
     "first_period_graded_games": 1,
