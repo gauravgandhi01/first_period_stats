@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-03-28",
-  "pulled_at_utc": "2026-03-29T00:30:01+00:00",
+  "pulled_at_utc": "2026-03-29T00:35:00+00:00",
   "target_date": "2026-03-28",
   "games": [
     {
@@ -677,7 +677,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "10:45",
+        "clock": "08:28",
         "in_intermission": false,
         "away_score": 2,
         "home_score": 0,
@@ -753,7 +753,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "07:38",
+        "clock": "05:27",
         "in_intermission": false,
         "away_score": 0,
         "home_score": 2,
@@ -829,7 +829,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "10:03",
+        "clock": "08:15",
         "in_intermission": false,
         "away_score": 2,
         "home_score": 1,
@@ -905,7 +905,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "13:57",
+        "clock": "12:07",
         "in_intermission": false,
         "away_score": 1,
         "home_score": 0,
