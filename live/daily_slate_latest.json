@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-03-29",
-  "pulled_at_utc": "2026-03-29T14:55:00+00:00",
+  "pulled_at_utc": "2026-03-29T15:00:00+00:00",
   "target_date": "2026-03-29",
   "games": [
     {
@@ -11,8 +11,8 @@
       "away": {
         "team_name_feed": "Florida Panthers",
         "goalie_name_feed": "Sergei Bobrovsky",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-03-29T14:55:54.484Z",
         "team_id": 13,
         "team_abbrev": "FLA",
         "team_name": "Florida Panthers",
@@ -550,8 +550,8 @@
     "projectable_games": 6,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 2,
-      "Unconfirmed": 10
+      "Confirmed": 3,
+      "Unconfirmed": 9
     },
     "live_games": 0,
     "first_period_graded_games": 0,
