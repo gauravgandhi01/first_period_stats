@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-03-29",
-  "pulled_at_utc": "2026-03-29T19:55:00+00:00",
+  "pulled_at_utc": "2026-03-29T20:00:00+00:00",
   "target_date": "2026-03-29",
   "games": [
     {
@@ -162,10 +162,10 @@
           "bookmaker_key": "fanduel",
           "bookmaker_title": "FanDuel",
           "point": 1.5,
-          "over_price": -128.0,
-          "under_price": 100.0,
-          "over_no_vig_prob": 0.5289256198347108,
-          "last_update": "2026-03-29T18:24:31Z"
+          "over_price": -126.0,
+          "under_price": -102.0,
+          "over_no_vig_prob": 0.524740227610094,
+          "last_update": "2026-03-29T19:59:34Z"
         }
       }
     },
@@ -255,7 +255,7 @@
           "over_price": -136.0,
           "under_price": 108.0,
           "over_no_vig_prob": 0.5451742213999383,
-          "last_update": "2026-03-29T18:24:31Z"
+          "last_update": "2026-03-29T19:59:28Z"
         }
       }
     },
@@ -345,7 +345,7 @@
           "over_price": -148.0,
           "under_price": 116.0,
           "over_no_vig_prob": 0.5631341600901917,
-          "last_update": "2026-03-29T18:24:19Z"
+          "last_update": "2026-03-29T19:59:38Z"
         }
       }
     },
@@ -435,7 +435,7 @@
           "over_price": -118.0,
           "under_price": -108.0,
           "over_no_vig_prob": 0.510397604391948,
-          "last_update": "2026-03-29T18:24:16Z"
+          "last_update": "2026-03-29T19:58:22Z"
         }
       }
     },
@@ -525,7 +525,7 @@
           "over_price": -116.0,
           "under_price": -110.0,
           "over_no_vig_prob": 0.5062344139650873,
-          "last_update": "2026-03-29T18:25:04Z"
+          "last_update": "2026-03-29T20:00:16Z"
         }
       }
     }
