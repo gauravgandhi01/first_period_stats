@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-03-29",
-  "pulled_at_utc": "2026-03-29T20:30:00+00:00",
+  "pulled_at_utc": "2026-03-29T20:35:01+00:00",
   "target_date": "2026-03-29",
   "games": [
     {
@@ -267,8 +267,8 @@
       "away": {
         "team_name_feed": "Nashville Predators",
         "goalie_name_feed": "Justus Annunen",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-03-29T20:30:20.502Z",
         "team_id": 18,
         "team_abbrev": "NSH",
         "team_name": "Nashville Predators",
@@ -283,8 +283,8 @@
       "home": {
         "team_name_feed": "Tampa Bay Lightning",
         "goalie_name_feed": "Jonas Johansson",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-03-29T20:30:57.942Z",
         "team_id": 14,
         "team_abbrev": "TBL",
         "team_name": "Tampa Bay Lightning",
@@ -536,9 +536,9 @@
     "projectable_games": 6,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 7,
+      "Confirmed": 9,
       "Likely": 1,
-      "Unconfirmed": 4
+      "Unconfirmed": 2
     },
     "live_games": 0,
     "first_period_graded_games": 1,
