@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-03-29",
-  "pulled_at_utc": "2026-03-29T16:35:01+00:00",
+  "pulled_at_utc": "2026-03-29T16:40:01+00:00",
   "target_date": "2026-03-29",
   "games": [
     {
@@ -461,8 +461,8 @@
       "away": {
         "team_name_feed": "Dallas Stars",
         "goalie_name_feed": "Casey DeSmith",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-03-29T16:37:00.836Z",
         "team_id": 25,
         "team_abbrev": "DAL",
         "team_name": "Dallas Stars",
@@ -550,9 +550,9 @@
     "projectable_games": 6,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 3,
+      "Confirmed": 4,
       "Likely": 2,
-      "Unconfirmed": 7
+      "Unconfirmed": 6
     },
     "live_games": 0,
     "first_period_graded_games": 0,
