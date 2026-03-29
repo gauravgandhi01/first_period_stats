@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-03-28",
-  "pulled_at_utc": "2026-03-29T00:35:00+00:00",
+  "pulled_at_utc": "2026-03-29T00:40:00+00:00",
   "target_date": "2026-03-28",
   "games": [
     {
@@ -677,7 +677,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "08:28",
+        "clock": "06:16",
         "in_intermission": false,
         "away_score": 2,
         "home_score": 0,
@@ -753,7 +753,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "05:27",
+        "clock": "01:33",
         "in_intermission": false,
         "away_score": 0,
         "home_score": 2,
@@ -829,7 +829,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "08:15",
+        "clock": "05:22",
         "in_intermission": false,
         "away_score": 2,
         "home_score": 1,
@@ -905,7 +905,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "12:07",
+        "clock": "09:49",
         "in_intermission": false,
         "away_score": 1,
         "home_score": 0,
@@ -923,8 +923,8 @@
       "away": {
         "team_name_feed": "Utah Mammoth",
         "goalie_name_feed": "Karel Vejmelka",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-03-29T00:38:07.656Z",
         "team_id": 68,
         "team_abbrev": "UTA",
         "team_name": "Utah Mammoth",
@@ -1192,8 +1192,8 @@
     "projectable_games": 15,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 28,
-      "Unconfirmed": 2
+      "Confirmed": 29,
+      "Unconfirmed": 1
     },
     "live_games": 4,
     "first_period_graded_games": 11,
