@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-03-29",
-  "pulled_at_utc": "2026-03-29T23:30:01+00:00",
+  "pulled_at_utc": "2026-03-29T23:35:01+00:00",
   "target_date": "2026-03-29",
   "games": [
     {
@@ -142,10 +142,10 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025021170,
-        "state_code": "LIVE",
+        "state_code": "CRIT",
         "state_label": "Live",
         "period": 3,
-        "clock": "06:31",
+        "clock": "02:41",
         "in_intermission": false,
         "away_score": 2,
         "home_score": 3,
@@ -218,10 +218,10 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025021169,
-        "state_code": "CRIT",
-        "state_label": "Live",
+        "state_code": "FINAL",
+        "state_label": "Final",
         "period": 3,
-        "clock": "01:15",
+        "clock": "00:00",
         "in_intermission": false,
         "away_score": 3,
         "home_score": 1,
@@ -297,7 +297,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 3,
-        "clock": "05:49",
+        "clock": "05:10",
         "in_intermission": false,
         "away_score": 2,
         "home_score": 3,
@@ -373,11 +373,11 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "08:11",
+        "clock": "05:19",
         "in_intermission": false,
-        "away_score": 1,
+        "away_score": 2,
         "home_score": 1,
-        "first_period_goals": 1,
+        "first_period_goals": 3,
         "first_period_complete": false,
         "first_period_total_result": null,
         "source_url": "https://api-web.nhle.com/v1/score/2026-03-29"
@@ -449,7 +449,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "09:13",
+        "clock": "05:46",
         "in_intermission": false,
         "away_score": 0,
         "home_score": 0,
@@ -468,7 +468,7 @@
     "status_counts": {
       "Confirmed": 12
     },
-    "live_games": 5,
+    "live_games": 4,
     "first_period_graded_games": 4,
     "first_period_over_games": 1,
     "first_period_under_games": 3,
