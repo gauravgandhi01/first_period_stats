@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-03-29",
-  "pulled_at_utc": "2026-03-29T21:20:01+00:00",
+  "pulled_at_utc": "2026-03-29T21:25:01+00:00",
   "target_date": "2026-03-29",
   "games": [
     {
@@ -145,7 +145,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "11:31",
+        "clock": "09:55",
         "in_intermission": false,
         "away_score": 0,
         "home_score": 2,
@@ -235,11 +235,11 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "12:24",
+        "clock": "11:07",
         "in_intermission": false,
         "away_score": 0,
-        "home_score": 0,
-        "first_period_goals": 0,
+        "home_score": 1,
+        "first_period_goals": 1,
         "first_period_complete": false,
         "first_period_total_result": null,
         "source_url": "https://api-web.nhle.com/v1/score/2026-03-29"
@@ -325,7 +325,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "13:01",
+        "clock": "09:40",
         "in_intermission": false,
         "away_score": 0,
         "home_score": 0,
