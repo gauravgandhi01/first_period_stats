@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-03-30",
-  "pulled_at_utc": "2026-03-30T18:25:01+00:00",
+  "pulled_at_utc": "2026-03-30T18:30:00+00:00",
   "target_date": "2026-03-30",
   "games": [
     {
@@ -191,8 +191,8 @@
       "away": {
         "team_name_feed": "St Louis Blues",
         "goalie_name_feed": "Joel Hofer",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-03-30T18:25:46.970Z",
         "team_id": 19,
         "team_abbrev": "STL",
         "team_name": "St. Louis Blues",
@@ -207,8 +207,8 @@
       "home": {
         "team_name_feed": "San Jose Sharks",
         "goalie_name_feed": "Yaroslav Askarov",
-        "status": "Likely",
-        "status_updated_at_utc": "2026-03-30T17:59:25.671Z",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-03-30T18:27:27.042Z",
         "team_id": 28,
         "team_abbrev": "SJS",
         "team_name": "San Jose Sharks",
@@ -280,17 +280,17 @@
       "game_time_et": "2026-03-30 10:00 PM ET",
       "away": {
         "team_name_feed": "Toronto Maple Leafs",
-        "goalie_name_feed": "Joseph Woll",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "goalie_name_feed": "Anthony Stolarz",
+        "status": "Likely",
+        "status_updated_at_utc": "2026-03-30T18:29:11.837Z",
         "team_id": 10,
         "team_abbrev": "TOR",
         "team_name": "Toronto Maple Leafs",
-        "goalie_id": 8479361,
-        "goalie_name": "Joseph Woll",
-        "goalie_games": 35,
-        "goalie_ga_pg": 1.0,
-        "goalie_save_pct": 90.64171122994652,
+        "goalie_id": 8476932,
+        "goalie_name": "Anthony Stolarz",
+        "goalie_games": 22,
+        "goalie_ga_pg": 1.1363636363636365,
+        "goalie_save_pct": 88.20754716981132,
         "team_o15_pct": 0.6164383561643836,
         "team_combined_pg": 1.821917808219178
       },
@@ -311,12 +311,12 @@
         "team_combined_pg": 1.7638888888888888
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5570705096647269,
-        "prob_under_1p_1_5": 0.44292949033527307,
-        "over_american_odds": -126,
-        "under_american_odds": 126,
-        "lambda_total": 1.6141975191181768,
-        "model_prob_over_1p_1_5_raw": 0.5056645632519718,
+        "prob_over_1p_1_5": 0.5603805565887856,
+        "prob_under_1p_1_5": 0.4396194434112144,
+        "over_american_odds": -127,
+        "under_american_odds": 127,
+        "lambda_total": 1.7284055044012039,
+        "model_prob_over_1p_1_5_raw": 0.5277315427456966,
         "market_prob_over_1p_1_5_consensus": 0.5661421472669779,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
@@ -324,7 +324,7 @@
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 6/10 2+ (60.0%) | L15: 11/15 2+ (73.3%) | L20: 12/20 2+ (60.0%)",
         "home_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 3/10 2+ (30.0%) | L15: 6/15 2+ (40.0%) | L20: 8/20 2+ (40.0%)",
-        "away_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 4/10 allow 2+ (40.0%) | L15: 6/15 allow 2+ (40.0%) | L20: 8/20 allow 2+ (40.0%)",
+        "away_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 3/10 allow 2+ (30.0%) | L15: 5/15 allow 2+ (33.3%) | L20: 6/20 allow 2+ (30.0%)",
         "home_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 2/10 allow 2+ (20.0%) | L15: 3/15 allow 2+ (20.0%) | L20: 3/16 allow 2+ (18.8%)",
         "h2h_games": 1,
         "h2h_o15_hits": 1,
@@ -460,9 +460,9 @@
     "projectable_games": 5,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 5,
+      "Confirmed": 7,
       "Likely": 1,
-      "Unconfirmed": 4
+      "Unconfirmed": 2
     },
     "live_games": 0,
     "first_period_graded_games": 0,
