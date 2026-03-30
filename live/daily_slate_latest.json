@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-03-30",
-  "pulled_at_utc": "2026-03-30T19:35:00+00:00",
+  "pulled_at_utc": "2026-03-30T19:40:01+00:00",
   "target_date": "2026-03-30",
   "games": [
     {
@@ -371,8 +371,8 @@
       "away": {
         "team_name_feed": "Vancouver Canucks",
         "goalie_name_feed": "Kevin Lankinen",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-03-30T19:35:26.357Z",
         "team_id": 23,
         "team_abbrev": "VAN",
         "team_name": "Vancouver Canucks",
@@ -460,9 +460,9 @@
     "projectable_games": 5,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 7,
+      "Confirmed": 8,
       "Likely": 1,
-      "Unconfirmed": 2
+      "Unconfirmed": 1
     },
     "live_games": 0,
     "first_period_graded_games": 0,
