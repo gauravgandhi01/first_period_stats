@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-03-30",
-  "pulled_at_utc": "2026-03-30T14:30:01+00:00",
+  "pulled_at_utc": "2026-03-30T14:35:00+00:00",
   "target_date": "2026-03-30",
   "games": [
     {
@@ -27,8 +27,8 @@
       "home": {
         "team_name_feed": "New York Islanders",
         "goalie_name_feed": "Ilya Sorokin",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Likely",
+        "status_updated_at_utc": "2026-03-30T14:30:03.798Z",
         "team_id": 2,
         "team_abbrev": "NYI",
         "team_name": "New York Islanders",
@@ -460,7 +460,8 @@
     "projectable_games": 5,
     "failed_games": 0,
     "status_counts": {
-      "Unconfirmed": 10
+      "Likely": 1,
+      "Unconfirmed": 9
     },
     "live_games": 0,
     "first_period_graded_games": 0,
