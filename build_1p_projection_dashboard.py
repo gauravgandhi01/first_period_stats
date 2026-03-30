@@ -10,6 +10,7 @@ import argparse
 import json
 import os
 import re
+from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import quote
 
@@ -655,7 +656,12 @@ HTML_TEMPLATE = """<!doctype html>
     const teamRankingsMetaEl = document.getElementById("teamRankingsMeta");
     const teamRankingsTableEl = document.getElementById("teamRankingsTable");
 
-    document.getElementById("generatedAt").textContent = DATASET.generated_at || "n/a";
+    const dashboardUpdatedAt =
+      DAILY_SLATE.dashboard_updated_at_utc ||
+      DAILY_SLATE.pulled_at_utc ||
+      DATASET.generated_at ||
+      "n/a";
+    document.getElementById("generatedAt").textContent = dashboardUpdatedAt;
 
     const teams = [...DATASET.teams].sort((a, b) => a.abbrev.localeCompare(b.abbrev));
     const teamsById = new Map(teams.map(t => [t.team_id, t]));
@@ -722,8 +728,35 @@ HTML_TEMPLATE = """<!doctype html>
     }
     function clsForCombined(v) { return v >= 2.0 ? "good" : (v >= 1.65 ? "warn" : "bad"); }
     function clsForGaPg(v) { return v <= 0.82 ? "good" : (v <= 1.08 ? "warn" : "bad"); }
-    function clsForAllow2(v) { return v <= 0.18 ? "good" : (v <= 0.32 ? "warn" : "bad"); }
+    function clsForAllow1(v, leagueAvg = null) {
+      if (Number.isFinite(leagueAvg)) {
+        if (v <= leagueAvg - 0.05) return "good";
+        if (v >= leagueAvg + 0.05) return "bad";
+        return "warn";
+      }
+      return v <= 0.45 ? "good" : (v <= 0.60 ? "warn" : "bad");
+    }
     function clsForSv(v) { return v >= 91 ? "good" : (v >= 88.5 ? "warn" : "bad"); }
+    const leagueAllow1PctByWindow = new Map();
+    for (const w of WINDOWS) {
+      let allow1Count = 0;
+      let games = 0;
+      for (const goalie of DATASET.goalies || []) {
+        const row = ((goalie || {}).window_stats || {})[String(w)] || null;
+        if (!row) continue;
+        const rowGames = Number(row.games || 0);
+        const rowAllow1 = Number(row.allow1_count);
+        if (!Number.isFinite(rowGames) || rowGames <= 0) continue;
+        if (!Number.isFinite(rowAllow1)) continue;
+        allow1Count += rowAllow1;
+        games += rowGames;
+      }
+      leagueAllow1PctByWindow.set(Number(w), games > 0 ? (allow1Count / games) : null);
+    }
+    const leagueAllow1Summary = WINDOWS.map(w => {
+      const v = leagueAllow1PctByWindow.get(Number(w));
+      return `L${w} ${Number.isFinite(v) ? pct(v) : "n/a"}`;
+    }).join(" | ");
     function rankIconMarkup(teamId) {
       const rank = teamRankById.get(Number(teamId));
       if (!rank || !totalTeams) return "";
@@ -1042,14 +1075,25 @@ HTML_TEMPLATE = """<!doctype html>
       const rows = WINDOWS.map(w => {
         const r = getWindowRow(goalie.window_stats, w);
         if (!r) return "";
+        const games = Number(r.games || 0);
+        const allow1CountRaw = Number(r.allow1_count);
+        const allow1Count = Number.isFinite(allow1CountRaw) ? allow1CountRaw : Number(r.allow2_count || 0);
+        const allow1PctRaw = Number(r.allow1_pct);
+        const allow1Pct = Number.isFinite(allow1PctRaw)
+          ? allow1PctRaw
+          : (games > 0 ? (allow1Count / games) : 0.0);
+        const leagueAllow1Pct = leagueAllow1PctByWindow.get(Number(w));
         return `
           <tr>
             <td>L${w}</td>
             <td>${r.ga_total.toFixed(0)}</td>
             <td class="${clsForGaPg(r.ga_pg)}">${r.ga_pg.toFixed(2)}</td>
             <td class="${clsForSv(r.sv_pct)}">${r.sv_pct.toFixed(1)}%</td>
-            <td>${r.allow2_count}/${r.games}</td>
-            <td><span class="tag ${clsForAllow2(r.allow2_pct)}">${pct(r.allow2_pct)}</span></td>
+            <td>${allow1Count}/${games}</td>
+            <td>
+              <span class="tag ${clsForAllow1(allow1Pct, leagueAllow1Pct)}">${pct(allow1Pct)}</span>
+              &nbsp;<span class="small">Lg ${Number.isFinite(leagueAllow1Pct) ? pct(leagueAllow1Pct) : "n/a"}</span>
+            </td>
           </tr>`;
       }).join("");
 
@@ -1063,6 +1107,7 @@ HTML_TEMPLATE = """<!doctype html>
       document.getElementById(elId).innerHTML = `
         <h3 class="section-title"><span class="team-ident">${teamLogoTag(team.abbrev, team.name, true)}<span>${team.abbrev} - ${goalie.name}</span></span></h3>
         <div class="small">${goalieRankText(goalie)} | Season 1P GA/GP ${goalie.ga_pg.toFixed(2)} | SV% ${goalie.save_pct.toFixed(1)}%</div>
+        <div class="small">League Avg Allow 1+%: ${leagueAllow1Summary}</div>
         <div style="margin:6px 0 8px; display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
           ${statusMarkup}
           ${statusUpdated}
@@ -1070,7 +1115,7 @@ HTML_TEMPLATE = """<!doctype html>
         <table>
           <thead>
             <tr>
-              <th>Window</th><th>1P GA</th><th>GA/GP</th><th>SV%</th><th>Allow 2+</th><th>Allow 2+%</th>
+              <th>Window</th><th>1P GA</th><th>GA/GP</th><th>SV%</th><th>Allow 1+</th><th>Allow 1+%</th>
             </tr>
           </thead>
           <tbody>${rows}</tbody>
@@ -1426,32 +1471,35 @@ def _build_team_logo_map(dataset, script_dir):
     return team_logo_map
 
 
-def build_dashboard_html(force_refresh=False, output_path=None, slate_date=None):
+def build_dashboard_html(force_refresh=False, output_path=None, slate_date=None, dataset=None, daily_slate=None):
     script_dir = Path(__file__).resolve().parent
-    dataset = proj.build_projection_dataset(force_refresh=force_refresh, verbose=True)
+    if dataset is None:
+        dataset = proj.build_projection_dataset(force_refresh=force_refresh, verbose=True)
     team_logos = _build_team_logo_map(dataset, script_dir)
-    try:
-        daily_slate = proj.build_daily_projection_slate(dataset, date_str=slate_date, verbose=True)
-    except Exception as exc:
-        daily_slate = {
-            "source_url": proj.dfo_build_url(slate_date),
-            "pulled_at_utc": None,
-            "target_date": slate_date,
-            "games": [],
-            "warnings": [f"Daily slate unavailable: {exc}"],
-            "meta": {
-                "total_games": 0,
-                "projectable_games": 0,
-                "failed_games": 0,
-                "status_counts": {},
-                "live_games": 0,
-                "first_period_graded_games": 0,
-                "first_period_over_games": 0,
-                "first_period_under_games": 0,
-            },
-        }
+    if daily_slate is None:
+        try:
+            daily_slate = proj.build_daily_projection_slate(dataset, date_str=slate_date, verbose=True)
+        except Exception as exc:
+            daily_slate = {
+                "source_url": proj.dfo_build_url(slate_date),
+                "pulled_at_utc": None,
+                "target_date": slate_date,
+                "games": [],
+                "warnings": [f"Daily slate unavailable: {exc}"],
+                "meta": {
+                    "total_games": 0,
+                    "projectable_games": 0,
+                    "failed_games": 0,
+                    "status_counts": {},
+                    "live_games": 0,
+                    "first_period_graded_games": 0,
+                    "first_period_over_games": 0,
+                    "first_period_under_games": 0,
+                },
+            }
 
     daily_slate_for_html = json.loads(json.dumps(daily_slate))
+    daily_slate_for_html["dashboard_updated_at_utc"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
     for game in daily_slate_for_html.get("games", []):
         if isinstance(game, dict):
             game.pop("projection", None)

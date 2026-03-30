@@ -25,7 +25,7 @@ import re
 import shlex
 import subprocess
 from contextlib import contextmanager
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -40,10 +40,36 @@ except ImportError:  # pragma: no cover
 
 ET_TZ = ZoneInfo("America/New_York")
 UTC_TZ = ZoneInfo("UTC")
+NOT_STARTED_GAME_STATE_CODES = {"FUT", "PRE"}
+STARTED_OR_FINAL_GAME_STATE_CODES = {"LIVE", "CRIT", "OFF", "FINAL"}
 
 
 def now_et_date():
     return datetime.now(ET_TZ).strftime("%Y-%m-%d")
+
+
+def next_et_date(date_str):
+    date_obj = datetime.strptime(date_str, "%Y-%m-%d")
+    return (date_obj + timedelta(days=1)).strftime("%Y-%m-%d")
+
+
+def game_has_not_started(game):
+    game_status = game.get("game_status") or {}
+    state_code = str(game_status.get("state_code") or "").strip().upper()
+    state_label = str(game_status.get("state_label") or "").strip().upper()
+
+    if state_code in NOT_STARTED_GAME_STATE_CODES or state_label == "SCHEDULED":
+        return True
+    if state_code in STARTED_OR_FINAL_GAME_STATE_CODES or state_label in {"LIVE", "FINAL"}:
+        return False
+
+    # Unknown status: treat conservatively to avoid rolling the slate early.
+    return True
+
+
+def should_roll_to_next_date(slate_payload):
+    games = slate_payload.get("games") or []
+    return not any(game_has_not_started(game) for game in games)
 
 
 def flatten_game_row(game):
@@ -330,6 +356,8 @@ def parse_args():
 def main():
     args = parse_args()
     target_date = args.date or now_et_date()
+    requested_target_date = target_date
+    odds_cache_max_age_seconds = max(0, int((args.odds_refresh_minutes or 0) * 60))
 
     output_dir = Path(args.output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -354,9 +382,26 @@ def main():
                 dataset,
                 date_str=target_date,
                 verbose=not args.quiet,
-                odds_cache_max_age_seconds=max(0, int((args.odds_refresh_minutes or 0) * 60)),
+                odds_cache_max_age_seconds=odds_cache_max_age_seconds,
                 force_refresh_odds=args.force_refresh_odds,
             )
+            if should_roll_to_next_date(slate_payload):
+                next_date = next_et_date(target_date)
+                if not args.quiet:
+                    print(
+                        f"No games remain in a scheduled state on {target_date}. "
+                        f"Rolling slate forward to {next_date}."
+                    )
+                target_date = next_date
+                slate_payload = proj.build_daily_projection_slate(
+                    dataset,
+                    date_str=target_date,
+                    verbose=not args.quiet,
+                    odds_cache_max_age_seconds=odds_cache_max_age_seconds,
+                    force_refresh_odds=args.force_refresh_odds,
+                )
+                if not args.quiet:
+                    print(f"Effective target date: {target_date} (requested: {requested_target_date})")
 
             rows = [flatten_game_row(game) for game in slate_payload.get("games", [])]
 
@@ -385,6 +430,8 @@ def main():
                     force_refresh=False,
                     output_path=args.dashboard_path,
                     slate_date=target_date,
+                    dataset=dataset,
+                    daily_slate=slate_payload,
                 )
 
             if args.git_auto_push:

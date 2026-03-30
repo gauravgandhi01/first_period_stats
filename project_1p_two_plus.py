@@ -97,6 +97,7 @@ ODDS_API_MARKET_KEY_P1_TOTALS = "totals_p1"
 ODDS_API_CACHE_MAX_AGE_SECONDS = 30 * 60
 ODDS_API_EVENT_REQUEST_SLEEP_SECONDS = 0.28
 ODDS_API_EVENT_MAX_RETRIES = 3
+ODDS_API_MIN_HEADROOM_CREDITS = 1
 ODDS_MARKET_DAMPEN_BASE_WEIGHT = 0.45
 ODDS_MARKET_DAMPEN_PER_BOOK_WEIGHT = 0.07
 ODDS_MARKET_DAMPEN_MAX_WEIGHT = 0.85
@@ -193,6 +194,19 @@ def _read_odds_api_keys():
         pass
 
     return _dedupe_keep_order(collected)
+
+
+def _parse_int_header(value):
+    try:
+        return int(str(value).strip())
+    except (TypeError, ValueError):
+        return None
+
+
+def _estimate_odds_api_credits_per_event():
+    region_count = max(1, len([x for x in str(ODDS_API_DEFAULT_REGIONS).split(",") if x.strip()]))
+    market_count = max(1, len([x for x in str(ODDS_API_MARKET_KEY_P1_TOTALS).split(",") if x.strip()]))
+    return region_count * market_count
 
 
 def american_to_implied_prob(odds):
@@ -1140,8 +1154,9 @@ def fetch_daily_market_totals_p1(
     warnings = []
     by_team_pair = {}
     events_url = f"{ODDS_API_BASE_URL}/sports/icehockey_nhl/events"
-    events_response = None
-    active_api_key = None
+    events = None
+    events_failure_response = None
+    key_remaining_credits = {}
     for candidate_key in api_keys:
         candidate_response = requests.get(
             events_url,
@@ -1149,17 +1164,28 @@ def fetch_daily_market_totals_p1(
             timeout=ODDS_API_TIMEOUT,
         )
         if candidate_response.status_code == 200:
-            events_response = candidate_response
-            active_api_key = candidate_key
-            break
+            if events is None:
+                candidate_events = candidate_response.json()
+                if not isinstance(candidate_events, list):
+                    return {
+                        "source_url": events_url,
+                        "target_date": target_date,
+                        "by_team_pair": {},
+                        "warnings": ["Odds API events response shape unexpected."],
+                    }
+                events = candidate_events
+            key_remaining_credits[candidate_key] = _parse_int_header(
+                candidate_response.headers.get("x-requests-remaining")
+            )
+            continue
+        events_failure_response = candidate_response
         if candidate_response.status_code in {401, 403, 429}:
             continue
-        events_response = candidate_response
         break
 
-    if events_response is None or events_response.status_code != 200:
-        status_code = events_response.status_code if events_response is not None else "no_response"
-        text_preview = (events_response.text[:220] if events_response is not None else "")
+    if events is None:
+        status_code = events_failure_response.status_code if events_failure_response is not None else "no_response"
+        text_preview = (events_failure_response.text[:220] if events_failure_response is not None else "")
         return {
             "source_url": events_url,
             "target_date": target_date,
@@ -1167,16 +1193,11 @@ def fetch_daily_market_totals_p1(
             "warnings": [f"Odds API events request failed ({status_code}): {text_preview}"],
         }
 
-    events = events_response.json()
-    if not isinstance(events, list):
-        return {
-            "source_url": events_url,
-            "target_date": target_date,
-            "by_team_pair": {},
-            "warnings": ["Odds API events response shape unexpected."],
-        }
-
     target_pairs_set = set(str(p) for p in (target_team_pairs or []))
+    event_candidates = []
+    now_utc = datetime.now(DFO_UTC_TZ)
+    skipped_started_events = 0
+    skipped_unparseable_events = 0
 
     for event in events:
         if not isinstance(event, dict):
@@ -1184,13 +1205,22 @@ def fetch_daily_market_totals_p1(
 
         commence_time = str(event.get("commence_time") or "")
         if commence_time:
-            # Keep only same-date ET events to match daily slate.
+            # Keep only same-date ET events to match daily slate and only fetch
+            # pregame odds (skip events that have already started).
             try:
-                event_dt_utc = datetime.fromisoformat(commence_time.replace("Z", "+00:00")).astimezone(DFO_ET_TZ)
-                if event_dt_utc.strftime("%Y-%m-%d") != target_date:
+                event_dt_utc = datetime.fromisoformat(commence_time.replace("Z", "+00:00")).astimezone(DFO_UTC_TZ)
+                event_dt_et = event_dt_utc.astimezone(DFO_ET_TZ)
+                if event_dt_et.strftime("%Y-%m-%d") != target_date:
+                    continue
+                if event_dt_utc <= now_utc:
+                    skipped_started_events += 1
                     continue
             except ValueError:
-                pass
+                skipped_unparseable_events += 1
+                continue
+        else:
+            skipped_unparseable_events += 1
+            continue
 
         away_name = event.get("away_team") or ""
         home_name = event.get("home_team") or ""
@@ -1208,10 +1238,70 @@ def fetch_daily_market_totals_p1(
         if not event_id:
             continue
 
+        event_candidates.append(
+            {
+                "event_id": event_id,
+                "pair": pair,
+                "away_name": away_name,
+                "home_name": home_name,
+            }
+        )
+
+    credits_per_event = _estimate_odds_api_credits_per_event()
+    estimated_required_credits = (len(event_candidates) * credits_per_event) + ODDS_API_MIN_HEADROOM_CREDITS
+    key_credits_ordered = [(k, key_remaining_credits.get(k)) for k in api_keys if k in key_remaining_credits]
+
+    if verbose and skipped_started_events > 0:
+        print(f"Odds API pregame filter: skipped {skipped_started_events} started events.")
+    if verbose and skipped_unparseable_events > 0:
+        print(f"Odds API pregame filter: skipped {skipped_unparseable_events} events with invalid commence_time.")
+
+    active_api_key = None
+    for candidate_key, remaining in key_credits_ordered:
+        if remaining is None or remaining >= estimated_required_credits:
+            active_api_key = candidate_key
+            break
+    if active_api_key is None and key_credits_ordered:
+        active_api_key = max(key_credits_ordered, key=lambda item: -1 if item[1] is None else item[1])[0]
+    if not active_api_key:
+        return {
+            "source_url": events_url,
+            "target_date": target_date,
+            "by_team_pair": {},
+            "warnings": ["Odds API key check failed: no usable key found."],
+        }
+
+    active_remaining = key_remaining_credits.get(active_api_key)
+    if active_remaining is not None and active_remaining < estimated_required_credits:
+        warnings.append(
+            "Odds API quota precheck: selected key may be short "
+            f"(remaining={active_remaining}, estimated_needed={estimated_required_credits}, "
+            f"events={len(event_candidates)}, credits_per_event={credits_per_event})."
+        )
+    if verbose:
+        remaining_text = "unknown" if active_remaining is None else str(active_remaining)
+        print(
+            "Odds API quota precheck: "
+            f"remaining={remaining_text}, estimated_needed={estimated_required_credits}, "
+            f"events={len(event_candidates)}, credits_per_event={credits_per_event}"
+        )
+
+    for candidate in event_candidates:
+        event_id = candidate["event_id"]
+        pair = candidate["pair"]
+        away_name = candidate["away_name"]
+        home_name = candidate["home_name"]
+
         event_odds_url = f"{ODDS_API_BASE_URL}/sports/icehockey_nhl/events/{event_id}/odds"
         event_odds_response = None
-        key_candidates = [active_api_key] + [k for k in api_keys if k != active_api_key]
-        for attempt, candidate_key in enumerate(key_candidates[: max(1, ODDS_API_EVENT_MAX_RETRIES)]):
+        fallback_keys = sorted(
+            [k for k in api_keys if k != active_api_key],
+            key=lambda key: -1 if key_remaining_credits.get(key) is None else key_remaining_credits.get(key),
+            reverse=True,
+        )
+        key_candidates = [active_api_key] + fallback_keys
+        max_attempts = max(1, min(len(key_candidates), ODDS_API_EVENT_MAX_RETRIES))
+        for attempt, candidate_key in enumerate(key_candidates[:max_attempts]):
             if ODDS_API_EVENT_REQUEST_SLEEP_SECONDS > 0:
                 time.sleep(ODDS_API_EVENT_REQUEST_SLEEP_SECONDS)
             event_odds_response = requests.get(
@@ -1225,6 +1315,9 @@ def fetch_daily_market_totals_p1(
                 },
                 timeout=ODDS_API_TIMEOUT,
             )
+            remaining_after_call = _parse_int_header(event_odds_response.headers.get("x-requests-remaining"))
+            if remaining_after_call is not None:
+                key_remaining_credits[candidate_key] = remaining_after_call
             if event_odds_response.status_code == 200:
                 active_api_key = candidate_key
                 break
