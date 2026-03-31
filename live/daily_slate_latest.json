@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-03-30",
-  "pulled_at_utc": "2026-03-31T01:30:00+00:00",
+  "pulled_at_utc": "2026-03-31T01:35:00+00:00",
   "target_date": "2026-03-30",
   "games": [
     {
@@ -69,7 +69,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 3,
-        "clock": "08:20",
+        "clock": "05:32",
         "in_intermission": false,
         "away_score": 7,
         "home_score": 3,
@@ -145,7 +145,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "10:14",
+        "clock": "05:12",
         "in_intermission": true,
         "away_score": 0,
         "home_score": 5,
@@ -253,8 +253,8 @@
       "away": {
         "team_name_feed": "Toronto Maple Leafs",
         "goalie_name_feed": "Anthony Stolarz",
-        "status": "Likely",
-        "status_updated_at_utc": "2026-03-30T18:29:11.837Z",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-03-31T01:31:03.755Z",
         "team_id": 10,
         "team_abbrev": "TOR",
         "team_name": "Toronto Maple Leafs",
@@ -359,8 +359,8 @@
       "home": {
         "team_name_feed": "Vegas Golden Knights",
         "goalie_name_feed": "Adin Hill",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-03-31T01:29:41.951Z",
         "team_id": 54,
         "team_abbrev": "VGK",
         "team_name": "Vegas Golden Knights",
@@ -432,9 +432,7 @@
     "projectable_games": 5,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 8,
-      "Likely": 1,
-      "Unconfirmed": 1
+      "Confirmed": 10
     },
     "live_games": 2,
     "first_period_graded_games": 2,
