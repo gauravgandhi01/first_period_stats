@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-03-31T15:05:01+00:00",
+  "updated_at_utc": "2026-03-31T15:10:10+00:00",
   "target_date": "2026-03-31",
   "sheet_json": "/Users/ggandhi001/nhl_tools/firstperiodstats/live/daily_slate_latest.json",
   "sheet_csv": "/Users/ggandhi001/nhl_tools/firstperiodstats/live/daily_slate_latest.csv",
@@ -12,8 +12,7 @@
   "first_period_under_games": 0,
   "status_counts": {
     "Confirmed": 3,
-    "Likely": 3,
-    "Projected": 1,
+    "Likely": 4,
     "Unconfirmed": 13
   },
   "odds_refresh_minutes": 90.0,
