@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-03-31",
-  "pulled_at_utc": "2026-03-31T15:30:01+00:00",
+  "pulled_at_utc": "2026-03-31T15:35:01+00:00",
   "target_date": "2026-03-31",
   "games": [
     {
@@ -551,8 +551,8 @@
       "away": {
         "team_name_feed": "Philadelphia Flyers",
         "goalie_name_feed": "Dan Vladar",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-03-31T15:34:18.496Z",
         "team_id": 4,
         "team_abbrev": "PHI",
         "team_name": "Philadelphia Flyers",
@@ -567,8 +567,8 @@
       "home": {
         "team_name_feed": "Washington Capitals",
         "goalie_name_feed": "Logan Thompson",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-03-31T15:29:19.400Z",
         "team_id": 15,
         "team_abbrev": "WSH",
         "team_name": "Washington Capitals",
@@ -910,9 +910,9 @@
     "projectable_games": 10,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 3,
+      "Confirmed": 5,
       "Likely": 5,
-      "Unconfirmed": 12
+      "Unconfirmed": 10
     },
     "live_games": 0,
     "first_period_graded_games": 0,
