@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-03-31",
-  "pulled_at_utc": "2026-03-31T15:50:01+00:00",
+  "pulled_at_utc": "2026-03-31T15:55:00+00:00",
   "target_date": "2026-03-31",
   "games": [
     {
@@ -461,8 +461,8 @@
       "away": {
         "team_name_feed": "Ottawa Senators",
         "goalie_name_feed": "Linus Ullmark",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-03-31T15:49:02.744Z",
         "team_id": 9,
         "team_abbrev": "OTT",
         "team_name": "Ottawa Senators",
@@ -910,9 +910,9 @@
     "projectable_games": 10,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 6,
+      "Confirmed": 7,
       "Likely": 6,
-      "Unconfirmed": 8
+      "Unconfirmed": 7
     },
     "live_games": 0,
     "first_period_graded_games": 0,
