@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-03-31",
-  "pulled_at_utc": "2026-03-31T16:30:01+00:00",
+  "pulled_at_utc": "2026-03-31T16:35:00+00:00",
   "target_date": "2026-03-31",
   "games": [
     {
@@ -11,8 +11,8 @@
       "away": {
         "team_name_feed": "Dallas Stars",
         "goalie_name_feed": "Jake Oettinger",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-03-31T16:34:11.974Z",
         "team_id": 25,
         "team_abbrev": "DAL",
         "team_name": "Dallas Stars",
@@ -731,8 +731,8 @@
       "away": {
         "team_name_feed": "Winnipeg Jets",
         "goalie_name_feed": "Connor Hellebuyck",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Likely",
+        "status_updated_at_utc": "2026-03-31T16:31:30.480Z",
         "team_id": 52,
         "team_abbrev": "WPG",
         "team_name": "Winnipeg Jets",
@@ -910,9 +910,9 @@
     "projectable_games": 10,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 9,
-      "Likely": 6,
-      "Unconfirmed": 5
+      "Confirmed": 10,
+      "Likely": 7,
+      "Unconfirmed": 3
     },
     "live_games": 0,
     "first_period_graded_games": 0,
