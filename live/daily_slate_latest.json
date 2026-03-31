@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-03-31",
-  "pulled_at_utc": "2026-03-31T14:30:01+00:00",
+  "pulled_at_utc": "2026-03-31T14:35:01+00:00",
   "target_date": "2026-03-31",
   "games": [
     {
@@ -27,8 +27,8 @@
       "home": {
         "team_name_feed": "Boston Bruins",
         "goalie_name_feed": "Jeremy Swayman",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Likely",
+        "status_updated_at_utc": "2026-03-31T14:29:36.936Z",
         "team_id": 6,
         "team_abbrev": "BOS",
         "team_name": "Boston Bruins",
@@ -657,8 +657,8 @@
       "home": {
         "team_name_feed": "Columbus Blue Jackets",
         "goalie_name_feed": "Jet Greaves",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Likely",
+        "status_updated_at_utc": "2026-03-31T14:32:25.156Z",
         "team_id": 29,
         "team_abbrev": "CBJ",
         "team_name": "Columbus Blue Jackets",
@@ -911,7 +911,8 @@
     "failed_games": 0,
     "status_counts": {
       "Confirmed": 1,
-      "Unconfirmed": 19
+      "Likely": 2,
+      "Unconfirmed": 17
     },
     "live_games": 0,
     "first_period_graded_games": 0,
