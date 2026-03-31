@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-03-31",
-  "pulled_at_utc": "2026-03-31T17:55:01+00:00",
+  "pulled_at_utc": "2026-03-31T18:00:01+00:00",
   "target_date": "2026-03-31",
   "games": [
     {
@@ -747,8 +747,8 @@
       "home": {
         "team_name_feed": "Chicago Blackhawks",
         "goalie_name_feed": "Spencer Knight",
-        "status": "Likely",
-        "status_updated_at_utc": "2026-03-31T15:25:53.955Z",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-03-31T17:54:32.395Z",
         "team_id": 16,
         "team_abbrev": "CHI",
         "team_name": "Chicago Blackhawks",
@@ -910,8 +910,8 @@
     "projectable_games": 10,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 10,
-      "Likely": 7,
+      "Confirmed": 11,
+      "Likely": 6,
       "Unconfirmed": 3
     },
     "live_games": 0,
