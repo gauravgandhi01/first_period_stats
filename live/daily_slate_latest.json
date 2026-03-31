@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-03-31",
-  "pulled_at_utc": "2026-03-31T15:45:01+00:00",
+  "pulled_at_utc": "2026-03-31T15:50:01+00:00",
   "target_date": "2026-03-31",
   "games": [
     {
@@ -191,8 +191,8 @@
       "away": {
         "team_name_feed": "Montreal Canadiens",
         "goalie_name_feed": "Jakub Dobes",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Likely",
+        "status_updated_at_utc": "2026-03-31T15:44:49.237Z",
         "team_id": 8,
         "team_abbrev": "MTL",
         "team_name": "Montr\u00e9al Canadiens",
@@ -207,8 +207,8 @@
       "home": {
         "team_name_feed": "Tampa Bay Lightning",
         "goalie_name_feed": "Andrei Vasilevskiy",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Likely",
+        "status_updated_at_utc": "2026-03-31T15:45:18.437Z",
         "team_id": 14,
         "team_abbrev": "TBL",
         "team_name": "Tampa Bay Lightning",
@@ -657,8 +657,8 @@
       "home": {
         "team_name_feed": "Columbus Blue Jackets",
         "goalie_name_feed": "Jet Greaves",
-        "status": "Likely",
-        "status_updated_at_utc": "2026-03-31T14:32:25.156Z",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-03-31T15:46:08.045Z",
         "team_id": 29,
         "team_abbrev": "CBJ",
         "team_name": "Columbus Blue Jackets",
@@ -910,9 +910,9 @@
     "projectable_games": 10,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 5,
-      "Likely": 5,
-      "Unconfirmed": 10
+      "Confirmed": 6,
+      "Likely": 6,
+      "Unconfirmed": 8
     },
     "live_games": 0,
     "first_period_graded_games": 0,
