@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-03-31",
-  "pulled_at_utc": "2026-03-31T21:45:00+00:00",
+  "pulled_at_utc": "2026-03-31T21:50:01+00:00",
   "target_date": "2026-03-31",
   "games": [
     {
@@ -370,17 +370,17 @@
       "game_time_et": "2026-03-31 07:00 PM ET",
       "away": {
         "team_name_feed": "New York Islanders",
-        "goalie_name_feed": "David Rittich",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "goalie_name_feed": "Ilya Sorokin",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-03-31T21:43:06.418Z",
         "team_id": 2,
         "team_abbrev": "NYI",
         "team_name": "New York Islanders",
-        "goalie_id": 8479496,
-        "goalie_name": "David Rittich",
-        "goalie_games": 27,
-        "goalie_ga_pg": 0.8888888888888888,
-        "goalie_save_pct": 89.51965065502183,
+        "goalie_id": 8478009,
+        "goalie_name": "Ilya Sorokin",
+        "goalie_games": 46,
+        "goalie_ga_pg": 0.7391304347826086,
+        "goalie_save_pct": 92.25512528473804,
         "team_o15_pct": 0.4931506849315068,
         "team_combined_pg": 1.63013698630137
       },
@@ -401,12 +401,12 @@
         "team_combined_pg": 1.9589041095890412
       },
       "projection": {
-        "prob_over_1p_1_5": 0.535448661480784,
-        "prob_under_1p_1_5": 0.46455133851921604,
-        "over_american_odds": -115,
-        "under_american_odds": 115,
-        "lambda_total": 1.9432212861477094,
-        "model_prob_over_1p_1_5_raw": 0.5606113097683196,
+        "prob_over_1p_1_5": 0.5223571918521371,
+        "prob_under_1p_1_5": 0.47764280814786286,
+        "over_american_odds": -109,
+        "under_american_odds": 109,
+        "lambda_total": 1.4830773486519724,
+        "model_prob_over_1p_1_5_raw": 0.4733348455773411,
         "market_prob_over_1p_1_5_consensus": 0.5310081941359247,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
@@ -414,7 +414,7 @@
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 5/10 2+ (50.0%) | L15: 7/15 2+ (46.7%) | L20: 9/20 2+ (45.0%)",
         "home_team_l5_l10_l15_o15": "L5: 3/5 2+ (60.0%) | L10: 5/10 2+ (50.0%) | L15: 7/15 2+ (46.7%) | L20: 10/20 2+ (50.0%)",
-        "away_goalie_l5_l10_l15_allow2": "L5: 3/5 allow 2+ (60.0%) | L10: 3/10 allow 2+ (30.0%) | L15: 3/15 allow 2+ (20.0%) | L20: 4/20 allow 2+ (20.0%)",
+        "away_goalie_l5_l10_l15_allow2": "L5: 0/5 allow 2+ (0.0%) | L10: 1/10 allow 2+ (10.0%) | L15: 2/15 allow 2+ (13.3%) | L20: 3/20 allow 2+ (15.0%)",
         "home_goalie_l5_l10_l15_allow2": "L5: 0/5 allow 2+ (0.0%) | L10: 1/10 allow 2+ (10.0%) | L15: 2/15 allow 2+ (13.3%) | L20: 4/20 allow 2+ (20.0%)",
         "h2h_games": 2,
         "h2h_o15_hits": 0,
@@ -910,9 +910,9 @@
     "projectable_games": 10,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 12,
+      "Confirmed": 13,
       "Likely": 6,
-      "Unconfirmed": 2
+      "Unconfirmed": 1
     },
     "live_games": 0,
     "first_period_graded_games": 0,
