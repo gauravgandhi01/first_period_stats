@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-03-31",
-  "pulled_at_utc": "2026-03-31T14:35:01+00:00",
+  "pulled_at_utc": "2026-03-31T14:40:01+00:00",
   "target_date": "2026-03-31",
   "games": [
     {
@@ -281,8 +281,8 @@
       "away": {
         "team_name_feed": "New Jersey Devils",
         "goalie_name_feed": "Jacob Markstrom",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Likely",
+        "status_updated_at_utc": "2026-03-31T14:38:03.969Z",
         "team_id": 1,
         "team_abbrev": "NJD",
         "team_name": "New Jersey Devils",
@@ -476,27 +476,27 @@
       },
       "home": {
         "team_name_feed": "Florida Panthers",
-        "goalie_name_feed": "Sergei Bobrovsky",
+        "goalie_name_feed": "Daniil Tarasov",
         "status": "Unconfirmed",
         "status_updated_at_utc": null,
         "team_id": 13,
         "team_abbrev": "FLA",
         "team_name": "Florida Panthers",
-        "goalie_id": 8475683,
-        "goalie_name": "Sergei Bobrovsky",
-        "goalie_games": 47,
-        "goalie_ga_pg": 0.9148936170212766,
-        "goalie_save_pct": 89.16876574307305,
+        "goalie_id": 8480193,
+        "goalie_name": "Daniil Tarasov",
+        "goalie_games": 24,
+        "goalie_ga_pg": 0.9166666666666666,
+        "goalie_save_pct": 91.5057915057915,
         "team_o15_pct": 0.4507042253521127,
         "team_combined_pg": 1.732394366197183
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5170546280337002,
-        "prob_under_1p_1_5": 0.48294537196629983,
-        "over_american_odds": -107,
-        "under_american_odds": 107,
-        "lambda_total": 1.6452042014100605,
-        "model_prob_over_1p_1_5_raw": 0.49863829856646075,
+        "prob_over_1p_1_5": 0.5190523377583529,
+        "prob_under_1p_1_5": 0.4809476622416471,
+        "over_american_odds": -108,
+        "under_american_odds": 108,
+        "lambda_total": 1.7143634016426368,
+        "model_prob_over_1p_1_5_raw": 0.511956363397479,
         "market_prob_over_1p_1_5_consensus": 0.5203045685279188,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
@@ -505,7 +505,7 @@
         "away_team_l5_l10_l15_o15": "L5: 1/5 2+ (20.0%) | L10: 3/10 2+ (30.0%) | L15: 6/15 2+ (40.0%) | L20: 8/20 2+ (40.0%)",
         "home_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 3/10 2+ (30.0%) | L15: 7/15 2+ (46.7%) | L20: 10/20 2+ (50.0%)",
         "away_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 2/10 allow 2+ (20.0%) | L15: 3/15 allow 2+ (20.0%) | L20: 3/20 allow 2+ (15.0%)",
-        "home_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 3/10 allow 2+ (30.0%) | L15: 3/15 allow 2+ (20.0%) | L20: 5/20 allow 2+ (25.0%)",
+        "home_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 3/10 allow 2+ (30.0%) | L15: 3/15 allow 2+ (20.0%) | L20: 6/20 allow 2+ (30.0%)",
         "h2h_games": 2,
         "h2h_o15_hits": 2,
         "h2h_o15_pct": 1.0,
@@ -911,8 +911,8 @@
     "failed_games": 0,
     "status_counts": {
       "Confirmed": 1,
-      "Likely": 2,
-      "Unconfirmed": 17
+      "Likely": 3,
+      "Unconfirmed": 16
     },
     "live_games": 0,
     "first_period_graded_games": 0,
