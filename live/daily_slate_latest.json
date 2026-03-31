@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-03-31",
-  "pulled_at_utc": "2026-03-31T22:30:00+00:00",
+  "pulled_at_utc": "2026-03-31T22:35:00+00:00",
   "target_date": "2026-03-31",
   "games": [
     {
@@ -281,8 +281,8 @@
       "away": {
         "team_name_feed": "New Jersey Devils",
         "goalie_name_feed": "Jacob Markstrom",
-        "status": "Likely",
-        "status_updated_at_utc": "2026-03-31T14:38:03.969Z",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-03-31T22:31:29.941Z",
         "team_id": 1,
         "team_abbrev": "NJD",
         "team_name": "New Jersey Devils",
@@ -297,8 +297,8 @@
       "home": {
         "team_name_feed": "New York Rangers",
         "goalie_name_feed": "Igor Shesterkin",
-        "status": "Likely",
-        "status_updated_at_utc": "2026-03-31T14:58:34.173Z",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-03-31T22:31:00.526Z",
         "team_id": 3,
         "team_abbrev": "NYR",
         "team_name": "New York Rangers",
@@ -387,8 +387,8 @@
       "home": {
         "team_name_feed": "Buffalo Sabres",
         "goalie_name_feed": "Ukko-Pekka Luukkonen",
-        "status": "Likely",
-        "status_updated_at_utc": "2026-03-31T14:59:46.863Z",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-03-31T22:31:11.280Z",
         "team_id": 7,
         "team_abbrev": "BUF",
         "team_name": "Buffalo Sabres",
@@ -910,8 +910,8 @@
     "projectable_games": 10,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 14,
-      "Likely": 5,
+      "Confirmed": 17,
+      "Likely": 2,
       "Unconfirmed": 1
     },
     "live_games": 0,
