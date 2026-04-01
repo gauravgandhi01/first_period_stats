@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-01",
-  "pulled_at_utc": "2026-04-01T17:25:00+00:00",
+  "pulled_at_utc": "2026-04-01T17:30:01+00:00",
   "target_date": "2026-04-01",
   "games": [
     {
@@ -116,27 +116,27 @@
       },
       "home": {
         "team_name_feed": "San Jose Sharks",
-        "goalie_name_feed": "Alex Nedeljkovic",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "goalie_name_feed": "Yaroslav Askarov",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-01T17:26:06.123Z",
         "team_id": 28,
         "team_abbrev": "SJS",
         "team_name": "San Jose Sharks",
-        "goalie_id": 8477968,
-        "goalie_name": "Alex Nedeljkovic",
-        "goalie_games": 30,
-        "goalie_ga_pg": 0.9333333333333333,
-        "goalie_save_pct": 89.89169675090253,
+        "goalie_id": 8482137,
+        "goalie_name": "Yaroslav Askarov",
+        "goalie_games": 41,
+        "goalie_ga_pg": 1.146341463414634,
+        "goalie_save_pct": 88.36633663366337,
         "team_o15_pct": 0.6142857142857143,
         "team_combined_pg": 2.0428571428571427
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5801080876919389,
-        "prob_under_1p_1_5": 0.4198919123080611,
-        "over_american_odds": -138,
-        "under_american_odds": 138,
-        "lambda_total": 2.0971264384035924,
-        "model_prob_over_1p_1_5_raw": 0.5886541820352456,
+        "prob_over_1p_1_5": 0.5752403477436792,
+        "prob_under_1p_1_5": 0.42475965225632084,
+        "over_american_odds": -135,
+        "under_american_odds": 135,
+        "lambda_total": 1.902210044383689,
+        "model_prob_over_1p_1_5_raw": 0.5562025823801804,
         "market_prob_over_1p_1_5_consensus": 0.5785999533960613,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
@@ -145,7 +145,7 @@
         "away_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 3/10 2+ (30.0%) | L15: 6/15 2+ (40.0%) | L20: 8/20 2+ (40.0%)",
         "home_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 5/10 2+ (50.0%) | L15: 7/15 2+ (46.7%) | L20: 10/20 2+ (50.0%)",
         "away_goalie_l5_l10_l15_allow2": "L5: 0/5 allow 2+ (0.0%) | L10: 2/10 allow 2+ (20.0%) | L15: 4/15 allow 2+ (26.7%) | L20: 4/20 allow 2+ (20.0%)",
-        "home_goalie_l5_l10_l15_allow2": "L5: 2/5 allow 2+ (40.0%) | L10: 2/10 allow 2+ (20.0%) | L15: 3/15 allow 2+ (20.0%) | L20: 4/20 allow 2+ (20.0%)",
+        "home_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 1/10 allow 2+ (10.0%) | L15: 3/15 allow 2+ (20.0%) | L20: 4/20 allow 2+ (20.0%)",
         "h2h_games": 2,
         "h2h_o15_hits": 2,
         "h2h_o15_pct": 1.0,
@@ -280,9 +280,9 @@
     "projectable_games": 3,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 1,
+      "Confirmed": 2,
       "Likely": 2,
-      "Unconfirmed": 3
+      "Unconfirmed": 2
     },
     "live_games": 0,
     "first_period_graded_games": 0,
