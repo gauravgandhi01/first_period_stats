@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-01",
-  "pulled_at_utc": "2026-04-01T18:10:00+00:00",
+  "pulled_at_utc": "2026-04-01T18:15:01+00:00",
   "target_date": "2026-04-01",
   "games": [
     {
@@ -191,8 +191,8 @@
       "away": {
         "team_name_feed": "St Louis Blues",
         "goalie_name_feed": "Jordan Binnington",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-01T18:13:10.528Z",
         "team_id": 19,
         "team_abbrev": "STL",
         "team_name": "St. Louis Blues",
@@ -280,9 +280,9 @@
     "projectable_games": 3,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 2,
+      "Confirmed": 3,
       "Likely": 2,
-      "Unconfirmed": 2
+      "Unconfirmed": 1
     },
     "live_games": 0,
     "first_period_graded_games": 0,
