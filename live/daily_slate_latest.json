@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-03-31",
-  "pulled_at_utc": "2026-04-01T00:35:00+00:00",
+  "pulled_at_utc": "2026-04-01T00:40:01+00:00",
   "target_date": "2026-03-31",
   "games": [
     {
@@ -41,15 +41,15 @@
         "team_combined_pg": 1.7777777777777777
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5399649448282464,
-        "prob_under_1p_1_5": 0.4600350551717536,
-        "over_american_odds": -117,
-        "under_american_odds": 117,
+        "prob_over_1p_1_5": 0.564122632497373,
+        "prob_under_1p_1_5": 0.43587736750262696,
+        "over_american_odds": -129,
+        "under_american_odds": 129,
         "lambda_total": 1.9600039509135314,
         "model_prob_over_1p_1_5_raw": 0.564122632497373,
-        "market_prob_over_1p_1_5_consensus": 0.5357018234748712,
-        "market_book_count": 8,
-        "market_dampening_weight": 0.85
+        "market_prob_over_1p_1_5_consensus": null,
+        "market_book_count": 0,
+        "market_dampening_weight": 0.0
       },
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 5/10 2+ (50.0%) | L15: 9/15 2+ (60.0%) | L20: 11/20 2+ (55.0%)",
@@ -69,7 +69,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "02:31",
+        "clock": "01:13",
         "in_intermission": false,
         "away_score": 2,
         "home_score": 2,
@@ -77,20 +77,6 @@
         "first_period_complete": true,
         "first_period_total_result": "OVER",
         "source_url": "https://api-web.nhle.com/v1/score/2026-03-31"
-      },
-      "market_totals_p1": {
-        "book_count": 8,
-        "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5357018234748712,
-        "fanduel": {
-          "bookmaker_key": "fanduel",
-          "bookmaker_title": "FanDuel",
-          "point": 1.5,
-          "over_price": -126.0,
-          "under_price": -102.0,
-          "over_no_vig_prob": 0.524740227610094,
-          "last_update": "2026-03-31T23:04:34Z"
-        }
       }
     },
     {
@@ -131,15 +117,15 @@
         "team_combined_pg": 1.9583333333333333
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5320063565103825,
-        "prob_under_1p_1_5": 0.4679936434896175,
-        "over_american_odds": -114,
-        "under_american_odds": 114,
+        "prob_over_1p_1_5": 0.45454164395620567,
+        "prob_under_1p_1_5": 0.5454583560437943,
+        "over_american_odds": 120,
+        "under_american_odds": -120,
         "lambda_total": 1.426446595340799,
         "model_prob_over_1p_1_5_raw": 0.45454164395620567,
-        "market_prob_over_1p_1_5_consensus": 0.5456765999022961,
-        "market_book_count": 8,
-        "market_dampening_weight": 0.85
+        "market_prob_over_1p_1_5_consensus": null,
+        "market_book_count": 0,
+        "market_dampening_weight": 0.0
       },
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 1/5 2+ (20.0%) | L10: 1/10 2+ (10.0%) | L15: 5/15 2+ (33.3%) | L20: 6/20 2+ (30.0%)",
@@ -159,7 +145,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "03:39",
+        "clock": "01:22",
         "in_intermission": false,
         "away_score": 1,
         "home_score": 4,
@@ -167,20 +153,6 @@
         "first_period_complete": true,
         "first_period_total_result": "OVER",
         "source_url": "https://api-web.nhle.com/v1/score/2026-03-31"
-      },
-      "market_totals_p1": {
-        "book_count": 8,
-        "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5456765999022961,
-        "fanduel": {
-          "bookmaker_key": "fanduel",
-          "bookmaker_title": "FanDuel",
-          "point": 1.5,
-          "over_price": -128.0,
-          "under_price": 102.0,
-          "over_no_vig_prob": 0.5314041433738902,
-          "last_update": "2026-03-31T23:05:07Z"
-        }
       }
     },
     {
@@ -221,15 +193,15 @@
         "team_combined_pg": 2.0
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5546122907804671,
-        "prob_under_1p_1_5": 0.44538770921953286,
-        "over_american_odds": -125,
-        "under_american_odds": 125,
+        "prob_over_1p_1_5": 0.6052478724234363,
+        "prob_under_1p_1_5": 0.39475212757656375,
+        "over_american_odds": -153,
+        "under_american_odds": 153,
         "lambda_total": 2.1329933562396843,
         "model_prob_over_1p_1_5_raw": 0.6052478724234363,
-        "market_prob_over_1p_1_5_consensus": 0.5456765999022961,
-        "market_book_count": 8,
-        "market_dampening_weight": 0.85
+        "market_prob_over_1p_1_5_consensus": null,
+        "market_book_count": 0,
+        "market_dampening_weight": 0.0
       },
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 4/5 2+ (80.0%) | L10: 7/10 2+ (70.0%) | L15: 11/15 2+ (73.3%) | L20: 13/20 2+ (65.0%)",
@@ -249,7 +221,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "06:49",
+        "clock": "04:15",
         "in_intermission": false,
         "away_score": 2,
         "home_score": 1,
@@ -257,20 +229,6 @@
         "first_period_complete": true,
         "first_period_total_result": "OVER",
         "source_url": "https://api-web.nhle.com/v1/score/2026-03-31"
-      },
-      "market_totals_p1": {
-        "book_count": 8,
-        "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5456765999022961,
-        "fanduel": {
-          "bookmaker_key": "fanduel",
-          "bookmaker_title": "FanDuel",
-          "point": 1.5,
-          "over_price": -134.0,
-          "under_price": 104.0,
-          "over_no_vig_prob": 0.5387890255439924,
-          "last_update": "2026-03-31T23:04:51Z"
-        }
       }
     },
     {
@@ -311,15 +269,15 @@
         "team_combined_pg": 1.821917808219178
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5319199648499134,
-        "prob_under_1p_1_5": 0.46808003515008656,
-        "over_american_odds": -114,
-        "under_american_odds": 114,
+        "prob_over_1p_1_5": 0.5393303779109875,
+        "prob_under_1p_1_5": 0.4606696220890125,
+        "over_american_odds": -117,
+        "under_american_odds": 117,
         "lambda_total": 1.8395440937924847,
         "model_prob_over_1p_1_5_raw": 0.5393303779109875,
-        "market_prob_over_1p_1_5_consensus": 0.5306122448979592,
-        "market_book_count": 8,
-        "market_dampening_weight": 0.85
+        "market_prob_over_1p_1_5_consensus": null,
+        "market_book_count": 0,
+        "market_dampening_weight": 0.0
       },
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 3/5 2+ (60.0%) | L10: 7/10 2+ (70.0%) | L15: 8/15 2+ (53.3%) | L20: 10/20 2+ (50.0%)",
@@ -339,7 +297,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "07:31",
+        "clock": "05:35",
         "in_intermission": false,
         "away_score": 1,
         "home_score": 3,
@@ -347,20 +305,6 @@
         "first_period_complete": true,
         "first_period_total_result": "OVER",
         "source_url": "https://api-web.nhle.com/v1/score/2026-03-31"
-      },
-      "market_totals_p1": {
-        "book_count": 8,
-        "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5306122448979592,
-        "fanduel": {
-          "bookmaker_key": "fanduel",
-          "bookmaker_title": "FanDuel",
-          "point": 1.5,
-          "over_price": -122.0,
-          "under_price": -104.0,
-          "over_no_vig_prob": 0.5187593796898449,
-          "last_update": "2026-03-31T23:04:34Z"
-        }
       }
     },
     {
@@ -401,15 +345,15 @@
         "team_combined_pg": 1.9589041095890412
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5220206349998665,
-        "prob_under_1p_1_5": 0.4779793650001335,
-        "over_american_odds": -109,
-        "under_american_odds": 109,
+        "prob_over_1p_1_5": 0.4733348455773411,
+        "prob_under_1p_1_5": 0.5266651544226588,
+        "over_american_odds": 111,
+        "under_american_odds": -111,
         "lambda_total": 1.4830773486519724,
         "model_prob_over_1p_1_5_raw": 0.4733348455773411,
-        "market_prob_over_1p_1_5_consensus": 0.5306122448979592,
-        "market_book_count": 8,
-        "market_dampening_weight": 0.85
+        "market_prob_over_1p_1_5_consensus": null,
+        "market_book_count": 0,
+        "market_dampening_weight": 0.0
       },
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 5/10 2+ (50.0%) | L15: 7/15 2+ (46.7%) | L20: 9/20 2+ (45.0%)",
@@ -429,7 +373,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "05:56",
+        "clock": "03:23",
         "in_intermission": false,
         "away_score": 0,
         "home_score": 1,
@@ -437,20 +381,6 @@
         "first_period_complete": true,
         "first_period_total_result": "UNDER",
         "source_url": "https://api-web.nhle.com/v1/score/2026-03-31"
-      },
-      "market_totals_p1": {
-        "book_count": 8,
-        "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5306122448979592,
-        "fanduel": {
-          "bookmaker_key": "fanduel",
-          "bookmaker_title": "FanDuel",
-          "point": 1.5,
-          "over_price": -128.0,
-          "under_price": 102.0,
-          "over_no_vig_prob": 0.5314041433738902,
-          "last_update": "2026-03-31T23:04:38Z"
-        }
       }
     },
     {
@@ -491,15 +421,15 @@
         "team_combined_pg": 1.732394366197183
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5190523377583529,
-        "prob_under_1p_1_5": 0.4809476622416471,
-        "over_american_odds": -108,
-        "under_american_odds": 108,
+        "prob_over_1p_1_5": 0.511956363397479,
+        "prob_under_1p_1_5": 0.48804363660252104,
+        "over_american_odds": -105,
+        "under_american_odds": 105,
         "lambda_total": 1.7143634016426368,
         "model_prob_over_1p_1_5_raw": 0.511956363397479,
-        "market_prob_over_1p_1_5_consensus": 0.5203045685279188,
-        "market_book_count": 8,
-        "market_dampening_weight": 0.85
+        "market_prob_over_1p_1_5_consensus": null,
+        "market_book_count": 0,
+        "market_dampening_weight": 0.0
       },
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 1/5 2+ (20.0%) | L10: 3/10 2+ (30.0%) | L15: 6/15 2+ (40.0%) | L20: 8/20 2+ (40.0%)",
@@ -519,28 +449,14 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "07:47",
+        "clock": "05:58",
         "in_intermission": false,
         "away_score": 1,
-        "home_score": 5,
+        "home_score": 6,
         "first_period_goals": 5,
         "first_period_complete": true,
         "first_period_total_result": "OVER",
         "source_url": "https://api-web.nhle.com/v1/score/2026-03-31"
-      },
-      "market_totals_p1": {
-        "book_count": 8,
-        "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5203045685279188,
-        "fanduel": {
-          "bookmaker_key": "fanduel",
-          "bookmaker_title": "FanDuel",
-          "point": 1.5,
-          "over_price": -116.0,
-          "under_price": -110.0,
-          "over_no_vig_prob": 0.5062344139650873,
-          "last_update": "2026-03-31T23:04:11Z"
-        }
       }
     },
     {
@@ -581,15 +497,15 @@
         "team_combined_pg": 1.5616438356164384
       },
       "projection": {
-        "prob_over_1p_1_5": 0.4842889468977884,
-        "prob_under_1p_1_5": 0.5157110531022115,
-        "over_american_odds": 106,
-        "under_american_odds": -106,
+        "prob_over_1p_1_5": 0.395259645985256,
+        "prob_under_1p_1_5": 0.604740354014744,
+        "over_american_odds": 153,
+        "under_american_odds": -153,
         "lambda_total": 1.2113757285198918,
         "model_prob_over_1p_1_5_raw": 0.395259645985256,
-        "market_prob_over_1p_1_5_consensus": 0.5,
-        "market_book_count": 8,
-        "market_dampening_weight": 0.85
+        "market_prob_over_1p_1_5_consensus": null,
+        "market_book_count": 0,
+        "market_dampening_weight": 0.0
       },
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 1/5 2+ (20.0%) | L10: 4/10 2+ (40.0%) | L15: 5/15 2+ (33.3%) | L20: 8/20 2+ (40.0%)",
@@ -609,7 +525,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "09:22",
+        "clock": "06:53",
         "in_intermission": false,
         "away_score": 2,
         "home_score": 3,
@@ -617,20 +533,6 @@
         "first_period_complete": true,
         "first_period_total_result": "OVER",
         "source_url": "https://api-web.nhle.com/v1/score/2026-03-31"
-      },
-      "market_totals_p1": {
-        "book_count": 8,
-        "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5,
-        "fanduel": {
-          "bookmaker_key": "fanduel",
-          "bookmaker_title": "FanDuel",
-          "point": 1.5,
-          "over_price": -110.0,
-          "under_price": -116.0,
-          "over_no_vig_prob": 0.4937655860349127,
-          "last_update": "2026-03-31T23:04:46Z"
-        }
       }
     },
     {
@@ -671,15 +573,15 @@
         "team_combined_pg": 1.7638888888888888
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5537645148960653,
-        "prob_under_1p_1_5": 0.44623548510393474,
-        "over_american_odds": -124,
-        "under_american_odds": 124,
+        "prob_over_1p_1_5": 0.5719132453745176,
+        "prob_under_1p_1_5": 0.4280867546254824,
+        "over_american_odds": -134,
+        "under_american_odds": 134,
         "lambda_total": 1.9853655671971087,
         "model_prob_over_1p_1_5_raw": 0.5719132453745176,
-        "market_prob_over_1p_1_5_consensus": 0.550561797752809,
-        "market_book_count": 8,
-        "market_dampening_weight": 0.85
+        "market_prob_over_1p_1_5_consensus": null,
+        "market_book_count": 0,
+        "market_dampening_weight": 0.0
       },
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 5/10 2+ (50.0%) | L15: 8/15 2+ (53.3%) | L20: 11/20 2+ (55.0%)",
@@ -699,7 +601,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "18:07",
+        "clock": "15:19",
         "in_intermission": false,
         "away_score": 2,
         "home_score": 0,
@@ -707,20 +609,6 @@
         "first_period_complete": true,
         "first_period_total_result": "OVER",
         "source_url": "https://api-web.nhle.com/v1/score/2026-03-31"
-      },
-      "market_totals_p1": {
-        "book_count": 8,
-        "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.550561797752809,
-        "fanduel": {
-          "bookmaker_key": "fanduel",
-          "bookmaker_title": "FanDuel",
-          "point": 1.5,
-          "over_price": -132.0,
-          "under_price": 104.0,
-          "over_no_vig_prob": 0.5371848068943506,
-          "last_update": "2026-03-31T23:05:08Z"
-        }
       }
     },
     {
@@ -761,15 +649,15 @@
         "team_combined_pg": 1.643835616438356
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5141958559840282,
-        "prob_under_1p_1_5": 0.48580414401597183,
-        "over_american_odds": -106,
-        "under_american_odds": 106,
+        "prob_over_1p_1_5": 0.4795798182353141,
+        "prob_under_1p_1_5": 0.5204201817646859,
+        "over_american_odds": 109,
+        "under_american_odds": -109,
         "lambda_total": 1.5009277298096375,
         "model_prob_over_1p_1_5_raw": 0.4795798182353141,
-        "market_prob_over_1p_1_5_consensus": 0.5203045685279188,
-        "market_book_count": 8,
-        "market_dampening_weight": 0.85
+        "market_prob_over_1p_1_5_consensus": null,
+        "market_book_count": 0,
+        "market_dampening_weight": 0.0
       },
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 4/10 2+ (40.0%) | L15: 5/15 2+ (33.3%) | L20: 7/20 2+ (35.0%)",
@@ -789,7 +677,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "20:00",
+        "clock": "19:15",
         "in_intermission": false,
         "away_score": 0,
         "home_score": 0,
@@ -797,20 +685,6 @@
         "first_period_complete": false,
         "first_period_total_result": null,
         "source_url": "https://api-web.nhle.com/v1/score/2026-03-31"
-      },
-      "market_totals_p1": {
-        "book_count": 8,
-        "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5203045685279188,
-        "fanduel": {
-          "bookmaker_key": "fanduel",
-          "bookmaker_title": "FanDuel",
-          "point": 1.5,
-          "over_price": -122.0,
-          "under_price": -106.0,
-          "over_no_vig_prob": 0.5164392569455861,
-          "last_update": "2026-03-31T23:05:10Z"
-        }
       }
     },
     {
@@ -858,7 +732,7 @@
         "lambda_total": 1.8251411309182444,
         "model_prob_over_1p_1_5_raw": 0.5558733992395208,
         "market_prob_over_1p_1_5_consensus": 0.5593715812461878,
-        "market_book_count": 8,
+        "market_book_count": 6,
         "market_dampening_weight": 0.85
       },
       "trends": {
@@ -889,18 +763,10 @@
         "source_url": "https://api-web.nhle.com/v1/score/2026-03-31"
       },
       "market_totals_p1": {
-        "book_count": 8,
+        "book_count": 6,
         "consensus_point": 1.5,
         "consensus_over_no_vig_prob": 0.5593715812461878,
-        "fanduel": {
-          "bookmaker_key": "fanduel",
-          "bookmaker_title": "FanDuel",
-          "point": 1.5,
-          "over_price": -136.0,
-          "under_price": 106.0,
-          "over_no_vig_prob": 0.5427774333539988,
-          "last_update": "2026-03-31T23:04:18Z"
-        }
+        "fanduel": null
       }
     }
   ],
@@ -917,6 +783,6 @@
     "first_period_graded_games": 8,
     "first_period_over_games": 7,
     "first_period_under_games": 1,
-    "market_games_with_data": 10
+    "market_games_with_data": 1
   }
 }
