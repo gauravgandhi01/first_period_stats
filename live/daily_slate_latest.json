@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-01",
-  "pulled_at_utc": "2026-04-01T03:00:05+00:00",
+  "pulled_at_utc": "2026-04-01T06:35:01+00:00",
   "target_date": "2026-04-01",
   "games": [
     {
@@ -41,15 +41,15 @@
         "team_combined_pg": 1.943661971830986
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5566363644415003,
-        "prob_under_1p_1_5": 0.44336363555849967,
-        "over_american_odds": -126,
-        "under_american_odds": 126,
+        "prob_over_1p_1_5": 0.5627298188534233,
+        "prob_under_1p_1_5": 0.4372701811465767,
+        "over_american_odds": -129,
+        "under_american_odds": 129,
         "lambda_total": 1.90500017756006,
         "model_prob_over_1p_1_5_raw": 0.560373985096811,
-        "market_prob_over_1p_1_5_consensus": 0.5552539568018648,
-        "market_book_count": 4,
-        "market_dampening_weight": 0.73
+        "market_prob_over_1p_1_5_consensus": 0.5633187772925764,
+        "market_book_count": 5,
+        "market_dampening_weight": 0.8
       },
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 1/5 2+ (20.0%) | L10: 4/10 2+ (40.0%) | L15: 8/15 2+ (53.3%) | L20: 10/20 2+ (50.0%)",
@@ -79,9 +79,9 @@
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-01"
       },
       "market_totals_p1": {
-        "book_count": 4,
+        "book_count": 5,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5552539568018648,
+        "consensus_over_no_vig_prob": 0.5633187772925764,
         "fanduel": null
       }
     },
@@ -123,15 +123,15 @@
         "team_combined_pg": 2.0428571428571427
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5752156556281798,
-        "prob_under_1p_1_5": 0.4247843443718202,
-        "over_american_odds": -135,
-        "under_american_odds": 135,
+        "prob_over_1p_1_5": 0.5778615553612975,
+        "prob_under_1p_1_5": 0.42213844463870254,
+        "over_american_odds": -137,
+        "under_american_odds": 137,
         "lambda_total": 2.0971264384035924,
         "model_prob_over_1p_1_5_raw": 0.5886541820352456,
-        "market_prob_over_1p_1_5_consensus": 0.5702452417515939,
-        "market_book_count": 4,
-        "market_dampening_weight": 0.73
+        "market_prob_over_1p_1_5_consensus": 0.5751633986928104,
+        "market_book_count": 5,
+        "market_dampening_weight": 0.8
       },
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 3/10 2+ (30.0%) | L15: 6/15 2+ (40.0%) | L20: 8/20 2+ (40.0%)",
@@ -161,9 +161,9 @@
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-01"
       },
       "market_totals_p1": {
-        "book_count": 4,
+        "book_count": 5,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5702452417515939,
+        "consensus_over_no_vig_prob": 0.5751633986928104,
         "fanduel": null
       }
     },
@@ -205,15 +205,15 @@
         "team_combined_pg": 1.4444444444444444
       },
       "projection": {
-        "prob_over_1p_1_5": 0.47285026669680713,
-        "prob_under_1p_1_5": 0.5271497333031929,
-        "over_american_odds": 111,
-        "under_american_odds": -111,
+        "prob_over_1p_1_5": 0.48262562865230574,
+        "prob_under_1p_1_5": 0.5173743713476943,
+        "over_american_odds": 107,
+        "under_american_odds": -107,
         "lambda_total": 1.3018138751467345,
         "model_prob_over_1p_1_5_raw": 0.4131281432615288,
-        "market_prob_over_1p_1_5_consensus": 0.49493927125506076,
-        "market_book_count": 4,
-        "market_dampening_weight": 0.73
+        "market_prob_over_1p_1_5_consensus": 0.5,
+        "market_book_count": 5,
+        "market_dampening_weight": 0.8
       },
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 1/5 2+ (20.0%) | L10: 1/10 2+ (10.0%) | L15: 4/15 2+ (26.7%) | L20: 7/20 2+ (35.0%)",
@@ -243,9 +243,9 @@
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-01"
       },
       "market_totals_p1": {
-        "book_count": 4,
+        "book_count": 5,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.49493927125506076,
+        "consensus_over_no_vig_prob": 0.5,
         "fanduel": null
       }
     }
