@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-01",
-  "pulled_at_utc": "2026-04-02T00:25:00+00:00",
+  "pulled_at_utc": "2026-04-02T00:30:00+00:00",
   "target_date": "2026-04-01",
   "games": [
     {
@@ -156,7 +156,7 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025021190,
-        "state_code": "FUT",
+        "state_code": "PRE",
         "state_label": "Scheduled",
         "period": 0,
         "clock": null,
@@ -246,7 +246,7 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025021189,
-        "state_code": "FUT",
+        "state_code": "PRE",
         "state_label": "Scheduled",
         "period": 0,
         "clock": null,
