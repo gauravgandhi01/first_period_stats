@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-02",
-  "pulled_at_utc": "2026-04-02T15:50:01+00:00",
+  "pulled_at_utc": "2026-04-02T15:55:00+00:00",
   "target_date": "2026-04-02",
   "games": [
     {
@@ -281,8 +281,8 @@
       "away": {
         "team_name_feed": "Detroit Red Wings",
         "goalie_name_feed": "John Gibson",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-02T15:51:50.649Z",
         "team_id": 17,
         "team_abbrev": "DET",
         "team_name": "Detroit Red Wings",
@@ -1270,9 +1270,9 @@
     "projectable_games": 14,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 6,
+      "Confirmed": 7,
       "Likely": 6,
-      "Unconfirmed": 16
+      "Unconfirmed": 15
     },
     "live_games": 0,
     "first_period_graded_games": 0,
