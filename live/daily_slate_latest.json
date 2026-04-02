@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-02",
-  "pulled_at_utc": "2026-04-02T16:25:01+00:00",
+  "pulled_at_utc": "2026-04-02T16:30:00+00:00",
   "target_date": "2026-04-02",
   "games": [
     {
@@ -551,8 +551,8 @@
       "away": {
         "team_name_feed": "Washington Capitals",
         "goalie_name_feed": "Logan Thompson",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Likely",
+        "status_updated_at_utc": "2026-04-02T16:25:23.377Z",
         "team_id": 15,
         "team_abbrev": "WSH",
         "team_name": "Washington Capitals",
@@ -1271,8 +1271,8 @@
     "failed_games": 0,
     "status_counts": {
       "Confirmed": 11,
-      "Likely": 5,
-      "Unconfirmed": 12
+      "Likely": 6,
+      "Unconfirmed": 11
     },
     "live_games": 0,
     "first_period_graded_games": 0,
