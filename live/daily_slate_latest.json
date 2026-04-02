@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-02",
-  "pulled_at_utc": "2026-04-02T15:30:01+00:00",
+  "pulled_at_utc": "2026-04-02T15:35:02+00:00",
   "target_date": "2026-04-02",
   "games": [
     {
@@ -100,17 +100,17 @@
       "game_time_et": "2026-04-02 07:00 PM ET",
       "away": {
         "team_name_feed": "Buffalo Sabres",
-        "goalie_name_feed": "Alex Lyon",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "goalie_name_feed": "Ukko-Pekka Luukkonen",
+        "status": "Likely",
+        "status_updated_at_utc": "2026-04-02T15:31:15.160Z",
         "team_id": 7,
         "team_abbrev": "BUF",
         "team_name": "Buffalo Sabres",
-        "goalie_id": 8479312,
-        "goalie_name": "Alex Lyon",
-        "goalie_games": 34,
-        "goalie_ga_pg": 0.9117647058823529,
-        "goalie_save_pct": 90.37267080745342,
+        "goalie_id": 8480045,
+        "goalie_name": "Ukko-Pekka Luukkonen",
+        "goalie_games": 29,
+        "goalie_ga_pg": 0.8620689655172413,
+        "goalie_save_pct": 89.91935483870968,
         "team_o15_pct": 0.5753424657534246,
         "team_combined_pg": 1.9589041095890412
       },
@@ -131,12 +131,12 @@
         "team_combined_pg": 1.8333333333333333
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5514398916041473,
-        "prob_under_1p_1_5": 0.4485601083958527,
-        "over_american_odds": -123,
-        "under_american_odds": 123,
-        "lambda_total": 2.0476895907220745,
-        "model_prob_over_1p_1_5_raw": 0.5840985445813043,
+        "prob_over_1p_1_5": 0.5427217803716203,
+        "prob_under_1p_1_5": 0.45727821962837967,
+        "over_american_odds": -119,
+        "under_american_odds": 119,
+        "lambda_total": 1.7177383707268095,
+        "model_prob_over_1p_1_5_raw": 0.5259778030311242,
         "market_prob_over_1p_1_5_consensus": 0.5456765999022961,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
@@ -144,7 +144,7 @@
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 3/5 2+ (60.0%) | L10: 5/10 2+ (50.0%) | L15: 7/15 2+ (46.7%) | L20: 10/20 2+ (50.0%)",
         "home_team_l5_l10_l15_o15": "L5: 1/5 2+ (20.0%) | L10: 3/10 2+ (30.0%) | L15: 6/15 2+ (40.0%) | L20: 8/20 2+ (40.0%)",
-        "away_goalie_l5_l10_l15_allow2": "L5: 2/5 allow 2+ (40.0%) | L10: 4/10 allow 2+ (40.0%) | L15: 5/15 allow 2+ (33.3%) | L20: 5/20 allow 2+ (25.0%)",
+        "away_goalie_l5_l10_l15_allow2": "L5: 0/5 allow 2+ (0.0%) | L10: 1/10 allow 2+ (10.0%) | L15: 2/15 allow 2+ (13.3%) | L20: 4/20 allow 2+ (20.0%)",
         "home_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 2/10 allow 2+ (20.0%) | L15: 3/15 allow 2+ (20.0%) | L20: 3/20 allow 2+ (15.0%)",
         "h2h_games": 2,
         "h2h_o15_hits": 2,
@@ -190,17 +190,17 @@
       "game_time_et": "2026-04-02 07:00 PM ET",
       "away": {
         "team_name_feed": "Columbus Blue Jackets",
-        "goalie_name_feed": "Jet Greaves",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "goalie_name_feed": "Elvis Merzlikins",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-02T15:31:44.660Z",
         "team_id": 29,
         "team_abbrev": "CBJ",
         "team_name": "Columbus Blue Jackets",
-        "goalie_id": 8482982,
-        "goalie_name": "Jet Greaves",
-        "goalie_games": 46,
-        "goalie_ga_pg": 0.6086956521739131,
-        "goalie_save_pct": 92.6509186351706,
+        "goalie_id": 8478007,
+        "goalie_name": "Elvis Merzlikins",
+        "goalie_games": 28,
+        "goalie_ga_pg": 0.8928571428571429,
+        "goalie_save_pct": 89.58333333333334,
         "team_o15_pct": 0.5416666666666666,
         "team_combined_pg": 1.7638888888888888
       },
@@ -221,12 +221,12 @@
         "team_combined_pg": 1.9014084507042253
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5412478528229597,
-        "prob_under_1p_1_5": 0.45875214717704027,
+        "prob_over_1p_1_5": 0.5422045269182764,
+        "prob_under_1p_1_5": 0.45779547308172364,
         "over_american_odds": -118,
         "under_american_odds": 118,
-        "lambda_total": 1.8243262764831938,
-        "model_prob_over_1p_1_5_raw": 0.5438344071929603,
+        "lambda_total": 1.8598483031941666,
+        "model_prob_over_1p_1_5_raw": 0.5502122344950711,
         "market_prob_over_1p_1_5_consensus": 0.5407914020517831,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
@@ -234,7 +234,7 @@
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 3/5 2+ (60.0%) | L10: 6/10 2+ (60.0%) | L15: 9/15 2+ (60.0%) | L20: 13/20 2+ (65.0%)",
         "home_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 5/10 2+ (50.0%) | L15: 8/15 2+ (53.3%) | L20: 11/20 2+ (55.0%)",
-        "away_goalie_l5_l10_l15_allow2": "L5: 0/5 allow 2+ (0.0%) | L10: 1/10 allow 2+ (10.0%) | L15: 2/15 allow 2+ (13.3%) | L20: 2/20 allow 2+ (10.0%)",
+        "away_goalie_l5_l10_l15_allow2": "L5: 0/5 allow 2+ (0.0%) | L10: 0/10 allow 2+ (0.0%) | L15: 4/15 allow 2+ (26.7%) | L20: 6/20 allow 2+ (30.0%)",
         "home_goalie_l5_l10_l15_allow2": "L5: 0/5 allow 2+ (0.0%) | L10: 0/10 allow 2+ (0.0%) | L15: 1/15 allow 2+ (6.7%) | L20: 3/20 allow 2+ (15.0%)",
         "h2h_games": 2,
         "h2h_o15_hits": 1,
@@ -747,8 +747,8 @@
       "home": {
         "team_name_feed": "Dallas Stars",
         "goalie_name_feed": "Jake Oettinger",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Likely",
+        "status_updated_at_utc": "2026-04-02T15:30:06.147Z",
         "team_id": 25,
         "team_abbrev": "DAL",
         "team_name": "Dallas Stars",
@@ -1270,9 +1270,9 @@
     "projectable_games": 14,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 5,
-      "Likely": 4,
-      "Unconfirmed": 19
+      "Confirmed": 6,
+      "Likely": 6,
+      "Unconfirmed": 16
     },
     "live_games": 0,
     "first_period_graded_games": 0,
