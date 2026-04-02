@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-02",
-  "pulled_at_utc": "2026-04-02T14:50:00+00:00",
+  "pulled_at_utc": "2026-04-02T14:55:01+00:00",
   "target_date": "2026-04-02",
   "games": [
     {
@@ -371,7 +371,7 @@
       "away": {
         "team_name_feed": "Montreal Canadiens",
         "goalie_name_feed": "Jacob Fowler",
-        "status": "Confirmed",
+        "status": "Likely",
         "status_updated_at_utc": "2026-04-02T14:47:32.774Z",
         "team_id": 8,
         "team_abbrev": "MTL",
@@ -1270,8 +1270,8 @@
     "projectable_games": 14,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 4,
-      "Likely": 3,
+      "Confirmed": 3,
+      "Likely": 4,
       "Unconfirmed": 21
     },
     "live_games": 0,
