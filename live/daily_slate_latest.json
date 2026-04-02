@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-02",
-  "pulled_at_utc": "2026-04-02T15:00:01+00:00",
+  "pulled_at_utc": "2026-04-02T15:05:00+00:00",
   "target_date": "2026-04-02",
   "games": [
     {
@@ -117,8 +117,8 @@
       "home": {
         "team_name_feed": "Ottawa Senators",
         "goalie_name_feed": "Linus Ullmark",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-02T15:02:22.779Z",
         "team_id": 9,
         "team_abbrev": "OTT",
         "team_name": "Ottawa Senators",
@@ -296,27 +296,27 @@
       },
       "home": {
         "team_name_feed": "Philadelphia Flyers",
-        "goalie_name_feed": "Dan Vladar",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "goalie_name_feed": "Samuel Ersson",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-02T14:59:28.837Z",
         "team_id": 4,
         "team_abbrev": "PHI",
         "team_name": "Philadelphia Flyers",
-        "goalie_id": 8478435,
-        "goalie_name": "Dan Vladar",
-        "goalie_games": 43,
-        "goalie_ga_pg": 0.7674418604651163,
-        "goalie_save_pct": 90.32258064516128,
+        "goalie_id": 8481035,
+        "goalie_name": "Samuel Ersson",
+        "goalie_games": 27,
+        "goalie_ga_pg": 0.8888888888888888,
+        "goalie_save_pct": 88.29268292682927,
         "team_o15_pct": 0.5070422535211268,
         "team_combined_pg": 1.591549295774648
       },
       "projection": {
-        "prob_over_1p_1_5": 0.486848948878734,
-        "prob_under_1p_1_5": 0.513151051121266,
-        "over_american_odds": 105,
-        "under_american_odds": -105,
-        "lambda_total": 1.036356437052722,
-        "model_prob_over_1p_1_5_raw": 0.35497140008224787,
+        "prob_over_1p_1_5": 0.49130921398231553,
+        "prob_under_1p_1_5": 0.5086907860176845,
+        "over_american_odds": 104,
+        "under_american_odds": -104,
+        "lambda_total": 1.1685104152513204,
+        "model_prob_over_1p_1_5_raw": 0.38470650077279134,
         "market_prob_over_1p_1_5_consensus": 0.5101214574898786,
         "market_book_count": 7,
         "market_dampening_weight": 0.85
@@ -325,7 +325,7 @@
         "away_team_l5_l10_l15_o15": "L5: 1/5 2+ (20.0%) | L10: 1/10 2+ (10.0%) | L15: 5/15 2+ (33.3%) | L20: 6/20 2+ (30.0%)",
         "home_team_l5_l10_l15_o15": "L5: 1/5 2+ (20.0%) | L10: 4/10 2+ (40.0%) | L15: 5/15 2+ (33.3%) | L20: 8/20 2+ (40.0%)",
         "away_goalie_l5_l10_l15_allow2": "L5: 0/5 allow 2+ (0.0%) | L10: 0/10 allow 2+ (0.0%) | L15: 2/15 allow 2+ (13.3%) | L20: 3/20 allow 2+ (15.0%)",
-        "home_goalie_l5_l10_l15_allow2": "L5: 0/5 allow 2+ (0.0%) | L10: 1/10 allow 2+ (10.0%) | L15: 3/15 allow 2+ (20.0%) | L20: 4/20 allow 2+ (20.0%)",
+        "home_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 1/10 allow 2+ (10.0%) | L15: 3/15 allow 2+ (20.0%) | L20: 4/20 allow 2+ (20.0%)",
         "h2h_games": 0,
         "h2h_o15_hits": 0,
         "h2h_o15_pct": null,
@@ -1270,9 +1270,9 @@
     "projectable_games": 14,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 3,
+      "Confirmed": 5,
       "Likely": 4,
-      "Unconfirmed": 21
+      "Unconfirmed": 19
     },
     "live_games": 0,
     "first_period_graded_games": 0,
