@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-02",
-  "pulled_at_utc": "2026-04-02T23:05:01+00:00",
+  "pulled_at_utc": "2026-04-02T23:10:01+00:00",
   "target_date": "2026-04-02",
   "games": [
     {
@@ -66,10 +66,10 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025021193,
-        "state_code": "PRE",
-        "state_label": "Scheduled",
-        "period": 0,
-        "clock": null,
+        "state_code": "LIVE",
+        "state_label": "Live",
+        "period": 1,
+        "clock": "19:41",
         "in_intermission": false,
         "away_score": 0,
         "home_score": 0,
@@ -156,10 +156,10 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025021191,
-        "state_code": "PRE",
-        "state_label": "Scheduled",
-        "period": 0,
-        "clock": null,
+        "state_code": "LIVE",
+        "state_label": "Live",
+        "period": 1,
+        "clock": "19:02",
         "in_intermission": false,
         "away_score": 0,
         "home_score": 0,
@@ -460,10 +460,10 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025021192,
-        "state_code": "PRE",
-        "state_label": "Scheduled",
-        "period": 0,
-        "clock": null,
+        "state_code": "LIVE",
+        "state_label": "Live",
+        "period": 1,
+        "clock": "19:51",
         "in_intermission": false,
         "away_score": 0,
         "home_score": 0,
@@ -1204,7 +1204,7 @@
       "Likely": 3,
       "Unconfirmed": 1
     },
-    "live_games": 0,
+    "live_games": 3,
     "first_period_graded_games": 0,
     "first_period_over_games": 0,
     "first_period_under_games": 0,
