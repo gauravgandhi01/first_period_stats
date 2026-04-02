@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-02",
-  "pulled_at_utc": "2026-04-02T16:20:00+00:00",
+  "pulled_at_utc": "2026-04-02T16:25:01+00:00",
   "target_date": "2026-04-02",
   "games": [
     {
@@ -11,8 +11,8 @@
       "away": {
         "team_name_feed": "Boston Bruins",
         "goalie_name_feed": "Jeremy Swayman",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-02T16:21:19.362Z",
         "team_id": 6,
         "team_abbrev": "BOS",
         "team_name": "Boston Bruins",
@@ -461,8 +461,8 @@
       "away": {
         "team_name_feed": "Pittsburgh Penguins",
         "goalie_name_feed": "Stuart Skinner",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-02T16:22:33.485Z",
         "team_id": 5,
         "team_abbrev": "PIT",
         "team_name": "Pittsburgh Penguins",
@@ -747,8 +747,8 @@
       "home": {
         "team_name_feed": "Dallas Stars",
         "goalie_name_feed": "Jake Oettinger",
-        "status": "Likely",
-        "status_updated_at_utc": "2026-04-02T15:30:06.147Z",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-02T16:18:13.838Z",
         "team_id": 25,
         "team_abbrev": "DAL",
         "team_name": "Dallas Stars",
@@ -1270,9 +1270,9 @@
     "projectable_games": 14,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 8,
-      "Likely": 6,
-      "Unconfirmed": 14
+      "Confirmed": 11,
+      "Likely": 5,
+      "Unconfirmed": 12
     },
     "live_games": 0,
     "first_period_graded_games": 0,
