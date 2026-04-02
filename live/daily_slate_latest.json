@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-02",
-  "pulled_at_utc": "2026-04-02T14:45:01+00:00",
+  "pulled_at_utc": "2026-04-02T14:50:00+00:00",
   "target_date": "2026-04-02",
   "games": [
     {
@@ -370,25 +370,25 @@
       "game_time_et": "2026-04-02 07:00 PM ET",
       "away": {
         "team_name_feed": "Montreal Canadiens",
-        "goalie_name_feed": "Jakub Dobes",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "goalie_name_feed": "Jacob Fowler",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-02T14:47:32.774Z",
         "team_id": 8,
         "team_abbrev": "MTL",
         "team_name": "Montr\u00e9al Canadiens",
-        "goalie_id": 8482487,
-        "goalie_name": "Jakub Dobes",
-        "goalie_games": 35,
-        "goalie_ga_pg": 0.9142857142857143,
-        "goalie_save_pct": 89.96865203761756,
+        "goalie_id": 8484170,
+        "goalie_name": "Jacob Fowler",
+        "goalie_games": 13,
+        "goalie_ga_pg": 1.0,
+        "goalie_save_pct": 88.39285714285714,
         "team_o15_pct": 0.6197183098591549,
         "team_combined_pg": 1.8732394366197183
       },
       "home": {
         "team_name_feed": "New York Rangers",
         "goalie_name_feed": "Igor Shesterkin",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-02T14:43:35.566Z",
         "team_id": 3,
         "team_abbrev": "NYR",
         "team_name": "New York Rangers",
@@ -401,12 +401,12 @@
         "team_combined_pg": 1.821917808219178
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5444479038524311,
-        "prob_under_1p_1_5": 0.45555209614756886,
-        "over_american_odds": -120,
-        "under_american_odds": 120,
-        "lambda_total": 1.8965513314204752,
-        "model_prob_over_1p_1_5_raw": 0.5651680807227701,
+        "prob_over_1p_1_5": 0.5484990801239198,
+        "prob_under_1p_1_5": 0.4515009198760802,
+        "over_american_odds": -121,
+        "under_american_odds": 121,
+        "lambda_total": 2.05693448278176,
+        "model_prob_over_1p_1_5_raw": 0.592175922532694,
         "market_prob_over_1p_1_5_consensus": 0.5407914020517831,
         "market_book_count": 7,
         "market_dampening_weight": 0.85
@@ -414,7 +414,7 @@
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 4/5 2+ (80.0%) | L10: 7/10 2+ (70.0%) | L15: 11/15 2+ (73.3%) | L20: 13/20 2+ (65.0%)",
         "home_team_l5_l10_l15_o15": "L5: 3/5 2+ (60.0%) | L10: 5/10 2+ (50.0%) | L15: 9/15 2+ (60.0%) | L20: 11/20 2+ (55.0%)",
-        "away_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 2/10 allow 2+ (20.0%) | L15: 2/15 allow 2+ (13.3%) | L20: 5/20 allow 2+ (25.0%)",
+        "away_goalie_l5_l10_l15_allow2": "L5: 3/5 allow 2+ (60.0%) | L10: 4/10 allow 2+ (40.0%) | L15: 5/13 allow 2+ (38.5%) | L20: 5/13 allow 2+ (38.5%)",
         "home_goalie_l5_l10_l15_allow2": "L5: 2/5 allow 2+ (40.0%) | L10: 3/10 allow 2+ (30.0%) | L15: 3/15 allow 2+ (20.0%) | L20: 4/20 allow 2+ (20.0%)",
         "h2h_games": 2,
         "h2h_o15_hits": 2,
@@ -1270,9 +1270,9 @@
     "projectable_games": 14,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 2,
+      "Confirmed": 4,
       "Likely": 3,
-      "Unconfirmed": 23
+      "Unconfirmed": 21
     },
     "live_games": 0,
     "first_period_graded_games": 0,
