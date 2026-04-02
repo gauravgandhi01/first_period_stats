@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-02",
-  "pulled_at_utc": "2026-04-02T22:25:00+00:00",
+  "pulled_at_utc": "2026-04-02T22:30:00+00:00",
   "target_date": "2026-04-02",
   "games": [
     {
@@ -66,7 +66,7 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025021193,
-        "state_code": "FUT",
+        "state_code": "PRE",
         "state_label": "Scheduled",
         "period": 0,
         "clock": null,
@@ -156,7 +156,7 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025021191,
-        "state_code": "FUT",
+        "state_code": "PRE",
         "state_label": "Scheduled",
         "period": 0,
         "clock": null,
@@ -246,7 +246,7 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025021197,
-        "state_code": "FUT",
+        "state_code": "PRE",
         "state_label": "Scheduled",
         "period": 0,
         "clock": null,
@@ -336,7 +336,7 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025021196,
-        "state_code": "FUT",
+        "state_code": "PRE",
         "state_label": "Scheduled",
         "period": 0,
         "clock": null,
@@ -426,7 +426,7 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025021195,
-        "state_code": "FUT",
+        "state_code": "PRE",
         "state_label": "Scheduled",
         "period": 0,
         "clock": null,
@@ -516,7 +516,7 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025021192,
-        "state_code": "FUT",
+        "state_code": "PRE",
         "state_label": "Scheduled",
         "period": 0,
         "clock": null,
