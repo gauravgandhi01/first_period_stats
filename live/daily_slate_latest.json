@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-02",
-  "pulled_at_utc": "2026-04-02T19:35:00+00:00",
+  "pulled_at_utc": "2026-04-02T19:40:01+00:00",
   "target_date": "2026-04-02",
   "games": [
     {
@@ -207,8 +207,8 @@
       "home": {
         "team_name_feed": "Carolina Hurricanes",
         "goalie_name_feed": "Frederik Andersen",
-        "status": "Likely",
-        "status_updated_at_utc": "2026-04-02T14:28:07.644Z",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-02T19:36:55.833Z",
         "team_id": 12,
         "team_abbrev": "CAR",
         "team_name": "Carolina Hurricanes",
@@ -1270,8 +1270,8 @@
     "projectable_games": 14,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 17,
-      "Likely": 8,
+      "Confirmed": 18,
+      "Likely": 7,
       "Unconfirmed": 3
     },
     "live_games": 0,
