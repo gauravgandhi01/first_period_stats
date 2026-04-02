@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-02",
-  "pulled_at_utc": "2026-04-02T18:55:00+00:00",
+  "pulled_at_utc": "2026-04-02T19:00:00+00:00",
   "target_date": "2026-04-02",
   "games": [
     {
@@ -1197,8 +1197,8 @@
       "home": {
         "team_name_feed": "Los Angeles Kings",
         "goalie_name_feed": "Darcy Kuemper",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Likely",
+        "status_updated_at_utc": "2026-04-02T18:53:45.785Z",
         "team_id": 26,
         "team_abbrev": "LAK",
         "team_name": "Los Angeles Kings",
@@ -1271,8 +1271,8 @@
     "failed_games": 0,
     "status_counts": {
       "Confirmed": 17,
-      "Likely": 7,
-      "Unconfirmed": 4
+      "Likely": 8,
+      "Unconfirmed": 3
     },
     "live_games": 0,
     "first_period_graded_games": 0,
