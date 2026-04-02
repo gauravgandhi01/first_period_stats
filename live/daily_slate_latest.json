@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-01",
-  "pulled_at_utc": "2026-04-02T00:05:01+00:00",
+  "pulled_at_utc": "2026-04-02T00:10:01+00:00",
   "target_date": "2026-04-01",
   "games": [
     {
@@ -206,27 +206,27 @@
       },
       "home": {
         "team_name_feed": "Los Angeles Kings",
-        "goalie_name_feed": "Darcy Kuemper",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "goalie_name_feed": "Anton Forsberg",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-02T00:08:29.759Z",
         "team_id": 26,
         "team_abbrev": "LAK",
         "team_name": "Los Angeles Kings",
-        "goalie_id": 8475311,
-        "goalie_name": "Darcy Kuemper",
-        "goalie_games": 46,
-        "goalie_ga_pg": 0.6086956521739131,
-        "goalie_save_pct": 92.3076923076923,
+        "goalie_id": 8476341,
+        "goalie_name": "Anton Forsberg",
+        "goalie_games": 25,
+        "goalie_ga_pg": 0.96,
+        "goalie_save_pct": 89.28571428571429,
         "team_o15_pct": 0.3888888888888889,
         "team_combined_pg": 1.4444444444444444
       },
       "projection": {
-        "prob_over_1p_1_5": 0.48696922148922933,
-        "prob_under_1p_1_5": 0.5130307785107706,
-        "over_american_odds": 105,
-        "under_american_odds": -105,
-        "lambda_total": 1.3018138751467345,
-        "model_prob_over_1p_1_5_raw": 0.4131281432615288,
+        "prob_over_1p_1_5": 0.4969394134676707,
+        "prob_under_1p_1_5": 0.5030605865323293,
+        "over_american_odds": 101,
+        "under_american_odds": -101,
+        "lambda_total": 1.6212228065322294,
+        "model_prob_over_1p_1_5_raw": 0.4795960897844712,
         "market_prob_over_1p_1_5_consensus": 0.5,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
@@ -235,7 +235,7 @@
         "away_team_l5_l10_l15_o15": "L5: 1/5 2+ (20.0%) | L10: 1/10 2+ (10.0%) | L15: 4/15 2+ (26.7%) | L20: 7/20 2+ (35.0%)",
         "home_team_l5_l10_l15_o15": "L5: 1/5 2+ (20.0%) | L10: 4/10 2+ (40.0%) | L15: 6/15 2+ (40.0%) | L20: 10/20 2+ (50.0%)",
         "away_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 3/10 allow 2+ (30.0%) | L15: 5/15 allow 2+ (33.3%) | L20: 9/20 allow 2+ (45.0%)",
-        "home_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 2/10 allow 2+ (20.0%) | L15: 5/15 allow 2+ (33.3%) | L20: 6/20 allow 2+ (30.0%)",
+        "home_goalie_l5_l10_l15_allow2": "L5: 2/5 allow 2+ (40.0%) | L10: 3/10 allow 2+ (30.0%) | L15: 4/15 allow 2+ (26.7%) | L20: 5/20 allow 2+ (25.0%)",
         "h2h_games": 2,
         "h2h_o15_hits": 0,
         "h2h_o15_pct": 0.0,
@@ -280,9 +280,8 @@
     "projectable_games": 3,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 3,
-      "Likely": 2,
-      "Unconfirmed": 1
+      "Confirmed": 4,
+      "Likely": 2
     },
     "live_games": 0,
     "first_period_graded_games": 0,
