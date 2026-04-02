@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-02",
-  "pulled_at_utc": "2026-04-02T14:25:00+00:00",
+  "pulled_at_utc": "2026-04-02T14:30:01+00:00",
   "target_date": "2026-04-02",
   "games": [
     {
@@ -27,8 +27,8 @@
       "home": {
         "team_name_feed": "Florida Panthers",
         "goalie_name_feed": "Sergei Bobrovsky",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-02T14:26:10.762Z",
         "team_id": 13,
         "team_abbrev": "FLA",
         "team_name": "Florida Panthers",
@@ -1270,8 +1270,8 @@
     "projectable_games": 14,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 1,
-      "Unconfirmed": 27
+      "Confirmed": 2,
+      "Unconfirmed": 26
     },
     "live_games": 0,
     "first_period_graded_games": 0,
