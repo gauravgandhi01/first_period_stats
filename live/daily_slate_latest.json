@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-02",
-  "pulled_at_utc": "2026-04-02T18:10:01+00:00",
+  "pulled_at_utc": "2026-04-02T18:15:01+00:00",
   "target_date": "2026-04-02",
   "games": [
     {
@@ -821,8 +821,8 @@
       "away": {
         "team_name_feed": "Chicago Blackhawks",
         "goalie_name_feed": "Spencer Knight",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Likely",
+        "status_updated_at_utc": "2026-04-02T18:11:15.225Z",
         "team_id": 16,
         "team_abbrev": "CHI",
         "team_name": "Chicago Blackhawks",
@@ -1017,8 +1017,8 @@
       "home": {
         "team_name_feed": "San Jose Sharks",
         "goalie_name_feed": "Alex Nedeljkovic",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-02T18:10:07.726Z",
         "team_id": 28,
         "team_abbrev": "SJS",
         "team_name": "San Jose Sharks",
@@ -1270,9 +1270,9 @@
     "projectable_games": 14,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 15,
-      "Likely": 6,
-      "Unconfirmed": 7
+      "Confirmed": 16,
+      "Likely": 7,
+      "Unconfirmed": 5
     },
     "live_games": 0,
     "first_period_graded_games": 0,
