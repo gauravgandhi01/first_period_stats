@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-02",
-  "pulled_at_utc": "2026-04-02T22:30:00+00:00",
+  "pulled_at_utc": "2026-04-02T22:35:01+00:00",
   "target_date": "2026-04-02",
   "games": [
     {
@@ -101,8 +101,8 @@
       "away": {
         "team_name_feed": "Buffalo Sabres",
         "goalie_name_feed": "Ukko-Pekka Luukkonen",
-        "status": "Likely",
-        "status_updated_at_utc": "2026-04-02T15:31:15.160Z",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-02T22:29:47.961Z",
         "team_id": 7,
         "team_abbrev": "BUF",
         "team_name": "Buffalo Sabres",
@@ -371,8 +371,8 @@
       "away": {
         "team_name_feed": "Montreal Canadiens",
         "goalie_name_feed": "Jacob Fowler",
-        "status": "Likely",
-        "status_updated_at_utc": "2026-04-02T14:47:32.774Z",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-02T22:29:36.840Z",
         "team_id": 8,
         "team_abbrev": "MTL",
         "team_name": "Montr\u00e9al Canadiens",
@@ -477,8 +477,8 @@
       "home": {
         "team_name_feed": "Tampa Bay Lightning",
         "goalie_name_feed": "Andrei Vasilevskiy",
-        "status": "Likely",
-        "status_updated_at_utc": "2026-04-02T14:38:27.600Z",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-02T22:30:45.064Z",
         "team_id": 14,
         "team_abbrev": "TBL",
         "team_name": "Tampa Bay Lightning",
@@ -1270,8 +1270,8 @@
     "projectable_games": 14,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 19,
-      "Likely": 8,
+      "Confirmed": 22,
+      "Likely": 5,
       "Unconfirmed": 1
     },
     "live_games": 0,
