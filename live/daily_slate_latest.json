@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-03",
-  "pulled_at_utc": "2026-04-03T22:35:01+00:00",
+  "pulled_at_utc": "2026-04-03T22:40:00+00:00",
   "target_date": "2026-04-03",
   "games": [
     {
@@ -41,13 +41,13 @@
         "team_combined_pg": 1.63013698630137
       },
       "projection": {
-        "prob_over_1p_1_5": 0.48723305911674675,
-        "prob_under_1p_1_5": 0.5127669408832533,
-        "over_american_odds": 105,
-        "under_american_odds": -105,
+        "prob_over_1p_1_5": 0.48549068456771427,
+        "prob_under_1p_1_5": 0.5145093154322857,
+        "over_american_odds": 106,
+        "under_american_odds": -106,
         "lambda_total": 1.2538562731047156,
         "model_prob_over_1p_1_5_raw": 0.41488706077831183,
-        "market_prob_over_1p_1_5_consensus": 0.5,
+        "market_prob_over_1p_1_5_consensus": 0.49795014758937356,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
       },
@@ -81,15 +81,15 @@
       "market_totals_p1": {
         "book_count": 8,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5,
+        "consensus_over_no_vig_prob": 0.49795014758937356,
         "fanduel": {
           "bookmaker_key": "fanduel",
           "bookmaker_title": "FanDuel",
           "point": 1.5,
-          "over_price": -108.0,
-          "under_price": -118.0,
-          "over_no_vig_prob": 0.4896023956080519,
-          "last_update": "2026-04-03T21:05:00Z"
+          "over_price": -112.0,
+          "under_price": -116.0,
+          "over_no_vig_prob": 0.4959002951787471,
+          "last_update": "2026-04-03T22:39:09Z"
         }
       }
     },
@@ -131,13 +131,13 @@
         "team_combined_pg": 1.7638888888888888
       },
       "projection": {
-        "prob_over_1p_1_5": 0.515647153461712,
-        "prob_under_1p_1_5": 0.48435284653828803,
-        "over_american_odds": -106,
-        "under_american_odds": 106,
+        "prob_over_1p_1_5": 0.5166587432295238,
+        "prob_under_1p_1_5": 0.48334125677047624,
+        "over_american_odds": -107,
+        "under_american_odds": 107,
         "lambda_total": 1.3563659309246925,
         "model_prob_over_1p_1_5_raw": 0.4375889004417227,
-        "market_prob_over_1p_1_5_consensus": 0.5294221392887689,
+        "market_prob_over_1p_1_5_consensus": 0.5306122448979592,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
       },
@@ -171,15 +171,15 @@
       "market_totals_p1": {
         "book_count": 8,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5294221392887689,
+        "consensus_over_no_vig_prob": 0.5306122448979592,
         "fanduel": {
           "bookmaker_key": "fanduel",
           "bookmaker_title": "FanDuel",
           "point": 1.5,
-          "over_price": -124.0,
-          "under_price": -102.0,
-          "over_no_vig_prob": 0.5229664272590613,
-          "last_update": "2026-04-03T21:04:11Z"
+          "over_price": -128.0,
+          "under_price": 100.0,
+          "over_no_vig_prob": 0.5289256198347108,
+          "last_update": "2026-04-03T22:39:23Z"
         }
       }
     }
