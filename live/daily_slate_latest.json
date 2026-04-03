@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-03",
-  "pulled_at_utc": "2026-04-03T09:15:01+00:00",
+  "pulled_at_utc": "2026-04-03T13:10:01+00:00",
   "target_date": "2026-04-03",
   "games": [
     {
@@ -10,17 +10,17 @@
       "game_time_et": "2026-04-03 07:00 PM ET",
       "away": {
         "team_name_feed": "Philadelphia Flyers",
-        "goalie_name_feed": "Samuel Ersson",
+        "goalie_name_feed": "Dan Vladar",
         "status": "Unconfirmed",
         "status_updated_at_utc": null,
         "team_id": 4,
         "team_abbrev": "PHI",
         "team_name": "Philadelphia Flyers",
-        "goalie_id": 8481035,
-        "goalie_name": "Samuel Ersson",
-        "goalie_games": 27,
-        "goalie_ga_pg": 0.8888888888888888,
-        "goalie_save_pct": 88.29268292682927,
+        "goalie_id": 8478435,
+        "goalie_name": "Dan Vladar",
+        "goalie_games": 43,
+        "goalie_ga_pg": 0.7674418604651163,
+        "goalie_save_pct": 90.32258064516128,
         "team_o15_pct": 0.5070422535211268,
         "team_combined_pg": 1.591549295774648
       },
@@ -41,20 +41,20 @@
         "team_combined_pg": 1.63013698630137
       },
       "projection": {
-        "prob_over_1p_1_5": 0.49542926293281614,
-        "prob_under_1p_1_5": 0.5045707370671839,
-        "over_american_odds": 102,
-        "under_american_odds": -102,
-        "lambda_total": 1.4217859555313992,
-        "model_prob_over_1p_1_5_raw": 0.45112298020344394,
-        "market_prob_over_1p_1_5_consensus": 0.5032480187085877,
-        "market_book_count": 6,
+        "prob_over_1p_1_5": 0.48723305911674675,
+        "prob_under_1p_1_5": 0.5127669408832533,
+        "over_american_odds": 105,
+        "under_american_odds": -105,
+        "lambda_total": 1.2538562731047156,
+        "model_prob_over_1p_1_5_raw": 0.41488706077831183,
+        "market_prob_over_1p_1_5_consensus": 0.5,
+        "market_book_count": 8,
         "market_dampening_weight": 0.85
       },
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 1/5 2+ (20.0%) | L10: 4/10 2+ (40.0%) | L15: 5/15 2+ (33.3%) | L20: 8/20 2+ (40.0%)",
         "home_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 5/10 2+ (50.0%) | L15: 7/15 2+ (46.7%) | L20: 9/20 2+ (45.0%)",
-        "away_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 1/10 allow 2+ (10.0%) | L15: 3/15 allow 2+ (20.0%) | L20: 4/20 allow 2+ (20.0%)",
+        "away_goalie_l5_l10_l15_allow2": "L5: 0/5 allow 2+ (0.0%) | L10: 1/10 allow 2+ (10.0%) | L15: 3/15 allow 2+ (20.0%) | L20: 4/20 allow 2+ (20.0%)",
         "home_goalie_l5_l10_l15_allow2": "L5: 0/5 allow 2+ (0.0%) | L10: 1/10 allow 2+ (10.0%) | L15: 2/15 allow 2+ (13.3%) | L20: 3/20 allow 2+ (15.0%)",
         "h2h_games": 3,
         "h2h_o15_hits": 1,
@@ -79,10 +79,18 @@
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-03"
       },
       "market_totals_p1": {
-        "book_count": 6,
+        "book_count": 8,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5032480187085877,
-        "fanduel": null
+        "consensus_over_no_vig_prob": 0.5,
+        "fanduel": {
+          "bookmaker_key": "fanduel",
+          "bookmaker_title": "FanDuel",
+          "point": 1.5,
+          "over_price": -108.0,
+          "under_price": -118.0,
+          "over_no_vig_prob": 0.4896023956080519,
+          "last_update": "2026-04-03T13:09:59Z"
+        }
       }
     },
     {
@@ -92,17 +100,17 @@
       "game_time_et": "2026-04-03 10:00 PM ET",
       "away": {
         "team_name_feed": "St Louis Blues",
-        "goalie_name_feed": "Jordan Binnington",
+        "goalie_name_feed": "Joel Hofer",
         "status": "Unconfirmed",
         "status_updated_at_utc": null,
         "team_id": 19,
         "team_abbrev": "STL",
         "team_name": "St. Louis Blues",
-        "goalie_id": 8476412,
-        "goalie_name": "Jordan Binnington",
-        "goalie_games": 36,
-        "goalie_ga_pg": 1.0277777777777777,
-        "goalie_save_pct": 88.92215568862275,
+        "goalie_id": 8480981,
+        "goalie_name": "Joel Hofer",
+        "goalie_games": 37,
+        "goalie_ga_pg": 0.7027027027027027,
+        "goalie_save_pct": 92.12121212121212,
         "team_o15_pct": 0.5492957746478874,
         "team_combined_pg": 1.6619718309859155
       },
@@ -123,20 +131,20 @@
         "team_combined_pg": 1.7638888888888888
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5332777776375903,
-        "prob_under_1p_1_5": 0.4667222223624097,
-        "over_american_odds": -114,
-        "under_american_odds": 114,
-        "lambda_total": 1.6789679159964375,
-        "model_prob_over_1p_1_5_raw": 0.5035064874876033,
-        "market_prob_over_1p_1_5_consensus": 0.5385315347228822,
-        "market_book_count": 6,
+        "prob_over_1p_1_5": 0.5166587432295238,
+        "prob_under_1p_1_5": 0.48334125677047624,
+        "over_american_odds": -107,
+        "under_american_odds": 107,
+        "lambda_total": 1.3563659309246925,
+        "model_prob_over_1p_1_5_raw": 0.4375889004417227,
+        "market_prob_over_1p_1_5_consensus": 0.5306122448979592,
+        "market_book_count": 8,
         "market_dampening_weight": 0.85
       },
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 1/5 2+ (20.0%) | L10: 1/10 2+ (10.0%) | L15: 4/15 2+ (26.7%) | L20: 7/20 2+ (35.0%)",
         "home_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 3/10 2+ (30.0%) | L15: 6/15 2+ (40.0%) | L20: 8/20 2+ (40.0%)",
-        "away_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 3/10 allow 2+ (30.0%) | L15: 5/15 allow 2+ (33.3%) | L20: 9/20 allow 2+ (45.0%)",
+        "away_goalie_l5_l10_l15_allow2": "L5: 0/5 allow 2+ (0.0%) | L10: 0/10 allow 2+ (0.0%) | L15: 2/15 allow 2+ (13.3%) | L20: 2/20 allow 2+ (10.0%)",
         "home_goalie_l5_l10_l15_allow2": "L5: 0/5 allow 2+ (0.0%) | L10: 2/10 allow 2+ (20.0%) | L15: 4/15 allow 2+ (26.7%) | L20: 4/20 allow 2+ (20.0%)",
         "h2h_games": 2,
         "h2h_o15_hits": 1,
@@ -161,10 +169,18 @@
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-03"
       },
       "market_totals_p1": {
-        "book_count": 6,
+        "book_count": 8,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5385315347228822,
-        "fanduel": null
+        "consensus_over_no_vig_prob": 0.5306122448979592,
+        "fanduel": {
+          "bookmaker_key": "fanduel",
+          "bookmaker_title": "FanDuel",
+          "point": 1.5,
+          "over_price": -122.0,
+          "under_price": -106.0,
+          "over_no_vig_prob": 0.5164392569455861,
+          "last_update": "2026-04-03T13:10:05Z"
+        }
       }
     }
   ],
