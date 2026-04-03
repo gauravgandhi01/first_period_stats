@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-03",
-  "pulled_at_utc": "2026-04-03T21:00:01+00:00",
+  "pulled_at_utc": "2026-04-03T21:05:01+00:00",
   "target_date": "2026-04-03",
   "games": [
     {
@@ -89,7 +89,7 @@
           "over_price": -108.0,
           "under_price": -118.0,
           "over_no_vig_prob": 0.4896023956080519,
-          "last_update": "2026-04-03T19:30:19Z"
+          "last_update": "2026-04-03T21:05:00Z"
         }
       }
     },
@@ -179,7 +179,7 @@
           "over_price": -124.0,
           "under_price": -102.0,
           "over_no_vig_prob": 0.5229664272590613,
-          "last_update": "2026-04-03T19:30:24Z"
+          "last_update": "2026-04-03T21:04:11Z"
         }
       }
     }
