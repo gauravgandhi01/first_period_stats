@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-04",
-  "pulled_at_utc": "2026-04-04T14:35:01+00:00",
+  "pulled_at_utc": "2026-04-04T14:40:00+00:00",
   "target_date": "2026-04-04",
   "games": [
     {
@@ -927,8 +927,8 @@
       "home": {
         "team_name_feed": "Columbus Blue Jackets",
         "goalie_name_feed": "Jet Greaves",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Likely",
+        "status_updated_at_utc": "2026-04-04T14:34:31.878Z",
         "team_id": 29,
         "team_abbrev": "CBJ",
         "team_name": "Columbus Blue Jackets",
@@ -1361,8 +1361,8 @@
     "failed_games": 0,
     "status_counts": {
       "Confirmed": 2,
-      "Likely": 1,
-      "Unconfirmed": 27
+      "Likely": 2,
+      "Unconfirmed": 26
     },
     "live_games": 0,
     "first_period_graded_games": 0,
