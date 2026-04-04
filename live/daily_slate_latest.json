@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-04",
-  "pulled_at_utc": "2026-04-04T14:30:01+00:00",
+  "pulled_at_utc": "2026-04-04T14:35:01+00:00",
   "target_date": "2026-04-04",
   "games": [
     {
@@ -657,8 +657,8 @@
       "home": {
         "team_name_feed": "Carolina Hurricanes",
         "goalie_name_feed": "Brandon Bussi",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Likely",
+        "status_updated_at_utc": "2026-04-04T14:32:52.919Z",
         "team_id": 12,
         "team_abbrev": "CAR",
         "team_name": "Carolina Hurricanes",
@@ -1361,7 +1361,8 @@
     "failed_games": 0,
     "status_counts": {
       "Confirmed": 2,
-      "Unconfirmed": 28
+      "Likely": 1,
+      "Unconfirmed": 27
     },
     "live_games": 0,
     "first_period_graded_games": 0,
