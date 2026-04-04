@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-04",
-  "pulled_at_utc": "2026-04-04T17:20:00+00:00",
+  "pulled_at_utc": "2026-04-04T17:25:00+00:00",
   "target_date": "2026-04-04",
   "games": [
     {
@@ -69,7 +69,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "14:24",
+        "clock": "09:22",
         "in_intermission": true,
         "away_score": 0,
         "home_score": 1,
@@ -159,7 +159,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "13:15",
+        "clock": "10:36",
         "in_intermission": false,
         "away_score": 0,
         "home_score": 0,
@@ -1107,8 +1107,8 @@
       "home": {
         "team_name_feed": "Seattle Kraken",
         "goalie_name_feed": "Philipp Grubauer",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Likely",
+        "status_updated_at_utc": "2026-04-04T17:17:02.052Z",
         "team_id": 55,
         "team_abbrev": "SEA",
         "team_name": "Seattle Kraken",
@@ -1361,8 +1361,8 @@
     "failed_games": 0,
     "status_counts": {
       "Confirmed": 8,
-      "Likely": 3,
-      "Unconfirmed": 19
+      "Likely": 4,
+      "Unconfirmed": 18
     },
     "live_games": 2,
     "first_period_graded_games": 1,
