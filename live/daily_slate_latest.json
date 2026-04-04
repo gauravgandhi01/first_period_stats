@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-04",
-  "pulled_at_utc": "2026-04-04T15:36:39+00:00",
+  "pulled_at_utc": "2026-04-04T15:40:00+00:00",
   "target_date": "2026-04-04",
   "games": [
     {
@@ -911,8 +911,8 @@
       "away": {
         "team_name_feed": "Winnipeg Jets",
         "goalie_name_feed": "Connor Hellebuyck",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Likely",
+        "status_updated_at_utc": "2026-04-04T15:35:16.914Z",
         "team_id": 52,
         "team_abbrev": "WPG",
         "team_name": "Winnipeg Jets",
@@ -1361,8 +1361,8 @@
     "failed_games": 0,
     "status_counts": {
       "Confirmed": 3,
-      "Likely": 3,
-      "Unconfirmed": 24
+      "Likely": 4,
+      "Unconfirmed": 23
     },
     "live_games": 0,
     "first_period_graded_games": 0,
