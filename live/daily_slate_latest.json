@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-04",
-  "pulled_at_utc": "2026-04-04T15:45:01+00:00",
+  "pulled_at_utc": "2026-04-04T15:50:00+00:00",
   "target_date": "2026-04-04",
   "games": [
     {
@@ -100,17 +100,17 @@
       "game_time_et": "2026-04-04 01:00 PM ET",
       "away": {
         "team_name_feed": "Minnesota Wild",
-        "goalie_name_feed": "Filip Gustavsson",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "goalie_name_feed": "Jesper Wallstedt",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-04T15:47:29.742Z",
         "team_id": 30,
         "team_abbrev": "MIN",
         "team_name": "Minnesota Wild",
-        "goalie_id": 8479406,
-        "goalie_name": "Filip Gustavsson",
-        "goalie_games": 44,
-        "goalie_ga_pg": 0.7954545454545454,
-        "goalie_save_pct": 91.183879093199,
+        "goalie_id": 8482661,
+        "goalie_name": "Jesper Wallstedt",
+        "goalie_games": 29,
+        "goalie_ga_pg": 0.6896551724137931,
+        "goalie_save_pct": 93.05555555555556,
         "team_o15_pct": 0.4794520547945205,
         "team_combined_pg": 1.6575342465753424
       },
@@ -131,12 +131,12 @@
         "team_combined_pg": 1.8333333333333333
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5250754861514527,
-        "prob_under_1p_1_5": 0.4749245138485473,
-        "over_american_odds": -111,
-        "under_american_odds": 111,
-        "lambda_total": 1.620830984966051,
-        "model_prob_over_1p_1_5_raw": 0.4937005199212494,
+        "prob_over_1p_1_5": 0.522851609990288,
+        "prob_under_1p_1_5": 0.477148390009712,
+        "over_american_odds": -110,
+        "under_american_odds": 110,
+        "lambda_total": 1.5466494020152677,
+        "model_prob_over_1p_1_5_raw": 0.4788746788468179,
         "market_prob_over_1p_1_5_consensus": 0.5306122448979592,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
@@ -144,7 +144,7 @@
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 3/10 2+ (30.0%) | L15: 3/15 2+ (20.0%) | L20: 8/20 2+ (40.0%)",
         "home_team_l5_l10_l15_o15": "L5: 1/5 2+ (20.0%) | L10: 3/10 2+ (30.0%) | L15: 6/15 2+ (40.0%) | L20: 8/20 2+ (40.0%)",
-        "away_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 2/10 allow 2+ (20.0%) | L15: 3/15 allow 2+ (20.0%) | L20: 3/20 allow 2+ (15.0%)",
+        "away_goalie_l5_l10_l15_allow2": "L5: 0/5 allow 2+ (0.0%) | L10: 4/10 allow 2+ (40.0%) | L15: 4/15 allow 2+ (26.7%) | L20: 4/20 allow 2+ (20.0%)",
         "home_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 2/10 allow 2+ (20.0%) | L15: 3/15 allow 2+ (20.0%) | L20: 3/20 allow 2+ (15.0%)",
         "h2h_games": 1,
         "h2h_o15_hits": 0,
@@ -927,8 +927,8 @@
       "home": {
         "team_name_feed": "Columbus Blue Jackets",
         "goalie_name_feed": "Jet Greaves",
-        "status": "Likely",
-        "status_updated_at_utc": "2026-04-04T14:34:31.878Z",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-04T15:46:21.778Z",
         "team_id": 29,
         "team_abbrev": "CBJ",
         "team_name": "Columbus Blue Jackets",
@@ -1360,9 +1360,9 @@
     "projectable_games": 15,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 3,
-      "Likely": 4,
-      "Unconfirmed": 23
+      "Confirmed": 5,
+      "Likely": 3,
+      "Unconfirmed": 22
     },
     "live_games": 0,
     "first_period_graded_games": 0,
