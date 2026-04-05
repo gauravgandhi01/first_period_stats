@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-05",
-  "pulled_at_utc": "2026-04-05T23:30:02+00:00",
+  "pulled_at_utc": "2026-04-05T23:35:00+00:00",
   "target_date": "2026-04-05",
   "games": [
     {
@@ -294,10 +294,10 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025021225,
-        "state_code": "LIVE",
+        "state_code": "CRIT",
         "state_label": "Live",
         "period": 3,
-        "clock": "05:35",
+        "clock": "03:27",
         "in_intermission": false,
         "away_score": 2,
         "home_score": 5,
@@ -373,7 +373,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "05:43",
+        "clock": "03:40",
         "in_intermission": false,
         "away_score": 1,
         "home_score": 0,
@@ -463,11 +463,11 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "08:27",
+        "clock": "05:29",
         "in_intermission": false,
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 1,
-        "first_period_goals": 1,
+        "first_period_goals": 2,
         "first_period_complete": false,
         "first_period_total_result": null,
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-05"
