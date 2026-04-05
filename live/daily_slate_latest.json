@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-05",
-  "pulled_at_utc": "2026-04-05T18:25:01+00:00",
+  "pulled_at_utc": "2026-04-05T18:30:01+00:00",
   "target_date": "2026-04-05",
   "games": [
     {
@@ -69,7 +69,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "07:24",
+        "clock": "05:17",
         "in_intermission": false,
         "away_score": 4,
         "home_score": 1,
@@ -142,7 +142,7 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025021223,
-        "state_code": "FUT",
+        "state_code": "PRE",
         "state_label": "Scheduled",
         "period": 0,
         "clock": null,
@@ -177,8 +177,8 @@
       "away": {
         "team_name_feed": "Boston Bruins",
         "goalie_name_feed": "Joonas Korpisalo",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-05T18:23:56.009Z",
         "team_id": 6,
         "team_abbrev": "BOS",
         "team_name": "Boston Bruins",
@@ -626,9 +626,9 @@
     "projectable_games": 7,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 4,
+      "Confirmed": 5,
       "Likely": 3,
-      "Unconfirmed": 7
+      "Unconfirmed": 6
     },
     "live_games": 1,
     "first_period_graded_games": 1,
