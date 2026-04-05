@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-05",
-  "pulled_at_utc": "2026-04-05T22:35:00+00:00",
+  "pulled_at_utc": "2026-04-05T22:40:01+00:00",
   "target_date": "2026-04-05",
   "games": [
     {
@@ -297,7 +297,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "05:28",
+        "clock": "03:53",
         "in_intermission": false,
         "away_score": 2,
         "home_score": 3,
@@ -315,8 +315,8 @@
       "away": {
         "team_name_feed": "New Jersey Devils",
         "goalie_name_feed": "Jacob Markstrom",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-05T22:32:26.189Z",
         "team_id": 1,
         "team_abbrev": "NJD",
         "team_name": "New Jersey Devils",
@@ -584,8 +584,8 @@
     "projectable_games": 7,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 11,
-      "Unconfirmed": 3
+      "Confirmed": 12,
+      "Unconfirmed": 2
     },
     "live_games": 1,
     "first_period_graded_games": 4,
