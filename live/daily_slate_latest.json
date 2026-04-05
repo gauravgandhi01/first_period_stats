@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-05",
-  "pulled_at_utc": "2026-04-05T22:30:00+00:00",
+  "pulled_at_utc": "2026-04-05T22:35:00+00:00",
   "target_date": "2026-04-05",
   "games": [
     {
@@ -218,13 +218,13 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025021224,
-        "state_code": "CRIT",
-        "state_label": "Live",
+        "state_code": "FINAL",
+        "state_label": "Final",
         "period": 4,
-        "clock": "02:44",
+        "clock": "02:29",
         "in_intermission": false,
         "away_score": 1,
-        "home_score": 1,
+        "home_score": 2,
         "first_period_goals": 1,
         "first_period_complete": true,
         "first_period_total_result": "UNDER",
@@ -297,7 +297,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "07:49",
+        "clock": "05:28",
         "in_intermission": false,
         "away_score": 2,
         "home_score": 3,
@@ -331,8 +331,8 @@
       "home": {
         "team_name_feed": "Montreal Canadiens",
         "goalie_name_feed": "Jacob Fowler",
-        "status": "Likely",
-        "status_updated_at_utc": "2026-04-05T01:29:37.580Z",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-05T22:31:26.444Z",
         "team_id": 8,
         "team_abbrev": "MTL",
         "team_name": "Montr\u00e9al Canadiens",
@@ -421,8 +421,8 @@
       "home": {
         "team_name_feed": "New York Rangers",
         "goalie_name_feed": "Igor Shesterkin",
-        "status": "Likely",
-        "status_updated_at_utc": "2026-04-03T17:12:48.238Z",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-05T22:30:07.859Z",
         "team_id": 3,
         "team_abbrev": "NYR",
         "team_name": "New York Rangers",
@@ -584,11 +584,10 @@
     "projectable_games": 7,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 9,
-      "Likely": 2,
+      "Confirmed": 11,
       "Unconfirmed": 3
     },
-    "live_games": 2,
+    "live_games": 1,
     "first_period_graded_games": 4,
     "first_period_over_games": 2,
     "first_period_under_games": 2,
