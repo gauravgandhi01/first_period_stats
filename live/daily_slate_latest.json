@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-05",
-  "pulled_at_utc": "2026-04-05T19:45:00+00:00",
+  "pulled_at_utc": "2026-04-05T19:50:00+00:00",
   "target_date": "2026-04-05",
   "games": [
     {
@@ -145,13 +145,13 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "01:40",
-        "in_intermission": false,
+        "clock": "14:41",
+        "in_intermission": true,
         "away_score": 1,
-        "home_score": 2,
-        "first_period_goals": 3,
-        "first_period_complete": false,
-        "first_period_total_result": null,
+        "home_score": 3,
+        "first_period_goals": 4,
+        "first_period_complete": true,
+        "first_period_total_result": "OVER",
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-05"
       }
     },
@@ -218,10 +218,10 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025021224,
-        "state_code": "PRE",
-        "state_label": "Scheduled",
-        "period": 0,
-        "clock": null,
+        "state_code": "LIVE",
+        "state_label": "Live",
+        "period": 1,
+        "clock": "18:57",
         "in_intermission": false,
         "away_score": 0,
         "home_score": 0,
@@ -616,9 +616,9 @@
       "Likely": 3,
       "Unconfirmed": 4
     },
-    "live_games": 1,
-    "first_period_graded_games": 1,
-    "first_period_over_games": 0,
+    "live_games": 2,
+    "first_period_graded_games": 2,
+    "first_period_over_games": 1,
     "first_period_under_games": 1,
     "market_games_with_data": 5
   }
