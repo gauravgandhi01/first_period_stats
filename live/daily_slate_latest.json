@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-05",
-  "pulled_at_utc": "2026-04-06T01:15:00+00:00",
+  "pulled_at_utc": "2026-04-06T01:36:37+00:00",
   "target_date": "2026-04-05",
   "games": [
     {
@@ -370,12 +370,12 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025021226,
-        "state_code": "LIVE",
+        "state_code": "CRIT",
         "state_label": "Live",
         "period": 3,
-        "clock": "11:07",
+        "clock": "00:34",
         "in_intermission": false,
-        "away_score": 2,
+        "away_score": 3,
         "home_score": 0,
         "first_period_goals": 1,
         "first_period_complete": true,
@@ -446,10 +446,10 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025021227,
-        "state_code": "LIVE",
+        "state_code": "CRIT",
         "state_label": "Live",
         "period": 3,
-        "clock": "12:31",
+        "clock": "03:43",
         "in_intermission": false,
         "away_score": 1,
         "home_score": 7,
@@ -467,8 +467,8 @@
       "away": {
         "team_name_feed": "St Louis Blues",
         "goalie_name_feed": "Joel Hofer",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-06T01:25:43.885Z",
         "team_id": 19,
         "team_abbrev": "STL",
         "team_name": "St. Louis Blues",
@@ -483,8 +483,8 @@
       "home": {
         "team_name_feed": "Colorado Avalanche",
         "goalie_name_feed": "Mackenzie Blackwood",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-06T01:15:50.460Z",
         "team_id": 21,
         "team_abbrev": "COL",
         "team_name": "Colorado Avalanche",
@@ -556,8 +556,7 @@
     "projectable_games": 7,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 12,
-      "Unconfirmed": 2
+      "Confirmed": 14
     },
     "live_games": 2,
     "first_period_graded_games": 6,
