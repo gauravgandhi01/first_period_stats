@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-07",
-  "pulled_at_utc": "2026-04-07T23:30:01+00:00",
+  "pulled_at_utc": "2026-04-07T23:35:01+00:00",
   "target_date": "2026-04-07",
   "games": [
     {
@@ -69,11 +69,11 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "09:10",
+        "clock": "06:56",
         "in_intermission": false,
         "away_score": 1,
-        "home_score": 1,
-        "first_period_goals": 2,
+        "home_score": 2,
+        "first_period_goals": 3,
         "first_period_complete": false,
         "first_period_total_result": null,
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-07"
@@ -145,7 +145,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "08:09",
+        "clock": "05:33",
         "in_intermission": false,
         "away_score": 1,
         "home_score": 1,
@@ -221,7 +221,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "06:49",
+        "clock": "04:41",
         "in_intermission": false,
         "away_score": 1,
         "home_score": 0,
@@ -297,7 +297,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "05:56",
+        "clock": "03:07",
         "in_intermission": false,
         "away_score": 2,
         "home_score": 1,
@@ -373,7 +373,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "09:48",
+        "clock": "07:20",
         "in_intermission": false,
         "away_score": 0,
         "home_score": 0,
@@ -497,8 +497,8 @@
       "home": {
         "team_name_feed": "St Louis Blues",
         "goalie_name_feed": "Joel Hofer",
-        "status": "Likely",
-        "status_updated_at_utc": "2026-04-07T15:48:55.571Z",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-07T23:32:49.830Z",
         "team_id": 19,
         "team_abbrev": "STL",
         "team_name": "St. Louis Blues",
@@ -571,8 +571,8 @@
       "away": {
         "team_name_feed": "Seattle Kraken",
         "goalie_name_feed": "Joey Daccord",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-07T23:32:01.607Z",
         "team_id": 55,
         "team_abbrev": "SEA",
         "team_name": "Seattle Kraken",
@@ -930,9 +930,9 @@
     "projectable_games": 11,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 16,
-      "Likely": 2,
-      "Unconfirmed": 4
+      "Confirmed": 18,
+      "Likely": 1,
+      "Unconfirmed": 3
     },
     "live_games": 5,
     "first_period_graded_games": 0,
