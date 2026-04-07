@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-07",
-  "pulled_at_utc": "2026-04-07T23:50:00+00:00",
+  "pulled_at_utc": "2026-04-07T23:55:09+00:00",
   "target_date": "2026-04-07",
   "games": [
     {
@@ -69,13 +69,13 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "00:10",
-        "in_intermission": false,
+        "clock": "12:07",
+        "in_intermission": true,
         "away_score": 3,
         "home_score": 2,
         "first_period_goals": 5,
-        "first_period_complete": false,
-        "first_period_total_result": null,
+        "first_period_complete": true,
+        "first_period_total_result": "OVER",
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-07"
       }
     },
@@ -145,7 +145,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "11:35",
+        "clock": "06:34",
         "in_intermission": true,
         "away_score": 1,
         "home_score": 1,
@@ -221,7 +221,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "11:22",
+        "clock": "06:22",
         "in_intermission": true,
         "away_score": 1,
         "home_score": 0,
@@ -297,7 +297,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "08:10",
+        "clock": "03:10",
         "in_intermission": true,
         "away_score": 2,
         "home_score": 1,
@@ -373,7 +373,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "12:26",
+        "clock": "07:26",
         "in_intermission": true,
         "away_score": 0,
         "home_score": 0,
@@ -934,8 +934,8 @@
       "Unconfirmed": 3
     },
     "live_games": 5,
-    "first_period_graded_games": 4,
-    "first_period_over_games": 2,
+    "first_period_graded_games": 5,
+    "first_period_over_games": 3,
     "first_period_under_games": 2,
     "market_games_with_data": 6
   }
