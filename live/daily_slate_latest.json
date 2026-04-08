@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-08",
-  "pulled_at_utc": "2026-04-08T05:55:01+00:00",
+  "pulled_at_utc": "2026-04-08T14:00:01+00:00",
   "target_date": "2026-04-08",
   "games": [
     {
@@ -41,15 +41,15 @@
         "team_combined_pg": 1.821917808219178
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5392576574377657,
-        "prob_under_1p_1_5": 0.46074234256223434,
-        "over_american_odds": -117,
-        "under_american_odds": 117,
+        "prob_over_1p_1_5": 0.5331226789816959,
+        "prob_under_1p_1_5": 0.46687732101830415,
+        "over_american_odds": -114,
+        "under_american_odds": 114,
         "lambda_total": 1.7620676893793472,
         "model_prob_over_1p_1_5_raw": 0.5331226789816959,
-        "market_prob_over_1p_1_5_consensus": 0.5407914020517831,
-        "market_book_count": 5,
-        "market_dampening_weight": 0.8
+        "market_prob_over_1p_1_5_consensus": null,
+        "market_book_count": 0,
+        "market_dampening_weight": 0.0
       },
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 3/5 2+ (60.0%) | L10: 5/10 2+ (50.0%) | L15: 7/15 2+ (46.7%) | L20: 10/20 2+ (50.0%)",
@@ -77,12 +77,6 @@
         "first_period_complete": false,
         "first_period_total_result": null,
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-08"
-      },
-      "market_totals_p1": {
-        "book_count": 5,
-        "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5407914020517831,
-        "fanduel": null
       }
     },
     {
@@ -123,15 +117,15 @@
         "team_combined_pg": 1.821917808219178
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5363743906659133,
-        "prob_under_1p_1_5": 0.4636256093340867,
-        "over_american_odds": -116,
-        "under_american_odds": 116,
+        "prob_over_1p_1_5": 0.4714959419064345,
+        "prob_under_1p_1_5": 0.5285040580935655,
+        "over_american_odds": 112,
+        "under_american_odds": -112,
         "lambda_total": 1.4989206877853498,
         "model_prob_over_1p_1_5_raw": 0.4714959419064345,
-        "market_prob_over_1p_1_5_consensus": 0.552594002855783,
-        "market_book_count": 5,
-        "market_dampening_weight": 0.8
+        "market_prob_over_1p_1_5_consensus": null,
+        "market_book_count": 0,
+        "market_dampening_weight": 0.0
       },
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 1/5 2+ (20.0%) | L10: 2/10 2+ (20.0%) | L15: 5/15 2+ (33.3%) | L20: 6/20 2+ (30.0%)",
@@ -159,12 +153,6 @@
         "first_period_complete": false,
         "first_period_total_result": null,
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-08"
-      },
-      "market_totals_p1": {
-        "book_count": 5,
-        "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.552594002855783,
-        "fanduel": null
       }
     },
     {
@@ -205,15 +193,15 @@
         "team_combined_pg": 2.0428571428571427
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5697470061286685,
-        "prob_under_1p_1_5": 0.43025299387133153,
-        "over_american_odds": -132,
-        "under_american_odds": 132,
+        "prob_over_1p_1_5": 0.6061846770397097,
+        "prob_under_1p_1_5": 0.3938153229602903,
+        "over_american_odds": -154,
+        "under_american_odds": 154,
         "lambda_total": 2.1523118737927485,
         "model_prob_over_1p_1_5_raw": 0.6061846770397097,
-        "market_prob_over_1p_1_5_consensus": 0.5562700593533518,
-        "market_book_count": 4,
-        "market_dampening_weight": 0.73
+        "market_prob_over_1p_1_5_consensus": null,
+        "market_book_count": 0,
+        "market_dampening_weight": 0.0
       },
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 3/5 2+ (60.0%) | L10: 5/10 2+ (50.0%) | L15: 10/15 2+ (66.7%) | L20: 14/20 2+ (70.0%)",
@@ -241,16 +229,15 @@
         "first_period_complete": false,
         "first_period_total_result": null,
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-08"
-      },
-      "market_totals_p1": {
-        "book_count": 4,
-        "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5562700593533518,
-        "fanduel": null
       }
     }
   ],
-  "warnings": [],
+  "warnings": [
+    "Odds API quota precheck: selected key may be short (remaining=0, estimated_needed=7, events=3, credits_per_event=2).",
+    "Buffalo Sabres at New York Rangers: odds request failed (503)",
+    "Washington Capitals at Toronto Maple Leafs: odds request failed (401)",
+    "Edmonton Oilers at San Jose Sharks: odds request failed (401)"
+  ],
   "meta": {
     "total_games": 3,
     "projectable_games": 3,
@@ -262,6 +249,6 @@
     "first_period_graded_games": 0,
     "first_period_over_games": 0,
     "first_period_under_games": 0,
-    "market_games_with_data": 3
+    "market_games_with_data": 0
   }
 }
