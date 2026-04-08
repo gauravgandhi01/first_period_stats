@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-08",
-  "pulled_at_utc": "2026-04-08T14:45:01+00:00",
+  "pulled_at_utc": "2026-04-08T14:50:00+00:00",
   "target_date": "2026-04-08",
   "games": [
     {
@@ -27,8 +27,8 @@
       "home": {
         "team_name_feed": "New York Rangers",
         "goalie_name_feed": "Igor Shesterkin",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-08T14:47:06.457Z",
         "team_id": 3,
         "team_abbrev": "NYR",
         "team_name": "New York Rangers",
@@ -243,8 +243,9 @@
     "projectable_games": 3,
     "failed_games": 0,
     "status_counts": {
+      "Confirmed": 1,
       "Likely": 1,
-      "Unconfirmed": 5
+      "Unconfirmed": 4
     },
     "live_games": 0,
     "first_period_graded_games": 0,
