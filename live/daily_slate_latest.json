@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-08",
-  "pulled_at_utc": "2026-04-08T14:30:01+00:00",
+  "pulled_at_utc": "2026-04-08T14:35:00+00:00",
   "target_date": "2026-04-08",
   "games": [
     {
@@ -102,27 +102,27 @@
       },
       "home": {
         "team_name_feed": "Toronto Maple Leafs",
-        "goalie_name_feed": "Joseph Woll",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "goalie_name_feed": "Anthony Stolarz",
+        "status": "Likely",
+        "status_updated_at_utc": "2026-04-08T14:32:25.198Z",
         "team_id": 10,
         "team_abbrev": "TOR",
         "team_name": "Toronto Maple Leafs",
-        "goalie_id": 8479361,
-        "goalie_name": "Joseph Woll",
-        "goalie_games": 35,
-        "goalie_ga_pg": 1.0,
-        "goalie_save_pct": 90.64171122994652,
+        "goalie_id": 8476932,
+        "goalie_name": "Anthony Stolarz",
+        "goalie_games": 22,
+        "goalie_ga_pg": 1.1363636363636365,
+        "goalie_save_pct": 88.20754716981132,
         "team_o15_pct": 0.6164383561643836,
         "team_combined_pg": 1.821917808219178
       },
       "projection": {
-        "prob_over_1p_1_5": 0.4714959419064345,
-        "prob_under_1p_1_5": 0.5285040580935655,
-        "over_american_odds": 112,
-        "under_american_odds": -112,
-        "lambda_total": 1.4989206877853498,
-        "model_prob_over_1p_1_5_raw": 0.4714959419064345,
+        "prob_over_1p_1_5": 0.49326007145978706,
+        "prob_under_1p_1_5": 0.506739928540213,
+        "over_american_odds": 103,
+        "under_american_odds": -103,
+        "lambda_total": 1.606611433790381,
+        "model_prob_over_1p_1_5_raw": 0.49326007145978706,
         "market_prob_over_1p_1_5_consensus": null,
         "market_book_count": 0,
         "market_dampening_weight": 0.0
@@ -131,7 +131,7 @@
         "away_team_l5_l10_l15_o15": "L5: 1/5 2+ (20.0%) | L10: 2/10 2+ (20.0%) | L15: 5/15 2+ (33.3%) | L20: 6/20 2+ (30.0%)",
         "home_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 6/10 2+ (60.0%) | L15: 11/15 2+ (73.3%) | L20: 12/20 2+ (60.0%)",
         "away_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 2/10 allow 2+ (20.0%) | L15: 2/15 allow 2+ (13.3%) | L20: 3/20 allow 2+ (15.0%)",
-        "home_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 4/10 allow 2+ (40.0%) | L15: 6/15 allow 2+ (40.0%) | L20: 8/20 allow 2+ (40.0%)",
+        "home_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 3/10 allow 2+ (30.0%) | L15: 5/15 allow 2+ (33.3%) | L20: 6/20 allow 2+ (30.0%)",
         "h2h_games": 2,
         "h2h_o15_hits": 1,
         "h2h_o15_pct": 0.5,
@@ -243,7 +243,8 @@
     "projectable_games": 3,
     "failed_games": 0,
     "status_counts": {
-      "Unconfirmed": 6
+      "Likely": 1,
+      "Unconfirmed": 5
     },
     "live_games": 0,
     "first_period_graded_games": 0,
