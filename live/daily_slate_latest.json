@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-08",
-  "pulled_at_utc": "2026-04-08T14:55:00+00:00",
+  "pulled_at_utc": "2026-04-08T15:00:01+00:00",
   "target_date": "2026-04-08",
   "games": [
     {
@@ -11,8 +11,8 @@
       "away": {
         "team_name_feed": "Buffalo Sabres",
         "goalie_name_feed": "Ukko-Pekka Luukkonen",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Likely",
+        "status_updated_at_utc": "2026-04-08T14:53:44.622Z",
         "team_id": 7,
         "team_abbrev": "BUF",
         "team_name": "Buffalo Sabres",
@@ -244,8 +244,8 @@
     "failed_games": 0,
     "status_counts": {
       "Confirmed": 1,
-      "Likely": 1,
-      "Unconfirmed": 4
+      "Likely": 2,
+      "Unconfirmed": 3
     },
     "live_games": 0,
     "first_period_graded_games": 0,
