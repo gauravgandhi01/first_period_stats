@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-09",
-  "pulled_at_utc": "2026-04-09T15:45:01+00:00",
+  "pulled_at_utc": "2026-04-09T15:50:01+00:00",
   "target_date": "2026-04-09",
   "games": [
     {
@@ -568,27 +568,27 @@
       },
       "home": {
         "team_name_feed": "St Louis Blues",
-        "goalie_name_feed": "Joel Hofer",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "goalie_name_feed": "Jordan Binnington",
+        "status": "Likely",
+        "status_updated_at_utc": "2026-04-09T15:46:36.821Z",
         "team_id": 19,
         "team_abbrev": "STL",
         "team_name": "St. Louis Blues",
-        "goalie_id": 8480981,
-        "goalie_name": "Joel Hofer",
-        "goalie_games": 37,
-        "goalie_ga_pg": 0.7027027027027027,
-        "goalie_save_pct": 92.12121212121212,
+        "goalie_id": 8476412,
+        "goalie_name": "Jordan Binnington",
+        "goalie_games": 36,
+        "goalie_ga_pg": 1.0277777777777777,
+        "goalie_save_pct": 88.92215568862275,
         "team_o15_pct": 0.5492957746478874,
         "team_combined_pg": 1.6619718309859155
       },
       "projection": {
-        "prob_over_1p_1_5": 0.4852071719334713,
-        "prob_under_1p_1_5": 0.5147928280665287,
-        "over_american_odds": 106,
-        "under_american_odds": -106,
-        "lambda_total": 1.1905009304841923,
-        "model_prob_over_1p_1_5_raw": 0.40138114622314186,
+        "prob_over_1p_1_5": 0.49521167519015463,
+        "prob_under_1p_1_5": 0.5047883248098454,
+        "over_american_odds": 102,
+        "under_american_odds": -102,
+        "lambda_total": 1.5006336974601362,
+        "model_prob_over_1p_1_5_raw": 0.4680778346010308,
         "market_prob_over_1p_1_5_consensus": 0.5,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
@@ -597,7 +597,7 @@
         "away_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 4/10 2+ (40.0%) | L15: 5/15 2+ (33.3%) | L20: 7/20 2+ (35.0%)",
         "home_team_l5_l10_l15_o15": "L5: 1/5 2+ (20.0%) | L10: 1/10 2+ (10.0%) | L15: 4/15 2+ (26.7%) | L20: 7/20 2+ (35.0%)",
         "away_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 1/10 allow 2+ (10.0%) | L15: 1/15 allow 2+ (6.7%) | L20: 1/20 allow 2+ (5.0%)",
-        "home_goalie_l5_l10_l15_allow2": "L5: 0/5 allow 2+ (0.0%) | L10: 0/10 allow 2+ (0.0%) | L15: 2/15 allow 2+ (13.3%) | L20: 2/20 allow 2+ (10.0%)",
+        "home_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 3/10 allow 2+ (30.0%) | L15: 5/15 allow 2+ (33.3%) | L20: 9/20 allow 2+ (45.0%)",
         "h2h_games": 3,
         "h2h_o15_hits": 2,
         "h2h_o15_pct": 0.6666666666666666,
@@ -1273,8 +1273,8 @@
     "failed_games": 0,
     "status_counts": {
       "Confirmed": 5,
-      "Likely": 3,
-      "Unconfirmed": 20
+      "Likely": 4,
+      "Unconfirmed": 19
     },
     "live_games": 0,
     "first_period_graded_games": 0,
