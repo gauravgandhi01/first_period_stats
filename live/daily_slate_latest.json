@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-09",
-  "pulled_at_utc": "2026-04-09T17:40:00+00:00",
+  "pulled_at_utc": "2026-04-09T17:45:01+00:00",
   "target_date": "2026-04-09",
   "games": [
     {
@@ -569,8 +569,8 @@
       "home": {
         "team_name_feed": "St Louis Blues",
         "goalie_name_feed": "Jordan Binnington",
-        "status": "Likely",
-        "status_updated_at_utc": "2026-04-09T15:46:36.821Z",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-09T17:43:14.511Z",
         "team_id": 19,
         "team_abbrev": "STL",
         "team_name": "St. Louis Blues",
@@ -913,8 +913,8 @@
       "away": {
         "team_name_feed": "Nashville Predators",
         "goalie_name_feed": "Juuse Saros",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-09T17:42:25.896Z",
         "team_id": 18,
         "team_abbrev": "NSH",
         "team_name": "Nashville Predators",
@@ -1272,9 +1272,9 @@
     "projectable_games": 14,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 13,
-      "Likely": 5,
-      "Unconfirmed": 10
+      "Confirmed": 15,
+      "Likely": 4,
+      "Unconfirmed": 9
     },
     "live_games": 0,
     "first_period_graded_games": 0,
