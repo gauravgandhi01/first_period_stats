@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-09",
-  "pulled_at_utc": "2026-04-09T18:10:01+00:00",
+  "pulled_at_utc": "2026-04-09T18:15:00+00:00",
   "target_date": "2026-04-09",
   "games": [
     {
@@ -1109,8 +1109,8 @@
       "home": {
         "team_name_feed": "Seattle Kraken",
         "goalie_name_feed": "Joey Daccord",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-09T18:10:04.515Z",
         "team_id": 55,
         "team_abbrev": "SEA",
         "team_name": "Seattle Kraken",
@@ -1272,9 +1272,9 @@
     "projectable_games": 14,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 15,
+      "Confirmed": 16,
       "Likely": 6,
-      "Unconfirmed": 7
+      "Unconfirmed": 6
     },
     "live_games": 0,
     "first_period_graded_games": 0,
