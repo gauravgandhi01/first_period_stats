@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-09",
-  "pulled_at_utc": "2026-04-09T15:55:01+00:00",
+  "pulled_at_utc": "2026-04-09T16:00:00+00:00",
   "target_date": "2026-04-09",
   "games": [
     {
@@ -372,17 +372,17 @@
       "game_time_et": "2026-04-09 07:00 PM ET",
       "away": {
         "team_name_feed": "Pittsburgh Penguins",
-        "goalie_name_feed": "Arturs Silovs",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "goalie_name_feed": "Sergei Murashov",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-09T15:53:31.746Z",
         "team_id": 5,
         "team_abbrev": "PIT",
         "team_name": "Pittsburgh Penguins",
-        "goalie_id": 8481668,
-        "goalie_name": "Arturs Silovs",
-        "goalie_games": 34,
-        "goalie_ga_pg": 1.0294117647058822,
-        "goalie_save_pct": 88.44884488448845,
+        "goalie_id": 8483703,
+        "goalie_name": "Sergei Murashov",
+        "goalie_games": 4,
+        "goalie_ga_pg": 0.25,
+        "goalie_save_pct": 95.45454545454545,
         "team_o15_pct": 0.5972222222222222,
         "team_combined_pg": 1.9583333333333333
       },
@@ -403,12 +403,12 @@
         "team_combined_pg": 1.676056338028169
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5609500864777721,
-        "prob_under_1p_1_5": 0.4390499135222279,
-        "over_american_odds": -128,
-        "under_american_odds": 128,
-        "lambda_total": 2.0749871483983378,
-        "model_prob_over_1p_1_5_raw": 0.5863452501001754,
+        "prob_over_1p_1_5": 0.5473874760942212,
+        "prob_under_1p_1_5": 0.4526125239057788,
+        "over_american_odds": -121,
+        "under_american_odds": 121,
+        "lambda_total": 1.5748003937272452,
+        "model_prob_over_1p_1_5_raw": 0.4959278475431699,
         "market_prob_over_1p_1_5_consensus": 0.556468587014995,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
@@ -416,7 +416,7 @@
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 3/5 2+ (60.0%) | L10: 6/10 2+ (60.0%) | L15: 9/15 2+ (60.0%) | L20: 12/20 2+ (60.0%)",
         "home_team_l5_l10_l15_o15": "L5: 3/5 2+ (60.0%) | L10: 7/10 2+ (70.0%) | L15: 8/15 2+ (53.3%) | L20: 10/20 2+ (50.0%)",
-        "away_goalie_l5_l10_l15_allow2": "L5: 2/5 allow 2+ (40.0%) | L10: 2/10 allow 2+ (20.0%) | L15: 2/15 allow 2+ (13.3%) | L20: 3/20 allow 2+ (15.0%)",
+        "away_goalie_l5_l10_l15_allow2": "L5: 0/4 allow 2+ (0.0%) | L10: 0/4 allow 2+ (0.0%) | L15: 0/4 allow 2+ (0.0%) | L20: 0/4 allow 2+ (0.0%)",
         "home_goalie_l5_l10_l15_allow2": "L5: 0/5 allow 2+ (0.0%) | L10: 0/10 allow 2+ (0.0%) | L15: 0/15 allow 2+ (0.0%) | L20: 0/20 allow 2+ (0.0%)",
         "h2h_games": 3,
         "h2h_o15_hits": 0,
@@ -839,8 +839,8 @@
       "home": {
         "team_name_feed": "Dallas Stars",
         "goalie_name_feed": "Jake Oettinger",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-09T15:57:47.211Z",
         "team_id": 25,
         "team_abbrev": "DAL",
         "team_name": "Dallas Stars",
@@ -1272,9 +1272,9 @@
     "projectable_games": 14,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 5,
+      "Confirmed": 7,
       "Likely": 5,
-      "Unconfirmed": 18
+      "Unconfirmed": 16
     },
     "live_games": 0,
     "first_period_graded_games": 0,
