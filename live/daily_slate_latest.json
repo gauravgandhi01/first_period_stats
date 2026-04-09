@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-09",
-  "pulled_at_utc": "2026-04-09T19:05:01+00:00",
+  "pulled_at_utc": "2026-04-09T19:10:01+00:00",
   "target_date": "2026-04-09",
   "games": [
     {
@@ -1183,8 +1183,8 @@
       "away": {
         "team_name_feed": "Vancouver Canucks",
         "goalie_name_feed": "Nikita Tolopilo",
-        "status": "Likely",
-        "status_updated_at_utc": "2026-04-09T18:09:22.803Z",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-09T19:07:41.559Z",
         "team_id": 23,
         "team_abbrev": "VAN",
         "team_name": "Vancouver Canucks",
@@ -1272,8 +1272,8 @@
     "projectable_games": 14,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 19,
-      "Likely": 4,
+      "Confirmed": 20,
+      "Likely": 3,
       "Unconfirmed": 5
     },
     "live_games": 0,
