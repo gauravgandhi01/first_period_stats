@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-09",
-  "pulled_at_utc": "2026-04-09T16:35:00+00:00",
+  "pulled_at_utc": "2026-04-09T16:40:01+00:00",
   "target_date": "2026-04-09",
   "games": [
     {
@@ -553,8 +553,8 @@
       "away": {
         "team_name_feed": "Winnipeg Jets",
         "goalie_name_feed": "Connor Hellebuyck",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Likely",
+        "status_updated_at_utc": "2026-04-09T16:36:44.215Z",
         "team_id": 52,
         "team_abbrev": "WPG",
         "team_name": "Winnipeg Jets",
@@ -749,8 +749,8 @@
       "home": {
         "team_name_feed": "Colorado Avalanche",
         "goalie_name_feed": "Mackenzie Blackwood",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-09T16:32:49.436Z",
         "team_id": 21,
         "team_abbrev": "COL",
         "team_name": "Colorado Avalanche",
@@ -823,8 +823,8 @@
       "away": {
         "team_name_feed": "Minnesota Wild",
         "goalie_name_feed": "Filip Gustavsson",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-09T16:36:18.622Z",
         "team_id": 30,
         "team_abbrev": "MIN",
         "team_name": "Minnesota Wild",
@@ -1272,9 +1272,9 @@
     "projectable_games": 14,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 10,
-      "Likely": 3,
-      "Unconfirmed": 15
+      "Confirmed": 12,
+      "Likely": 4,
+      "Unconfirmed": 12
     },
     "live_games": 0,
     "first_period_graded_games": 0,
