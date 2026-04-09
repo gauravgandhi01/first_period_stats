@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-09",
-  "pulled_at_utc": "2026-04-09T16:15:01+00:00",
+  "pulled_at_utc": "2026-04-09T16:20:01+00:00",
   "target_date": "2026-04-09",
   "games": [
     {
@@ -103,8 +103,8 @@
       "away": {
         "team_name_feed": "Columbus Blue Jackets",
         "goalie_name_feed": "Jet Greaves",
-        "status": "Likely",
-        "status_updated_at_utc": "2026-04-09T15:33:19.025Z",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-09T16:13:30.142Z",
         "team_id": 29,
         "team_abbrev": "CBJ",
         "team_name": "Columbus Blue Jackets",
@@ -193,8 +193,8 @@
       "away": {
         "team_name_feed": "Florida Panthers",
         "goalie_name_feed": "Sergei Bobrovsky",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-09T16:18:19.426Z",
         "team_id": 13,
         "team_abbrev": "FLA",
         "team_name": "Florida Panthers",
@@ -1272,9 +1272,9 @@
     "projectable_games": 14,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 8,
-      "Likely": 4,
-      "Unconfirmed": 16
+      "Confirmed": 10,
+      "Likely": 3,
+      "Unconfirmed": 15
     },
     "live_games": 0,
     "first_period_graded_games": 0,
