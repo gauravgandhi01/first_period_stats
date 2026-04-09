@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-09",
-  "pulled_at_utc": "2026-04-09T15:30:00+00:00",
+  "pulled_at_utc": "2026-04-09T15:35:00+00:00",
   "target_date": "2026-04-09",
   "games": [
     {
@@ -103,8 +103,8 @@
       "away": {
         "team_name_feed": "Columbus Blue Jackets",
         "goalie_name_feed": "Jet Greaves",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Likely",
+        "status_updated_at_utc": "2026-04-09T15:33:19.025Z",
         "team_id": 29,
         "team_abbrev": "CBJ",
         "team_name": "Columbus Blue Jackets",
@@ -479,8 +479,8 @@
       "home": {
         "team_name_feed": "Montreal Canadiens",
         "goalie_name_feed": "Jakub Dobes",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Likely",
+        "status_updated_at_utc": "2026-04-09T15:32:06.125Z",
         "team_id": 8,
         "team_abbrev": "MTL",
         "team_name": "Montr\u00e9al Canadiens",
@@ -1273,7 +1273,8 @@
     "failed_games": 0,
     "status_counts": {
       "Confirmed": 4,
-      "Unconfirmed": 24
+      "Likely": 2,
+      "Unconfirmed": 22
     },
     "live_games": 0,
     "first_period_graded_games": 0,
