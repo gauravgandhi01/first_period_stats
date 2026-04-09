@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-08",
-  "pulled_at_utc": "2026-04-09T01:00:01+00:00",
+  "pulled_at_utc": "2026-04-09T01:05:00+00:00",
   "target_date": "2026-04-08",
   "games": [
     {
@@ -69,7 +69,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "08:04",
+        "clock": "03:05",
         "in_intermission": true,
         "away_score": 2,
         "home_score": 3,
@@ -117,15 +117,15 @@
         "team_combined_pg": 1.821917808219178
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5434873289040392,
-        "prob_under_1p_1_5": 0.45651267109596083,
-        "over_american_odds": -119,
-        "under_american_odds": 119,
+        "prob_over_1p_1_5": 0.49326007145978706,
+        "prob_under_1p_1_5": 0.506739928540213,
+        "over_american_odds": 103,
+        "under_american_odds": -103,
         "lambda_total": 1.606611433790381,
         "model_prob_over_1p_1_5_raw": 0.49326007145978706,
-        "market_prob_over_1p_1_5_consensus": 0.552350962570672,
-        "market_book_count": 8,
-        "market_dampening_weight": 0.85
+        "market_prob_over_1p_1_5_consensus": null,
+        "market_book_count": 0,
+        "market_dampening_weight": 0.0
       },
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 1/5 2+ (20.0%) | L10: 2/10 2+ (20.0%) | L15: 5/15 2+ (33.3%) | L20: 6/20 2+ (30.0%)",
@@ -145,7 +145,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "08:38",
+        "clock": "07:01",
         "in_intermission": false,
         "away_score": 3,
         "home_score": 0,
@@ -153,20 +153,6 @@
         "first_period_complete": true,
         "first_period_total_result": "UNDER",
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-08"
-      },
-      "market_totals_p1": {
-        "book_count": 8,
-        "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.552350962570672,
-        "fanduel": {
-          "bookmaker_key": "fanduel",
-          "bookmaker_title": "FanDuel",
-          "point": 1.5,
-          "over_price": -128.0,
-          "under_price": 102.0,
-          "over_no_vig_prob": 0.5314041433738902,
-          "last_update": "2026-04-08T23:29:36Z"
-        }
       }
     },
     {
@@ -255,7 +241,7 @@
           "over_price": -150.0,
           "under_price": 118.0,
           "over_no_vig_prob": 0.5667244367417678,
-          "last_update": "2026-04-08T23:29:58Z"
+          "last_update": "2026-04-09T01:04:16Z"
         }
       }
     }
@@ -273,6 +259,6 @@
     "first_period_graded_games": 2,
     "first_period_over_games": 1,
     "first_period_under_games": 1,
-    "market_games_with_data": 2
+    "market_games_with_data": 1
   }
 }
