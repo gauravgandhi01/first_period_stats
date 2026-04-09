@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-08",
-  "pulled_at_utc": "2026-04-09T01:30:01+00:00",
+  "pulled_at_utc": "2026-04-09T01:35:00+00:00",
   "target_date": "2026-04-08",
   "games": [
     {
@@ -66,10 +66,10 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025021244,
-        "state_code": "LIVE",
+        "state_code": "CRIT",
         "state_label": "Live",
         "period": 3,
-        "clock": "07:25",
+        "clock": "04:04",
         "in_intermission": false,
         "away_score": 4,
         "home_score": 3,
@@ -145,7 +145,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "06:24",
+        "clock": "01:14",
         "in_intermission": true,
         "away_score": 3,
         "home_score": 0,
@@ -163,8 +163,8 @@
       "away": {
         "team_name_feed": "Edmonton Oilers",
         "goalie_name_feed": "Connor Ingram",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-09T01:33:17.412Z",
         "team_id": 22,
         "team_abbrev": "EDM",
         "team_name": "Edmonton Oilers",
@@ -252,8 +252,7 @@
     "projectable_games": 3,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 5,
-      "Unconfirmed": 1
+      "Confirmed": 6
     },
     "live_games": 2,
     "first_period_graded_games": 2,
