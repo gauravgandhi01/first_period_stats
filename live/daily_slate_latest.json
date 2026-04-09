@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-09",
-  "pulled_at_utc": "2026-04-09T23:40:00+00:00",
+  "pulled_at_utc": "2026-04-09T23:45:00+00:00",
   "target_date": "2026-04-09",
   "games": [
     {
@@ -71,7 +71,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "10:49",
+        "clock": "05:50",
         "in_intermission": true,
         "away_score": 1,
         "home_score": 2,
@@ -161,7 +161,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "04:18",
+        "clock": "01:31",
         "in_intermission": false,
         "away_score": 0,
         "home_score": 1,
@@ -251,13 +251,13 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "01:34",
-        "in_intermission": false,
+        "clock": "15:04",
+        "in_intermission": true,
         "away_score": 0,
         "home_score": 2,
         "first_period_goals": 2,
-        "first_period_complete": false,
-        "first_period_total_result": null,
+        "first_period_complete": true,
+        "first_period_total_result": "OVER",
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-09"
       },
       "market_totals_p1": {
@@ -341,7 +341,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "05:21",
+        "clock": "03:48",
         "in_intermission": false,
         "away_score": 1,
         "home_score": 1,
@@ -431,13 +431,13 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "00:04",
-        "in_intermission": false,
+        "clock": "12:41",
+        "in_intermission": true,
         "away_score": 1,
         "home_score": 0,
         "first_period_goals": 1,
-        "first_period_complete": false,
-        "first_period_total_result": null,
+        "first_period_complete": true,
+        "first_period_total_result": "UNDER",
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-09"
       },
       "market_totals_p1": {
@@ -521,7 +521,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "03:14",
+        "clock": "00:54",
         "in_intermission": false,
         "away_score": 0,
         "home_score": 0,
@@ -1277,9 +1277,9 @@
       "Unconfirmed": 2
     },
     "live_games": 6,
-    "first_period_graded_games": 1,
-    "first_period_over_games": 1,
-    "first_period_under_games": 0,
+    "first_period_graded_games": 3,
+    "first_period_over_games": 2,
+    "first_period_under_games": 1,
     "market_games_with_data": 14
   }
 }
