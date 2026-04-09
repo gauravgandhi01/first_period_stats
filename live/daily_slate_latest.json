@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-09",
-  "pulled_at_utc": "2026-04-09T18:20:01+00:00",
+  "pulled_at_utc": "2026-04-09T18:25:01+00:00",
   "target_date": "2026-04-09",
   "games": [
     {
@@ -1092,17 +1092,17 @@
       "game_time_et": "2026-04-09 10:00 PM ET",
       "away": {
         "team_name_feed": "Vegas Golden Knights",
-        "goalie_name_feed": "Carter Hart",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "goalie_name_feed": "Adin Hill",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-09T18:22:38.230Z",
         "team_id": 54,
         "team_abbrev": "VGK",
         "team_name": "Vegas Golden Knights",
-        "goalie_id": 8479394,
-        "goalie_name": "Carter Hart",
-        "goalie_games": 12,
-        "goalie_ga_pg": 0.8333333333333334,
-        "goalie_save_pct": 88.23529411764706,
+        "goalie_id": 8478499,
+        "goalie_name": "Adin Hill",
+        "goalie_games": 24,
+        "goalie_ga_pg": 1.0833333333333333,
+        "goalie_save_pct": 85.6353591160221,
         "team_o15_pct": 0.547945205479452,
         "team_combined_pg": 1.8493150684931507
       },
@@ -1123,12 +1123,12 @@
         "team_combined_pg": 1.6338028169014085
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5306319513646434,
-        "prob_under_1p_1_5": 0.46936804863535664,
-        "over_american_odds": -113,
-        "under_american_odds": 113,
-        "lambda_total": 1.738621834769114,
-        "model_prob_over_1p_1_5_raw": 0.53074362134252,
+        "prob_over_1p_1_5": 0.5356085237017562,
+        "prob_under_1p_1_5": 0.46439147629824384,
+        "over_american_odds": -115,
+        "under_american_odds": 115,
+        "lambda_total": 1.922459811153746,
+        "model_prob_over_1p_1_5_raw": 0.5639207702566054,
         "market_prob_over_1p_1_5_consensus": 0.5306122448979592,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
@@ -1136,7 +1136,7 @@
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 3/10 2+ (30.0%) | L15: 4/15 2+ (26.7%) | L20: 7/20 2+ (35.0%)",
         "home_team_l5_l10_l15_o15": "L5: 4/5 2+ (80.0%) | L10: 9/10 2+ (90.0%) | L15: 12/15 2+ (80.0%) | L20: 15/20 2+ (75.0%)",
-        "away_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 2/10 allow 2+ (20.0%) | L15: 2/12 allow 2+ (16.7%) | L20: 2/12 allow 2+ (16.7%)",
+        "away_goalie_l5_l10_l15_allow2": "L5: 2/5 allow 2+ (40.0%) | L10: 3/10 allow 2+ (30.0%) | L15: 3/15 allow 2+ (20.0%) | L20: 4/20 allow 2+ (20.0%)",
         "home_goalie_l5_l10_l15_allow2": "L5: 2/5 allow 2+ (40.0%) | L10: 3/10 allow 2+ (30.0%) | L15: 4/15 allow 2+ (26.7%) | L20: 5/20 allow 2+ (25.0%)",
         "h2h_games": 2,
         "h2h_o15_hits": 1,
@@ -1272,9 +1272,9 @@
     "projectable_games": 14,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 16,
+      "Confirmed": 17,
       "Likely": 6,
-      "Unconfirmed": 6
+      "Unconfirmed": 5
     },
     "live_games": 0,
     "first_period_graded_games": 0,
