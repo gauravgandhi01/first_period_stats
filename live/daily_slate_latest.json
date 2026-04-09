@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-09",
-  "pulled_at_utc": "2026-04-09T15:40:01+00:00",
+  "pulled_at_utc": "2026-04-09T15:45:01+00:00",
   "target_date": "2026-04-09",
   "games": [
     {
@@ -283,8 +283,8 @@
       "away": {
         "team_name_feed": "Philadelphia Flyers",
         "goalie_name_feed": "Dan Vladar",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Likely",
+        "status_updated_at_utc": "2026-04-09T15:41:46.831Z",
         "team_id": 4,
         "team_abbrev": "PHI",
         "team_name": "Philadelphia Flyers",
@@ -1273,8 +1273,8 @@
     "failed_games": 0,
     "status_counts": {
       "Confirmed": 5,
-      "Likely": 2,
-      "Unconfirmed": 21
+      "Likely": 3,
+      "Unconfirmed": 20
     },
     "live_games": 0,
     "first_period_graded_games": 0,
