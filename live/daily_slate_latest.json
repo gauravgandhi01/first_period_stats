@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-09",
-  "pulled_at_utc": "2026-04-09T21:00:02+00:00",
+  "pulled_at_utc": "2026-04-09T21:05:00+00:00",
   "target_date": "2026-04-09",
   "games": [
     {
@@ -119,8 +119,8 @@
       "home": {
         "team_name_feed": "Buffalo Sabres",
         "goalie_name_feed": "Colten Ellis",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-09T21:02:32.009Z",
         "team_id": 7,
         "team_abbrev": "BUF",
         "team_name": "Buffalo Sabres",
@@ -1272,9 +1272,9 @@
     "projectable_games": 14,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 21,
+      "Confirmed": 22,
       "Likely": 2,
-      "Unconfirmed": 5
+      "Unconfirmed": 4
     },
     "live_games": 0,
     "first_period_graded_games": 0,
