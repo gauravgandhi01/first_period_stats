@@ -1,18 +1,17 @@
 {
-  "updated_at_utc": "2026-04-10T01:30:02+00:00",
+  "updated_at_utc": "2026-04-10T01:35:07+00:00",
   "target_date": "2026-04-09",
   "sheet_json": "/Users/ggandhi001/nhl_tools/firstperiodstats/live/daily_slate_latest.json",
   "sheet_csv": "/Users/ggandhi001/nhl_tools/firstperiodstats/live/daily_slate_latest.csv",
   "games_total": 14,
   "games_projectable": 14,
   "games_failed": 0,
-  "games_live": 9,
+  "games_live": 8,
   "first_period_graded_games": 8,
   "first_period_over_games": 5,
   "first_period_under_games": 3,
   "status_counts": {
-    "Confirmed": 26,
-    "Unconfirmed": 2
+    "Confirmed": 28
   },
   "odds_refresh_minutes": 90.0,
   "force_refresh_odds": false
