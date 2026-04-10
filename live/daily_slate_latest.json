@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-11",
-  "pulled_at_utc": "2026-04-10T15:00:01+00:00",
+  "pulled_at_utc": "2026-04-10T15:05:01+00:00",
   "target_date": "2026-04-11",
   "games": [
     {
@@ -862,7 +862,7 @@
       },
       "home": {
         "team_name_feed": "Toronto Maple Leafs",
-        "goalie_name_feed": "Artur Akhtyamov",
+        "goalie_name_feed": "Joseph Woll",
         "status": "Unconfirmed",
         "status_updated_at_utc": null,
         "team_id": 10,
@@ -898,9 +898,7 @@
         "h2h_avg_combined_1p": 2.0,
         "h2h_recent_scores": "2026-02-26: FLA 3-0 TOR (1P total 3) | 2026-01-06: FLA 0-1 TOR (1P total 1) | 2025-12-02: FLA 0-2 TOR (1P total 2)"
       },
-      "notes": [
-        "Home starter fallback used: Joseph Woll"
-      ],
+      "notes": [],
       "error": null,
       "game_status": {
         "nhl_game_id": 2025021270,
