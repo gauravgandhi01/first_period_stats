@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-11",
-  "pulled_at_utc": "2026-04-10T05:30:01+00:00",
+  "pulled_at_utc": "2026-04-10T05:35:01+00:00",
   "target_date": "2026-04-11",
   "games": [
     {
@@ -1146,13 +1146,7 @@
       }
     }
   ],
-  "warnings": [
-    "Odds API quota precheck: selected key may be short (remaining=0, estimated_needed=9, events=4, credits_per_event=2).",
-    "St Louis Blues at Chicago Blackhawks: odds request failed (401)",
-    "Calgary Flames at Seattle Kraken: odds request failed (401)",
-    "Florida Panthers at Toronto Maple Leafs: odds request failed (401)",
-    "Vancouver Canucks at San Jose Sharks: odds request failed (401)"
-  ],
+  "warnings": [],
   "meta": {
     "total_games": 15,
     "projectable_games": 15,
