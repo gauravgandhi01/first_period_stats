@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-11",
-  "pulled_at_utc": "2026-04-11T20:40:01+00:00",
+  "pulled_at_utc": "2026-04-11T20:45:00+00:00",
   "target_date": "2026-04-11",
   "games": [
     {
@@ -221,7 +221,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "06:20",
+        "clock": "04:59",
         "in_intermission": false,
         "away_score": 4,
         "home_score": 2,
@@ -297,7 +297,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "03:19",
+        "clock": "00:51",
         "in_intermission": false,
         "away_score": 0,
         "home_score": 1,
@@ -331,8 +331,8 @@
       "home": {
         "team_name_feed": "Utah Mammoth",
         "goalie_name_feed": "Karel Vejmelka",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-11T20:43:32.730Z",
         "team_id": 68,
         "team_abbrev": "UTA",
         "team_name": "Utah Mammoth",
@@ -925,8 +925,8 @@
       "away": {
         "team_name_feed": "Philadelphia Flyers",
         "goalie_name_feed": "Dan Vladar",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-11T20:42:11.445Z",
         "team_id": 4,
         "team_abbrev": "PHI",
         "team_name": "Philadelphia Flyers",
@@ -1166,8 +1166,8 @@
     "projectable_games": 15,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 23,
-      "Unconfirmed": 7
+      "Confirmed": 25,
+      "Unconfirmed": 5
     },
     "live_games": 2,
     "first_period_graded_games": 3,
