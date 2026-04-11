@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-11",
-  "pulled_at_utc": "2026-04-11T23:50:00+00:00",
+  "pulled_at_utc": "2026-04-11T23:55:00+00:00",
   "target_date": "2026-04-11",
   "games": [
     {
@@ -755,7 +755,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "13:33",
+        "clock": "08:37",
         "in_intermission": true,
         "away_score": 0,
         "home_score": 0,
@@ -845,13 +845,13 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "00:25",
-        "in_intermission": false,
+        "clock": "12:29",
+        "in_intermission": true,
         "away_score": 2,
         "home_score": 1,
         "first_period_goals": 3,
-        "first_period_complete": false,
-        "first_period_total_result": null,
+        "first_period_complete": true,
+        "first_period_total_result": "OVER",
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-11"
       },
       "market_totals_p1": {
@@ -935,13 +935,13 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "03:01",
-        "in_intermission": false,
+        "clock": "16:10",
+        "in_intermission": true,
         "away_score": 2,
         "home_score": 0,
         "first_period_goals": 2,
-        "first_period_complete": false,
-        "first_period_total_result": null,
+        "first_period_complete": true,
+        "first_period_total_result": "OVER",
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-11"
       },
       "market_totals_p1": {
@@ -1025,13 +1025,13 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "02:57",
-        "in_intermission": false,
+        "clock": "16:10",
+        "in_intermission": true,
         "away_score": 3,
         "home_score": 1,
         "first_period_goals": 4,
-        "first_period_complete": false,
-        "first_period_total_result": null,
+        "first_period_complete": true,
+        "first_period_total_result": "OVER",
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-11"
       },
       "market_totals_p1": {
@@ -1239,8 +1239,8 @@
       "Confirmed": 30
     },
     "live_games": 5,
-    "first_period_graded_games": 10,
-    "first_period_over_games": 3,
+    "first_period_graded_games": 13,
+    "first_period_over_games": 6,
     "first_period_under_games": 7,
     "market_games_with_data": 6
   }
