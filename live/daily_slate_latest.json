@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-11",
-  "pulled_at_utc": "2026-04-11T01:05:01+00:00",
+  "pulled_at_utc": "2026-04-11T01:10:01+00:00",
   "target_date": "2026-04-11",
   "games": [
     {
@@ -109,8 +109,8 @@
       "home": {
         "team_name_feed": "New York Islanders",
         "goalie_name_feed": "Ilya Sorokin",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-11T01:05:40.555Z",
         "team_id": 2,
         "team_abbrev": "NYI",
         "team_name": "New York Islanders",
@@ -503,8 +503,8 @@
       "away": {
         "team_name_feed": "New Jersey Devils",
         "goalie_name_feed": "Jake Allen",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-11T01:07:44.566Z",
         "team_id": 1,
         "team_abbrev": "NJD",
         "team_name": "New Jersey Devils",
@@ -1242,7 +1242,8 @@
     "projectable_games": 15,
     "failed_games": 0,
     "status_counts": {
-      "Unconfirmed": 30
+      "Confirmed": 2,
+      "Unconfirmed": 28
     },
     "live_games": 0,
     "first_period_graded_games": 0,
