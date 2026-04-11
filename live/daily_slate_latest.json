@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-11",
-  "pulled_at_utc": "2026-04-11T16:00:00+00:00",
+  "pulled_at_utc": "2026-04-11T16:05:01+00:00",
   "target_date": "2026-04-11",
   "games": [
     {
@@ -11,8 +11,8 @@
       "away": {
         "team_name_feed": "Tampa Bay Lightning",
         "goalie_name_feed": "Andrei Vasilevskiy",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-11T16:01:13.571Z",
         "team_id": 14,
         "team_abbrev": "TBL",
         "team_name": "Tampa Bay Lightning",
@@ -1003,8 +1003,8 @@
       "away": {
         "team_name_feed": "Florida Panthers",
         "goalie_name_feed": "Daniil Tarasov",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Likely",
+        "status_updated_at_utc": "2026-04-11T16:01:50.100Z",
         "team_id": 13,
         "team_abbrev": "FLA",
         "team_name": "Florida Panthers",
@@ -1362,9 +1362,9 @@
     "projectable_games": 15,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 5,
-      "Likely": 2,
-      "Unconfirmed": 23
+      "Confirmed": 6,
+      "Likely": 3,
+      "Unconfirmed": 21
     },
     "live_games": 0,
     "first_period_graded_games": 0,
