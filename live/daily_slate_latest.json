@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-11",
-  "pulled_at_utc": "2026-04-11T17:45:01+00:00",
+  "pulled_at_utc": "2026-04-11T17:50:00+00:00",
   "target_date": "2026-04-11",
   "games": [
     {
@@ -69,10 +69,10 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "09:55",
+        "clock": "06:26",
         "in_intermission": false,
         "away_score": 0,
-        "home_score": 0,
+        "home_score": 1,
         "first_period_goals": 0,
         "first_period_complete": true,
         "first_period_total_result": "UNDER",
@@ -159,13 +159,13 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "02:06",
-        "in_intermission": false,
+        "clock": "14:29",
+        "in_intermission": true,
         "away_score": 1,
         "home_score": 0,
         "first_period_goals": 1,
-        "first_period_complete": false,
-        "first_period_total_result": null,
+        "first_period_complete": true,
+        "first_period_total_result": "UNDER",
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-11"
       },
       "market_totals_p1": {
@@ -1288,27 +1288,27 @@
       },
       "home": {
         "team_name_feed": "San Jose Sharks",
-        "goalie_name_feed": "Alex Nedeljkovic",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "goalie_name_feed": "Yaroslav Askarov",
+        "status": "Likely",
+        "status_updated_at_utc": "2026-04-11T17:44:22.150Z",
         "team_id": 28,
         "team_abbrev": "SJS",
         "team_name": "San Jose Sharks",
-        "goalie_id": 8477968,
-        "goalie_name": "Alex Nedeljkovic",
-        "goalie_games": 30,
-        "goalie_ga_pg": 0.9333333333333333,
-        "goalie_save_pct": 89.89169675090253,
+        "goalie_id": 8482137,
+        "goalie_name": "Yaroslav Askarov",
+        "goalie_games": 41,
+        "goalie_ga_pg": 1.146341463414634,
+        "goalie_save_pct": 88.36633663366337,
         "team_o15_pct": 0.6142857142857143,
         "team_combined_pg": 2.0428571428571427
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5824630668168299,
-        "prob_under_1p_1_5": 0.4175369331831701,
-        "over_american_odds": -139,
-        "under_american_odds": 139,
-        "lambda_total": 2.1400047552906707,
-        "model_prob_over_1p_1_5_raw": 0.5973728263979143,
+        "prob_over_1p_1_5": 0.5775678073647981,
+        "prob_under_1p_1_5": 0.42243219263520193,
+        "over_american_odds": -137,
+        "under_american_odds": 137,
+        "lambda_total": 1.9399621915105096,
+        "model_prob_over_1p_1_5_raw": 0.5647377633843685,
         "market_prob_over_1p_1_5_consensus": 0.5798319327731092,
         "market_book_count": 7,
         "market_dampening_weight": 0.85
@@ -1317,7 +1317,7 @@
         "away_team_l5_l10_l15_o15": "L5: 1/5 2+ (20.0%) | L10: 4/10 2+ (40.0%) | L15: 8/15 2+ (53.3%) | L20: 10/20 2+ (50.0%)",
         "home_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 5/10 2+ (50.0%) | L15: 7/15 2+ (46.7%) | L20: 10/20 2+ (50.0%)",
         "away_goalie_l5_l10_l15_allow2": "L5: 2/5 allow 2+ (40.0%) | L10: 2/10 allow 2+ (20.0%) | L15: 2/13 allow 2+ (15.4%) | L20: 2/13 allow 2+ (15.4%)",
-        "home_goalie_l5_l10_l15_allow2": "L5: 2/5 allow 2+ (40.0%) | L10: 2/10 allow 2+ (20.0%) | L15: 3/15 allow 2+ (20.0%) | L20: 4/20 allow 2+ (20.0%)",
+        "home_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 1/10 allow 2+ (10.0%) | L15: 3/15 allow 2+ (20.0%) | L20: 4/20 allow 2+ (20.0%)",
         "h2h_games": 3,
         "h2h_o15_hits": 3,
         "h2h_o15_pct": 1.0,
@@ -1363,13 +1363,13 @@
     "failed_games": 0,
     "status_counts": {
       "Confirmed": 10,
-      "Likely": 1,
-      "Unconfirmed": 19
+      "Likely": 2,
+      "Unconfirmed": 18
     },
     "live_games": 2,
-    "first_period_graded_games": 1,
+    "first_period_graded_games": 2,
     "first_period_over_games": 0,
-    "first_period_under_games": 1,
+    "first_period_under_games": 2,
     "market_games_with_data": 15
   }
 }
