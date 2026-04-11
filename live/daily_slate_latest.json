@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-11",
-  "pulled_at_utc": "2026-04-11T18:45:01+00:00",
+  "pulled_at_utc": "2026-04-11T18:50:00+00:00",
   "target_date": "2026-04-11",
   "games": [
     {
@@ -69,7 +69,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 3,
-        "clock": "09:17",
+        "clock": "05:40",
         "in_intermission": false,
         "away_score": 1,
         "home_score": 1,
@@ -145,7 +145,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "10:10",
+        "clock": "05:13",
         "in_intermission": true,
         "away_score": 1,
         "home_score": 0,
@@ -342,17 +342,17 @@
       "game_time_et": "2026-04-11 05:00 PM ET",
       "away": {
         "team_name_feed": "Carolina Hurricanes",
-        "goalie_name_feed": "Brandon Bussi",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "goalie_name_feed": "Frederik Andersen",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-11T18:47:54.272Z",
         "team_id": 12,
         "team_abbrev": "CAR",
         "team_name": "Carolina Hurricanes",
-        "goalie_id": 8483548,
-        "goalie_name": "Brandon Bussi",
-        "goalie_games": 33,
-        "goalie_ga_pg": 0.7272727272727273,
-        "goalie_save_pct": 89.51965065502183,
+        "goalie_id": 8475883,
+        "goalie_name": "Frederik Andersen",
+        "goalie_games": 30,
+        "goalie_ga_pg": 0.8666666666666667,
+        "goalie_save_pct": 89.47368421052632,
         "team_o15_pct": 0.5492957746478874,
         "team_combined_pg": 1.9014084507042253
       },
@@ -373,12 +373,12 @@
         "team_combined_pg": 1.63013698630137
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5541332654997019,
-        "prob_under_1p_1_5": 0.4458667345002981,
-        "over_american_odds": -124,
-        "under_american_odds": 124,
-        "lambda_total": 1.9104814675465651,
-        "model_prob_over_1p_1_5_raw": 0.5642329820975384,
+        "prob_over_1p_1_5": 0.5499527831746966,
+        "prob_under_1p_1_5": 0.45004721682530335,
+        "over_american_odds": -122,
+        "under_american_odds": 122,
+        "lambda_total": 1.7558728070509377,
+        "model_prob_over_1p_1_5_raw": 0.5363630999308364,
         "market_prob_over_1p_1_5_consensus": 0.552350962570672,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
@@ -386,7 +386,7 @@
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 5/10 2+ (50.0%) | L15: 8/15 2+ (53.3%) | L20: 11/20 2+ (55.0%)",
         "home_team_l5_l10_l15_o15": "L5: 5/5 2+ (100.0%) | L10: 8/10 2+ (80.0%) | L15: 10/15 2+ (66.7%) | L20: 13/20 2+ (65.0%)",
-        "away_goalie_l5_l10_l15_allow2": "L5: 2/5 allow 2+ (40.0%) | L10: 3/10 allow 2+ (30.0%) | L15: 3/15 allow 2+ (20.0%) | L20: 4/20 allow 2+ (20.0%)",
+        "away_goalie_l5_l10_l15_allow2": "L5: 0/5 allow 2+ (0.0%) | L10: 0/10 allow 2+ (0.0%) | L15: 1/15 allow 2+ (6.7%) | L20: 3/20 allow 2+ (15.0%)",
         "home_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 1/10 allow 2+ (10.0%) | L15: 2/15 allow 2+ (13.3%) | L20: 3/20 allow 2+ (15.0%)",
         "h2h_games": 1,
         "h2h_o15_hits": 0,
@@ -1334,9 +1334,9 @@
     "projectable_games": 15,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 11,
+      "Confirmed": 12,
       "Likely": 1,
-      "Unconfirmed": 18
+      "Unconfirmed": 17
     },
     "live_games": 2,
     "first_period_graded_games": 2,
