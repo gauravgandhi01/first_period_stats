@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-11",
-  "pulled_at_utc": "2026-04-11T22:35:00+00:00",
+  "pulled_at_utc": "2026-04-11T22:40:00+00:00",
   "target_date": "2026-04-11",
   "games": [
     {
@@ -294,10 +294,10 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025021264,
-        "state_code": "CRIT",
-        "state_label": "Live",
+        "state_code": "FINAL",
+        "state_label": "Final",
         "period": 3,
-        "clock": "01:10",
+        "clock": "00:00",
         "in_intermission": false,
         "away_score": 0,
         "home_score": 1,
@@ -373,8 +373,8 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "03:16",
-        "in_intermission": false,
+        "clock": "15:45",
+        "in_intermission": true,
         "away_score": 2,
         "home_score": 0,
         "first_period_goals": 2,
@@ -449,8 +449,8 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "01:42",
-        "in_intermission": false,
+        "clock": "13:40",
+        "in_intermission": true,
         "away_score": 0,
         "home_score": 2,
         "first_period_goals": 1,
@@ -525,7 +525,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "04:02",
+        "clock": "00:15",
         "in_intermission": false,
         "away_score": 2,
         "home_score": 2,
@@ -601,7 +601,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "01:40",
+        "clock": "01:07",
         "in_intermission": false,
         "away_score": 0,
         "home_score": 0,
@@ -677,7 +677,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "04:26",
+        "clock": "02:42",
         "in_intermission": false,
         "away_score": 3,
         "home_score": 2,
@@ -775,7 +775,7 @@
           "over_price": -138.0,
           "under_price": 108.0,
           "over_no_vig_prob": 0.5467012037178121,
-          "last_update": "2026-04-11T21:04:39Z"
+          "last_update": "2026-04-11T22:39:30Z"
         }
       }
     },
@@ -817,13 +817,13 @@
         "team_combined_pg": 1.8732394366197183
       },
       "projection": {
-        "prob_over_1p_1_5": 0.539305451519011,
-        "prob_under_1p_1_5": 0.460694548480989,
-        "over_american_odds": -117,
-        "under_american_odds": 117,
+        "prob_over_1p_1_5": 0.5445265341959619,
+        "prob_under_1p_1_5": 0.45547346580403814,
+        "over_american_odds": -120,
+        "under_american_odds": 120,
         "lambda_total": 1.8899899533305728,
         "model_prob_over_1p_1_5_raw": 0.5656922830129745,
-        "market_prob_over_1p_1_5_consensus": 0.5346489518436057,
+        "market_prob_over_1p_1_5_consensus": 0.5407914020517831,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
       },
@@ -857,7 +857,7 @@
       "market_totals_p1": {
         "book_count": 8,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5346489518436057,
+        "consensus_over_no_vig_prob": 0.5407914020517831,
         "fanduel": {
           "bookmaker_key": "fanduel",
           "bookmaker_title": "FanDuel",
@@ -865,7 +865,7 @@
           "over_price": -128.0,
           "under_price": 100.0,
           "over_no_vig_prob": 0.5289256198347108,
-          "last_update": "2026-04-11T21:04:02Z"
+          "last_update": "2026-04-11T22:39:30Z"
         }
       }
     },
@@ -953,9 +953,9 @@
           "bookmaker_title": "FanDuel",
           "point": 1.5,
           "over_price": -136.0,
-          "under_price": 108.0,
-          "over_no_vig_prob": 0.5451742213999383,
-          "last_update": "2026-04-11T21:05:00Z"
+          "under_price": 106.0,
+          "over_no_vig_prob": 0.5427774333539988,
+          "last_update": "2026-04-11T22:39:57Z"
         }
       }
     },
@@ -997,13 +997,13 @@
         "team_combined_pg": 1.5416666666666667
       },
       "projection": {
-        "prob_over_1p_1_5": 0.47955206879451423,
-        "prob_under_1p_1_5": 0.5204479312054857,
-        "over_american_odds": 109,
-        "under_american_odds": -109,
+        "prob_over_1p_1_5": 0.4882726700942905,
+        "prob_under_1p_1_5": 0.5117273299057095,
+        "over_american_odds": 105,
+        "under_american_odds": -105,
         "lambda_total": 1.2818553430073063,
         "model_prob_over_1p_1_5_raw": 0.4218178006286033,
-        "market_prob_over_1p_1_5_consensus": 0.48974046905908675,
+        "market_prob_over_1p_1_5_consensus": 0.5,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
       },
@@ -1037,15 +1037,15 @@
       "market_totals_p1": {
         "book_count": 8,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.48974046905908675,
+        "consensus_over_no_vig_prob": 0.5,
         "fanduel": {
           "bookmaker_key": "fanduel",
           "bookmaker_title": "FanDuel",
           "point": 1.5,
-          "over_price": -108.0,
-          "under_price": -118.0,
-          "over_no_vig_prob": 0.4896023956080519,
-          "last_update": "2026-04-11T21:04:08Z"
+          "over_price": -112.0,
+          "under_price": -112.0,
+          "over_no_vig_prob": 0.5,
+          "last_update": "2026-04-11T22:39:52Z"
         }
       }
     },
@@ -1135,7 +1135,7 @@
           "over_price": -122.0,
           "under_price": -106.0,
           "over_no_vig_prob": 0.5164392569455861,
-          "last_update": "2026-04-11T21:04:17Z"
+          "last_update": "2026-04-11T22:39:27Z"
         }
       }
     },
@@ -1225,7 +1225,7 @@
           "over_price": -146.0,
           "under_price": 114.0,
           "over_no_vig_prob": 0.5594871427548169,
-          "last_update": "2026-04-11T21:04:54Z"
+          "last_update": "2026-04-11T22:39:25Z"
         }
       }
     }
@@ -1239,7 +1239,7 @@
       "Confirmed": 26,
       "Unconfirmed": 4
     },
-    "live_games": 6,
+    "live_games": 5,
     "first_period_graded_games": 9,
     "first_period_over_games": 3,
     "first_period_under_games": 6,
