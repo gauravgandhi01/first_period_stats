@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-11",
-  "pulled_at_utc": "2026-04-11T16:30:01+00:00",
+  "pulled_at_utc": "2026-04-11T16:35:00+00:00",
   "target_date": "2026-04-11",
   "games": [
     {
@@ -1003,8 +1003,8 @@
       "away": {
         "team_name_feed": "Florida Panthers",
         "goalie_name_feed": "Daniil Tarasov",
-        "status": "Likely",
-        "status_updated_at_utc": "2026-04-11T16:01:50.100Z",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-11T16:32:07.402Z",
         "team_id": 13,
         "team_abbrev": "FLA",
         "team_name": "Florida Panthers",
@@ -1362,8 +1362,8 @@
     "projectable_games": 15,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 7,
-      "Likely": 3,
+      "Confirmed": 8,
+      "Likely": 2,
       "Unconfirmed": 20
     },
     "live_games": 0,
