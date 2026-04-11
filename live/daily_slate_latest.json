@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-11",
-  "pulled_at_utc": "2026-04-11T19:40:01+00:00",
+  "pulled_at_utc": "2026-04-11T19:45:00+00:00",
   "target_date": "2026-04-11",
   "games": [
     {
@@ -221,7 +221,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "07:39",
+        "clock": "05:56",
         "in_intermission": false,
         "away_score": 0,
         "home_score": 0,
@@ -1076,17 +1076,17 @@
       "game_time_et": "2026-04-11 10:00 PM ET",
       "away": {
         "team_name_feed": "Vancouver Canucks",
-        "goalie_name_feed": "Nikita Tolopilo",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "goalie_name_feed": "Kevin Lankinen",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-11T19:41:40.364Z",
         "team_id": 23,
         "team_abbrev": "VAN",
         "team_name": "Vancouver Canucks",
-        "goalie_id": 8484268,
-        "goalie_name": "Nikita Tolopilo",
-        "goalie_games": 13,
-        "goalie_ga_pg": 0.7692307692307693,
-        "goalie_save_pct": 91.52542372881356,
+        "goalie_id": 8480947,
+        "goalie_name": "Kevin Lankinen",
+        "goalie_games": 38,
+        "goalie_ga_pg": 1.0789473684210527,
+        "goalie_save_pct": 88.94878706199461,
         "team_o15_pct": 0.5352112676056338,
         "team_combined_pg": 1.7746478873239437
       },
@@ -1107,12 +1107,12 @@
         "team_combined_pg": 2.0428571428571427
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5647377633843685,
-        "prob_under_1p_1_5": 0.43526223661563146,
-        "over_american_odds": -130,
-        "under_american_odds": 130,
-        "lambda_total": 1.9399621915105096,
-        "model_prob_over_1p_1_5_raw": 0.5647377633843685,
+        "prob_over_1p_1_5": 0.5452737325172261,
+        "prob_under_1p_1_5": 0.4547262674827739,
+        "over_american_odds": -120,
+        "under_american_odds": 120,
+        "lambda_total": 1.829391728842235,
+        "model_prob_over_1p_1_5_raw": 0.5452737325172261,
         "market_prob_over_1p_1_5_consensus": null,
         "market_book_count": 0,
         "market_dampening_weight": 0.0
@@ -1120,7 +1120,7 @@
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 1/5 2+ (20.0%) | L10: 4/10 2+ (40.0%) | L15: 8/15 2+ (53.3%) | L20: 10/20 2+ (50.0%)",
         "home_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 5/10 2+ (50.0%) | L15: 7/15 2+ (46.7%) | L20: 10/20 2+ (50.0%)",
-        "away_goalie_l5_l10_l15_allow2": "L5: 2/5 allow 2+ (40.0%) | L10: 2/10 allow 2+ (20.0%) | L15: 2/13 allow 2+ (15.4%) | L20: 2/13 allow 2+ (15.4%)",
+        "away_goalie_l5_l10_l15_allow2": "L5: 0/5 allow 2+ (0.0%) | L10: 1/10 allow 2+ (10.0%) | L15: 4/15 allow 2+ (26.7%) | L20: 5/20 allow 2+ (25.0%)",
         "home_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 1/10 allow 2+ (10.0%) | L15: 3/15 allow 2+ (20.0%) | L20: 4/20 allow 2+ (20.0%)",
         "h2h_games": 3,
         "h2h_o15_hits": 3,
@@ -1166,8 +1166,8 @@
     "projectable_games": 15,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 16,
-      "Unconfirmed": 14
+      "Confirmed": 17,
+      "Unconfirmed": 13
     },
     "live_games": 1,
     "first_period_graded_games": 2,
