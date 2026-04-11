@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-11",
-  "pulled_at_utc": "2026-04-11T19:50:01+00:00",
+  "pulled_at_utc": "2026-04-11T19:55:00+00:00",
   "target_date": "2026-04-11",
   "games": [
     {
@@ -221,13 +221,13 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "03:05",
-        "in_intermission": false,
+        "clock": "15:59",
+        "in_intermission": true,
         "away_score": 0,
         "home_score": 0,
         "first_period_goals": 0,
-        "first_period_complete": false,
-        "first_period_total_result": null,
+        "first_period_complete": true,
+        "first_period_total_result": "UNDER",
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-11"
       }
     },
@@ -391,8 +391,8 @@
       "away": {
         "team_name_feed": "Minnesota Wild",
         "goalie_name_feed": "Jesper Wallstedt",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-11T19:49:31.919Z",
         "team_id": 30,
         "team_abbrev": "MIN",
         "team_name": "Minnesota Wild",
@@ -559,8 +559,8 @@
       "home": {
         "team_name_feed": "Dallas Stars",
         "goalie_name_feed": "Jake Oettinger",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-11T19:50:46.489Z",
         "team_id": 25,
         "team_abbrev": "DAL",
         "team_name": "Dallas Stars",
@@ -1166,13 +1166,13 @@
     "projectable_games": 15,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 17,
-      "Unconfirmed": 13
+      "Confirmed": 19,
+      "Unconfirmed": 11
     },
     "live_games": 1,
-    "first_period_graded_games": 2,
+    "first_period_graded_games": 3,
     "first_period_over_games": 0,
-    "first_period_under_games": 2,
+    "first_period_under_games": 3,
     "market_games_with_data": 0
   }
 }
