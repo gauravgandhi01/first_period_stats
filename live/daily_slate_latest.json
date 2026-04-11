@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-11",
-  "pulled_at_utc": "2026-04-11T21:50:01+00:00",
+  "pulled_at_utc": "2026-04-11T21:55:01+00:00",
   "target_date": "2026-04-11",
   "games": [
     {
@@ -297,7 +297,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "09:07",
+        "clock": "04:06",
         "in_intermission": true,
         "away_score": 0,
         "home_score": 1,
@@ -373,13 +373,13 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "00:00",
-        "in_intermission": false,
+        "clock": "11:52",
+        "in_intermission": true,
         "away_score": 2,
         "home_score": 0,
         "first_period_goals": 2,
-        "first_period_complete": false,
-        "first_period_total_result": null,
+        "first_period_complete": true,
+        "first_period_total_result": "OVER",
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-11"
       }
     },
@@ -449,7 +449,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "13:31",
+        "clock": "08:33",
         "in_intermission": true,
         "away_score": 0,
         "home_score": 1,
@@ -525,7 +525,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "10:28",
+        "clock": "05:25",
         "in_intermission": true,
         "away_score": 1,
         "home_score": 1,
@@ -601,7 +601,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "08:50",
+        "clock": "03:50",
         "in_intermission": true,
         "away_score": 0,
         "home_score": 0,
@@ -677,7 +677,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "15:03",
+        "clock": "10:03",
         "in_intermission": true,
         "away_score": 1,
         "home_score": 1,
@@ -1240,8 +1240,8 @@
       "Unconfirmed": 4
     },
     "live_games": 6,
-    "first_period_graded_games": 8,
-    "first_period_over_games": 2,
+    "first_period_graded_games": 9,
+    "first_period_over_games": 3,
     "first_period_under_games": 6,
     "market_games_with_data": 6
   }
