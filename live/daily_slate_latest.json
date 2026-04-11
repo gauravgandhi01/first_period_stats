@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-11",
-  "pulled_at_utc": "2026-04-11T19:05:01+00:00",
+  "pulled_at_utc": "2026-04-11T19:10:00+00:00",
   "target_date": "2026-04-11",
   "games": [
     {
@@ -145,7 +145,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 3,
-        "clock": "15:39",
+        "clock": "13:04",
         "in_intermission": false,
         "away_score": 1,
         "home_score": 0,
@@ -1261,8 +1261,8 @@
       "home": {
         "team_name_feed": "San Jose Sharks",
         "goalie_name_feed": "Yaroslav Askarov",
-        "status": "Likely",
-        "status_updated_at_utc": "2026-04-11T17:44:22.150Z",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-11T19:08:49.135Z",
         "team_id": 28,
         "team_abbrev": "SJS",
         "team_name": "San Jose Sharks",
@@ -1334,8 +1334,7 @@
     "projectable_games": 15,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 13,
-      "Likely": 1,
+      "Confirmed": 14,
       "Unconfirmed": 16
     },
     "live_games": 1,
