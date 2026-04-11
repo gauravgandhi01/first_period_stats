@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-11",
-  "pulled_at_utc": "2026-04-11T20:25:01+00:00",
+  "pulled_at_utc": "2026-04-11T20:30:01+00:00",
   "target_date": "2026-04-11",
   "games": [
     {
@@ -221,9 +221,9 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "13:54",
+        "clock": "11:22",
         "in_intermission": false,
-        "away_score": 2,
+        "away_score": 3,
         "home_score": 1,
         "first_period_goals": 0,
         "first_period_complete": true,
@@ -297,7 +297,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "11:35",
+        "clock": "08:37",
         "in_intermission": false,
         "away_score": 0,
         "home_score": 1,
@@ -370,7 +370,7 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025021269,
-        "state_code": "FUT",
+        "state_code": "PRE",
         "state_label": "Scheduled",
         "period": 0,
         "clock": null,
@@ -446,7 +446,7 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025021267,
-        "state_code": "FUT",
+        "state_code": "PRE",
         "state_label": "Scheduled",
         "period": 0,
         "clock": null,
@@ -522,7 +522,7 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025021265,
-        "state_code": "FUT",
+        "state_code": "PRE",
         "state_label": "Scheduled",
         "period": 0,
         "clock": null,
@@ -598,7 +598,7 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025021268,
-        "state_code": "FUT",
+        "state_code": "PRE",
         "state_label": "Scheduled",
         "period": 0,
         "clock": null,
@@ -674,7 +674,7 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025021266,
-        "state_code": "FUT",
+        "state_code": "PRE",
         "state_label": "Scheduled",
         "period": 0,
         "clock": null,
