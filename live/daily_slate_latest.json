@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-11",
-  "pulled_at_utc": "2026-04-11T18:55:01+00:00",
+  "pulled_at_utc": "2026-04-11T19:00:00+00:00",
   "target_date": "2026-04-11",
   "games": [
     {
@@ -69,9 +69,9 @@
         "state_code": "CRIT",
         "state_label": "Live",
         "period": 3,
-        "clock": "02:44",
+        "clock": "00:33",
         "in_intermission": false,
-        "away_score": 1,
+        "away_score": 2,
         "home_score": 1,
         "first_period_goals": 0,
         "first_period_complete": true,
@@ -145,7 +145,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 3,
-        "clock": "20:00",
+        "clock": "18:03",
         "in_intermission": false,
         "away_score": 1,
         "home_score": 0,
@@ -613,8 +613,8 @@
       "away": {
         "team_name_feed": "New York Rangers",
         "goalie_name_feed": "Igor Shesterkin",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-11T18:56:50.250Z",
         "team_id": 3,
         "team_abbrev": "NYR",
         "team_name": "New York Rangers",
@@ -1334,9 +1334,9 @@
     "projectable_games": 15,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 12,
+      "Confirmed": 13,
       "Likely": 1,
-      "Unconfirmed": 17
+      "Unconfirmed": 16
     },
     "live_games": 2,
     "first_period_graded_games": 2,
