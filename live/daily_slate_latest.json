@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-12",
-  "pulled_at_utc": "2026-04-12T23:30:00+00:00",
+  "pulled_at_utc": "2026-04-12T23:35:01+00:00",
   "target_date": "2026-04-12",
   "games": [
     {
@@ -117,15 +117,15 @@
         "team_combined_pg": 1.7638888888888888
       },
       "projection": {
-        "prob_over_1p_1_5": 0.542567814150111,
-        "prob_under_1p_1_5": 0.457432185849889,
-        "over_american_odds": -119,
-        "under_american_odds": 119,
+        "prob_over_1p_1_5": 0.5628528356533615,
+        "prob_under_1p_1_5": 0.4371471643466385,
+        "over_american_odds": -129,
+        "under_american_odds": 129,
         "lambda_total": 1.9338006768239668,
         "model_prob_over_1p_1_5_raw": 0.5628528356533615,
-        "market_prob_over_1p_1_5_consensus": 0.5389881044730669,
-        "market_book_count": 8,
-        "market_dampening_weight": 0.85
+        "market_prob_over_1p_1_5_consensus": null,
+        "market_book_count": 0,
+        "market_dampening_weight": 0.0
       },
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 3/10 2+ (30.0%) | L15: 5/15 2+ (33.3%) | L20: 9/20 2+ (45.0%)",
@@ -145,7 +145,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "04:28",
+        "clock": "02:34",
         "in_intermission": false,
         "away_score": 1,
         "home_score": 1,
@@ -153,20 +153,6 @@
         "first_period_complete": true,
         "first_period_total_result": "OVER",
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-12"
-      },
-      "market_totals_p1": {
-        "book_count": 8,
-        "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5389881044730669,
-        "fanduel": {
-          "bookmaker_key": "fanduel",
-          "bookmaker_title": "FanDuel",
-          "point": 1.5,
-          "over_price": -132.0,
-          "under_price": 104.0,
-          "over_no_vig_prob": 0.5371848068943506,
-          "last_update": "2026-04-12T21:59:40Z"
-        }
       }
     },
     {
@@ -235,9 +221,9 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "04:26",
+        "clock": "03:13",
         "in_intermission": false,
-        "away_score": 0,
+        "away_score": 2,
         "home_score": 0,
         "first_period_goals": 0,
         "first_period_complete": true,
@@ -283,15 +269,15 @@
         "team_combined_pg": 1.676056338028169
       },
       "projection": {
-        "prob_over_1p_1_5": 0.526074350336111,
-        "prob_under_1p_1_5": 0.47392564966388895,
-        "over_american_odds": -111,
-        "under_american_odds": 111,
+        "prob_over_1p_1_5": 0.44267772394730254,
+        "prob_under_1p_1_5": 0.5573222760526975,
+        "over_american_odds": 126,
+        "under_american_odds": -126,
         "lambda_total": 1.3470294072387952,
         "model_prob_over_1p_1_5_raw": 0.44267772394730254,
-        "market_prob_over_1p_1_5_consensus": 0.5407914020517831,
-        "market_book_count": 8,
-        "market_dampening_weight": 0.85
+        "market_prob_over_1p_1_5_consensus": null,
+        "market_book_count": 0,
+        "market_dampening_weight": 0.0
       },
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 1/5 2+ (20.0%) | L10: 3/10 2+ (30.0%) | L15: 6/15 2+ (40.0%) | L20: 8/20 2+ (40.0%)",
@@ -311,7 +297,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "07:56",
+        "clock": "06:10",
         "in_intermission": false,
         "away_score": 0,
         "home_score": 1,
@@ -319,20 +305,6 @@
         "first_period_complete": false,
         "first_period_total_result": null,
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-12"
-      },
-      "market_totals_p1": {
-        "book_count": 8,
-        "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5407914020517831,
-        "fanduel": {
-          "bookmaker_key": "fanduel",
-          "bookmaker_title": "FanDuel",
-          "point": 1.5,
-          "over_price": -124.0,
-          "under_price": -102.0,
-          "over_no_vig_prob": 0.5229664272590613,
-          "last_update": "2026-04-12T21:59:31Z"
-        }
       }
     },
     {
@@ -359,8 +331,8 @@
       "home": {
         "team_name_feed": "Anaheim Ducks",
         "goalie_name_feed": "Lukas Dostal",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-12T23:30:26.839Z",
         "team_id": 24,
         "team_abbrev": "ANA",
         "team_name": "Anaheim Ducks",
@@ -373,13 +345,13 @@
         "team_combined_pg": 1.7638888888888888
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5875101998886547,
-        "prob_under_1p_1_5": 0.4124898001113453,
-        "over_american_odds": -142,
-        "under_american_odds": 142,
+        "prob_over_1p_1_5": 0.5917719330284288,
+        "prob_under_1p_1_5": 0.4082280669715712,
+        "over_american_odds": -145,
+        "under_american_odds": 145,
         "lambda_total": 1.7461757798530235,
         "model_prob_over_1p_1_5_raw": 0.521030347331482,
-        "market_prob_over_1p_1_5_consensus": 0.5992419385752146,
+        "market_prob_over_1p_1_5_consensus": 0.6042557422690664,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
       },
@@ -413,7 +385,7 @@
       "market_totals_p1": {
         "book_count": 8,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5992419385752146,
+        "consensus_over_no_vig_prob": 0.6042557422690664,
         "fanduel": {
           "bookmaker_key": "fanduel",
           "bookmaker_title": "FanDuel",
@@ -421,7 +393,7 @@
           "over_price": -164.0,
           "under_price": 128.0,
           "over_no_vig_prob": 0.5861550037622273,
-          "last_update": "2026-04-12T21:59:58Z"
+          "last_update": "2026-04-12T23:34:16Z"
         }
       }
     },
@@ -463,13 +435,13 @@
         "team_combined_pg": 1.5972222222222223
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5282213035620902,
-        "prob_under_1p_1_5": 0.4717786964379098,
-        "over_american_odds": -112,
-        "under_american_odds": 112,
+        "prob_over_1p_1_5": 0.524948092079039,
+        "prob_under_1p_1_5": 0.47505190792096097,
+        "over_american_odds": -111,
+        "under_american_odds": 111,
         "lambda_total": 1.5112952791730865,
         "model_prob_over_1p_1_5_raw": 0.47465194903474234,
-        "market_prob_over_1p_1_5_consensus": 0.5376747190669163,
+        "market_prob_over_1p_1_5_consensus": 0.5338238820280325,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
       },
@@ -503,36 +475,33 @@
       "market_totals_p1": {
         "book_count": 8,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5376747190669163,
+        "consensus_over_no_vig_prob": 0.5338238820280325,
         "fanduel": {
           "bookmaker_key": "fanduel",
           "bookmaker_title": "FanDuel",
           "point": 1.5,
-          "over_price": -122.0,
-          "under_price": -104.0,
-          "over_no_vig_prob": 0.5187593796898449,
-          "last_update": "2026-04-12T21:59:42Z"
+          "over_price": -130.0,
+          "under_price": 102.0,
+          "over_no_vig_prob": 0.5330897279740154,
+          "last_update": "2026-04-12T23:35:01Z"
         }
       }
     }
   ],
-  "warnings": [
-    "Odds API quota precheck: selected key may be short (remaining=2, estimated_needed=11, events=5, credits_per_event=2).",
-    "Montr\u00e9al Canadiens at New York Islanders: odds request failed (503)"
-  ],
+  "warnings": [],
   "meta": {
     "total_games": 6,
     "projectable_games": 6,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 9,
+      "Confirmed": 10,
       "Likely": 1,
-      "Unconfirmed": 2
+      "Unconfirmed": 1
     },
     "live_games": 3,
     "first_period_graded_games": 3,
     "first_period_over_games": 1,
     "first_period_under_games": 2,
-    "market_games_with_data": 4
+    "market_games_with_data": 2
   }
 }
