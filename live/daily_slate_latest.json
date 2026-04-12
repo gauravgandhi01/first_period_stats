@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-12",
-  "pulled_at_utc": "2026-04-12T23:05:01+00:00",
+  "pulled_at_utc": "2026-04-12T23:10:01+00:00",
   "target_date": "2026-04-12",
   "games": [
     {
@@ -145,7 +145,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "17:42",
+        "clock": "14:49",
         "in_intermission": false,
         "away_score": 1,
         "home_score": 1,
@@ -235,7 +235,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "16:50",
+        "clock": "13:58",
         "in_intermission": false,
         "away_score": 0,
         "home_score": 0,
@@ -308,10 +308,10 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025021279,
-        "state_code": "PRE",
-        "state_label": "Scheduled",
-        "period": 0,
-        "clock": null,
+        "state_code": "LIVE",
+        "state_label": "Live",
+        "period": 1,
+        "clock": "19:10",
         "in_intermission": false,
         "away_score": 0,
         "home_score": 0,
@@ -529,7 +529,7 @@
       "Likely": 1,
       "Unconfirmed": 2
     },
-    "live_games": 2,
+    "live_games": 3,
     "first_period_graded_games": 3,
     "first_period_over_games": 1,
     "first_period_under_games": 2,
