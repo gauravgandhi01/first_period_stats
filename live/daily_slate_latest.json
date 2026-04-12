@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-11",
-  "pulled_at_utc": "2026-04-12T01:40:01+00:00",
+  "pulled_at_utc": "2026-04-12T01:45:01+00:00",
   "target_date": "2026-04-11",
   "games": [
     {
@@ -831,7 +831,7 @@
         "state_code": "CRIT",
         "state_label": "Live",
         "period": 3,
-        "clock": "04:22",
+        "clock": "00:20",
         "in_intermission": false,
         "away_score": 5,
         "home_score": 2,
@@ -904,12 +904,12 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025021270,
-        "state_code": "CRIT",
-        "state_label": "Live",
+        "state_code": "FINAL",
+        "state_label": "Final",
         "period": 3,
-        "clock": "02:15",
+        "clock": "00:00",
         "in_intermission": false,
-        "away_score": 5,
+        "away_score": 6,
         "home_score": 2,
         "first_period_goals": 2,
         "first_period_complete": true,
@@ -980,10 +980,10 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025021272,
-        "state_code": "CRIT",
-        "state_label": "Live",
+        "state_code": "FINAL",
+        "state_label": "Final",
         "period": 3,
-        "clock": "00:32",
+        "clock": "00:00",
         "in_intermission": false,
         "away_score": 7,
         "home_score": 1,
@@ -1059,7 +1059,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "05:19",
+        "clock": "03:41",
         "in_intermission": false,
         "away_score": 2,
         "home_score": 2,
@@ -1182,7 +1182,7 @@
     "status_counts": {
       "Confirmed": 30
     },
-    "live_games": 4,
+    "live_games": 2,
     "first_period_graded_games": 14,
     "first_period_over_games": 7,
     "first_period_under_games": 7,
