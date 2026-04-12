@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-11",
-  "pulled_at_utc": "2026-04-12T00:15:00+00:00",
+  "pulled_at_utc": "2026-04-12T00:20:01+00:00",
   "target_date": "2026-04-11",
   "games": [
     {
@@ -522,7 +522,7 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025021265,
-        "state_code": "FINAL",
+        "state_code": "OFF",
         "state_label": "Final",
         "period": 3,
         "clock": "00:00",
@@ -598,7 +598,7 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025021268,
-        "state_code": "FINAL",
+        "state_code": "OFF",
         "state_label": "Final",
         "period": 3,
         "clock": "00:00",
@@ -674,7 +674,7 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025021266,
-        "state_code": "FINAL",
+        "state_code": "OFF",
         "state_label": "Final",
         "period": 3,
         "clock": "00:00",
@@ -755,7 +755,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "14:19",
+        "clock": "10:34",
         "in_intermission": false,
         "away_score": 1,
         "home_score": 1,
@@ -831,7 +831,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "17:12",
+        "clock": "13:59",
         "in_intermission": false,
         "away_score": 3,
         "home_score": 1,
@@ -907,9 +907,9 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "18:28",
+        "clock": "14:47",
         "in_intermission": false,
-        "away_score": 2,
+        "away_score": 3,
         "home_score": 0,
         "first_period_goals": 2,
         "first_period_complete": true,
@@ -983,7 +983,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "18:44",
+        "clock": "15:22",
         "in_intermission": false,
         "away_score": 3,
         "home_score": 1,
@@ -1056,10 +1056,10 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025021274,
-        "state_code": "PRE",
-        "state_label": "Scheduled",
-        "period": 0,
-        "clock": null,
+        "state_code": "LIVE",
+        "state_label": "Live",
+        "period": 1,
+        "clock": "16:35",
         "in_intermission": false,
         "away_score": 0,
         "home_score": 0,
@@ -1182,7 +1182,7 @@
     "status_counts": {
       "Confirmed": 30
     },
-    "live_games": 4,
+    "live_games": 5,
     "first_period_graded_games": 13,
     "first_period_over_games": 6,
     "first_period_under_games": 7,
