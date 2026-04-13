@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-13",
-  "pulled_at_utc": "2026-04-13T15:50:01+00:00",
+  "pulled_at_utc": "2026-04-13T15:55:01+00:00",
   "target_date": "2026-04-13",
   "games": [
     {
@@ -190,17 +190,17 @@
       "game_time_et": "2026-04-13 07:00 PM ET",
       "away": {
         "team_name_feed": "New York Rangers",
-        "goalie_name_feed": "Igor Shesterkin",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "goalie_name_feed": "Jonathan Quick",
+        "status": "Likely",
+        "status_updated_at_utc": "2026-04-13T15:51:44.764Z",
         "team_id": 3,
         "team_abbrev": "NYR",
         "team_name": "New York Rangers",
-        "goalie_id": 8478048,
-        "goalie_name": "Igor Shesterkin",
-        "goalie_games": 45,
-        "goalie_ga_pg": 0.8666666666666667,
-        "goalie_save_pct": 90.69212410501193,
+        "goalie_id": 8471734,
+        "goalie_name": "Jonathan Quick",
+        "goalie_games": 23,
+        "goalie_ga_pg": 1.0869565217391304,
+        "goalie_save_pct": 87.86407766990291,
         "team_o15_pct": 0.5205479452054794,
         "team_combined_pg": 1.821917808219178
       },
@@ -221,12 +221,12 @@
         "team_combined_pg": 1.732394366197183
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5328032799290916,
-        "prob_under_1p_1_5": 0.4671967200709084,
-        "over_american_odds": -114,
-        "under_american_odds": 114,
-        "lambda_total": 1.7440603932501968,
-        "model_prob_over_1p_1_5_raw": 0.516378199836341,
+        "prob_over_1p_1_5": 0.5364626062344038,
+        "prob_under_1p_1_5": 0.4635373937655962,
+        "over_american_odds": -116,
+        "under_american_odds": 116,
+        "lambda_total": 1.8780491172508373,
+        "model_prob_over_1p_1_5_raw": 0.5407737085384215,
         "market_prob_over_1p_1_5_consensus": 0.5357018234748712,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
@@ -234,7 +234,7 @@
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 3/5 2+ (60.0%) | L10: 5/10 2+ (50.0%) | L15: 9/15 2+ (60.0%) | L20: 11/20 2+ (55.0%)",
         "home_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 3/10 2+ (30.0%) | L15: 7/15 2+ (46.7%) | L20: 10/20 2+ (50.0%)",
-        "away_goalie_l5_l10_l15_allow2": "L5: 2/5 allow 2+ (40.0%) | L10: 3/10 allow 2+ (30.0%) | L15: 3/15 allow 2+ (20.0%) | L20: 4/20 allow 2+ (20.0%)",
+        "away_goalie_l5_l10_l15_allow2": "L5: 3/5 allow 2+ (60.0%) | L10: 5/10 allow 2+ (50.0%) | L15: 6/15 allow 2+ (40.0%) | L20: 6/20 allow 2+ (30.0%)",
         "home_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 3/10 allow 2+ (30.0%) | L15: 3/15 allow 2+ (20.0%) | L20: 6/20 allow 2+ (30.0%)",
         "h2h_games": 1,
         "h2h_o15_hits": 1,
@@ -915,8 +915,8 @@
     "failed_games": 0,
     "status_counts": {
       "Confirmed": 3,
-      "Likely": 5,
-      "Unconfirmed": 12
+      "Likely": 6,
+      "Unconfirmed": 11
     },
     "live_games": 0,
     "first_period_graded_games": 0,
