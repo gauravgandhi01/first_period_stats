@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-12",
-  "pulled_at_utc": "2026-04-13T00:40:01+00:00",
+  "pulled_at_utc": "2026-04-13T00:45:00+00:00",
   "target_date": "2026-04-12",
   "games": [
     {
@@ -142,8 +142,8 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025021278,
-        "state_code": "CRIT",
-        "state_label": "Live",
+        "state_code": "FINAL",
+        "state_label": "Final",
         "period": 3,
         "clock": "00:00",
         "in_intermission": false,
@@ -297,7 +297,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "15:27",
+        "clock": "10:26",
         "in_intermission": true,
         "away_score": 3,
         "home_score": 2,
@@ -373,11 +373,11 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "06:26",
+        "clock": "05:16",
         "in_intermission": false,
-        "away_score": 1,
+        "away_score": 2,
         "home_score": 1,
-        "first_period_goals": 2,
+        "first_period_goals": 3,
         "first_period_complete": false,
         "first_period_total_result": null,
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-12"
@@ -496,7 +496,7 @@
     "status_counts": {
       "Confirmed": 12
     },
-    "live_games": 3,
+    "live_games": 2,
     "first_period_graded_games": 4,
     "first_period_over_games": 2,
     "first_period_under_games": 2,
