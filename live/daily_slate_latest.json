@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-13",
-  "pulled_at_utc": "2026-04-13T18:45:01+00:00",
+  "pulled_at_utc": "2026-04-13T18:50:01+00:00",
   "target_date": "2026-04-13",
   "games": [
     {
@@ -463,8 +463,8 @@
       "away": {
         "team_name_feed": "San Jose Sharks",
         "goalie_name_feed": "Alex Nedeljkovic",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-13T18:43:28.223Z",
         "team_id": 28,
         "team_abbrev": "SJS",
         "team_name": "San Jose Sharks",
@@ -914,9 +914,9 @@
     "projectable_games": 10,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 11,
+      "Confirmed": 12,
       "Likely": 6,
-      "Unconfirmed": 3
+      "Unconfirmed": 2
     },
     "live_games": 0,
     "first_period_graded_games": 0,
