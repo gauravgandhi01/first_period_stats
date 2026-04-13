@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-13",
-  "pulled_at_utc": "2026-04-13T23:10:01+00:00",
+  "pulled_at_utc": "2026-04-13T23:15:00+00:00",
   "target_date": "2026-04-13",
   "games": [
     {
@@ -69,7 +69,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "19:10",
+        "clock": "14:38",
         "in_intermission": false,
         "away_score": 0,
         "home_score": 0,
@@ -159,7 +159,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "19:37",
+        "clock": "16:04",
         "in_intermission": false,
         "away_score": 0,
         "home_score": 0,
@@ -249,7 +249,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "19:02",
+        "clock": "16:03",
         "in_intermission": false,
         "away_score": 0,
         "home_score": 0,
@@ -297,8 +297,8 @@
       "home": {
         "team_name_feed": "Toronto Maple Leafs",
         "goalie_name_feed": "Artur Akhtyamov",
-        "status": "Likely",
-        "status_updated_at_utc": "2026-04-13T14:34:37.797Z",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-13T23:10:57.149Z",
         "team_id": 10,
         "team_abbrev": "TOR",
         "team_name": "Toronto Maple Leafs",
@@ -914,8 +914,8 @@
     "projectable_games": 10,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 13,
-      "Likely": 6,
+      "Confirmed": 14,
+      "Likely": 5,
       "Unconfirmed": 1
     },
     "live_games": 3,
