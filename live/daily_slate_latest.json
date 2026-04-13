@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-12",
-  "pulled_at_utc": "2026-04-13T00:35:01+00:00",
+  "pulled_at_utc": "2026-04-13T00:40:01+00:00",
   "target_date": "2026-04-12",
   "games": [
     {
@@ -145,7 +145,7 @@
         "state_code": "CRIT",
         "state_label": "Live",
         "period": 3,
-        "clock": "01:22",
+        "clock": "00:00",
         "in_intermission": false,
         "away_score": 3,
         "home_score": 2,
@@ -218,12 +218,12 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025021277,
-        "state_code": "CRIT",
-        "state_label": "Live",
+        "state_code": "FINAL",
+        "state_label": "Final",
         "period": 3,
-        "clock": "00:24",
+        "clock": "00:00",
         "in_intermission": false,
-        "away_score": 3,
+        "away_score": 4,
         "home_score": 1,
         "first_period_goals": 0,
         "first_period_complete": true,
@@ -297,8 +297,8 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "02:57",
-        "in_intermission": false,
+        "clock": "15:27",
+        "in_intermission": true,
         "away_score": 3,
         "home_score": 2,
         "first_period_goals": 2,
@@ -373,7 +373,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "08:23",
+        "clock": "06:26",
         "in_intermission": false,
         "away_score": 1,
         "home_score": 1,
@@ -405,8 +405,8 @@
       "away": {
         "team_name_feed": "Utah Mammoth",
         "goalie_name_feed": "Vitek Vanecek",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-13T00:33:51.148Z",
         "team_id": 68,
         "team_abbrev": "UTA",
         "team_name": "Utah Mammoth",
@@ -494,10 +494,9 @@
     "projectable_games": 6,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 11,
-      "Unconfirmed": 1
+      "Confirmed": 12
     },
-    "live_games": 4,
+    "live_games": 3,
     "first_period_graded_games": 4,
     "first_period_over_games": 2,
     "first_period_under_games": 2,
