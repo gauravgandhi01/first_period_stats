@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-13",
-  "pulled_at_utc": "2026-04-13T23:30:00+00:00",
+  "pulled_at_utc": "2026-04-13T23:35:01+00:00",
   "target_date": "2026-04-13",
   "games": [
     {
@@ -69,11 +69,11 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "05:34",
+        "clock": "03:14",
         "in_intermission": false,
-        "away_score": 1,
+        "away_score": 2,
         "home_score": 0,
-        "first_period_goals": 1,
+        "first_period_goals": 2,
         "first_period_complete": false,
         "first_period_total_result": null,
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-13"
@@ -159,7 +159,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "09:34",
+        "clock": "06:25",
         "in_intermission": false,
         "away_score": 1,
         "home_score": 0,
@@ -249,7 +249,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "07:48",
+        "clock": "05:25",
         "in_intermission": false,
         "away_score": 0,
         "home_score": 2,
@@ -479,8 +479,8 @@
       "home": {
         "team_name_feed": "Nashville Predators",
         "goalie_name_feed": "Justus Annunen",
-        "status": "Likely",
-        "status_updated_at_utc": "2026-04-13T15:35:51.192Z",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-13T23:31:39.192Z",
         "team_id": 18,
         "team_abbrev": "NSH",
         "team_name": "Nashville Predators",
@@ -914,8 +914,8 @@
     "projectable_games": 10,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 14,
-      "Likely": 5,
+      "Confirmed": 15,
+      "Likely": 4,
       "Unconfirmed": 1
     },
     "live_games": 3,
