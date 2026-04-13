@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-13",
-  "pulled_at_utc": "2026-04-13T16:40:01+00:00",
+  "pulled_at_utc": "2026-04-13T16:45:01+00:00",
   "target_date": "2026-04-13",
   "games": [
     {
@@ -373,8 +373,8 @@
       "away": {
         "team_name_feed": "Minnesota Wild",
         "goalie_name_feed": "Filip Gustavsson",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-13T16:42:14.646Z",
         "team_id": 30,
         "team_abbrev": "MIN",
         "team_name": "Minnesota Wild",
@@ -553,8 +553,8 @@
       "away": {
         "team_name_feed": "Buffalo Sabres",
         "goalie_name_feed": "Ukko-Pekka Luukkonen",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Likely",
+        "status_updated_at_utc": "2026-04-13T16:41:47.574Z",
         "team_id": 7,
         "team_abbrev": "BUF",
         "team_name": "Buffalo Sabres",
@@ -914,9 +914,9 @@
     "projectable_games": 10,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 6,
-      "Likely": 5,
-      "Unconfirmed": 9
+      "Confirmed": 7,
+      "Likely": 6,
+      "Unconfirmed": 7
     },
     "live_games": 0,
     "first_period_graded_games": 0,
