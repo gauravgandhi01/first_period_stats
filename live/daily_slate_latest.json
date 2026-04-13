@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-13",
-  "pulled_at_utc": "2026-04-13T15:35:01+00:00",
+  "pulled_at_utc": "2026-04-13T15:40:00+00:00",
   "target_date": "2026-04-13",
   "games": [
     {
@@ -388,27 +388,27 @@
       },
       "home": {
         "team_name_feed": "St Louis Blues",
-        "goalie_name_feed": "Jordan Binnington",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "goalie_name_feed": "Joel Hofer",
+        "status": "Likely",
+        "status_updated_at_utc": "2026-04-13T15:35:25.545Z",
         "team_id": 19,
         "team_abbrev": "STL",
         "team_name": "St. Louis Blues",
-        "goalie_id": 8476412,
-        "goalie_name": "Jordan Binnington",
-        "goalie_games": 36,
-        "goalie_ga_pg": 1.0277777777777777,
-        "goalie_save_pct": 88.92215568862275,
+        "goalie_id": 8480981,
+        "goalie_name": "Joel Hofer",
+        "goalie_games": 37,
+        "goalie_ga_pg": 0.7027027027027027,
+        "goalie_save_pct": 92.12121212121212,
         "team_o15_pct": 0.5492957746478874,
         "team_combined_pg": 1.6619718309859155
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5184061997049844,
-        "prob_under_1p_1_5": 0.48159380029501564,
-        "over_american_odds": -108,
-        "under_american_odds": 108,
-        "lambda_total": 1.5849960081856265,
-        "model_prob_over_1p_1_5_raw": 0.4784436933265744,
+        "prob_over_1p_1_5": 0.5081215897176703,
+        "prob_under_1p_1_5": 0.4918784102823297,
+        "over_american_odds": -103,
+        "under_american_odds": 103,
+        "lambda_total": 1.2593858065207546,
+        "model_prob_over_1p_1_5_raw": 0.4098796267444806,
         "market_prob_over_1p_1_5_consensus": 0.5254584067129391,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
@@ -417,7 +417,7 @@
         "away_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 3/10 2+ (30.0%) | L15: 3/15 2+ (20.0%) | L20: 8/20 2+ (40.0%)",
         "home_team_l5_l10_l15_o15": "L5: 1/5 2+ (20.0%) | L10: 1/10 2+ (10.0%) | L15: 4/15 2+ (26.7%) | L20: 7/20 2+ (35.0%)",
         "away_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 2/10 allow 2+ (20.0%) | L15: 3/15 allow 2+ (20.0%) | L20: 3/20 allow 2+ (15.0%)",
-        "home_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 3/10 allow 2+ (30.0%) | L15: 5/15 allow 2+ (33.3%) | L20: 9/20 allow 2+ (45.0%)",
+        "home_goalie_l5_l10_l15_allow2": "L5: 0/5 allow 2+ (0.0%) | L10: 0/10 allow 2+ (0.0%) | L15: 2/15 allow 2+ (13.3%) | L20: 2/20 allow 2+ (10.0%)",
         "h2h_games": 2,
         "h2h_o15_hits": 1,
         "h2h_o15_pct": 0.5,
@@ -479,8 +479,8 @@
       "home": {
         "team_name_feed": "Nashville Predators",
         "goalie_name_feed": "Justus Annunen",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Likely",
+        "status_updated_at_utc": "2026-04-13T15:35:51.192Z",
         "team_id": 18,
         "team_abbrev": "NSH",
         "team_name": "Nashville Predators",
@@ -915,8 +915,8 @@
     "failed_games": 0,
     "status_counts": {
       "Confirmed": 3,
-      "Likely": 2,
-      "Unconfirmed": 15
+      "Likely": 4,
+      "Unconfirmed": 13
     },
     "live_games": 0,
     "first_period_graded_games": 0,
