@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-14",
-  "pulled_at_utc": "2026-04-14T18:10:01+00:00",
+  "pulled_at_utc": "2026-04-14T18:15:01+00:00",
   "target_date": "2026-04-14",
   "games": [
     {
@@ -453,8 +453,8 @@
       "away": {
         "team_name_feed": "Colorado Avalanche",
         "goalie_name_feed": "Mackenzie Blackwood",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Likely",
+        "status_updated_at_utc": "2026-04-14T18:13:17.892Z",
         "team_id": 21,
         "team_abbrev": "COL",
         "team_name": "Colorado Avalanche",
@@ -789,8 +789,8 @@
     "failed_games": 0,
     "status_counts": {
       "Confirmed": 6,
-      "Likely": 4,
-      "Unconfirmed": 8
+      "Likely": 5,
+      "Unconfirmed": 7
     },
     "live_games": 0,
     "first_period_graded_games": 0,
