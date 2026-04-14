@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-14",
-  "pulled_at_utc": "2026-04-14T16:25:01+00:00",
+  "pulled_at_utc": "2026-04-14T16:30:00+00:00",
   "target_date": "2026-04-14",
   "games": [
     {
@@ -407,8 +407,8 @@
       "home": {
         "team_name_feed": "Calgary Flames",
         "goalie_name_feed": "Dustin Wolf",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-14T16:23:55.224Z",
         "team_id": 20,
         "team_abbrev": "CGY",
         "team_name": "Calgary Flames",
@@ -705,9 +705,9 @@
     "projectable_games": 9,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 3,
+      "Confirmed": 4,
       "Likely": 2,
-      "Unconfirmed": 13
+      "Unconfirmed": 12
     },
     "live_games": 0,
     "first_period_graded_games": 0,
