@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-14",
-  "pulled_at_utc": "2026-04-14T22:30:01+00:00",
+  "pulled_at_utc": "2026-04-14T22:35:01+00:00",
   "target_date": "2026-04-14",
   "games": [
     {
@@ -27,8 +27,8 @@
       "home": {
         "team_name_feed": "New York Islanders",
         "goalie_name_feed": "David Rittich",
-        "status": "Likely",
-        "status_updated_at_utc": "2026-04-14T14:23:34.715Z",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-14T22:31:42.648Z",
         "team_id": 2,
         "team_abbrev": "NYI",
         "team_name": "New York Islanders",
@@ -281,8 +281,8 @@
       "away": {
         "team_name_feed": "Washington Capitals",
         "goalie_name_feed": "Clay Stevenson",
-        "status": "Likely",
-        "status_updated_at_utc": "2026-04-14T15:55:17.066Z",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-14T22:31:24.233Z",
         "team_id": 15,
         "team_abbrev": "WSH",
         "team_name": "Washington Capitals",
@@ -788,8 +788,8 @@
     "projectable_games": 9,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 10,
-      "Likely": 4,
+      "Confirmed": 12,
+      "Likely": 2,
       "Unconfirmed": 4
     },
     "live_games": 0,
