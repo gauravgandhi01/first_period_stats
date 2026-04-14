@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-14",
-  "pulled_at_utc": "2026-04-14T04:40:01+00:00",
+  "pulled_at_utc": "2026-04-14T13:25:01+00:00",
   "target_date": "2026-04-14",
   "games": [
     {
@@ -41,15 +41,15 @@
         "team_combined_pg": 1.63013698630137
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5351709888880167,
-        "prob_under_1p_1_5": 0.46482901111198327,
-        "over_american_odds": -115,
-        "under_american_odds": 115,
+        "prob_over_1p_1_5": 0.5448809285248303,
+        "prob_under_1p_1_5": 0.4551190714751697,
+        "over_american_odds": -120,
+        "under_american_odds": 120,
         "lambda_total": 1.6923380028506438,
         "model_prob_over_1p_1_5_raw": 0.5126893362329512,
-        "market_prob_over_1p_1_5_consensus": 0.5407914020517831,
-        "market_book_count": 5,
-        "market_dampening_weight": 0.8
+        "market_prob_over_1p_1_5_consensus": 0.550561797752809,
+        "market_book_count": 7,
+        "market_dampening_weight": 0.85
       },
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 5/10 2+ (50.0%) | L15: 8/15 2+ (53.3%) | L20: 11/20 2+ (55.0%)",
@@ -79,9 +79,9 @@
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-14"
       },
       "market_totals_p1": {
-        "book_count": 5,
+        "book_count": 7,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5407914020517831,
+        "consensus_over_no_vig_prob": 0.550561797752809,
         "fanduel": null
       }
     },
@@ -92,52 +92,52 @@
       "game_time_et": "2026-04-14 07:00 PM ET",
       "away": {
         "team_name_feed": "Montreal Canadiens",
-        "goalie_name_feed": "Jacob Fowler",
+        "goalie_name_feed": "Jakub Dobes",
         "status": "Unconfirmed",
         "status_updated_at_utc": null,
         "team_id": 8,
         "team_abbrev": "MTL",
         "team_name": "Montr\u00e9al Canadiens",
-        "goalie_id": 8484170,
-        "goalie_name": "Jacob Fowler",
-        "goalie_games": 13,
-        "goalie_ga_pg": 1.0,
-        "goalie_save_pct": 88.39285714285714,
+        "goalie_id": 8482487,
+        "goalie_name": "Jakub Dobes",
+        "goalie_games": 35,
+        "goalie_ga_pg": 0.9142857142857143,
+        "goalie_save_pct": 89.96865203761756,
         "team_o15_pct": 0.6197183098591549,
         "team_combined_pg": 1.8732394366197183
       },
       "home": {
         "team_name_feed": "Philadelphia Flyers",
-        "goalie_name_feed": "Dan Vladar",
+        "goalie_name_feed": "Samuel Ersson",
         "status": "Unconfirmed",
         "status_updated_at_utc": null,
         "team_id": 4,
         "team_abbrev": "PHI",
         "team_name": "Philadelphia Flyers",
-        "goalie_id": 8478435,
-        "goalie_name": "Dan Vladar",
-        "goalie_games": 43,
-        "goalie_ga_pg": 0.7674418604651163,
-        "goalie_save_pct": 90.32258064516128,
+        "goalie_id": 8481035,
+        "goalie_name": "Samuel Ersson",
+        "goalie_games": 27,
+        "goalie_ga_pg": 0.8888888888888888,
+        "goalie_save_pct": 88.29268292682927,
         "team_o15_pct": 0.5070422535211268,
         "team_combined_pg": 1.591549295774648
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5376744536117638,
-        "prob_under_1p_1_5": 0.4623255463882362,
-        "over_american_odds": -116,
-        "under_american_odds": 116,
-        "lambda_total": 1.7143046413946292,
-        "model_prob_over_1p_1_5_raw": 0.5252066598516865,
+        "prob_over_1p_1_5": 0.5397808215450179,
+        "prob_under_1p_1_5": 0.46021917845498206,
+        "over_american_odds": -117,
+        "under_american_odds": 117,
+        "lambda_total": 1.7613673812288697,
+        "model_prob_over_1p_1_5_raw": 0.5340541986733485,
         "market_prob_over_1p_1_5_consensus": 0.5407914020517831,
-        "market_book_count": 5,
-        "market_dampening_weight": 0.8
+        "market_book_count": 7,
+        "market_dampening_weight": 0.85
       },
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 4/5 2+ (80.0%) | L10: 7/10 2+ (70.0%) | L15: 11/15 2+ (73.3%) | L20: 13/20 2+ (65.0%)",
         "home_team_l5_l10_l15_o15": "L5: 1/5 2+ (20.0%) | L10: 4/10 2+ (40.0%) | L15: 5/15 2+ (33.3%) | L20: 8/20 2+ (40.0%)",
-        "away_goalie_l5_l10_l15_allow2": "L5: 3/5 allow 2+ (60.0%) | L10: 4/10 allow 2+ (40.0%) | L15: 5/13 allow 2+ (38.5%) | L20: 5/13 allow 2+ (38.5%)",
-        "home_goalie_l5_l10_l15_allow2": "L5: 0/5 allow 2+ (0.0%) | L10: 1/10 allow 2+ (10.0%) | L15: 3/15 allow 2+ (20.0%) | L20: 4/20 allow 2+ (20.0%)",
+        "away_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 2/10 allow 2+ (20.0%) | L15: 2/15 allow 2+ (13.3%) | L20: 5/20 allow 2+ (25.0%)",
+        "home_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 1/10 allow 2+ (10.0%) | L15: 3/15 allow 2+ (20.0%) | L20: 4/20 allow 2+ (20.0%)",
         "h2h_games": 2,
         "h2h_o15_hits": 2,
         "h2h_o15_pct": 1.0,
@@ -161,7 +161,7 @@
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-14"
       },
       "market_totals_p1": {
-        "book_count": 5,
+        "book_count": 7,
         "consensus_point": 1.5,
         "consensus_over_no_vig_prob": 0.5407914020517831,
         "fanduel": null
@@ -190,36 +190,36 @@
       },
       "home": {
         "team_name_feed": "Boston Bruins",
-        "goalie_name_feed": "Joonas Korpisalo",
+        "goalie_name_feed": "Jeremy Swayman",
         "status": "Unconfirmed",
         "status_updated_at_utc": null,
         "team_id": 6,
         "team_abbrev": "BOS",
         "team_name": "Boston Bruins",
-        "goalie_id": 8476914,
-        "goalie_name": "Joonas Korpisalo",
-        "goalie_games": 25,
-        "goalie_ga_pg": 1.08,
-        "goalie_save_pct": 88.70292887029288,
+        "goalie_id": 8480280,
+        "goalie_name": "Jeremy Swayman",
+        "goalie_games": 47,
+        "goalie_ga_pg": 0.7021276595744681,
+        "goalie_save_pct": 91.47286821705426,
         "team_o15_pct": 0.5972222222222222,
         "team_combined_pg": 1.7777777777777777
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5283510729175583,
-        "prob_under_1p_1_5": 0.47164892708244166,
-        "over_american_odds": -112,
-        "under_american_odds": 112,
-        "lambda_total": 1.7361482334214293,
-        "model_prob_over_1p_1_5_raw": 0.5203196047756482,
-        "market_prob_over_1p_1_5_consensus": 0.5303589399530358,
-        "market_book_count": 5,
-        "market_dampening_weight": 0.8
+        "prob_over_1p_1_5": 0.5171938442899477,
+        "prob_under_1p_1_5": 0.48280615571005225,
+        "over_american_odds": -107,
+        "under_american_odds": 107,
+        "lambda_total": 1.3454037768381233,
+        "model_prob_over_1p_1_5_raw": 0.441156240844549,
+        "market_prob_over_1p_1_5_consensus": 0.5306122448979592,
+        "market_book_count": 7,
+        "market_dampening_weight": 0.85
       },
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 3/5 2+ (60.0%) | L10: 7/10 2+ (70.0%) | L15: 8/15 2+ (53.3%) | L20: 10/20 2+ (50.0%)",
         "home_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 3/10 2+ (30.0%) | L15: 5/15 2+ (33.3%) | L20: 9/20 2+ (45.0%)",
         "away_goalie_l5_l10_l15_allow2": "L5: 0/5 allow 2+ (0.0%) | L10: 0/10 allow 2+ (0.0%) | L15: 0/15 allow 2+ (0.0%) | L20: 0/20 allow 2+ (0.0%)",
-        "home_goalie_l5_l10_l15_allow2": "L5: 0/5 allow 2+ (0.0%) | L10: 2/10 allow 2+ (20.0%) | L15: 4/15 allow 2+ (26.7%) | L20: 7/20 allow 2+ (35.0%)",
+        "home_goalie_l5_l10_l15_allow2": "L5: 0/5 allow 2+ (0.0%) | L10: 0/10 allow 2+ (0.0%) | L15: 1/15 allow 2+ (6.7%) | L20: 1/20 allow 2+ (5.0%)",
         "h2h_games": 2,
         "h2h_o15_hits": 2,
         "h2h_o15_pct": 1.0,
@@ -243,9 +243,9 @@
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-14"
       },
       "market_totals_p1": {
-        "book_count": 5,
+        "book_count": 7,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5303589399530358,
+        "consensus_over_no_vig_prob": 0.5306122448979592,
         "fanduel": null
       }
     },
@@ -287,15 +287,15 @@
         "team_combined_pg": 1.7638888888888888
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5243873251119084,
-        "prob_under_1p_1_5": 0.47561267488809156,
-        "over_american_odds": -110,
-        "under_american_odds": 110,
+        "prob_over_1p_1_5": 0.5367931806927491,
+        "prob_under_1p_1_5": 0.46320681930725094,
+        "over_american_odds": -116,
+        "under_american_odds": 116,
         "lambda_total": 1.4671972751381928,
         "model_prob_over_1p_1_5_raw": 0.45877101735240977,
-        "market_prob_over_1p_1_5_consensus": 0.5407914020517831,
-        "market_book_count": 5,
-        "market_dampening_weight": 0.8
+        "market_prob_over_1p_1_5_consensus": 0.550561797752809,
+        "market_book_count": 7,
+        "market_dampening_weight": 0.85
       },
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 1/5 2+ (20.0%) | L10: 2/10 2+ (20.0%) | L15: 5/15 2+ (33.3%) | L20: 6/20 2+ (30.0%)",
@@ -325,9 +325,9 @@
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-14"
       },
       "market_totals_p1": {
-        "book_count": 5,
+        "book_count": 7,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5407914020517831,
+        "consensus_over_no_vig_prob": 0.550561797752809,
         "fanduel": null
       }
     },
@@ -354,36 +354,36 @@
       },
       "home": {
         "team_name_feed": "Minnesota Wild",
-        "goalie_name_feed": "Filip Gustavsson",
+        "goalie_name_feed": "Jesper Wallstedt",
         "status": "Unconfirmed",
         "status_updated_at_utc": null,
         "team_id": 30,
         "team_abbrev": "MIN",
         "team_name": "Minnesota Wild",
-        "goalie_id": 8479406,
-        "goalie_name": "Filip Gustavsson",
-        "goalie_games": 44,
-        "goalie_ga_pg": 0.7954545454545454,
-        "goalie_save_pct": 91.183879093199,
+        "goalie_id": 8482661,
+        "goalie_name": "Jesper Wallstedt",
+        "goalie_games": 29,
+        "goalie_ga_pg": 0.6896551724137931,
+        "goalie_save_pct": 93.05555555555556,
         "team_o15_pct": 0.4794520547945205,
         "team_combined_pg": 1.6575342465753424
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5340953561688133,
-        "prob_under_1p_1_5": 0.4659046438311867,
-        "over_american_odds": -115,
-        "under_american_odds": 115,
-        "lambda_total": 1.6098886546201177,
-        "model_prob_over_1p_1_5_raw": 0.4861450158395677,
-        "market_prob_over_1p_1_5_consensus": 0.558797046641455,
-        "market_book_count": 3,
-        "market_dampening_weight": 0.66
+        "prob_over_1p_1_5": 0.554570085249455,
+        "prob_under_1p_1_5": 0.44542991475054505,
+        "over_american_odds": -125,
+        "under_american_odds": 125,
+        "lambda_total": 1.5442586521360857,
+        "model_prob_over_1p_1_5_raw": 0.47299597062855026,
+        "market_prob_over_1p_1_5_consensus": 0.5689655172413793,
+        "market_book_count": 7,
+        "market_dampening_weight": 0.85
       },
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 3/10 2+ (30.0%) | L15: 6/15 2+ (40.0%) | L20: 8/20 2+ (40.0%)",
         "home_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 3/10 2+ (30.0%) | L15: 3/15 2+ (20.0%) | L20: 8/20 2+ (40.0%)",
         "away_goalie_l5_l10_l15_allow2": "L5: 0/5 allow 2+ (0.0%) | L10: 2/10 allow 2+ (20.0%) | L15: 4/15 allow 2+ (26.7%) | L20: 4/20 allow 2+ (20.0%)",
-        "home_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 2/10 allow 2+ (20.0%) | L15: 3/15 allow 2+ (20.0%) | L20: 3/20 allow 2+ (15.0%)",
+        "home_goalie_l5_l10_l15_allow2": "L5: 0/5 allow 2+ (0.0%) | L10: 4/10 allow 2+ (40.0%) | L15: 4/15 allow 2+ (26.7%) | L20: 4/20 allow 2+ (20.0%)",
         "h2h_games": 2,
         "h2h_o15_hits": 0,
         "h2h_o15_pct": 0.0,
@@ -407,9 +407,9 @@
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-14"
       },
       "market_totals_p1": {
-        "book_count": 3,
+        "book_count": 7,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.558797046641455,
+        "consensus_over_no_vig_prob": 0.5689655172413793,
         "fanduel": null
       }
     },
@@ -420,17 +420,17 @@
       "game_time_et": "2026-04-14 09:00 PM ET",
       "away": {
         "team_name_feed": "Colorado Avalanche",
-        "goalie_name_feed": "Scott Wedgewood",
+        "goalie_name_feed": "Mackenzie Blackwood",
         "status": "Unconfirmed",
         "status_updated_at_utc": null,
         "team_id": 21,
         "team_abbrev": "COL",
         "team_name": "Colorado Avalanche",
-        "goalie_id": 8475809,
-        "goalie_name": "Scott Wedgewood",
-        "goalie_games": 38,
-        "goalie_ga_pg": 0.7631578947368421,
-        "goalie_save_pct": 91.47058823529412,
+        "goalie_id": 8478406,
+        "goalie_name": "Mackenzie Blackwood",
+        "goalie_games": 31,
+        "goalie_ga_pg": 0.7419354838709677,
+        "goalie_save_pct": 91.05058365758755,
         "team_o15_pct": 0.5915492957746479,
         "team_combined_pg": 1.943661971830986
       },
@@ -451,20 +451,20 @@
         "team_combined_pg": 1.5972222222222223
       },
       "projection": {
-        "prob_over_1p_1_5": 0.6127481216683716,
-        "prob_under_1p_1_5": 0.38725187833162844,
-        "over_american_odds": -158,
-        "under_american_odds": 158,
-        "lambda_total": 1.7180852479870656,
-        "model_prob_over_1p_1_5_raw": 0.5151079265849519,
-        "market_prob_over_1p_1_5_consensus": 0.6805997826585446,
-        "market_book_count": 2,
-        "market_dampening_weight": 0.5900000000000001
+        "prob_over_1p_1_5": 0.5555348963989115,
+        "prob_under_1p_1_5": 0.4444651036010885,
+        "over_american_odds": -125,
+        "under_american_odds": 125,
+        "lambda_total": 1.8009295674484904,
+        "model_prob_over_1p_1_5_raw": 0.5305379861708603,
+        "market_prob_over_1p_1_5_consensus": 0.5599461158509206,
+        "market_book_count": 7,
+        "market_dampening_weight": 0.85
       },
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 3/5 2+ (60.0%) | L10: 6/10 2+ (60.0%) | L15: 9/15 2+ (60.0%) | L20: 11/20 2+ (55.0%)",
         "home_team_l5_l10_l15_o15": "L5: 1/5 2+ (20.0%) | L10: 4/10 2+ (40.0%) | L15: 5/15 2+ (33.3%) | L20: 8/20 2+ (40.0%)",
-        "away_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 2/10 allow 2+ (20.0%) | L15: 2/15 allow 2+ (13.3%) | L20: 3/20 allow 2+ (15.0%)",
+        "away_goalie_l5_l10_l15_allow2": "L5: 0/5 allow 2+ (0.0%) | L10: 2/10 allow 2+ (20.0%) | L15: 2/15 allow 2+ (13.3%) | L20: 4/20 allow 2+ (20.0%)",
         "home_goalie_l5_l10_l15_allow2": "L5: 0/5 allow 2+ (0.0%) | L10: 1/10 allow 2+ (10.0%) | L15: 2/15 allow 2+ (13.3%) | L20: 4/20 allow 2+ (20.0%)",
         "h2h_games": 0,
         "h2h_o15_hits": 0,
@@ -489,9 +489,9 @@
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-14"
       },
       "market_totals_p1": {
-        "book_count": 2,
-        "consensus_point": 1.0,
-        "consensus_over_no_vig_prob": 0.6805997826585446,
+        "book_count": 7,
+        "consensus_point": 1.5,
+        "consensus_over_no_vig_prob": 0.5599461158509206,
         "fanduel": null
       }
     },
@@ -502,17 +502,17 @@
       "game_time_et": "2026-04-14 09:00 PM ET",
       "away": {
         "team_name_feed": "Winnipeg Jets",
-        "goalie_name_feed": "Connor Hellebuyck",
+        "goalie_name_feed": "Eric Comrie",
         "status": "Unconfirmed",
         "status_updated_at_utc": null,
         "team_id": 52,
         "team_abbrev": "WPG",
         "team_name": "Winnipeg Jets",
-        "goalie_id": 8476945,
-        "goalie_name": "Connor Hellebuyck",
-        "goalie_games": 49,
-        "goalie_ga_pg": 0.5918367346938775,
-        "goalie_save_pct": 93.02884615384616,
+        "goalie_id": 8477480,
+        "goalie_name": "Eric Comrie",
+        "goalie_games": 22,
+        "goalie_ga_pg": 0.9545454545454546,
+        "goalie_save_pct": 89.90384615384616,
         "team_o15_pct": 0.5277777777777778,
         "team_combined_pg": 1.5416666666666667
       },
@@ -533,20 +533,20 @@
         "team_combined_pg": 1.63013698630137
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5138706801892728,
-        "prob_under_1p_1_5": 0.48612931981072716,
-        "over_american_odds": -106,
-        "under_american_odds": 106,
-        "lambda_total": 1.4984305252286996,
-        "model_prob_over_1p_1_5_raw": 0.4813723486959406,
+        "prob_over_1p_1_5": 0.5229702160443158,
+        "prob_under_1p_1_5": 0.4770297839556842,
+        "over_american_odds": -110,
+        "under_american_odds": 110,
+        "lambda_total": 1.4901534545599604,
+        "model_prob_over_1p_1_5_raw": 0.4796653858736699,
         "market_prob_over_1p_1_5_consensus": 0.5306122448979592,
-        "market_book_count": 3,
-        "market_dampening_weight": 0.66
+        "market_book_count": 7,
+        "market_dampening_weight": 0.85
       },
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 4/10 2+ (40.0%) | L15: 5/15 2+ (33.3%) | L20: 7/20 2+ (35.0%)",
         "home_team_l5_l10_l15_o15": "L5: 5/5 2+ (100.0%) | L10: 8/10 2+ (80.0%) | L15: 10/15 2+ (66.7%) | L20: 13/20 2+ (65.0%)",
-        "away_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 1/10 allow 2+ (10.0%) | L15: 1/15 allow 2+ (6.7%) | L20: 1/20 allow 2+ (5.0%)",
+        "away_goalie_l5_l10_l15_allow2": "L5: 0/5 allow 2+ (0.0%) | L10: 2/10 allow 2+ (20.0%) | L15: 4/15 allow 2+ (26.7%) | L20: 5/20 allow 2+ (25.0%)",
         "home_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 1/10 allow 2+ (10.0%) | L15: 2/15 allow 2+ (13.3%) | L20: 3/20 allow 2+ (15.0%)",
         "h2h_games": 2,
         "h2h_o15_hits": 1,
@@ -571,7 +571,7 @@
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-14"
       },
       "market_totals_p1": {
-        "book_count": 3,
+        "book_count": 7,
         "consensus_point": 1.5,
         "consensus_over_no_vig_prob": 0.5306122448979592,
         "fanduel": null
@@ -584,17 +584,17 @@
       "game_time_et": "2026-04-14 09:30 PM ET",
       "away": {
         "team_name_feed": "Pittsburgh Penguins",
-        "goalie_name_feed": "Stuart Skinner",
+        "goalie_name_feed": "Arturs Silovs",
         "status": "Unconfirmed",
         "status_updated_at_utc": null,
         "team_id": 5,
         "team_abbrev": "PIT",
         "team_name": "Pittsburgh Penguins",
-        "goalie_id": 8479973,
-        "goalie_name": "Stuart Skinner",
-        "goalie_games": 21,
-        "goalie_ga_pg": 0.9047619047619048,
-        "goalie_save_pct": 89.67391304347827,
+        "goalie_id": 8481668,
+        "goalie_name": "Arturs Silovs",
+        "goalie_games": 34,
+        "goalie_ga_pg": 1.0294117647058822,
+        "goalie_save_pct": 88.44884488448845,
         "team_o15_pct": 0.5972222222222222,
         "team_combined_pg": 1.9583333333333333
       },
@@ -615,20 +615,20 @@
         "team_combined_pg": 1.6619718309859155
       },
       "projection": {
-        "prob_over_1p_1_5": 0.543300891099573,
-        "prob_under_1p_1_5": 0.456699108900427,
-        "over_american_odds": -119,
-        "under_american_odds": 119,
-        "lambda_total": 1.9733749759839105,
-        "model_prob_over_1p_1_5_raw": 0.5679317925497646,
-        "market_prob_over_1p_1_5_consensus": 0.5306122448979592,
-        "market_book_count": 3,
-        "market_dampening_weight": 0.66
+        "prob_over_1p_1_5": 0.5585096061437291,
+        "prob_under_1p_1_5": 0.44149039385627087,
+        "over_american_odds": -127,
+        "under_american_odds": 127,
+        "lambda_total": 2.1968066595012017,
+        "model_prob_over_1p_1_5_raw": 0.6035471870256099,
+        "market_prob_over_1p_1_5_consensus": 0.550561797752809,
+        "market_book_count": 7,
+        "market_dampening_weight": 0.85
       },
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 3/5 2+ (60.0%) | L10: 6/10 2+ (60.0%) | L15: 9/15 2+ (60.0%) | L20: 12/20 2+ (60.0%)",
         "home_team_l5_l10_l15_o15": "L5: 1/5 2+ (20.0%) | L10: 1/10 2+ (10.0%) | L15: 4/15 2+ (26.7%) | L20: 7/20 2+ (35.0%)",
-        "away_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 3/10 allow 2+ (30.0%) | L15: 3/15 allow 2+ (20.0%) | L20: 5/20 allow 2+ (25.0%)",
+        "away_goalie_l5_l10_l15_allow2": "L5: 2/5 allow 2+ (40.0%) | L10: 2/10 allow 2+ (20.0%) | L15: 2/15 allow 2+ (13.3%) | L20: 3/20 allow 2+ (15.0%)",
         "home_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 3/10 allow 2+ (30.0%) | L15: 5/15 allow 2+ (33.3%) | L20: 9/20 allow 2+ (45.0%)",
         "h2h_games": 1,
         "h2h_o15_hits": 1,
@@ -653,9 +653,9 @@
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-14"
       },
       "market_totals_p1": {
-        "book_count": 3,
+        "book_count": 7,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5306122448979592,
+        "consensus_over_no_vig_prob": 0.550561797752809,
         "fanduel": null
       }
     },
@@ -666,52 +666,52 @@
       "game_time_et": "2026-04-14 10:00 PM ET",
       "away": {
         "team_name_feed": "Los Angeles Kings",
-        "goalie_name_feed": "Anton Forsberg",
+        "goalie_name_feed": "Darcy Kuemper",
         "status": "Unconfirmed",
         "status_updated_at_utc": null,
         "team_id": 26,
         "team_abbrev": "LAK",
         "team_name": "Los Angeles Kings",
-        "goalie_id": 8476341,
-        "goalie_name": "Anton Forsberg",
-        "goalie_games": 25,
-        "goalie_ga_pg": 0.96,
-        "goalie_save_pct": 89.28571428571429,
+        "goalie_id": 8475311,
+        "goalie_name": "Darcy Kuemper",
+        "goalie_games": 46,
+        "goalie_ga_pg": 0.6086956521739131,
+        "goalie_save_pct": 92.3076923076923,
         "team_o15_pct": 0.3888888888888889,
         "team_combined_pg": 1.4444444444444444
       },
       "home": {
         "team_name_feed": "Vancouver Canucks",
-        "goalie_name_feed": "Nikita Tolopilo",
+        "goalie_name_feed": "Kevin Lankinen",
         "status": "Unconfirmed",
         "status_updated_at_utc": null,
         "team_id": 23,
         "team_abbrev": "VAN",
         "team_name": "Vancouver Canucks",
-        "goalie_id": 8484268,
-        "goalie_name": "Nikita Tolopilo",
-        "goalie_games": 13,
-        "goalie_ga_pg": 0.7692307692307693,
-        "goalie_save_pct": 91.52542372881356,
+        "goalie_id": 8480947,
+        "goalie_name": "Kevin Lankinen",
+        "goalie_games": 38,
+        "goalie_ga_pg": 1.0789473684210527,
+        "goalie_save_pct": 88.94878706199461,
         "team_o15_pct": 0.5352112676056338,
         "team_combined_pg": 1.7746478873239437
       },
       "projection": {
-        "prob_over_1p_1_5": 0.4653112873645666,
-        "prob_under_1p_1_5": 0.5346887126354334,
-        "over_american_odds": 115,
-        "under_american_odds": -115,
-        "lambda_total": 1.7017356276836282,
-        "model_prob_over_1p_1_5_raw": 0.4999690914617021,
-        "market_prob_over_1p_1_5_consensus": 0.4412270506190996,
-        "market_book_count": 2,
-        "market_dampening_weight": 0.5900000000000001
+        "prob_over_1p_1_5": 0.5075706840183213,
+        "prob_under_1p_1_5": 0.4924293159816787,
+        "over_american_odds": -103,
+        "under_american_odds": 103,
+        "lambda_total": 1.2485211320090583,
+        "model_prob_over_1p_1_5_raw": 0.4062069220821537,
+        "market_prob_over_1p_1_5_consensus": 0.5254584067129391,
+        "market_book_count": 6,
+        "market_dampening_weight": 0.85
       },
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 1/5 2+ (20.0%) | L10: 4/10 2+ (40.0%) | L15: 6/15 2+ (40.0%) | L20: 10/20 2+ (50.0%)",
         "home_team_l5_l10_l15_o15": "L5: 1/5 2+ (20.0%) | L10: 4/10 2+ (40.0%) | L15: 8/15 2+ (53.3%) | L20: 10/20 2+ (50.0%)",
-        "away_goalie_l5_l10_l15_allow2": "L5: 2/5 allow 2+ (40.0%) | L10: 3/10 allow 2+ (30.0%) | L15: 4/15 allow 2+ (26.7%) | L20: 5/20 allow 2+ (25.0%)",
-        "home_goalie_l5_l10_l15_allow2": "L5: 2/5 allow 2+ (40.0%) | L10: 2/10 allow 2+ (20.0%) | L15: 2/13 allow 2+ (15.4%) | L20: 2/13 allow 2+ (15.4%)",
+        "away_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 2/10 allow 2+ (20.0%) | L15: 5/15 allow 2+ (33.3%) | L20: 6/20 allow 2+ (30.0%)",
+        "home_goalie_l5_l10_l15_allow2": "L5: 0/5 allow 2+ (0.0%) | L10: 1/10 allow 2+ (10.0%) | L15: 4/15 allow 2+ (26.7%) | L20: 5/20 allow 2+ (25.0%)",
         "h2h_games": 2,
         "h2h_o15_hits": 0,
         "h2h_o15_pct": 0.0,
@@ -735,9 +735,9 @@
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-14"
       },
       "market_totals_p1": {
-        "book_count": 2,
-        "consensus_point": 1.75,
-        "consensus_over_no_vig_prob": 0.4412270506190996,
+        "book_count": 6,
+        "consensus_point": 1.5,
+        "consensus_over_no_vig_prob": 0.5254584067129391,
         "fanduel": null
       }
     }
