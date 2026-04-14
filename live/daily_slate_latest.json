@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-14",
-  "pulled_at_utc": "2026-04-14T15:55:00+00:00",
+  "pulled_at_utc": "2026-04-14T16:00:00+00:00",
   "target_date": "2026-04-14",
   "games": [
     {
@@ -238,17 +238,17 @@
       "game_time_et": "2026-04-14 07:00 PM ET",
       "away": {
         "team_name_feed": "Washington Capitals",
-        "goalie_name_feed": "Logan Thompson",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "goalie_name_feed": "Clay Stevenson",
+        "status": "Likely",
+        "status_updated_at_utc": "2026-04-14T15:55:17.066Z",
         "team_id": 15,
         "team_abbrev": "WSH",
         "team_name": "Washington Capitals",
-        "goalie_id": 8480313,
-        "goalie_name": "Logan Thompson",
-        "goalie_games": 51,
-        "goalie_ga_pg": 0.6274509803921569,
-        "goalie_save_pct": 92.82511210762333,
+        "goalie_id": 8483532,
+        "goalie_name": "Clay Stevenson",
+        "goalie_games": 3,
+        "goalie_ga_pg": 1.3333333333333333,
+        "goalie_save_pct": 87.09677419354838,
         "team_o15_pct": 0.4246575342465753,
         "team_combined_pg": 1.5616438356164384
       },
@@ -269,12 +269,12 @@
         "team_combined_pg": 1.7638888888888888
       },
       "projection": {
-        "prob_over_1p_1_5": 0.45877101735240977,
-        "prob_under_1p_1_5": 0.5412289826475902,
-        "over_american_odds": 118,
-        "under_american_odds": -118,
-        "lambda_total": 1.4671972751381928,
-        "model_prob_over_1p_1_5_raw": 0.45877101735240977,
+        "prob_over_1p_1_5": 0.5258323025915147,
+        "prob_under_1p_1_5": 0.4741676974084853,
+        "over_american_odds": -111,
+        "under_american_odds": 111,
+        "lambda_total": 1.81015934307476,
+        "model_prob_over_1p_1_5_raw": 0.5258323025915147,
         "market_prob_over_1p_1_5_consensus": null,
         "market_book_count": 0,
         "market_dampening_weight": 0.0
@@ -282,7 +282,7 @@
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 1/5 2+ (20.0%) | L10: 2/10 2+ (20.0%) | L15: 5/15 2+ (33.3%) | L20: 6/20 2+ (30.0%)",
         "home_team_l5_l10_l15_o15": "L5: 3/5 2+ (60.0%) | L10: 6/10 2+ (60.0%) | L15: 9/15 2+ (60.0%) | L20: 13/20 2+ (65.0%)",
-        "away_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 2/10 allow 2+ (20.0%) | L15: 2/15 allow 2+ (13.3%) | L20: 3/20 allow 2+ (15.0%)",
+        "away_goalie_l5_l10_l15_allow2": "L5: 1/3 allow 2+ (33.3%) | L10: 1/3 allow 2+ (33.3%) | L15: 1/3 allow 2+ (33.3%) | L20: 1/3 allow 2+ (33.3%)",
         "home_goalie_l5_l10_l15_allow2": "L5: 0/5 allow 2+ (0.0%) | L10: 1/10 allow 2+ (10.0%) | L15: 2/15 allow 2+ (13.3%) | L20: 2/20 allow 2+ (10.0%)",
         "h2h_games": 3,
         "h2h_o15_hits": 0,
@@ -706,8 +706,8 @@
     "failed_games": 0,
     "status_counts": {
       "Confirmed": 2,
-      "Likely": 1,
-      "Unconfirmed": 15
+      "Likely": 2,
+      "Unconfirmed": 14
     },
     "live_games": 0,
     "first_period_graded_games": 0,
