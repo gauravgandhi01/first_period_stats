@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-14",
-  "pulled_at_utc": "2026-04-14T17:45:01+00:00",
+  "pulled_at_utc": "2026-04-14T17:50:00+00:00",
   "target_date": "2026-04-14",
   "games": [
     {
@@ -584,17 +584,17 @@
       "game_time_et": "2026-04-14 09:30 PM ET",
       "away": {
         "team_name_feed": "Pittsburgh Penguins",
-        "goalie_name_feed": "Arturs Silovs",
+        "goalie_name_feed": "Stuart Skinner",
         "status": "Unconfirmed",
         "status_updated_at_utc": null,
         "team_id": 5,
         "team_abbrev": "PIT",
         "team_name": "Pittsburgh Penguins",
-        "goalie_id": 8481668,
-        "goalie_name": "Arturs Silovs",
-        "goalie_games": 34,
-        "goalie_ga_pg": 1.0294117647058822,
-        "goalie_save_pct": 88.44884488448845,
+        "goalie_id": 8479973,
+        "goalie_name": "Stuart Skinner",
+        "goalie_games": 21,
+        "goalie_ga_pg": 0.9047619047619048,
+        "goalie_save_pct": 89.67391304347827,
         "team_o15_pct": 0.5972222222222222,
         "team_combined_pg": 1.9583333333333333
       },
@@ -615,12 +615,12 @@
         "team_combined_pg": 1.6619718309859155
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5585096061437291,
-        "prob_under_1p_1_5": 0.44149039385627087,
-        "over_american_odds": -127,
-        "under_american_odds": 127,
-        "lambda_total": 2.1968066595012017,
-        "model_prob_over_1p_1_5_raw": 0.6035471870256099,
+        "prob_over_1p_1_5": 0.5531672969723523,
+        "prob_under_1p_1_5": 0.44683270302764766,
+        "over_american_odds": -124,
+        "under_american_odds": 124,
+        "lambda_total": 1.9733749759839105,
+        "model_prob_over_1p_1_5_raw": 0.5679317925497646,
         "market_prob_over_1p_1_5_consensus": 0.550561797752809,
         "market_book_count": 7,
         "market_dampening_weight": 0.85
@@ -628,7 +628,7 @@
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 3/5 2+ (60.0%) | L10: 6/10 2+ (60.0%) | L15: 9/15 2+ (60.0%) | L20: 12/20 2+ (60.0%)",
         "home_team_l5_l10_l15_o15": "L5: 1/5 2+ (20.0%) | L10: 1/10 2+ (10.0%) | L15: 4/15 2+ (26.7%) | L20: 7/20 2+ (35.0%)",
-        "away_goalie_l5_l10_l15_allow2": "L5: 2/5 allow 2+ (40.0%) | L10: 2/10 allow 2+ (20.0%) | L15: 2/15 allow 2+ (13.3%) | L20: 3/20 allow 2+ (15.0%)",
+        "away_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 3/10 allow 2+ (30.0%) | L15: 3/15 allow 2+ (20.0%) | L20: 5/20 allow 2+ (25.0%)",
         "home_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 3/10 allow 2+ (30.0%) | L15: 5/15 allow 2+ (33.3%) | L20: 9/20 allow 2+ (45.0%)",
         "h2h_games": 1,
         "h2h_o15_hits": 1,
