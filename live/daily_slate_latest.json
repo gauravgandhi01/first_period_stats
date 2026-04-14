@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-14",
-  "pulled_at_utc": "2026-04-14T22:35:01+00:00",
+  "pulled_at_utc": "2026-04-14T22:40:01+00:00",
   "target_date": "2026-04-14",
   "games": [
     {
@@ -11,8 +11,8 @@
       "away": {
         "team_name_feed": "Carolina Hurricanes",
         "goalie_name_feed": "Pyotr Kochetkov",
-        "status": "Confirmed",
-        "status_updated_at_utc": "2026-04-14T21:10:29.540Z",
+        "status": "Unconfirmed",
+        "status_updated_at_utc": null,
         "team_id": 12,
         "team_abbrev": "CAR",
         "team_name": "Carolina Hurricanes",
@@ -788,9 +788,9 @@
     "projectable_games": 9,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 12,
+      "Confirmed": 11,
       "Likely": 2,
-      "Unconfirmed": 4
+      "Unconfirmed": 5
     },
     "live_games": 0,
     "first_period_graded_games": 0,
