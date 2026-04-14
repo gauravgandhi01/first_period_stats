@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-14",
-  "pulled_at_utc": "2026-04-14T21:10:01+00:00",
+  "pulled_at_utc": "2026-04-14T21:15:00+00:00",
   "target_date": "2026-04-14",
   "games": [
     {
@@ -10,17 +10,17 @@
       "game_time_et": "2026-04-14 07:00 PM ET",
       "away": {
         "team_name_feed": "Carolina Hurricanes",
-        "goalie_name_feed": "Frederik Andersen",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "goalie_name_feed": "Pyotr Kochetkov",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-14T21:10:29.540Z",
         "team_id": 12,
         "team_abbrev": "CAR",
         "team_name": "Carolina Hurricanes",
-        "goalie_id": 8475883,
-        "goalie_name": "Frederik Andersen",
-        "goalie_games": 30,
-        "goalie_ga_pg": 0.8666666666666667,
-        "goalie_save_pct": 89.47368421052632,
+        "goalie_id": 8481611,
+        "goalie_name": "Pyotr Kochetkov",
+        "goalie_games": 8,
+        "goalie_ga_pg": 0.75,
+        "goalie_save_pct": 89.65517241379311,
         "team_o15_pct": 0.5492957746478874,
         "team_combined_pg": 1.9014084507042253
       },
@@ -41,12 +41,12 @@
         "team_combined_pg": 1.63013698630137
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5554129758475728,
-        "prob_under_1p_1_5": 0.44458702415242723,
-        "over_american_odds": -125,
-        "under_american_odds": 125,
-        "lambda_total": 2.0300031684332134,
-        "model_prob_over_1p_1_5_raw": 0.572764384416677,
+        "prob_over_1p_1_5": 0.5570607158596315,
+        "prob_under_1p_1_5": 0.44293928414036854,
+        "over_american_odds": -126,
+        "under_american_odds": 126,
+        "lambda_total": 2.0981764070681024,
+        "model_prob_over_1p_1_5_raw": 0.5837493178304023,
         "market_prob_over_1p_1_5_consensus": 0.552350962570672,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
@@ -54,7 +54,7 @@
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 5/10 2+ (50.0%) | L15: 8/15 2+ (53.3%) | L20: 11/20 2+ (55.0%)",
         "home_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 5/10 2+ (50.0%) | L15: 7/15 2+ (46.7%) | L20: 9/20 2+ (45.0%)",
-        "away_goalie_l5_l10_l15_allow2": "L5: 0/5 allow 2+ (0.0%) | L10: 0/10 allow 2+ (0.0%) | L15: 1/15 allow 2+ (6.7%) | L20: 3/20 allow 2+ (15.0%)",
+        "away_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 2/8 allow 2+ (25.0%) | L15: 2/8 allow 2+ (25.0%) | L20: 2/8 allow 2+ (25.0%)",
         "home_goalie_l5_l10_l15_allow2": "L5: 3/5 allow 2+ (60.0%) | L10: 3/10 allow 2+ (30.0%) | L15: 3/15 allow 2+ (20.0%) | L20: 4/20 allow 2+ (20.0%)",
         "h2h_games": 1,
         "h2h_o15_hits": 1,
@@ -788,9 +788,9 @@
     "projectable_games": 9,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 9,
+      "Confirmed": 10,
       "Likely": 4,
-      "Unconfirmed": 5
+      "Unconfirmed": 4
     },
     "live_games": 0,
     "first_period_graded_games": 0,
