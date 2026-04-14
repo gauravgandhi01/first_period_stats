@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-14",
-  "pulled_at_utc": "2026-04-14T19:00:01+00:00",
+  "pulled_at_utc": "2026-04-14T19:05:01+00:00",
   "target_date": "2026-04-14",
   "games": [
     {
@@ -117,8 +117,8 @@
       "home": {
         "team_name_feed": "Philadelphia Flyers",
         "goalie_name_feed": "Samuel Ersson",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-14T19:03:32.543Z",
         "team_id": 4,
         "team_abbrev": "PHI",
         "team_name": "Philadelphia Flyers",
@@ -788,9 +788,9 @@
     "projectable_games": 9,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 7,
+      "Confirmed": 8,
       "Likely": 5,
-      "Unconfirmed": 6
+      "Unconfirmed": 5
     },
     "live_games": 0,
     "first_period_graded_games": 0,
