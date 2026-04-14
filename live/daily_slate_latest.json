@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-14",
-  "pulled_at_utc": "2026-04-14T18:25:01+00:00",
+  "pulled_at_utc": "2026-04-14T18:30:00+00:00",
   "target_date": "2026-04-14",
   "games": [
     {
@@ -723,8 +723,8 @@
       "home": {
         "team_name_feed": "Vancouver Canucks",
         "goalie_name_feed": "Kevin Lankinen",
-        "status": "Likely",
-        "status_updated_at_utc": "2026-04-14T17:29:55.156Z",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-14T18:24:53.849Z",
         "team_id": 23,
         "team_abbrev": "VAN",
         "team_name": "Vancouver Canucks",
@@ -788,8 +788,8 @@
     "projectable_games": 9,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 6,
-      "Likely": 5,
+      "Confirmed": 7,
+      "Likely": 4,
       "Unconfirmed": 7
     },
     "live_games": 0,
