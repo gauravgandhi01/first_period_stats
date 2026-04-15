@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-15",
-  "pulled_at_utc": "2026-04-15T14:35:00+00:00",
+  "pulled_at_utc": "2026-04-15T14:40:01+00:00",
   "target_date": "2026-04-15",
   "games": [
     {
@@ -190,7 +190,7 @@
       },
       "home": {
         "team_name_feed": "Tampa Bay Lightning",
-        "goalie_name_feed": "Brandon Halverson",
+        "goalie_name_feed": "Andrei Vasilevskiy",
         "status": "Unconfirmed",
         "status_updated_at_utc": null,
         "team_id": 14,
@@ -226,9 +226,7 @@
         "h2h_avg_combined_1p": 4.0,
         "h2h_recent_scores": "2025-11-29: NYR 0-1 TBL (1P total 1) | 2025-11-12: NYR 4-3 TBL (1P total 7)"
       },
-      "notes": [
-        "Home starter fallback used: Andrei Vasilevskiy"
-      ],
+      "notes": [],
       "error": null,
       "game_status": {
         "nhl_game_id": 2025021302,
@@ -275,8 +273,8 @@
       "home": {
         "team_name_feed": "Ottawa Senators",
         "goalie_name_feed": "James Reimer",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Likely",
+        "status_updated_at_utc": "2026-04-15T14:32:31.380Z",
         "team_id": 9,
         "team_abbrev": "OTT",
         "team_name": "Ottawa Senators",
@@ -506,8 +504,8 @@
     "projectable_games": 6,
     "failed_games": 0,
     "status_counts": {
-      "Likely": 2,
-      "Unconfirmed": 10
+      "Likely": 3,
+      "Unconfirmed": 9
     },
     "live_games": 0,
     "first_period_graded_games": 0,
