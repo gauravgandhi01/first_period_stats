@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-14",
-  "pulled_at_utc": "2026-04-14T23:55:00+00:00",
+  "pulled_at_utc": "2026-04-15T00:00:01+00:00",
   "target_date": "2026-04-14",
   "games": [
     {
@@ -69,7 +69,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "05:35",
+        "clock": "00:33",
         "in_intermission": true,
         "away_score": 1,
         "home_score": 0,
@@ -159,7 +159,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "05:56",
+        "clock": "00:54",
         "in_intermission": true,
         "away_score": 0,
         "home_score": 2,
@@ -249,7 +249,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "06:45",
+        "clock": "01:44",
         "in_intermission": true,
         "away_score": 0,
         "home_score": 4,
@@ -338,11 +338,11 @@
         "nhl_game_id": 2025021295,
         "state_code": "LIVE",
         "state_label": "Live",
-        "period": 1,
-        "clock": "01:14",
-        "in_intermission": true,
+        "period": 2,
+        "clock": "18:40",
+        "in_intermission": false,
         "away_score": 0,
-        "home_score": 0,
+        "home_score": 1,
         "first_period_goals": 0,
         "first_period_complete": true,
         "first_period_total_result": "UNDER",
@@ -371,8 +371,8 @@
       "away": {
         "team_name_feed": "Anaheim Ducks",
         "goalie_name_feed": "Lukas Dostal",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-14T23:55:52.353Z",
         "team_id": 24,
         "team_abbrev": "ANA",
         "team_name": "Anaheim Ducks",
@@ -788,9 +788,9 @@
     "projectable_games": 9,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 13,
+      "Confirmed": 14,
       "Likely": 2,
-      "Unconfirmed": 3
+      "Unconfirmed": 2
     },
     "live_games": 4,
     "first_period_graded_games": 4,
