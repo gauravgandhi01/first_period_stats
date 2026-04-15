@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-14",
-  "pulled_at_utc": "2026-04-15T01:45:00+00:00",
+  "pulled_at_utc": "2026-04-15T01:50:01+00:00",
   "target_date": "2026-04-14",
   "games": [
     {
@@ -373,7 +373,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "14:34",
+        "clock": "09:33",
         "in_intermission": true,
         "away_score": 1,
         "home_score": 2,
@@ -449,7 +449,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "15:07",
+        "clock": "10:09",
         "in_intermission": true,
         "away_score": 0,
         "home_score": 0,
@@ -525,13 +525,13 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "00:00",
-        "in_intermission": false,
+        "clock": "11:09",
+        "in_intermission": true,
         "away_score": 0,
         "home_score": 1,
         "first_period_goals": 1,
-        "first_period_complete": false,
-        "first_period_total_result": null,
+        "first_period_complete": true,
+        "first_period_total_result": "UNDER",
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-14"
       }
     },
@@ -601,7 +601,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "18:00",
+        "clock": "17:25",
         "in_intermission": false,
         "away_score": 0,
         "home_score": 0,
@@ -703,9 +703,9 @@
       "Confirmed": 18
     },
     "live_games": 4,
-    "first_period_graded_games": 6,
+    "first_period_graded_games": 7,
     "first_period_over_games": 3,
-    "first_period_under_games": 3,
+    "first_period_under_games": 4,
     "market_games_with_data": 0
   }
 }
