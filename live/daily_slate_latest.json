@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-15",
-  "pulled_at_utc": "2026-04-15T13:50:00+00:00",
+  "pulled_at_utc": "2026-04-15T13:55:01+00:00",
   "target_date": "2026-04-15",
   "games": [
     {
@@ -64,20 +64,7 @@
       },
       "notes": [],
       "error": null,
-      "game_status": {
-        "nhl_game_id": 2025021301,
-        "state_code": "FUT",
-        "state_label": "Scheduled",
-        "period": 0,
-        "clock": null,
-        "in_intermission": false,
-        "away_score": 0,
-        "home_score": 0,
-        "first_period_goals": 0,
-        "first_period_complete": false,
-        "first_period_total_result": null,
-        "source_url": "https://api-web.nhle.com/v1/score/2026-04-15"
-      },
+      "game_status": null,
       "market_totals_p1": {
         "book_count": 6,
         "consensus_point": 1.5,
@@ -146,20 +133,7 @@
       },
       "notes": [],
       "error": null,
-      "game_status": {
-        "nhl_game_id": 2025021303,
-        "state_code": "FUT",
-        "state_label": "Scheduled",
-        "period": 0,
-        "clock": null,
-        "in_intermission": false,
-        "away_score": 0,
-        "home_score": 0,
-        "first_period_goals": 0,
-        "first_period_complete": false,
-        "first_period_total_result": null,
-        "source_url": "https://api-web.nhle.com/v1/score/2026-04-15"
-      },
+      "game_status": null,
       "market_totals_p1": {
         "book_count": 6,
         "consensus_point": 1.5,
@@ -228,20 +202,7 @@
       },
       "notes": [],
       "error": null,
-      "game_status": {
-        "nhl_game_id": 2025021302,
-        "state_code": "FUT",
-        "state_label": "Scheduled",
-        "period": 0,
-        "clock": null,
-        "in_intermission": false,
-        "away_score": 0,
-        "home_score": 0,
-        "first_period_goals": 0,
-        "first_period_complete": false,
-        "first_period_total_result": null,
-        "source_url": "https://api-web.nhle.com/v1/score/2026-04-15"
-      },
+      "game_status": null,
       "market_totals_p1": {
         "book_count": 6,
         "consensus_point": 1.5,
@@ -310,20 +271,7 @@
       },
       "notes": [],
       "error": null,
-      "game_status": {
-        "nhl_game_id": 2025021304,
-        "state_code": "FUT",
-        "state_label": "Scheduled",
-        "period": 0,
-        "clock": null,
-        "in_intermission": false,
-        "away_score": 0,
-        "home_score": 0,
-        "first_period_goals": 0,
-        "first_period_complete": false,
-        "first_period_total_result": null,
-        "source_url": "https://api-web.nhle.com/v1/score/2026-04-15"
-      },
+      "game_status": null,
       "market_totals_p1": {
         "book_count": 6,
         "consensus_point": 1.5,
@@ -392,20 +340,7 @@
       },
       "notes": [],
       "error": null,
-      "game_status": {
-        "nhl_game_id": 2025021305,
-        "state_code": "FUT",
-        "state_label": "Scheduled",
-        "period": 0,
-        "clock": null,
-        "in_intermission": false,
-        "away_score": 0,
-        "home_score": 0,
-        "first_period_goals": 0,
-        "first_period_complete": false,
-        "first_period_total_result": null,
-        "source_url": "https://api-web.nhle.com/v1/score/2026-04-15"
-      },
+      "game_status": null,
       "market_totals_p1": {
         "book_count": 6,
         "consensus_point": 1.5,
@@ -476,20 +411,7 @@
         "Away starter fallback used: Joey Daccord"
       ],
       "error": null,
-      "game_status": {
-        "nhl_game_id": 2025021306,
-        "state_code": "FUT",
-        "state_label": "Scheduled",
-        "period": 0,
-        "clock": null,
-        "in_intermission": false,
-        "away_score": 0,
-        "home_score": 0,
-        "first_period_goals": 0,
-        "first_period_complete": false,
-        "first_period_total_result": null,
-        "source_url": "https://api-web.nhle.com/v1/score/2026-04-15"
-      },
+      "game_status": null,
       "market_totals_p1": {
         "book_count": 6,
         "consensus_point": 1.5,
@@ -498,7 +420,9 @@
       }
     }
   ],
-  "warnings": [],
+  "warnings": [
+    "NHL live status unavailable: HTTPSConnectionPool(host='api-web.nhle.com', port=443): Read timed out. (read timeout=20)"
+  ],
   "meta": {
     "total_games": 6,
     "projectable_games": 6,
