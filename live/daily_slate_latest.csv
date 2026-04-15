@@ -1,7 +1,7 @@
 game_date,game_time_et,game_time_utc,away_team,home_team,away_goalie,away_status,away_status_updated_at_utc,home_goalie,home_status,home_status_updated_at_utc,prob_over_1p_1_5,over_american_odds,under_american_odds,h2h_o15_pct,h2h_games,h2h_hits,game_state,game_state_code,period,clock,first_period_goals,first_period_complete,first_period_result,away_score_live,home_score_live,error,notes
-2026-04-15,2026-04-15 07:00 PM ET,2026-04-15T23:00:00+00:00,DAL,BUF,Casey DeSmith,Unconfirmed,,Ukko-Pekka Luukkonen,Unconfirmed,,0.6120211962803892,-158,158,0.0%,1,0,Scheduled,FUT,0,,0,False,,0,0,,
+2026-04-15,2026-04-15 07:00 PM ET,2026-04-15T23:00:00+00:00,DAL,BUF,Casey DeSmith,Unconfirmed,,Ukko-Pekka Luukkonen,Unconfirmed,,0.5268711339428991,-111,111,0.0%,1,0,Scheduled,FUT,0,,0,False,,0,0,,
 2026-04-15,2026-04-15 07:00 PM ET,2026-04-15T23:00:00+00:00,DET,FLA,Cam Talbot,Unconfirmed,,Daniil Tarasov,Unconfirmed,,0.5184383091988016,-108,108,0.0%,3,0,Scheduled,FUT,0,,0,False,,0,0,,
-2026-04-15,2026-04-15 07:00 PM ET,2026-04-15T23:00:00+00:00,NYR,TBL,Igor Shesterkin,Unconfirmed,,Andrei Vasilevskiy,Unconfirmed,,0.6288364741667231,-169,169,50.0%,2,1,Scheduled,FUT,0,,0,False,,0,0,,
-2026-04-15,2026-04-15 07:30 PM ET,2026-04-15T23:30:00+00:00,TOR,OTT,Joseph Woll,Unconfirmed,,Linus Ullmark,Unconfirmed,,0.4040365211867272,148,-148,66.7%,3,2,Scheduled,FUT,0,,0,False,,0,0,,
-2026-04-15,2026-04-15 08:30 PM ET,2026-04-16T00:30:00+00:00,SJS,CHI,Alex Nedeljkovic,Unconfirmed,,Spencer Knight,Unconfirmed,,0.5658467239699452,-130,130,0.0%,1,0,Scheduled,FUT,0,,0,False,,0,0,,
+2026-04-15,2026-04-15 07:00 PM ET,2026-04-15T23:00:00+00:00,NYR,TBL,Igor Shesterkin,Unconfirmed,,Andrei Vasilevskiy,Unconfirmed,,0.5458272897570382,-120,120,50.0%,2,1,Scheduled,FUT,0,,0,False,,0,0,,
+2026-04-15,2026-04-15 07:30 PM ET,2026-04-15T23:30:00+00:00,TOR,OTT,Joseph Woll,Unconfirmed,,Linus Ullmark,Unconfirmed,,0.4663056718113514,114,-114,66.7%,3,2,Scheduled,FUT,0,,0,False,,0,0,,
+2026-04-15,2026-04-15 08:30 PM ET,2026-04-16T00:30:00+00:00,SJS,CHI,Alex Nedeljkovic,Unconfirmed,,Spencer Knight,Unconfirmed,,0.5628408581255895,-129,129,0.0%,1,0,Scheduled,FUT,0,,0,False,,0,0,,
 2026-04-15,2026-04-15 10:00 PM ET,2026-04-16T02:00:00+00:00,SEA,VGK,Joey Daccord,Unconfirmed,,Carter Hart,Unconfirmed,,0.538078501260282,-116,116,50.0%,2,1,Scheduled,FUT,0,,0,False,,0,0,,Away starter fallback used: Joey Daccord
