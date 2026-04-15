@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-14",
-  "pulled_at_utc": "2026-04-15T00:15:01+00:00",
+  "pulled_at_utc": "2026-04-15T00:20:00+00:00",
   "target_date": "2026-04-14",
   "games": [
     {
@@ -69,7 +69,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "10:58",
+        "clock": "09:30",
         "in_intermission": false,
         "away_score": 1,
         "home_score": 0,
@@ -159,7 +159,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "12:04",
+        "clock": "09:22",
         "in_intermission": false,
         "away_score": 1,
         "home_score": 2,
@@ -249,7 +249,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "12:47",
+        "clock": "10:01",
         "in_intermission": false,
         "away_score": 0,
         "home_score": 4,
@@ -339,7 +339,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "09:04",
+        "clock": "06:49",
         "in_intermission": false,
         "away_score": 1,
         "home_score": 1,
@@ -429,7 +429,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "16:54",
+        "clock": "13:24",
         "in_intermission": false,
         "away_score": 0,
         "home_score": 0,
@@ -633,8 +633,8 @@
       "home": {
         "team_name_feed": "St Louis Blues",
         "goalie_name_feed": "Jordan Binnington",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-15T00:17:51.002Z",
         "team_id": 19,
         "team_abbrev": "STL",
         "team_name": "St. Louis Blues",
@@ -788,9 +788,9 @@
     "projectable_games": 9,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 14,
+      "Confirmed": 15,
       "Likely": 2,
-      "Unconfirmed": 2
+      "Unconfirmed": 1
     },
     "live_games": 5,
     "first_period_graded_games": 4,
