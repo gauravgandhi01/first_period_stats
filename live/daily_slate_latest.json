@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-15",
-  "pulled_at_utc": "2026-04-15T22:30:00+00:00",
+  "pulled_at_utc": "2026-04-15T22:35:01+00:00",
   "target_date": "2026-04-15",
   "games": [
     {
@@ -27,8 +27,8 @@
       "home": {
         "team_name_feed": "Buffalo Sabres",
         "goalie_name_feed": "Colten Ellis",
-        "status": "Likely",
-        "status_updated_at_utc": "2026-04-15T14:23:23.342Z",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-15T22:30:11.786Z",
         "team_id": 7,
         "team_abbrev": "BUF",
         "team_name": "Buffalo Sabres",
@@ -190,9 +190,9 @@
       },
       "home": {
         "team_name_feed": "Tampa Bay Lightning",
-        "goalie_name_feed": "Andrei Vasilevskiy",
-        "status": "Likely",
-        "status_updated_at_utc": "2026-04-15T14:39:48.460Z",
+        "goalie_name_feed": "Brandon Halverson",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-15T22:30:53.548Z",
         "team_id": 14,
         "team_abbrev": "TBL",
         "team_name": "Tampa Bay Lightning",
@@ -226,7 +226,9 @@
         "h2h_avg_combined_1p": 4.0,
         "h2h_recent_scores": "2025-11-29: NYR 0-1 TBL (1P total 1) | 2025-11-12: NYR 4-3 TBL (1P total 7)"
       },
-      "notes": [],
+      "notes": [
+        "Home starter fallback used: Andrei Vasilevskiy"
+      ],
       "error": null,
       "game_status": {
         "nhl_game_id": 2025021302,
@@ -520,8 +522,8 @@
     "projectable_games": 6,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 9,
-      "Likely": 3
+      "Confirmed": 11,
+      "Likely": 1
     },
     "live_games": 0,
     "first_period_graded_games": 0,
