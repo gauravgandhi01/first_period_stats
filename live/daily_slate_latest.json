@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-15",
-  "pulled_at_utc": "2026-04-15T15:35:01+00:00",
+  "pulled_at_utc": "2026-04-15T15:40:01+00:00",
   "target_date": "2026-04-15",
   "games": [
     {
@@ -256,17 +256,17 @@
       "game_time_et": "2026-04-15 07:30 PM ET",
       "away": {
         "team_name_feed": "Toronto Maple Leafs",
-        "goalie_name_feed": "Joseph Woll",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "goalie_name_feed": "Dennis Hildeby",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-15T15:37:49.149Z",
         "team_id": 10,
         "team_abbrev": "TOR",
         "team_name": "Toronto Maple Leafs",
-        "goalie_id": 8479361,
-        "goalie_name": "Joseph Woll",
-        "goalie_games": 35,
-        "goalie_ga_pg": 1.0,
-        "goalie_save_pct": 90.64171122994652,
+        "goalie_id": 8483710,
+        "goalie_name": "Dennis Hildeby",
+        "goalie_games": 13,
+        "goalie_ga_pg": 0.6153846153846154,
+        "goalie_save_pct": 93.75,
         "team_o15_pct": 0.6164383561643836,
         "team_combined_pg": 1.821917808219178
       },
@@ -287,12 +287,12 @@
         "team_combined_pg": 1.8333333333333333
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5519543494404004,
-        "prob_under_1p_1_5": 0.44804565055959955,
-        "over_american_odds": -123,
-        "under_american_odds": 123,
-        "lambda_total": 1.6084578590971987,
-        "model_prob_over_1p_1_5_raw": 0.5099233692076058,
+        "prob_over_1p_1_5": 0.5450617941529865,
+        "prob_under_1p_1_5": 0.4549382058470135,
+        "over_american_odds": -120,
+        "under_american_odds": 120,
+        "lambda_total": 1.3852974119894323,
+        "model_prob_over_1p_1_5_raw": 0.46397300062484564,
         "market_prob_over_1p_1_5_consensus": 0.5593715812461878,
         "market_book_count": 6,
         "market_dampening_weight": 0.85
@@ -300,7 +300,7 @@
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 6/10 2+ (60.0%) | L15: 11/15 2+ (73.3%) | L20: 12/20 2+ (60.0%)",
         "home_team_l5_l10_l15_o15": "L5: 1/5 2+ (20.0%) | L10: 3/10 2+ (30.0%) | L15: 6/15 2+ (40.0%) | L20: 8/20 2+ (40.0%)",
-        "away_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 4/10 allow 2+ (40.0%) | L15: 6/15 allow 2+ (40.0%) | L20: 8/20 allow 2+ (40.0%)",
+        "away_goalie_l5_l10_l15_allow2": "L5: 0/5 allow 2+ (0.0%) | L10: 1/10 allow 2+ (10.0%) | L15: 2/13 allow 2+ (15.4%) | L20: 2/13 allow 2+ (15.4%)",
         "home_goalie_l5_l10_l15_allow2": "L5: 0/5 allow 2+ (0.0%) | L10: 1/10 allow 2+ (10.0%) | L15: 1/10 allow 2+ (10.0%) | L20: 1/10 allow 2+ (10.0%)",
         "h2h_games": 3,
         "h2h_o15_hits": 2,
@@ -504,9 +504,9 @@
     "projectable_games": 6,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 2,
+      "Confirmed": 3,
       "Likely": 2,
-      "Unconfirmed": 8
+      "Unconfirmed": 7
     },
     "live_games": 0,
     "first_period_graded_games": 0,
