@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-15",
-  "pulled_at_utc": "2026-04-15T15:30:00+00:00",
+  "pulled_at_utc": "2026-04-15T15:35:01+00:00",
   "target_date": "2026-04-15",
   "games": [
     {
@@ -273,8 +273,8 @@
       "home": {
         "team_name_feed": "Ottawa Senators",
         "goalie_name_feed": "James Reimer",
-        "status": "Likely",
-        "status_updated_at_utc": "2026-04-15T14:32:31.380Z",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-15T15:29:42.481Z",
         "team_id": 9,
         "team_abbrev": "OTT",
         "team_name": "Ottawa Senators",
@@ -504,8 +504,8 @@
     "projectable_games": 6,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 1,
-      "Likely": 3,
+      "Confirmed": 2,
+      "Likely": 2,
       "Unconfirmed": 8
     },
     "live_games": 0,
