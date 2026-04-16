@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-16",
-  "pulled_at_utc": "2026-04-16T16:20:01+00:00",
+  "pulled_at_utc": "2026-04-16T16:25:00+00:00",
   "target_date": "2026-04-16",
   "games": [
     {
@@ -123,13 +123,13 @@
         "team_combined_pg": 1.8888888888888888
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5525897016332875,
-        "prob_under_1p_1_5": 0.44741029836671253,
-        "over_american_odds": -124,
-        "under_american_odds": 124,
+        "prob_over_1p_1_5": 0.5495481214429203,
+        "prob_under_1p_1_5": 0.4504518785570797,
+        "over_american_odds": -122,
+        "under_american_odds": 122,
         "lambda_total": 1.8487128239141888,
         "model_prob_over_1p_1_5_raw": 0.5438039556868846,
-        "market_prob_over_1p_1_5_consensus": 0.554140127388535,
+        "market_prob_over_1p_1_5_consensus": 0.550561797752809,
         "market_book_count": 7,
         "market_dampening_weight": 0.85
       },
@@ -163,7 +163,7 @@
       "market_totals_p1": {
         "book_count": 7,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.554140127388535,
+        "consensus_over_no_vig_prob": 0.550561797752809,
         "fanduel": null
       }
     },
@@ -272,9 +272,9 @@
       },
       "home": {
         "team_name_feed": "Calgary Flames",
-        "goalie_name_feed": "Dustin Wolf",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "goalie_name_feed": "Arseniy Sergeev",
+        "status": "Likely",
+        "status_updated_at_utc": "2026-04-16T16:20:30.208Z",
         "team_id": 20,
         "team_abbrev": "CGY",
         "team_name": "Calgary Flames",
@@ -287,13 +287,13 @@
         "team_combined_pg": 1.5972222222222223
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5095832387738404,
-        "prob_under_1p_1_5": 0.4904167612261596,
-        "over_american_odds": -104,
-        "under_american_odds": 104,
+        "prob_over_1p_1_5": 0.5183447636883747,
+        "prob_under_1p_1_5": 0.4816552363116253,
+        "over_american_odds": -108,
+        "under_american_odds": 108,
         "lambda_total": 1.5007390789791437,
         "model_prob_over_1p_1_5_raw": 0.44882903683406206,
-        "market_prob_over_1p_1_5_consensus": 0.5203045685279188,
+        "market_prob_over_1p_1_5_consensus": 0.5306122448979592,
         "market_book_count": 7,
         "market_dampening_weight": 0.85
       },
@@ -308,7 +308,9 @@
         "h2h_avg_combined_1p": 0.6666666666666666,
         "h2h_recent_scores": "2026-03-24: LAK 1-0 CGY (1P total 1) | 2026-02-28: LAK 0-0 CGY (1P total 0) | 2025-12-13: LAK 1-0 CGY (1P total 1)"
       },
-      "notes": [],
+      "notes": [
+        "Home starter fallback used: Dustin Wolf"
+      ],
       "error": null,
       "game_status": {
         "nhl_game_id": 2025021310,
@@ -327,7 +329,7 @@
       "market_totals_p1": {
         "book_count": 7,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5203045685279188,
+        "consensus_over_no_vig_prob": 0.5306122448979592,
         "fanduel": null
       }
     },
@@ -505,7 +507,8 @@
     "failed_games": 0,
     "status_counts": {
       "Confirmed": 1,
-      "Unconfirmed": 11
+      "Likely": 1,
+      "Unconfirmed": 10
     },
     "live_games": 0,
     "first_period_graded_games": 0,
