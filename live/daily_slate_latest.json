@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-16",
-  "pulled_at_utc": "2026-04-16T16:10:01+00:00",
+  "pulled_at_utc": "2026-04-16T16:15:01+00:00",
   "target_date": "2026-04-16",
   "games": [
     {
@@ -355,8 +355,8 @@
       "home": {
         "team_name_feed": "Edmonton Oilers",
         "goalie_name_feed": "Connor Ingram",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-16T16:10:50.600Z",
         "team_id": 22,
         "team_abbrev": "EDM",
         "team_name": "Edmonton Oilers",
@@ -504,7 +504,8 @@
     "projectable_games": 6,
     "failed_games": 0,
     "status_counts": {
-      "Unconfirmed": 12
+      "Confirmed": 1,
+      "Unconfirmed": 11
     },
     "live_games": 0,
     "first_period_graded_games": 0,
