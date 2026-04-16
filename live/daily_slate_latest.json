@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-16",
-  "pulled_at_utc": "2026-04-16T16:25:00+00:00",
+  "pulled_at_utc": "2026-04-16T16:30:00+00:00",
   "target_date": "2026-04-16",
   "games": [
     {
@@ -272,7 +272,7 @@
       },
       "home": {
         "team_name_feed": "Calgary Flames",
-        "goalie_name_feed": "Arseniy Sergeev",
+        "goalie_name_feed": "Arsenii Sergeev",
         "status": "Likely",
         "status_updated_at_utc": "2026-04-16T16:20:30.208Z",
         "team_id": 20,
