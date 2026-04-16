@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-15",
-  "pulled_at_utc": "2026-04-16T01:45:00+00:00",
+  "pulled_at_utc": "2026-04-16T01:50:00+00:00",
   "target_date": "2026-04-15",
   "games": [
     {
@@ -299,7 +299,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 3,
-        "clock": "10:51",
+        "clock": "08:32",
         "in_intermission": false,
         "away_score": 1,
         "home_score": 2,
@@ -375,7 +375,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "14:25",
+        "clock": "12:00",
         "in_intermission": false,
         "away_score": 2,
         "home_score": 0,
