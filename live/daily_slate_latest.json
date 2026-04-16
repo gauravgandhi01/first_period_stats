@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-16",
-  "pulled_at_utc": "2026-04-16T16:00:01+00:00",
+  "pulled_at_utc": "2026-04-16T16:05:01+00:00",
   "target_date": "2026-04-16",
   "games": [
     {
@@ -190,27 +190,27 @@
       },
       "home": {
         "team_name_feed": "Winnipeg Jets",
-        "goalie_name_feed": "Connor Hellebuyck",
-        "status": "Likely",
-        "status_updated_at_utc": "2026-04-16T15:30:12.376Z",
+        "goalie_name_feed": "Eric Comrie",
+        "status": "Unconfirmed",
+        "status_updated_at_utc": null,
         "team_id": 52,
         "team_abbrev": "WPG",
         "team_name": "Winnipeg Jets",
-        "goalie_id": 8476945,
-        "goalie_name": "Connor Hellebuyck",
-        "goalie_games": 49,
-        "goalie_ga_pg": 0.5918367346938775,
-        "goalie_save_pct": 93.02884615384616,
+        "goalie_id": 8477480,
+        "goalie_name": "Eric Comrie",
+        "goalie_games": 22,
+        "goalie_ga_pg": 0.9545454545454546,
+        "goalie_save_pct": 89.90384615384616,
         "team_o15_pct": 0.5277777777777778,
         "team_combined_pg": 1.5416666666666667
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5426720873953466,
-        "prob_under_1p_1_5": 0.45732791260465344,
+        "prob_over_1p_1_5": 0.5424435559669651,
+        "prob_under_1p_1_5": 0.45755644403303486,
         "over_american_odds": -119,
         "under_american_odds": 119,
-        "lambda_total": 1.885116293775814,
-        "model_prob_over_1p_1_5_raw": 0.5533293043422056,
+        "lambda_total": 1.876477413596885,
+        "model_prob_over_1p_1_5_raw": 0.5518057614863296,
         "market_prob_over_1p_1_5_consensus": 0.5407914020517831,
         "market_book_count": 7,
         "market_dampening_weight": 0.85
@@ -219,7 +219,7 @@
         "away_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 5/10 2+ (50.0%) | L15: 7/15 2+ (46.7%) | L20: 10/20 2+ (50.0%)",
         "home_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 4/10 2+ (40.0%) | L15: 5/15 2+ (33.3%) | L20: 7/20 2+ (35.0%)",
         "away_goalie_l5_l10_l15_allow2": "L5: 2/5 allow 2+ (40.0%) | L10: 2/10 allow 2+ (20.0%) | L15: 3/15 allow 2+ (20.0%) | L20: 4/20 allow 2+ (20.0%)",
-        "home_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 1/10 allow 2+ (10.0%) | L15: 1/15 allow 2+ (6.7%) | L20: 1/20 allow 2+ (5.0%)",
+        "home_goalie_l5_l10_l15_allow2": "L5: 0/5 allow 2+ (0.0%) | L10: 2/10 allow 2+ (20.0%) | L15: 4/15 allow 2+ (26.7%) | L20: 5/20 allow 2+ (25.0%)",
         "h2h_games": 2,
         "h2h_o15_hits": 1,
         "h2h_o15_pct": 0.5,
@@ -504,8 +504,7 @@
     "projectable_games": 6,
     "failed_games": 0,
     "status_counts": {
-      "Likely": 1,
-      "Unconfirmed": 11
+      "Unconfirmed": 12
     },
     "live_games": 0,
     "first_period_graded_games": 0,
