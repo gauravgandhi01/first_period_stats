@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-16",
-  "pulled_at_utc": "2026-04-16T23:30:00+00:00",
+  "pulled_at_utc": "2026-04-16T23:35:01+00:00",
   "target_date": "2026-04-16",
   "games": [
     {
@@ -92,25 +92,25 @@
       "game_time_et": "2026-04-16 08:00 PM ET",
       "away": {
         "team_name_feed": "Anaheim Ducks",
-        "goalie_name_feed": "Lukas Dostal",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "goalie_name_feed": "Ville Husso",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-16T23:30:04.695Z",
         "team_id": 24,
         "team_abbrev": "ANA",
         "team_name": "Anaheim Ducks",
-        "goalie_id": 8480843,
-        "goalie_name": "Lukas Dostal",
-        "goalie_games": 48,
-        "goalie_ga_pg": 1.0,
-        "goalie_save_pct": 89.49671772428884,
+        "goalie_id": 8478024,
+        "goalie_name": "Ville Husso",
+        "goalie_games": 16,
+        "goalie_ga_pg": 0.875,
+        "goalie_save_pct": 91.13924050632912,
         "team_o15_pct": 0.5277777777777778,
         "team_combined_pg": 1.7638888888888888
       },
       "home": {
         "team_name_feed": "Nashville Predators",
         "goalie_name_feed": "Juuse Saros",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-16T23:29:49.981Z",
         "team_id": 18,
         "team_abbrev": "NSH",
         "team_name": "Nashville Predators",
@@ -123,12 +123,12 @@
         "team_combined_pg": 1.8888888888888888
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5495481214429203,
-        "prob_under_1p_1_5": 0.4504518785570797,
-        "over_american_odds": -122,
-        "under_american_odds": 122,
-        "lambda_total": 1.8487128239141888,
-        "model_prob_over_1p_1_5_raw": 0.5438039556868846,
+        "prob_over_1p_1_5": 0.5450149473221564,
+        "prob_under_1p_1_5": 0.4549850526778436,
+        "over_american_odds": -120,
+        "under_american_odds": 120,
+        "lambda_total": 1.6858890067570167,
+        "model_prob_over_1p_1_5_raw": 0.5135827948817919,
         "market_prob_over_1p_1_5_consensus": 0.550561797752809,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
@@ -136,7 +136,7 @@
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 3/10 2+ (30.0%) | L15: 6/15 2+ (40.0%) | L20: 8/20 2+ (40.0%)",
         "home_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 5/10 2+ (50.0%) | L15: 8/15 2+ (53.3%) | L20: 12/20 2+ (60.0%)",
-        "away_goalie_l5_l10_l15_allow2": "L5: 0/5 allow 2+ (0.0%) | L10: 2/10 allow 2+ (20.0%) | L15: 4/15 allow 2+ (26.7%) | L20: 4/20 allow 2+ (20.0%)",
+        "away_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 2/10 allow 2+ (20.0%) | L15: 3/15 allow 2+ (20.0%) | L20: 3/16 allow 2+ (18.8%)",
         "home_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 2/10 allow 2+ (20.0%) | L15: 5/15 allow 2+ (33.3%) | L20: 7/20 allow 2+ (35.0%)",
         "h2h_games": 1,
         "h2h_o15_hits": 1,
@@ -538,8 +538,8 @@
     "projectable_games": 6,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 9,
-      "Unconfirmed": 3
+      "Confirmed": 11,
+      "Unconfirmed": 1
     },
     "live_games": 0,
     "first_period_graded_games": 0,
