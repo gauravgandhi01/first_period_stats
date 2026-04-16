@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-16",
-  "pulled_at_utc": "2026-04-16T17:50:01+00:00",
+  "pulled_at_utc": "2026-04-16T17:55:00+00:00",
   "target_date": "2026-04-16",
   "games": [
     {
@@ -257,8 +257,8 @@
       "away": {
         "team_name_feed": "Los Angeles Kings",
         "goalie_name_feed": "Anton Forsberg",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-16T17:53:38.381Z",
         "team_id": 26,
         "team_abbrev": "LAK",
         "team_name": "Los Angeles Kings",
@@ -506,9 +506,9 @@
     "projectable_games": 6,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 3,
+      "Confirmed": 4,
       "Likely": 1,
-      "Unconfirmed": 8
+      "Unconfirmed": 7
     },
     "live_games": 0,
     "first_period_graded_games": 0,
