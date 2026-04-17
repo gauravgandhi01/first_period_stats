@@ -1,11 +1,9 @@
 {
-  "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-17",
-  "pulled_at_utc": "2026-04-17T03:58:10+00:00",
-  "target_date": "2026-04-17",
+  "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-18",
+  "pulled_at_utc": "2026-04-17T04:24:10+00:00",
+  "target_date": "2026-04-18",
   "games": [],
-  "warnings": [
-    "Odds API market pull unavailable: HTTPSConnectionPool(host='api.the-odds-api.com', port=443): Read timed out. (read timeout=30)"
-  ],
+  "warnings": [],
   "meta": {
     "total_games": 0,
     "projectable_games": 0,
