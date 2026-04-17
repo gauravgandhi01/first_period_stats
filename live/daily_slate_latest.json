@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-16",
-  "pulled_at_utc": "2026-04-17T00:40:00+00:00",
+  "pulled_at_utc": "2026-04-17T00:45:01+00:00",
   "target_date": "2026-04-16",
   "games": [
     {
@@ -69,10 +69,10 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "18:34",
+        "clock": "15:14",
         "in_intermission": false,
         "away_score": 1,
-        "home_score": 3,
+        "home_score": 2,
         "first_period_goals": 2,
         "first_period_complete": true,
         "first_period_total_result": "OVER",
@@ -145,13 +145,13 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "01:32",
-        "in_intermission": false,
-        "away_score": 1,
+        "clock": "16:02",
+        "in_intermission": true,
+        "away_score": 2,
         "home_score": 2,
-        "first_period_goals": 3,
-        "first_period_complete": false,
-        "first_period_total_result": null,
+        "first_period_goals": 4,
+        "first_period_complete": true,
+        "first_period_total_result": "OVER",
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-16"
       }
     },
@@ -221,13 +221,13 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "01:28",
-        "in_intermission": false,
+        "clock": "15:21",
+        "in_intermission": true,
         "away_score": 2,
         "home_score": 1,
         "first_period_goals": 3,
-        "first_period_complete": false,
-        "first_period_total_result": null,
+        "first_period_complete": true,
+        "first_period_total_result": "OVER",
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-16"
       }
     },
@@ -508,8 +508,8 @@
       "Unconfirmed": 1
     },
     "live_games": 3,
-    "first_period_graded_games": 1,
-    "first_period_over_games": 1,
+    "first_period_graded_games": 3,
+    "first_period_over_games": 3,
     "first_period_under_games": 0,
     "market_games_with_data": 3
   }
