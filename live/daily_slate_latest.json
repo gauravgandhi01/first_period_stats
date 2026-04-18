@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-18",
-  "pulled_at_utc": "2026-04-18T15:55:01+00:00",
+  "pulled_at_utc": "2026-04-18T16:00:01+00:00",
   "target_date": "2026-04-18",
   "games": [
     {
@@ -207,8 +207,8 @@
       "home": {
         "team_name_feed": "Pittsburgh Penguins",
         "goalie_name_feed": "Stuart Skinner",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-18T15:56:30.896Z",
         "team_id": 5,
         "team_abbrev": "PIT",
         "team_name": "Pittsburgh Penguins",
@@ -280,9 +280,9 @@
     "projectable_games": 3,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 2,
+      "Confirmed": 3,
       "Likely": 1,
-      "Unconfirmed": 3
+      "Unconfirmed": 2
     },
     "live_games": 0,
     "first_period_graded_games": 0,
