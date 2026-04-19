@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-19",
-  "pulled_at_utc": "2026-04-19T12:55:01+00:00",
+  "pulled_at_utc": "2026-04-19T16:05:01+00:00",
   "target_date": "2026-04-19",
   "games": [
     {
@@ -89,7 +89,7 @@
           "over_price": -118.0,
           "under_price": -108.0,
           "over_no_vig_prob": 0.510397604391948,
-          "last_update": "2026-04-19T12:53:59Z"
+          "last_update": "2026-04-19T16:04:39Z"
         }
       }
     },
@@ -176,10 +176,10 @@
           "bookmaker_key": "fanduel",
           "bookmaker_title": "FanDuel",
           "point": 1.5,
-          "over_price": -120.0,
-          "under_price": -106.0,
-          "over_no_vig_prob": 0.5145711906744379,
-          "last_update": "2026-04-19T12:54:27Z"
+          "over_price": -122.0,
+          "under_price": -104.0,
+          "over_no_vig_prob": 0.5187593796898449,
+          "last_update": "2026-04-19T16:04:58Z"
         }
       }
     },
@@ -191,8 +191,8 @@
       "away": {
         "team_name_feed": "Boston Bruins",
         "goalie_name_feed": "Jeremy Swayman",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-19T15:59:33.215Z",
         "team_id": 6,
         "team_abbrev": "BOS",
         "team_name": "Boston Bruins",
@@ -221,13 +221,13 @@
         "team_combined_pg": 1.9589041095890412
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5119550395104616,
-        "prob_under_1p_1_5": 0.4880449604895384,
-        "over_american_odds": -105,
-        "under_american_odds": 105,
+        "prob_over_1p_1_5": 0.5046128056404903,
+        "prob_under_1p_1_5": 0.49538719435950973,
+        "over_american_odds": -102,
+        "under_american_odds": 102,
         "lambda_total": 1.4598579317060527,
         "model_prob_over_1p_1_5_raw": 0.4733971118272901,
-        "market_prob_over_1p_1_5_consensus": 0.5187593796898449,
+        "market_prob_over_1p_1_5_consensus": 0.5101214574898786,
         "market_book_count": 7,
         "market_dampening_weight": 0.85
       },
@@ -261,7 +261,7 @@
       "market_totals_p1": {
         "book_count": 7,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5187593796898449,
+        "consensus_over_no_vig_prob": 0.5101214574898786,
         "fanduel": {
           "bookmaker_key": "fanduel",
           "bookmaker_title": "FanDuel",
@@ -269,7 +269,7 @@
           "over_price": -122.0,
           "under_price": -104.0,
           "over_no_vig_prob": 0.5187593796898449,
-          "last_update": "2026-04-19T13:09:56Z"
+          "last_update": "2026-04-19T16:04:57Z"
         }
       }
     },
@@ -318,7 +318,7 @@
         "lambda_total": 1.6300848739649678,
         "model_prob_over_1p_1_5_raw": 0.507489515359212,
         "market_prob_over_1p_1_5_consensus": 0.5203045685279188,
-        "market_book_count": 8,
+        "market_book_count": 7,
         "market_dampening_weight": 0.85
       },
       "trends": {
@@ -349,7 +349,7 @@
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-19"
       },
       "market_totals_p1": {
-        "book_count": 8,
+        "book_count": 7,
         "consensus_point": 1.5,
         "consensus_over_no_vig_prob": 0.5203045685279188,
         "fanduel": {
@@ -359,7 +359,7 @@
           "over_price": -116.0,
           "under_price": -110.0,
           "over_no_vig_prob": 0.5062344139650873,
-          "last_update": "2026-04-19T13:10:06Z"
+          "last_update": "2026-04-19T16:04:42Z"
         }
       }
     }
@@ -370,8 +370,9 @@
     "projectable_games": 4,
     "failed_games": 0,
     "status_counts": {
+      "Confirmed": 1,
       "Likely": 1,
-      "Unconfirmed": 7
+      "Unconfirmed": 6
     },
     "live_games": 0,
     "first_period_graded_games": 0,
