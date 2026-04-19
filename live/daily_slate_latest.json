@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-19",
-  "pulled_at_utc": "2026-04-19T18:20:01+00:00",
+  "pulled_at_utc": "2026-04-19T18:25:00+00:00",
   "target_date": "2026-04-19",
   "games": [
     {
@@ -281,8 +281,8 @@
       "away": {
         "team_name_feed": "Utah Mammoth",
         "goalie_name_feed": "Karel Vejmelka",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Likely",
+        "status_updated_at_utc": "2026-04-19T18:22:50.063Z",
         "team_id": 68,
         "team_abbrev": "UTA",
         "team_name": "Utah Mammoth",
@@ -371,8 +371,8 @@
     "failed_games": 0,
     "status_counts": {
       "Confirmed": 3,
-      "Likely": 1,
-      "Unconfirmed": 4
+      "Likely": 2,
+      "Unconfirmed": 3
     },
     "live_games": 0,
     "first_period_graded_games": 0,
