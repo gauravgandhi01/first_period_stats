@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-19",
-  "pulled_at_utc": "2026-04-20T01:35:00+00:00",
+  "pulled_at_utc": "2026-04-20T01:40:00+00:00",
   "target_date": "2026-04-19",
   "games": [
     {
@@ -220,9 +220,9 @@
         "nhl_game_id": 2025030111,
         "state_code": "LIVE",
         "state_label": "Live",
-        "period": 2,
-        "clock": "04:54",
-        "in_intermission": true,
+        "period": 3,
+        "clock": "20:00",
+        "in_intermission": false,
         "away_score": 1,
         "home_score": 0,
         "first_period_goals": 1,
