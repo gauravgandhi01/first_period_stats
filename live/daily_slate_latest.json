@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-20",
-  "pulled_at_utc": "2026-04-20T15:15:00+00:00",
+  "pulled_at_utc": "2026-04-20T15:20:01+00:00",
   "target_date": "2026-04-20",
   "games": [
     {
@@ -27,8 +27,8 @@
       "home": {
         "team_name_feed": "Pittsburgh Penguins",
         "goalie_name_feed": "Stuart Skinner",
-        "status": "Likely",
-        "status_updated_at_utc": "2026-04-20T14:35:11.340Z",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-20T15:16:01.091Z",
         "team_id": 5,
         "team_abbrev": "PIT",
         "team_name": "Pittsburgh Penguins",
@@ -117,8 +117,8 @@
       "home": {
         "team_name_feed": "Carolina Hurricanes",
         "goalie_name_feed": "Frederik Andersen",
-        "status": "Likely",
-        "status_updated_at_utc": "2026-04-20T14:45:04.996Z",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-20T15:17:12.201Z",
         "team_id": 12,
         "team_abbrev": "CAR",
         "team_name": "Carolina Hurricanes",
@@ -370,8 +370,7 @@
     "projectable_games": 4,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 1,
-      "Likely": 2,
+      "Confirmed": 3,
       "Unconfirmed": 5
     },
     "live_games": 0,
