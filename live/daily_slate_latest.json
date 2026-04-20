@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-19",
-  "pulled_at_utc": "2026-04-19T23:55:01+00:00",
+  "pulled_at_utc": "2026-04-20T00:00:00+00:00",
   "target_date": "2026-04-19",
   "games": [
     {
@@ -144,9 +144,9 @@
         "nhl_game_id": 2025030121,
         "state_code": "LIVE",
         "state_label": "Live",
-        "period": 2,
-        "clock": "03:00",
-        "in_intermission": true,
+        "period": 3,
+        "clock": "19:51",
+        "in_intermission": false,
         "away_score": 2,
         "home_score": 2,
         "first_period_goals": 1,
@@ -193,15 +193,15 @@
         "team_combined_pg": 1.9589041095890412
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5110920906942379,
-        "prob_under_1p_1_5": 0.4889079093057621,
-        "over_american_odds": -105,
-        "under_american_odds": 105,
+        "prob_over_1p_1_5": 0.4733971118272901,
+        "prob_under_1p_1_5": 0.5266028881727098,
+        "over_american_odds": 111,
+        "under_american_odds": -111,
         "lambda_total": 1.4598579317060527,
         "model_prob_over_1p_1_5_raw": 0.4733971118272901,
-        "market_prob_over_1p_1_5_consensus": 0.5177441457884052,
-        "market_book_count": 8,
-        "market_dampening_weight": 0.85
+        "market_prob_over_1p_1_5_consensus": null,
+        "market_book_count": 0,
+        "market_dampening_weight": 0.0
       },
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 3/10 2+ (30.0%) | L15: 5/15 2+ (33.3%) | L20: 9/20 2+ (45.0%)",
@@ -221,7 +221,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "12:10",
+        "clock": "10:23",
         "in_intermission": false,
         "away_score": 0,
         "home_score": 0,
@@ -229,20 +229,6 @@
         "first_period_complete": false,
         "first_period_total_result": null,
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-19"
-      },
-      "market_totals_p1": {
-        "book_count": 8,
-        "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5177441457884052,
-        "fanduel": {
-          "bookmaker_key": "fanduel",
-          "bookmaker_title": "FanDuel",
-          "point": 1.5,
-          "over_price": -126.0,
-          "under_price": -102.0,
-          "over_no_vig_prob": 0.524740227610094,
-          "last_update": "2026-04-19T22:25:04Z"
-        }
       }
     },
     {
@@ -283,15 +269,15 @@
         "team_combined_pg": 1.8493150684931507
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5140544883614457,
-        "prob_under_1p_1_5": 0.48594551163855426,
-        "over_american_odds": -106,
-        "under_american_odds": 106,
+        "prob_over_1p_1_5": 0.507489515359212,
+        "prob_under_1p_1_5": 0.49251048464078795,
+        "over_american_odds": -103,
+        "under_american_odds": 103,
         "lambda_total": 1.6300848739649678,
         "model_prob_over_1p_1_5_raw": 0.507489515359212,
-        "market_prob_over_1p_1_5_consensus": 0.5152130130088988,
-        "market_book_count": 8,
-        "market_dampening_weight": 0.85
+        "market_prob_over_1p_1_5_consensus": null,
+        "market_book_count": 0,
+        "market_dampening_weight": 0.0
       },
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 5/5 2+ (100.0%) | L10: 8/10 2+ (80.0%) | L15: 10/15 2+ (66.7%) | L20: 13/20 2+ (65.0%)",
@@ -319,24 +305,13 @@
         "first_period_complete": false,
         "first_period_total_result": null,
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-19"
-      },
-      "market_totals_p1": {
-        "book_count": 8,
-        "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5152130130088988,
-        "fanduel": {
-          "bookmaker_key": "fanduel",
-          "bookmaker_title": "FanDuel",
-          "point": 1.5,
-          "over_price": -116.0,
-          "under_price": -110.0,
-          "over_no_vig_prob": 0.5062344139650873,
-          "last_update": "2026-04-19T22:24:55Z"
-        }
       }
     }
   ],
-  "warnings": [],
+  "warnings": [
+    "Odds API quota precheck: selected key may be short (remaining=0, estimated_needed=3, events=1, credits_per_event=2).",
+    "Utah Mammoth at Vegas Golden Knights: odds request failed (503)"
+  ],
   "meta": {
     "total_games": 4,
     "projectable_games": 4,
@@ -349,6 +324,6 @@
     "first_period_graded_games": 2,
     "first_period_over_games": 0,
     "first_period_under_games": 2,
-    "market_games_with_data": 2
+    "market_games_with_data": 0
   }
 }
