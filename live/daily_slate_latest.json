@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-20",
-  "pulled_at_utc": "2026-04-20T16:55:01+00:00",
+  "pulled_at_utc": "2026-04-20T17:00:00+00:00",
   "target_date": "2026-04-20",
   "games": [
     {
@@ -207,8 +207,8 @@
       "home": {
         "team_name_feed": "Dallas Stars",
         "goalie_name_feed": "Jake Oettinger",
-        "status": "Likely",
-        "status_updated_at_utc": "2026-04-20T16:04:02.615Z",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-20T16:52:12.709Z",
         "team_id": 25,
         "team_abbrev": "DAL",
         "team_name": "Dallas Stars",
@@ -370,8 +370,7 @@
     "projectable_games": 4,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 4,
-      "Likely": 1,
+      "Confirmed": 5,
       "Unconfirmed": 3
     },
     "live_games": 0,
