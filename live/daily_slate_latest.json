@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-21",
-  "pulled_at_utc": "2026-04-21T03:50:01+00:00",
+  "pulled_at_utc": "2026-04-21T03:55:01+00:00",
   "target_date": "2026-04-21",
   "games": [
     {
@@ -205,13 +205,13 @@
         "team_combined_pg": 1.8493150684931507
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5097266661702786,
-        "prob_under_1p_1_5": 0.4902733338297214,
-        "over_american_odds": -104,
-        "under_american_odds": 104,
+        "prob_over_1p_1_5": 0.5232970247763435,
+        "prob_under_1p_1_5": 0.47670297522365646,
+        "over_american_odds": -110,
+        "under_american_odds": 110,
         "lambda_total": 1.6300848739649678,
         "model_prob_over_1p_1_5_raw": 0.507489515359212,
-        "market_prob_over_1p_1_5_consensus": 0.5101214574898786,
+        "market_prob_over_1p_1_5_consensus": 0.5260865852617197,
         "market_book_count": 7,
         "market_dampening_weight": 0.85
       },
@@ -245,7 +245,7 @@
       "market_totals_p1": {
         "book_count": 7,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5101214574898786,
+        "consensus_over_no_vig_prob": 0.5260865852617197,
         "fanduel": null
       }
     },
@@ -287,13 +287,13 @@
         "team_combined_pg": 1.943661971830986
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5154666725452155,
-        "prob_under_1p_1_5": 0.4845333274547845,
-        "over_american_odds": -106,
-        "under_american_odds": 106,
+        "prob_over_1p_1_5": 0.5197695982703765,
+        "prob_under_1p_1_5": 0.4802304017296235,
+        "over_american_odds": -108,
+        "under_american_odds": 108,
         "lambda_total": 1.9052471789044778,
         "model_prob_over_1p_1_5_raw": 0.5457562245254576,
-        "market_prob_over_1p_1_5_consensus": 0.5101214574898786,
+        "market_prob_over_1p_1_5_consensus": 0.5151837230488916,
         "market_book_count": 7,
         "market_dampening_weight": 0.85
       },
@@ -327,7 +327,7 @@
       "market_totals_p1": {
         "book_count": 7,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5101214574898786,
+        "consensus_over_no_vig_prob": 0.5151837230488916,
         "fanduel": null
       }
     }
