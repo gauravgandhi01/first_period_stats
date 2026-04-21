@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-21",
-  "pulled_at_utc": "2026-04-21T22:35:00+00:00",
+  "pulled_at_utc": "2026-04-21T22:40:01+00:00",
   "target_date": "2026-04-21",
   "games": [
     {
@@ -27,8 +27,8 @@
       "home": {
         "team_name_feed": "Tampa Bay Lightning",
         "goalie_name_feed": "Andrei Vasilevskiy",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-21T22:34:24.382Z",
         "team_id": 14,
         "team_abbrev": "TBL",
         "team_name": "Tampa Bay Lightning",
@@ -370,9 +370,9 @@
     "projectable_games": 4,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 1,
+      "Confirmed": 2,
       "Likely": 5,
-      "Unconfirmed": 2
+      "Unconfirmed": 1
     },
     "live_games": 0,
     "first_period_graded_games": 0,
