@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-22",
-  "pulled_at_utc": "2026-04-22T14:48:05+00:00",
+  "pulled_at_utc": "2026-04-22T17:33:25+00:00",
   "target_date": "2026-04-22",
   "games": [
     {
@@ -11,8 +11,8 @@
       "away": {
         "team_name_feed": "Pittsburgh Penguins",
         "goalie_name_feed": "Stuart Skinner",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-22T16:16:37.585Z",
         "team_id": 5,
         "team_abbrev": "PIT",
         "team_name": "Pittsburgh Penguins",
@@ -27,8 +27,8 @@
       "home": {
         "team_name_feed": "Philadelphia Flyers",
         "goalie_name_feed": "Dan Vladar",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-22T15:29:35.721Z",
         "team_id": 4,
         "team_abbrev": "PHI",
         "team_name": "Philadelphia Flyers",
@@ -89,7 +89,7 @@
           "over_price": -110.0,
           "under_price": -116.0,
           "over_no_vig_prob": 0.4937655860349127,
-          "last_update": "2026-04-22T14:48:07Z"
+          "last_update": "2026-04-22T17:34:22Z"
         }
       }
     },
@@ -131,13 +131,13 @@
         "team_combined_pg": 1.6575342465753424
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5099676382043874,
-        "prob_under_1p_1_5": 0.4900323617956126,
-        "over_american_odds": -104,
-        "under_american_odds": 104,
+        "prob_over_1p_1_5": 0.506889504208171,
+        "prob_under_1p_1_5": 0.493110495791829,
+        "over_american_odds": -103,
+        "under_american_odds": 103,
         "lambda_total": 1.6086287454291097,
         "model_prob_over_1p_1_5_raw": 0.48857510227849477,
-        "market_prob_over_1p_1_5_consensus": 0.5137427916030743,
+        "market_prob_over_1p_1_5_consensus": 0.5101214574898786,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
       },
@@ -171,15 +171,15 @@
       "market_totals_p1": {
         "book_count": 8,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5137427916030743,
+        "consensus_over_no_vig_prob": 0.5101214574898786,
         "fanduel": {
           "bookmaker_key": "fanduel",
           "bookmaker_title": "FanDuel",
           "point": 1.5,
-          "over_price": -112.0,
-          "under_price": -112.0,
-          "over_no_vig_prob": 0.5,
-          "last_update": "2026-04-22T14:48:07Z"
+          "over_price": -116.0,
+          "under_price": -110.0,
+          "over_no_vig_prob": 0.5062344139650873,
+          "last_update": "2026-04-22T17:34:28Z"
         }
       }
     },
@@ -266,10 +266,10 @@
           "bookmaker_key": "fanduel",
           "bookmaker_title": "FanDuel",
           "point": 1.5,
-          "over_price": -158.0,
-          "under_price": 124.0,
-          "over_no_vig_prob": 0.5783762583344229,
-          "last_update": "2026-04-22T14:47:19Z"
+          "over_price": -160.0,
+          "under_price": 126.0,
+          "over_no_vig_prob": 0.5817245817245817,
+          "last_update": "2026-04-22T17:33:58Z"
         }
       }
     }
@@ -280,8 +280,8 @@
     "projectable_games": 3,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 1,
-      "Unconfirmed": 5
+      "Confirmed": 3,
+      "Unconfirmed": 3
     },
     "live_games": 0,
     "first_period_graded_games": 0,
