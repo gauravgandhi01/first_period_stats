@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-23",
-  "pulled_at_utc": "2026-04-23T14:46:01+00:00",
+  "pulled_at_utc": "2026-04-23T14:55:01+00:00",
   "target_date": "2026-04-23",
   "games": [
     {
@@ -64,7 +64,20 @@
       },
       "notes": [],
       "error": null,
-      "game_status": null,
+      "game_status": {
+        "nhl_game_id": 2025030113,
+        "state_code": "FUT",
+        "state_label": "Scheduled",
+        "period": 0,
+        "clock": null,
+        "in_intermission": false,
+        "away_score": 0,
+        "home_score": 0,
+        "first_period_goals": 0,
+        "first_period_complete": false,
+        "first_period_total_result": null,
+        "source_url": "https://api-web.nhle.com/v1/score/2026-04-23"
+      },
       "market_totals_p1": {
         "book_count": 8,
         "consensus_point": 1.5,
@@ -141,7 +154,20 @@
       },
       "notes": [],
       "error": null,
-      "game_status": null,
+      "game_status": {
+        "nhl_game_id": 2025030133,
+        "state_code": "FUT",
+        "state_label": "Scheduled",
+        "period": 0,
+        "clock": null,
+        "in_intermission": false,
+        "away_score": 0,
+        "home_score": 0,
+        "first_period_goals": 0,
+        "first_period_complete": false,
+        "first_period_total_result": null,
+        "source_url": "https://api-web.nhle.com/v1/score/2026-04-23"
+      },
       "market_totals_p1": {
         "book_count": 8,
         "consensus_point": 1.5,
@@ -218,7 +244,20 @@
       },
       "notes": [],
       "error": null,
-      "game_status": null,
+      "game_status": {
+        "nhl_game_id": 2025030153,
+        "state_code": "FUT",
+        "state_label": "Scheduled",
+        "period": 0,
+        "clock": null,
+        "in_intermission": false,
+        "away_score": 0,
+        "home_score": 0,
+        "first_period_goals": 0,
+        "first_period_complete": false,
+        "first_period_total_result": null,
+        "source_url": "https://api-web.nhle.com/v1/score/2026-04-23"
+      },
       "market_totals_p1": {
         "book_count": 8,
         "consensus_point": 1.5,
@@ -235,9 +274,7 @@
       }
     }
   ],
-  "warnings": [
-    "NHL live status unavailable: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"
-  ],
+  "warnings": [],
   "meta": {
     "total_games": 3,
     "projectable_games": 3,
