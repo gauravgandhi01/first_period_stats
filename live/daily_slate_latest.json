@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-23",
-  "pulled_at_utc": "2026-04-23T12:55:38+00:00",
+  "pulled_at_utc": "2026-04-23T14:46:01+00:00",
   "target_date": "2026-04-23",
   "games": [
     {
@@ -41,13 +41,13 @@
         "team_combined_pg": 1.7777777777777777
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5269109579563304,
-        "prob_under_1p_1_5": 0.47308904204366964,
+        "prob_over_1p_1_5": 0.5269803623224454,
+        "prob_under_1p_1_5": 0.4730196376775546,
         "over_american_odds": -111,
         "under_american_odds": 111,
         "lambda_total": 1.7767706943581991,
         "model_prob_over_1p_1_5_raw": 0.5358597790128308,
-        "market_prob_over_1p_1_5_consensus": 0.5253317542404774,
+        "market_prob_over_1p_1_5_consensus": 0.5254134064359068,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
       },
@@ -64,32 +64,19 @@
       },
       "notes": [],
       "error": null,
-      "game_status": {
-        "nhl_game_id": 2025030113,
-        "state_code": "FUT",
-        "state_label": "Scheduled",
-        "period": 0,
-        "clock": null,
-        "in_intermission": false,
-        "away_score": 0,
-        "home_score": 0,
-        "first_period_goals": 0,
-        "first_period_complete": false,
-        "first_period_total_result": null,
-        "source_url": "https://api-web.nhle.com/v1/score/2026-04-23"
-      },
+      "game_status": null,
       "market_totals_p1": {
         "book_count": 8,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5253317542404774,
+        "consensus_over_no_vig_prob": 0.5254134064359068,
         "fanduel": {
           "bookmaker_key": "fanduel",
           "bookmaker_title": "FanDuel",
           "point": 1.5,
-          "over_price": -120.0,
-          "under_price": -106.0,
-          "over_no_vig_prob": 0.5145711906744379,
-          "last_update": "2026-04-23T12:55:43Z"
+          "over_price": -126.0,
+          "under_price": -102.0,
+          "over_no_vig_prob": 0.524740227610094,
+          "last_update": "2026-04-23T14:54:48Z"
         }
       }
     },
@@ -154,20 +141,7 @@
       },
       "notes": [],
       "error": null,
-      "game_status": {
-        "nhl_game_id": 2025030133,
-        "state_code": "FUT",
-        "state_label": "Scheduled",
-        "period": 0,
-        "clock": null,
-        "in_intermission": false,
-        "away_score": 0,
-        "home_score": 0,
-        "first_period_goals": 0,
-        "first_period_complete": false,
-        "first_period_total_result": null,
-        "source_url": "https://api-web.nhle.com/v1/score/2026-04-23"
-      },
+      "game_status": null,
       "market_totals_p1": {
         "book_count": 8,
         "consensus_point": 1.5,
@@ -176,10 +150,10 @@
           "bookmaker_key": "fanduel",
           "bookmaker_title": "FanDuel",
           "point": 1.5,
-          "over_price": -112.0,
-          "under_price": -112.0,
-          "over_no_vig_prob": 0.5,
-          "last_update": "2026-04-23T12:54:42Z"
+          "over_price": -110.0,
+          "under_price": -116.0,
+          "over_no_vig_prob": 0.4937655860349127,
+          "last_update": "2026-04-23T14:53:55Z"
         }
       }
     },
@@ -221,13 +195,13 @@
         "team_combined_pg": 1.4444444444444444
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5050232881990819,
-        "prob_under_1p_1_5": 0.49497671180091807,
-        "over_american_odds": -102,
-        "under_american_odds": 102,
+        "prob_over_1p_1_5": 0.50318122955475,
+        "prob_under_1p_1_5": 0.49681877044525,
+        "over_american_odds": -101,
+        "under_american_odds": 101,
         "lambda_total": 1.9052471789044778,
         "model_prob_over_1p_1_5_raw": 0.5457562245254576,
-        "market_prob_over_1p_1_5_consensus": 0.4978351229650156,
+        "market_prob_over_1p_1_5_consensus": 0.49566799514815457,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
       },
@@ -244,37 +218,26 @@
       },
       "notes": [],
       "error": null,
-      "game_status": {
-        "nhl_game_id": 2025030153,
-        "state_code": "FUT",
-        "state_label": "Scheduled",
-        "period": 0,
-        "clock": null,
-        "in_intermission": false,
-        "away_score": 0,
-        "home_score": 0,
-        "first_period_goals": 0,
-        "first_period_complete": false,
-        "first_period_total_result": null,
-        "source_url": "https://api-web.nhle.com/v1/score/2026-04-23"
-      },
+      "game_status": null,
       "market_totals_p1": {
         "book_count": 8,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.4978351229650156,
+        "consensus_over_no_vig_prob": 0.49566799514815457,
         "fanduel": {
           "bookmaker_key": "fanduel",
           "bookmaker_title": "FanDuel",
           "point": 1.5,
-          "over_price": -110.0,
-          "under_price": -116.0,
-          "over_no_vig_prob": 0.4937655860349127,
-          "last_update": "2026-04-23T12:55:45Z"
+          "over_price": -102.0,
+          "under_price": -124.0,
+          "over_no_vig_prob": 0.4770335727409387,
+          "last_update": "2026-04-23T14:53:44Z"
         }
       }
     }
   ],
-  "warnings": [],
+  "warnings": [
+    "NHL live status unavailable: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"
+  ],
   "meta": {
     "total_games": 3,
     "projectable_games": 3,
