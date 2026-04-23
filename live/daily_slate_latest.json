@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-23",
-  "pulled_at_utc": "2026-04-23T23:05:01+00:00",
+  "pulled_at_utc": "2026-04-23T23:10:00+00:00",
   "target_date": "2026-04-23",
   "games": [
     {
@@ -66,10 +66,10 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025030113,
-        "state_code": "PRE",
-        "state_label": "Scheduled",
-        "period": 0,
-        "clock": null,
+        "state_code": "LIVE",
+        "state_label": "Live",
+        "period": 1,
+        "clock": "20:00",
         "in_intermission": false,
         "away_score": 0,
         "home_score": 0,
@@ -117,8 +117,8 @@
       "home": {
         "team_name_feed": "Ottawa Senators",
         "goalie_name_feed": "Linus Ullmark",
-        "status": "Likely",
-        "status_updated_at_utc": "2026-04-23T15:31:21.806Z",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-23T23:06:06.465Z",
         "team_id": 9,
         "team_abbrev": "OTT",
         "team_name": "Ottawa Senators",
@@ -280,10 +280,10 @@
     "projectable_games": 3,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 4,
-      "Likely": 2
+      "Confirmed": 5,
+      "Likely": 1
     },
-    "live_games": 0,
+    "live_games": 1,
     "first_period_graded_games": 0,
     "first_period_over_games": 0,
     "first_period_under_games": 0,
