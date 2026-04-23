@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-23",
-  "pulled_at_utc": "2026-04-23T15:30:01+00:00",
+  "pulled_at_utc": "2026-04-23T15:35:01+00:00",
   "target_date": "2026-04-23",
   "games": [
     {
@@ -11,8 +11,8 @@
       "away": {
         "team_name_feed": "Buffalo Sabres",
         "goalie_name_feed": "Alex Lyon",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Likely",
+        "status_updated_at_utc": "2026-04-23T15:33:07.628Z",
         "team_id": 7,
         "team_abbrev": "BUF",
         "team_name": "Buffalo Sabres",
@@ -117,8 +117,8 @@
       "home": {
         "team_name_feed": "Ottawa Senators",
         "goalie_name_feed": "Linus Ullmark",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Likely",
+        "status_updated_at_utc": "2026-04-23T15:31:21.806Z",
         "team_id": 9,
         "team_abbrev": "OTT",
         "team_name": "Ottawa Senators",
@@ -280,8 +280,8 @@
     "projectable_games": 3,
     "failed_games": 0,
     "status_counts": {
-      "Likely": 1,
-      "Unconfirmed": 5
+      "Likely": 3,
+      "Unconfirmed": 3
     },
     "live_games": 0,
     "first_period_graded_games": 0,
