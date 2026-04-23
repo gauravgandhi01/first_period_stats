@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-23",
-  "pulled_at_utc": "2026-04-23T21:05:00+00:00",
+  "pulled_at_utc": "2026-04-23T21:10:01+00:00",
   "target_date": "2026-04-23",
   "games": [
     {
@@ -89,7 +89,7 @@
           "over_price": -122.0,
           "under_price": -106.0,
           "over_no_vig_prob": 0.5164392569455861,
-          "last_update": "2026-04-23T19:34:31Z"
+          "last_update": "2026-04-23T21:09:43Z"
         }
       }
     },
@@ -131,13 +131,13 @@
         "team_combined_pg": 1.8333333333333333
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5100935651323527,
-        "prob_under_1p_1_5": 0.4899064348676473,
-        "over_american_odds": -104,
-        "under_american_odds": 104,
+        "prob_over_1p_1_5": 0.5057919456991543,
+        "prob_under_1p_1_5": 0.4942080543008457,
+        "over_american_odds": -102,
+        "under_american_odds": 102,
         "lambda_total": 1.7983552312535234,
         "model_prob_over_1p_1_5_raw": 0.5386129713276953,
-        "market_prob_over_1p_1_5_consensus": 0.5050607287449393,
+        "market_prob_over_1p_1_5_consensus": 0.5,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
       },
@@ -171,7 +171,7 @@
       "market_totals_p1": {
         "book_count": 8,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5050607287449393,
+        "consensus_over_no_vig_prob": 0.5,
         "fanduel": {
           "bookmaker_key": "fanduel",
           "bookmaker_title": "FanDuel",
@@ -179,7 +179,7 @@
           "over_price": -112.0,
           "under_price": -112.0,
           "over_no_vig_prob": 0.5,
-          "last_update": "2026-04-23T19:34:06Z"
+          "last_update": "2026-04-23T21:09:03Z"
         }
       }
     },
@@ -269,7 +269,7 @@
           "over_price": -104.0,
           "under_price": -122.0,
           "over_no_vig_prob": 0.48124062031015497,
-          "last_update": "2026-04-23T19:35:05Z"
+          "last_update": "2026-04-23T21:09:04Z"
         }
       }
     }
