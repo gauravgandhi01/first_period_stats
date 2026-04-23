@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-23",
-  "pulled_at_utc": "2026-04-23T17:10:00+00:00",
+  "pulled_at_utc": "2026-04-23T17:15:01+00:00",
   "target_date": "2026-04-23",
   "games": [
     {
@@ -27,8 +27,8 @@
       "home": {
         "team_name_feed": "Boston Bruins",
         "goalie_name_feed": "Jeremy Swayman",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-23T17:11:06.601Z",
         "team_id": 6,
         "team_abbrev": "BOS",
         "team_name": "Boston Bruins",
@@ -280,9 +280,9 @@
     "projectable_games": 3,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 1,
+      "Confirmed": 2,
       "Likely": 2,
-      "Unconfirmed": 3
+      "Unconfirmed": 2
     },
     "live_games": 0,
     "first_period_graded_games": 0,
