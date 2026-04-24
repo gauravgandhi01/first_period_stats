@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-23",
-  "pulled_at_utc": "2026-04-24T01:30:00+00:00",
+  "pulled_at_utc": "2026-04-24T01:35:01+00:00",
   "target_date": "2026-04-23",
   "games": [
     {
@@ -66,10 +66,10 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025030113,
-        "state_code": "LIVE",
+        "state_code": "CRIT",
         "state_label": "Live",
         "period": 3,
-        "clock": "05:47",
+        "clock": "03:35",
         "in_intermission": false,
         "away_score": 2,
         "home_score": 1,
@@ -144,9 +144,9 @@
         "nhl_game_id": 2025030133,
         "state_code": "LIVE",
         "state_label": "Live",
-        "period": 2,
-        "clock": "05:54",
-        "in_intermission": true,
+        "period": 3,
+        "clock": "20:00",
+        "in_intermission": false,
         "away_score": 2,
         "home_score": 1,
         "first_period_goals": 1,
@@ -163,8 +163,8 @@
       "away": {
         "team_name_feed": "Colorado Avalanche",
         "goalie_name_feed": "Scott Wedgewood",
-        "status": "Likely",
-        "status_updated_at_utc": "2026-04-23T18:39:54.872Z",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-24T01:32:31.181Z",
         "team_id": 21,
         "team_abbrev": "COL",
         "team_name": "Colorado Avalanche",
@@ -252,8 +252,7 @@
     "projectable_games": 3,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 5,
-      "Likely": 1
+      "Confirmed": 6
     },
     "live_games": 2,
     "first_period_graded_games": 2,
