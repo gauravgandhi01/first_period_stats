@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-25",
-  "pulled_at_utc": "2026-04-25T17:40:00+00:00",
+  "pulled_at_utc": "2026-04-25T17:45:01+00:00",
   "target_date": "2026-04-25",
   "games": [
     {
@@ -89,7 +89,7 @@
           "over_price": -110.0,
           "under_price": -116.0,
           "over_no_vig_prob": 0.4937655860349127,
-          "last_update": "2026-04-25T16:09:14Z"
+          "last_update": "2026-04-25T17:44:04Z"
         }
       }
     },
@@ -179,7 +179,7 @@
           "over_price": -118.0,
           "under_price": -108.0,
           "over_no_vig_prob": 0.510397604391948,
-          "last_update": "2026-04-25T16:10:03Z"
+          "last_update": "2026-04-25T17:44:53Z"
         }
       }
     },
@@ -221,13 +221,13 @@
         "team_combined_pg": 1.591549295774648
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5087451251432177,
-        "prob_under_1p_1_5": 0.4912548748567823,
-        "over_american_odds": -104,
-        "under_american_odds": 104,
+        "prob_over_1p_1_5": 0.5044435057100194,
+        "prob_under_1p_1_5": 0.4955564942899806,
+        "over_american_odds": -102,
+        "under_american_odds": 102,
         "lambda_total": 1.9155278895353987,
         "model_prob_over_1p_1_5_raw": 0.5583008342881182,
-        "market_prob_over_1p_1_5_consensus": 0.5,
+        "market_prob_over_1p_1_5_consensus": 0.49493927125506076,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
       },
@@ -261,7 +261,7 @@
       "market_totals_p1": {
         "book_count": 8,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5,
+        "consensus_over_no_vig_prob": 0.49493927125506076,
         "fanduel": {
           "bookmaker_key": "fanduel",
           "bookmaker_title": "FanDuel",
@@ -269,7 +269,7 @@
           "over_price": -112.0,
           "under_price": -112.0,
           "over_no_vig_prob": 0.5,
-          "last_update": "2026-04-25T16:09:40Z"
+          "last_update": "2026-04-25T17:45:00Z"
         }
       }
     }
