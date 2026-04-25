@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-24",
-  "pulled_at_utc": "2026-04-25T01:30:01+00:00",
+  "pulled_at_utc": "2026-04-25T01:35:01+00:00",
   "target_date": "2026-04-24",
   "games": [
     {
@@ -69,7 +69,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 3,
-        "clock": "09:51",
+        "clock": "07:49",
         "in_intermission": false,
         "away_score": 2,
         "home_score": 2,
@@ -117,13 +117,13 @@
         "team_combined_pg": 1.63013698630137
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5011234273038818,
-        "prob_under_1p_1_5": 0.4988765726961182,
-        "over_american_odds": -100,
-        "under_american_odds": 100,
+        "prob_over_1p_1_5": 0.49928328182414505,
+        "prob_under_1p_1_5": 0.500716718175855,
+        "over_american_odds": 100,
+        "under_american_odds": -100,
         "lambda_total": 1.6300848739649678,
         "model_prob_over_1p_1_5_raw": 0.507489515359212,
-        "market_prob_over_1p_1_5_consensus": 0.5,
+        "market_prob_over_1p_1_5_consensus": 0.4978351229650156,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
       },
@@ -157,15 +157,15 @@
       "market_totals_p1": {
         "book_count": 8,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5,
+        "consensus_over_no_vig_prob": 0.4978351229650156,
         "fanduel": {
           "bookmaker_key": "fanduel",
           "bookmaker_title": "FanDuel",
           "point": 1.5,
-          "over_price": -108.0,
-          "under_price": -118.0,
-          "over_no_vig_prob": 0.4896023956080519,
-          "last_update": "2026-04-24T23:59:37Z"
+          "over_price": -110.0,
+          "under_price": -116.0,
+          "over_no_vig_prob": 0.4937655860349127,
+          "last_update": "2026-04-25T01:34:38Z"
         }
       }
     },
@@ -177,8 +177,8 @@
       "away": {
         "team_name_feed": "Edmonton Oilers",
         "goalie_name_feed": "Connor Ingram",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-25T01:32:39.443Z",
         "team_id": 22,
         "team_abbrev": "EDM",
         "team_name": "Edmonton Oilers",
@@ -207,13 +207,13 @@
         "team_combined_pg": 1.7638888888888888
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5788146579146227,
-        "prob_under_1p_1_5": 0.4211853420853773,
-        "over_american_odds": -137,
-        "under_american_odds": 137,
+        "prob_over_1p_1_5": 0.5819371026889745,
+        "prob_under_1p_1_5": 0.4180628973110255,
+        "over_american_odds": -139,
+        "under_american_odds": 139,
         "lambda_total": 1.7494663677126119,
         "model_prob_over_1p_1_5_raw": 0.5285587382375712,
-        "market_prob_over_1p_1_5_consensus": 0.5876833496223377,
+        "market_prob_over_1p_1_5_consensus": 0.5913568140627514,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
       },
@@ -247,15 +247,15 @@
       "market_totals_p1": {
         "book_count": 8,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5876833496223377,
+        "consensus_over_no_vig_prob": 0.5913568140627514,
         "fanduel": {
           "bookmaker_key": "fanduel",
           "bookmaker_title": "FanDuel",
           "point": 1.5,
-          "over_price": -166.0,
-          "under_price": 130.0,
-          "over_no_vig_prob": 0.5893794380981784,
-          "last_update": "2026-04-24T23:59:13Z"
+          "over_price": -172.0,
+          "under_price": 134.0,
+          "over_no_vig_prob": 0.596726366979006,
+          "last_update": "2026-04-25T01:34:12Z"
         }
       }
     }
@@ -266,8 +266,8 @@
     "projectable_games": 3,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 4,
-      "Unconfirmed": 2
+      "Confirmed": 5,
+      "Unconfirmed": 1
     },
     "live_games": 1,
     "first_period_graded_games": 1,
