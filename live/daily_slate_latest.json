@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-24",
-  "pulled_at_utc": "2026-04-25T01:05:00+00:00",
+  "pulled_at_utc": "2026-04-25T01:10:01+00:00",
   "target_date": "2026-04-24",
   "games": [
     {
@@ -68,9 +68,9 @@
         "nhl_game_id": 2025030123,
         "state_code": "LIVE",
         "state_label": "Live",
-        "period": 2,
-        "clock": "04:35",
-        "in_intermission": true,
+        "period": 3,
+        "clock": "20:00",
+        "in_intermission": false,
         "away_score": 2,
         "home_score": 2,
         "first_period_goals": 2,
@@ -87,8 +87,8 @@
       "away": {
         "team_name_feed": "Vegas Golden Knights",
         "goalie_name_feed": "Carter Hart",
-        "status": "Likely",
-        "status_updated_at_utc": "2026-04-24T17:22:48.930Z",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-25T01:03:50.813Z",
         "team_id": 54,
         "team_abbrev": "VGK",
         "team_name": "Vegas Golden Knights",
@@ -103,8 +103,8 @@
       "home": {
         "team_name_feed": "Utah Mammoth",
         "goalie_name_feed": "Karel Vejmelka",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-25T01:03:58.491Z",
         "team_id": 68,
         "team_abbrev": "UTA",
         "team_name": "Utah Mammoth",
@@ -266,9 +266,8 @@
     "projectable_games": 3,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 2,
-      "Likely": 1,
-      "Unconfirmed": 3
+      "Confirmed": 4,
+      "Unconfirmed": 2
     },
     "live_games": 1,
     "first_period_graded_games": 1,
