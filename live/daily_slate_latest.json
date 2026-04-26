@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-26",
-  "pulled_at_utc": "2026-04-26T20:15:00+00:00",
+  "pulled_at_utc": "2026-04-26T20:20:01+00:00",
   "target_date": "2026-04-26",
   "games": [
     {
@@ -69,9 +69,9 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 3,
-        "clock": "13:52",
+        "clock": "12:29",
         "in_intermission": false,
-        "away_score": 5,
+        "away_score": 6,
         "home_score": 0,
         "first_period_goals": 4,
         "first_period_complete": true,
@@ -87,8 +87,8 @@
       "away": {
         "team_name_feed": "Colorado Avalanche",
         "goalie_name_feed": "Scott Wedgewood",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-26T20:15:18.756Z",
         "team_id": 21,
         "team_abbrev": "COL",
         "team_name": "Colorado Avalanche",
@@ -103,8 +103,8 @@
       "home": {
         "team_name_feed": "Los Angeles Kings",
         "goalie_name_feed": "Anton Forsberg",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-26T20:15:35.515Z",
         "team_id": 26,
         "team_abbrev": "LAK",
         "team_name": "Los Angeles Kings",
@@ -356,8 +356,8 @@
     "projectable_games": 4,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 2,
-      "Unconfirmed": 6
+      "Confirmed": 4,
+      "Unconfirmed": 4
     },
     "live_games": 1,
     "first_period_graded_games": 1,
