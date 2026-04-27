@@ -1,71 +1,8 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-27",
-  "pulled_at_utc": "2026-04-27T13:50:00+00:00",
+  "pulled_at_utc": "2026-04-27T13:55:01+00:00",
   "target_date": "2026-04-27",
   "games": [
-    {
-      "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-27",
-      "game_date": "2026-04-27",
-      "game_time_utc": "2026-04-27T17:00:00+00:00",
-      "game_time_et": "2026-04-27 01:00 PM ET",
-      "away": {
-        "team_name_feed": "Ottawa Senators",
-        "goalie_name_feed": "Linus Ullmark",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
-        "team_id": 9,
-        "team_abbrev": "OTT",
-        "team_name": "Ottawa Senators",
-        "goalie_id": 8476999,
-        "goalie_name": "Linus Ullmark",
-        "goalie_games": 42,
-        "goalie_ga_pg": 0.8809523809523809,
-        "goalie_save_pct": 88.14102564102564,
-        "team_o15_pct": 0.5972222222222222,
-        "team_combined_pg": 1.8333333333333333
-      },
-      "home": {
-        "team_name_feed": "Carolina Hurricanes",
-        "goalie_name_feed": "Frederik Andersen",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
-        "team_id": 12,
-        "team_abbrev": "CAR",
-        "team_name": "Carolina Hurricanes",
-        "goalie_id": 8475883,
-        "goalie_name": "Frederik Andersen",
-        "goalie_games": 30,
-        "goalie_ga_pg": 0.8666666666666667,
-        "goalie_save_pct": 89.47368421052632,
-        "team_o15_pct": 0.5492957746478874,
-        "team_combined_pg": 1.9014084507042253
-      },
-      "projection": {
-        "prob_over_1p_1_5": 0.5386129713276953,
-        "prob_under_1p_1_5": 0.46138702867230474,
-        "over_american_odds": -117,
-        "under_american_odds": 117,
-        "lambda_total": 1.7983552312535234,
-        "model_prob_over_1p_1_5_raw": 0.5386129713276953,
-        "market_prob_over_1p_1_5_consensus": null,
-        "market_book_count": 0,
-        "market_dampening_weight": 0.0
-      },
-      "trends": {
-        "away_team_l5_l10_l15_o15": "L5: 1/5 2+ (20.0%) | L10: 3/10 2+ (30.0%) | L15: 6/15 2+ (40.0%) | L20: 8/20 2+ (40.0%)",
-        "home_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 5/10 2+ (50.0%) | L15: 8/15 2+ (53.3%) | L20: 11/20 2+ (55.0%)",
-        "away_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 2/10 allow 2+ (20.0%) | L15: 3/15 allow 2+ (20.0%) | L20: 3/20 allow 2+ (15.0%)",
-        "home_goalie_l5_l10_l15_allow2": "L5: 0/5 allow 2+ (0.0%) | L10: 0/10 allow 2+ (0.0%) | L15: 1/15 allow 2+ (6.7%) | L20: 3/20 allow 2+ (15.0%)",
-        "h2h_games": 2,
-        "h2h_o15_hits": 2,
-        "h2h_o15_pct": 1.0,
-        "h2h_avg_combined_1p": 2.5,
-        "h2h_recent_scores": "2026-02-03: OTT 1-1 CAR (1P total 2) | 2026-01-24: OTT 0-3 CAR (1P total 3)"
-      },
-      "notes": [],
-      "error": null,
-      "game_status": null
-    },
     {
       "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-27",
       "game_date": "2026-04-27",
@@ -249,11 +186,11 @@
   ],
   "warnings": [],
   "meta": {
-    "total_games": 3,
-    "projectable_games": 3,
+    "total_games": 2,
+    "projectable_games": 2,
     "failed_games": 0,
     "status_counts": {
-      "Unconfirmed": 6
+      "Unconfirmed": 4
     },
     "live_games": 0,
     "first_period_graded_games": 0,
