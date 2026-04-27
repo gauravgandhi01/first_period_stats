@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-26",
-  "pulled_at_utc": "2026-04-27T00:15:00+00:00",
+  "pulled_at_utc": "2026-04-27T00:20:00+00:00",
   "target_date": "2026-04-26",
   "games": [
     {
@@ -221,7 +221,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "16:18",
+        "clock": "12:58",
         "in_intermission": false,
         "away_score": 0,
         "home_score": 0,
@@ -238,17 +238,17 @@
       "game_time_et": "2026-04-26 09:30 PM ET",
       "away": {
         "team_name_feed": "Edmonton Oilers",
-        "goalie_name_feed": "Connor Ingram",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "goalie_name_feed": "Tristan Jarry",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-27T00:16:26.615Z",
         "team_id": 22,
         "team_abbrev": "EDM",
         "team_name": "Edmonton Oilers",
-        "goalie_id": 8478971,
-        "goalie_name": "Connor Ingram",
-        "goalie_games": 23,
-        "goalie_ga_pg": 0.8695652173913043,
-        "goalie_save_pct": 90.0,
+        "goalie_id": 8477465,
+        "goalie_name": "Tristan Jarry",
+        "goalie_games": 14,
+        "goalie_ga_pg": 1.3571428571428572,
+        "goalie_save_pct": 84.42622950819673,
         "team_o15_pct": 0.589041095890411,
         "team_combined_pg": 1.9726027397260273
       },
@@ -269,12 +269,12 @@
         "team_combined_pg": 1.7638888888888888
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5844465541280054,
-        "prob_under_1p_1_5": 0.4155534458719946,
-        "over_american_odds": -141,
-        "under_american_odds": 141,
-        "lambda_total": 1.7494663677126119,
-        "model_prob_over_1p_1_5_raw": 0.5285587382375712,
+        "prob_over_1p_1_5": 0.5965977787637242,
+        "prob_under_1p_1_5": 0.4034022212362758,
+        "over_american_odds": -148,
+        "under_american_odds": 148,
+        "lambda_total": 2.234161684533396,
+        "model_prob_over_1p_1_5_raw": 0.6095669024756969,
         "market_prob_over_1p_1_5_consensus": 0.5943091098733762,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
@@ -282,7 +282,7 @@
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 3/5 2+ (60.0%) | L10: 5/10 2+ (50.0%) | L15: 10/15 2+ (66.7%) | L20: 14/20 2+ (70.0%)",
         "home_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 3/10 2+ (30.0%) | L15: 6/15 2+ (40.0%) | L20: 8/20 2+ (40.0%)",
-        "away_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 4/10 allow 2+ (40.0%) | L15: 5/15 allow 2+ (33.3%) | L20: 6/20 allow 2+ (30.0%)",
+        "away_goalie_l5_l10_l15_allow2": "L5: 3/5 allow 2+ (60.0%) | L10: 5/10 allow 2+ (50.0%) | L15: 5/14 allow 2+ (35.7%) | L20: 5/14 allow 2+ (35.7%)",
         "home_goalie_l5_l10_l15_allow2": "L5: 0/5 allow 2+ (0.0%) | L10: 2/10 allow 2+ (20.0%) | L15: 4/15 allow 2+ (26.7%) | L20: 4/20 allow 2+ (20.0%)",
         "h2h_games": 2,
         "h2h_o15_hits": 2,
@@ -328,8 +328,7 @@
     "projectable_games": 4,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 7,
-      "Unconfirmed": 1
+      "Confirmed": 8
     },
     "live_games": 1,
     "first_period_graded_games": 3,
