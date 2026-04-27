@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-26",
-  "pulled_at_utc": "2026-04-27T01:15:00+00:00",
+  "pulled_at_utc": "2026-04-27T01:20:01+00:00",
   "target_date": "2026-04-26",
   "games": [
     {
@@ -221,9 +221,9 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 3,
-        "clock": "20:00",
+        "clock": "18:09",
         "in_intermission": false,
-        "away_score": 1,
+        "away_score": 2,
         "home_score": 2,
         "first_period_goals": 0,
         "first_period_complete": true,
@@ -269,13 +269,13 @@
         "team_combined_pg": 1.7638888888888888
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5965977787637242,
-        "prob_under_1p_1_5": 0.4034022212362758,
-        "over_american_odds": -148,
-        "under_american_odds": 148,
+        "prob_over_1p_1_5": 0.605052416300061,
+        "prob_under_1p_1_5": 0.394947583699939,
+        "over_american_odds": -153,
+        "under_american_odds": 153,
         "lambda_total": 2.234161684533396,
         "model_prob_over_1p_1_5_raw": 0.6095669024756969,
-        "market_prob_over_1p_1_5_consensus": 0.5943091098733762,
+        "market_prob_over_1p_1_5_consensus": 0.6042557422690664,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
       },
@@ -309,15 +309,15 @@
       "market_totals_p1": {
         "book_count": 8,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5943091098733762,
+        "consensus_over_no_vig_prob": 0.6042557422690664,
         "fanduel": {
           "bookmaker_key": "fanduel",
           "bookmaker_title": "FanDuel",
           "point": 1.5,
-          "over_price": -174.0,
-          "under_price": 136.0,
-          "over_no_vig_prob": 0.5997896704837579,
-          "last_update": "2026-04-26T23:44:26Z"
+          "over_price": -192.0,
+          "under_price": 150.0,
+          "over_no_vig_prob": 0.6217616580310881,
+          "last_update": "2026-04-27T01:20:01Z"
         }
       }
     }
