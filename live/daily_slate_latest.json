@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-27",
-  "pulled_at_utc": "2026-04-27T17:15:00+00:00",
+  "pulled_at_utc": "2026-04-27T17:20:01+00:00",
   "target_date": "2026-04-27",
   "games": [
     {
@@ -101,8 +101,8 @@
       "away": {
         "team_name_feed": "Vegas Golden Knights",
         "goalie_name_feed": "Carter Hart",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-27T17:17:13.615Z",
         "team_id": 54,
         "team_abbrev": "VGK",
         "team_name": "Vegas Golden Knights",
@@ -190,8 +190,8 @@
     "projectable_games": 2,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 1,
-      "Unconfirmed": 3
+      "Confirmed": 2,
+      "Unconfirmed": 2
     },
     "live_games": 0,
     "first_period_graded_games": 0,
