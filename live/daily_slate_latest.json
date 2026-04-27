@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-27",
-  "pulled_at_utc": "2026-04-27T14:55:00+00:00",
+  "pulled_at_utc": "2026-04-27T15:00:01+00:00",
   "target_date": "2026-04-27",
   "games": [
     {
@@ -27,8 +27,8 @@
       "home": {
         "team_name_feed": "Pittsburgh Penguins",
         "goalie_name_feed": "Arturs Silovs",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Likely",
+        "status_updated_at_utc": "2026-04-27T14:56:52.370Z",
         "team_id": 5,
         "team_abbrev": "PIT",
         "team_name": "Pittsburgh Penguins",
@@ -190,7 +190,8 @@
     "projectable_games": 2,
     "failed_games": 0,
     "status_counts": {
-      "Unconfirmed": 4
+      "Likely": 1,
+      "Unconfirmed": 3
     },
     "live_games": 0,
     "first_period_graded_games": 0,
