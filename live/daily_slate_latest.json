@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-28",
-  "pulled_at_utc": "2026-04-28T23:05:01+00:00",
+  "pulled_at_utc": "2026-04-28T23:10:01+00:00",
   "target_date": "2026-04-28",
   "games": [
     {
@@ -11,8 +11,8 @@
       "away": {
         "team_name_feed": "Boston Bruins",
         "goalie_name_feed": "Jeremy Swayman",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-28T23:03:53.014Z",
         "team_id": 6,
         "team_abbrev": "BOS",
         "team_name": "Boston Bruins",
@@ -27,8 +27,8 @@
       "home": {
         "team_name_feed": "Buffalo Sabres",
         "goalie_name_feed": "Alex Lyon",
-        "status": "Likely",
-        "status_updated_at_utc": "2026-04-28T14:36:29.852Z",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-28T23:03:58.810Z",
         "team_id": 7,
         "team_abbrev": "BUF",
         "team_name": "Buffalo Sabres",
@@ -280,9 +280,8 @@
     "projectable_games": 3,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 3,
-      "Likely": 1,
-      "Unconfirmed": 2
+      "Confirmed": 5,
+      "Unconfirmed": 1
     },
     "live_games": 0,
     "first_period_graded_games": 0,
