@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-27",
-  "pulled_at_utc": "2026-04-28T01:40:01+00:00",
+  "pulled_at_utc": "2026-04-28T01:45:01+00:00",
   "target_date": "2026-04-27",
   "games": [
     {
@@ -69,8 +69,8 @@
         "state_code": "CRIT",
         "state_label": "Live",
         "period": 3,
-        "clock": "01:12",
-        "in_intermission": false,
+        "clock": "16:55",
+        "in_intermission": true,
         "away_score": 2,
         "home_score": 3,
         "first_period_goals": 1,
