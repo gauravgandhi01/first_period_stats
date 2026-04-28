@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-27",
-  "pulled_at_utc": "2026-04-28T00:45:01+00:00",
+  "pulled_at_utc": "2026-04-28T00:50:00+00:00",
   "target_date": "2026-04-27",
   "games": [
     {
@@ -69,8 +69,8 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "02:12",
-        "in_intermission": false,
+        "clock": "16:08",
+        "in_intermission": true,
         "away_score": 2,
         "home_score": 3,
         "first_period_goals": 1,
@@ -162,10 +162,10 @@
           "bookmaker_key": "fanduel",
           "bookmaker_title": "FanDuel",
           "point": 1.5,
-          "over_price": -112.0,
-          "under_price": -112.0,
-          "over_no_vig_prob": 0.5,
-          "last_update": "2026-04-27T23:14:20Z"
+          "over_price": -110.0,
+          "under_price": -116.0,
+          "over_no_vig_prob": 0.4937655860349127,
+          "last_update": "2026-04-28T00:49:11Z"
         }
       }
     }
