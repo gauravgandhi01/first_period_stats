@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-28",
-  "pulled_at_utc": "2026-04-28T15:15:00+00:00",
+  "pulled_at_utc": "2026-04-28T15:20:00+00:00",
   "target_date": "2026-04-28",
   "games": [
     {
@@ -89,7 +89,7 @@
           "over_price": -116.0,
           "under_price": -110.0,
           "over_no_vig_prob": 0.5062344139650873,
-          "last_update": "2026-04-28T13:48:19Z"
+          "last_update": "2026-04-28T15:19:09Z"
         }
       }
     },
@@ -131,13 +131,13 @@
         "team_combined_pg": 1.6666666666666667
       },
       "projection": {
-        "prob_over_1p_1_5": 0.4939846459085759,
-        "prob_under_1p_1_5": 0.5060153540914241,
-        "over_american_odds": 102,
-        "under_american_odds": -102,
+        "prob_over_1p_1_5": 0.4982862653417742,
+        "prob_under_1p_1_5": 0.5017137346582258,
+        "over_american_odds": 101,
+        "under_american_odds": -101,
         "lambda_total": 1.6086287454291097,
         "model_prob_over_1p_1_5_raw": 0.48857510227849477,
-        "market_prob_over_1p_1_5_consensus": 0.49493927125506076,
+        "market_prob_over_1p_1_5_consensus": 0.5,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
       },
@@ -171,7 +171,7 @@
       "market_totals_p1": {
         "book_count": 8,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.49493927125506076,
+        "consensus_over_no_vig_prob": 0.5,
         "fanduel": {
           "bookmaker_key": "fanduel",
           "bookmaker_title": "FanDuel",
@@ -179,7 +179,7 @@
           "over_price": -106.0,
           "under_price": -120.0,
           "over_no_vig_prob": 0.48542880932556204,
-          "last_update": "2026-04-28T13:47:53Z"
+          "last_update": "2026-04-28T15:19:36Z"
         }
       }
     },
@@ -269,7 +269,7 @@
           "over_price": -168.0,
           "under_price": 130.0,
           "over_no_vig_prob": 0.5904645476772616,
-          "last_update": "2026-04-28T13:47:36Z"
+          "last_update": "2026-04-28T15:19:29Z"
         }
       }
     }
