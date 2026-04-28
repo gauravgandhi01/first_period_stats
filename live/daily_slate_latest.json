@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-28",
-  "pulled_at_utc": "2026-04-28T23:50:00+00:00",
+  "pulled_at_utc": "2026-04-28T23:55:00+00:00",
   "target_date": "2026-04-28",
   "games": [
     {
@@ -69,7 +69,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "15:27",
+        "clock": "13:07",
         "in_intermission": false,
         "away_score": 0,
         "home_score": 1,
@@ -101,8 +101,8 @@
       "away": {
         "team_name_feed": "Minnesota Wild",
         "goalie_name_feed": "Jesper Wallstedt",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-28T23:50:13.377Z",
         "team_id": 30,
         "team_abbrev": "MIN",
         "team_name": "Minnesota Wild",
@@ -280,8 +280,7 @@
     "projectable_games": 3,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 5,
-      "Unconfirmed": 1
+      "Confirmed": 6
     },
     "live_games": 1,
     "first_period_graded_games": 0,
