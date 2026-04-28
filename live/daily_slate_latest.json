@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-27",
-  "pulled_at_utc": "2026-04-28T01:35:00+00:00",
+  "pulled_at_utc": "2026-04-28T01:40:01+00:00",
   "target_date": "2026-04-27",
   "games": [
     {
@@ -66,10 +66,10 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025030145,
-        "state_code": "LIVE",
+        "state_code": "CRIT",
         "state_label": "Live",
         "period": 3,
-        "clock": "06:09",
+        "clock": "01:12",
         "in_intermission": false,
         "away_score": 2,
         "home_score": 3,
