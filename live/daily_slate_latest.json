@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-28",
-  "pulled_at_utc": "2026-04-28T13:48:29+00:00",
+  "pulled_at_utc": "2026-04-28T14:55:01+00:00",
   "target_date": "2026-04-28",
   "games": [
     {
@@ -27,8 +27,8 @@
       "home": {
         "team_name_feed": "Buffalo Sabres",
         "goalie_name_feed": "Alex Lyon",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Likely",
+        "status_updated_at_utc": "2026-04-28T14:36:29.852Z",
         "team_id": 7,
         "team_abbrev": "BUF",
         "team_name": "Buffalo Sabres",
@@ -280,7 +280,8 @@
     "projectable_games": 3,
     "failed_games": 0,
     "status_counts": {
-      "Unconfirmed": 6
+      "Likely": 1,
+      "Unconfirmed": 5
     },
     "live_games": 0,
     "first_period_graded_games": 0,
