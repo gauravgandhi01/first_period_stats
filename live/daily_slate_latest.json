@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-29",
-  "pulled_at_utc": "2026-04-29T17:06:54+00:00",
+  "pulled_at_utc": "2026-04-29T22:48:48+00:00",
   "target_date": "2026-04-29",
   "games": [
     {
@@ -11,8 +11,8 @@
       "away": {
         "team_name_feed": "Montreal Canadiens",
         "goalie_name_feed": "Jakub Dobes",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-29T22:35:11.288Z",
         "team_id": 8,
         "team_abbrev": "MTL",
         "team_name": "Montr\u00e9al Canadiens",
@@ -27,8 +27,8 @@
       "home": {
         "team_name_feed": "Tampa Bay Lightning",
         "goalie_name_feed": "Andrei Vasilevskiy",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-29T17:35:45.911Z",
         "team_id": 14,
         "team_abbrev": "TBL",
         "team_name": "Tampa Bay Lightning",
@@ -41,13 +41,13 @@
         "team_combined_pg": 2.0
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5113681989969375,
-        "prob_under_1p_1_5": 0.48863180100306247,
-        "over_american_odds": -105,
-        "under_american_odds": 105,
+        "prob_over_1p_1_5": 0.4941475351575173,
+        "prob_under_1p_1_5": 0.5058524648424827,
+        "over_american_odds": 102,
+        "under_american_odds": -102,
         "lambda_total": 2.1329933562396843,
         "model_prob_over_1p_1_5_raw": 0.6052478724234363,
-        "market_prob_over_1p_1_5_consensus": 0.494801197804026,
+        "market_prob_over_1p_1_5_consensus": 0.474541593287061,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
       },
@@ -66,7 +66,7 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025030125,
-        "state_code": "FUT",
+        "state_code": "PRE",
         "state_label": "Scheduled",
         "period": 0,
         "clock": null,
@@ -81,15 +81,15 @@
       "market_totals_p1": {
         "book_count": 8,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.494801197804026,
+        "consensus_over_no_vig_prob": 0.474541593287061,
         "fanduel": {
           "bookmaker_key": "fanduel",
           "bookmaker_title": "FanDuel",
           "point": 1.5,
-          "over_price": -108.0,
-          "under_price": -118.0,
-          "over_no_vig_prob": 0.4896023956080519,
-          "last_update": "2026-04-29T17:06:11Z"
+          "over_price": -112.0,
+          "under_price": -112.0,
+          "over_no_vig_prob": 0.5,
+          "last_update": "2026-04-29T22:48:46Z"
         }
       }
     },
@@ -131,13 +131,13 @@
         "team_combined_pg": 1.591549295774648
       },
       "projection": {
-        "prob_over_1p_1_5": 0.4982755380391155,
-        "prob_under_1p_1_5": 0.5017244619608845,
-        "over_american_odds": 101,
-        "under_american_odds": -101,
+        "prob_over_1p_1_5": 0.4827247169799525,
+        "prob_under_1p_1_5": 0.5172752830200475,
+        "over_american_odds": 107,
+        "under_american_odds": -107,
         "lambda_total": 1.9155278895353987,
         "model_prob_over_1p_1_5_raw": 0.5583008342881182,
-        "market_prob_over_1p_1_5_consensus": 0.4876828387010562,
+        "market_prob_over_1p_1_5_consensus": 0.4693877551020409,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
       },
@@ -171,15 +171,15 @@
       "market_totals_p1": {
         "book_count": 8,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.4876828387010562,
+        "consensus_over_no_vig_prob": 0.4693877551020409,
         "fanduel": {
           "bookmaker_key": "fanduel",
           "bookmaker_title": "FanDuel",
           "point": 1.5,
-          "over_price": -112.0,
-          "under_price": -112.0,
-          "over_no_vig_prob": 0.5,
-          "last_update": "2026-04-29T17:06:57Z"
+          "over_price": -110.0,
+          "under_price": -116.0,
+          "over_no_vig_prob": 0.4937655860349127,
+          "last_update": "2026-04-29T22:47:55Z"
         }
       }
     },
@@ -191,8 +191,8 @@
       "away": {
         "team_name_feed": "Utah Mammoth",
         "goalie_name_feed": "Karel Vejmelka",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Likely",
+        "status_updated_at_utc": "2026-04-29T21:04:47.511Z",
         "team_id": 68,
         "team_abbrev": "UTA",
         "team_name": "Utah Mammoth",
@@ -207,8 +207,8 @@
       "home": {
         "team_name_feed": "Vegas Golden Knights",
         "goalie_name_feed": "Carter Hart",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-29T18:34:22.921Z",
         "team_id": 54,
         "team_abbrev": "VGK",
         "team_name": "Vegas Golden Knights",
@@ -221,13 +221,13 @@
         "team_combined_pg": 1.8493150684931507
       },
       "projection": {
-        "prob_over_1p_1_5": 0.510146959549658,
-        "prob_under_1p_1_5": 0.48985304045034195,
+        "prob_over_1p_1_5": 0.5098440286036581,
+        "prob_under_1p_1_5": 0.4901559713963419,
         "over_american_odds": -104,
         "under_american_odds": 104,
         "lambda_total": 1.6300848739649678,
         "model_prob_over_1p_1_5_raw": 0.507489515359212,
-        "market_prob_over_1p_1_5_consensus": 0.5106159202891485,
+        "market_prob_over_1p_1_5_consensus": 0.5102595309409133,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
       },
@@ -261,7 +261,7 @@
       "market_totals_p1": {
         "book_count": 8,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5106159202891485,
+        "consensus_over_no_vig_prob": 0.5102595309409133,
         "fanduel": {
           "bookmaker_key": "fanduel",
           "bookmaker_title": "FanDuel",
@@ -269,7 +269,7 @@
           "over_price": -118.0,
           "under_price": -108.0,
           "over_no_vig_prob": 0.510397604391948,
-          "last_update": "2026-04-29T17:05:58Z"
+          "last_update": "2026-04-29T22:48:36Z"
         }
       }
     }
@@ -280,9 +280,8 @@
     "projectable_games": 3,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 1,
-      "Likely": 1,
-      "Unconfirmed": 4
+      "Confirmed": 4,
+      "Likely": 2
     },
     "live_games": 0,
     "first_period_graded_games": 0,
