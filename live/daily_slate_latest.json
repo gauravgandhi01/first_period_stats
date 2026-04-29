@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-29",
-  "pulled_at_utc": "2026-04-29T07:05:00+00:00",
+  "pulled_at_utc": "2026-04-29T07:10:00+00:00",
   "target_date": "2026-04-29",
   "games": [
     {
@@ -104,14 +104,14 @@
         "team_combined_pg": 2.0
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5157871808635155,
-        "prob_under_1p_1_5": 0.4842128191364845,
-        "over_american_odds": -107,
-        "under_american_odds": 107,
+        "prob_over_1p_1_5": 0.5113681989969375,
+        "prob_under_1p_1_5": 0.48863180100306247,
+        "over_american_odds": -105,
+        "under_american_odds": 105,
         "lambda_total": 2.1329933562396843,
         "model_prob_over_1p_1_5_raw": 0.6052478724234363,
-        "market_prob_over_1p_1_5_consensus": 0.5,
-        "market_book_count": 7,
+        "market_prob_over_1p_1_5_consensus": 0.494801197804026,
+        "market_book_count": 8,
         "market_dampening_weight": 0.85
       },
       "trends": {
@@ -142,10 +142,18 @@
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-29"
       },
       "market_totals_p1": {
-        "book_count": 7,
+        "book_count": 8,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5,
-        "fanduel": null
+        "consensus_over_no_vig_prob": 0.494801197804026,
+        "fanduel": {
+          "bookmaker_key": "fanduel",
+          "bookmaker_title": "FanDuel",
+          "point": 1.5,
+          "over_price": -108.0,
+          "under_price": -118.0,
+          "over_no_vig_prob": 0.4896023956080519,
+          "last_update": "2026-04-29T07:09:35Z"
+        }
       }
     },
     {
@@ -193,7 +201,7 @@
         "lambda_total": 1.9155278895353987,
         "model_prob_over_1p_1_5_raw": 0.5583008342881182,
         "market_prob_over_1p_1_5_consensus": 0.5,
-        "market_book_count": 7,
+        "market_book_count": 8,
         "market_dampening_weight": 0.85
       },
       "trends": {
@@ -224,10 +232,18 @@
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-29"
       },
       "market_totals_p1": {
-        "book_count": 7,
+        "book_count": 8,
         "consensus_point": 1.5,
         "consensus_over_no_vig_prob": 0.5,
-        "fanduel": null
+        "fanduel": {
+          "bookmaker_key": "fanduel",
+          "bookmaker_title": "FanDuel",
+          "point": 1.5,
+          "over_price": -112.0,
+          "under_price": -112.0,
+          "over_no_vig_prob": 0.5,
+          "last_update": "2026-04-29T07:09:56Z"
+        }
       }
     },
     {
@@ -268,14 +284,14 @@
         "team_combined_pg": 1.8493150684931507
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5183823105526129,
-        "prob_under_1p_1_5": 0.48161768944738714,
-        "over_american_odds": -108,
-        "under_american_odds": 108,
+        "prob_over_1p_1_5": 0.5141718507948252,
+        "prob_under_1p_1_5": 0.4858281492051748,
+        "over_american_odds": -106,
+        "under_american_odds": 106,
         "lambda_total": 1.6300848739649678,
         "model_prob_over_1p_1_5_raw": 0.507489515359212,
-        "market_prob_over_1p_1_5_consensus": 0.5203045685279188,
-        "market_book_count": 7,
+        "market_prob_over_1p_1_5_consensus": 0.5153510864599334,
+        "market_book_count": 8,
         "market_dampening_weight": 0.85
       },
       "trends": {
@@ -306,10 +322,18 @@
         "source_url": "https://api-web.nhle.com/v1/score/2026-04-29"
       },
       "market_totals_p1": {
-        "book_count": 7,
+        "book_count": 8,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5203045685279188,
-        "fanduel": null
+        "consensus_over_no_vig_prob": 0.5153510864599334,
+        "fanduel": {
+          "bookmaker_key": "fanduel",
+          "bookmaker_title": "FanDuel",
+          "point": 1.5,
+          "over_price": -118.0,
+          "under_price": -108.0,
+          "over_no_vig_prob": 0.510397604391948,
+          "last_update": "2026-04-29T07:09:37Z"
+        }
       }
     }
   ],
