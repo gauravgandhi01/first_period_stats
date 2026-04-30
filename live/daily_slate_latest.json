@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-30",
-  "pulled_at_utc": "2026-04-30T20:35:00+00:00",
+  "pulled_at_utc": "2026-04-30T20:40:00+00:00",
   "target_date": "2026-04-30",
   "games": [
     {
@@ -89,7 +89,7 @@
           "over_price": -108.0,
           "under_price": -118.0,
           "over_no_vig_prob": 0.4896023956080519,
-          "last_update": "2026-04-30T19:04:22Z"
+          "last_update": "2026-04-30T20:39:04Z"
         }
       }
     },
@@ -176,10 +176,10 @@
           "bookmaker_key": "fanduel",
           "bookmaker_title": "FanDuel",
           "point": 1.5,
-          "over_price": -166.0,
-          "under_price": 130.0,
-          "over_no_vig_prob": 0.5893794380981784,
-          "last_update": "2026-04-30T19:04:28Z"
+          "over_price": -168.0,
+          "under_price": 132.0,
+          "over_no_vig_prob": 0.5925565555825834,
+          "last_update": "2026-04-30T20:39:38Z"
         }
       }
     }
