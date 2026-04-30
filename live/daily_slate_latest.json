@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-04-30",
-  "pulled_at_utc": "2026-04-30T23:00:01+00:00",
+  "pulled_at_utc": "2026-04-30T23:05:01+00:00",
   "target_date": "2026-04-30",
   "games": [
     {
@@ -11,8 +11,8 @@
       "away": {
         "team_name_feed": "Dallas Stars",
         "goalie_name_feed": "Jake Oettinger",
-        "status": "Likely",
-        "status_updated_at_utc": "2026-04-30T16:31:38.844Z",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-30T23:01:19.994Z",
         "team_id": 25,
         "team_abbrev": "DAL",
         "team_name": "Dallas Stars",
@@ -27,8 +27,8 @@
       "home": {
         "team_name_feed": "Minnesota Wild",
         "goalie_name_feed": "Jesper Wallstedt",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-04-30T23:01:27.089Z",
         "team_id": 30,
         "team_abbrev": "MIN",
         "team_name": "Minnesota Wild",
@@ -190,9 +190,8 @@
     "projectable_games": 2,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 1,
-      "Likely": 1,
-      "Unconfirmed": 2
+      "Confirmed": 3,
+      "Unconfirmed": 1
     },
     "live_games": 0,
     "first_period_graded_games": 0,
