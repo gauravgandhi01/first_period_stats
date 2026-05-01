@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-05-01",
-  "pulled_at_utc": "2026-05-01T20:10:01+00:00",
+  "pulled_at_utc": "2026-05-01T21:10:20+00:00",
   "target_date": "2026-05-01",
   "games": [
     {
@@ -41,13 +41,13 @@
         "team_combined_pg": 1.8732394366197183
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5061076299304015,
-        "prob_under_1p_1_5": 0.4938923700695985,
+        "prob_over_1p_1_5": 0.5052928053936809,
+        "prob_under_1p_1_5": 0.49470719460631907,
         "over_american_odds": -102,
         "under_american_odds": 102,
         "lambda_total": 2.1329933562396843,
         "model_prob_over_1p_1_5_raw": 0.6052478724234363,
-        "market_prob_over_1p_1_5_consensus": 0.4886122930198659,
+        "market_prob_over_1p_1_5_consensus": 0.4876536759178418,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
       },
@@ -81,15 +81,15 @@
       "market_totals_p1": {
         "book_count": 8,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.4886122930198659,
+        "consensus_over_no_vig_prob": 0.4876536759178418,
         "fanduel": {
           "bookmaker_key": "fanduel",
           "bookmaker_title": "FanDuel",
           "point": 1.5,
           "over_price": -106.0,
-          "under_price": -118.0,
-          "over_no_vig_prob": 0.4873460435296103,
-          "last_update": "2026-05-01T18:44:43Z"
+          "under_price": -120.0,
+          "over_no_vig_prob": 0.48542880932556204,
+          "last_update": "2026-05-01T21:09:40Z"
         }
       }
     },
@@ -179,7 +179,7 @@
           "over_price": -110.0,
           "under_price": -116.0,
           "over_no_vig_prob": 0.4937655860349127,
-          "last_update": "2026-05-01T18:44:27Z"
+          "last_update": "2026-05-01T21:09:22Z"
         }
       }
     },
@@ -269,7 +269,7 @@
           "over_price": -112.0,
           "under_price": -112.0,
           "over_no_vig_prob": 0.5,
-          "last_update": "2026-05-01T18:44:29Z"
+          "last_update": "2026-05-01T21:09:53Z"
         }
       }
     }
