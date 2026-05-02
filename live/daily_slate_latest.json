@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-05-01",
-  "pulled_at_utc": "2026-05-01T22:36:46+00:00",
+  "pulled_at_utc": "2026-05-02T00:13:24+00:00",
   "target_date": "2026-05-01",
   "games": [
     {
@@ -11,8 +11,8 @@
       "away": {
         "team_name_feed": "Tampa Bay Lightning",
         "goalie_name_feed": "Andrei Vasilevskiy",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-05-01T22:36:14.444Z",
         "team_id": 14,
         "team_abbrev": "TBL",
         "team_name": "Tampa Bay Lightning",
@@ -41,15 +41,15 @@
         "team_combined_pg": 1.8732394366197183
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5052928053936809,
-        "prob_under_1p_1_5": 0.49470719460631907,
-        "over_american_odds": -102,
-        "under_american_odds": 102,
+        "prob_over_1p_1_5": 0.6052478724234363,
+        "prob_under_1p_1_5": 0.39475212757656375,
+        "over_american_odds": -153,
+        "under_american_odds": 153,
         "lambda_total": 2.1329933562396843,
         "model_prob_over_1p_1_5_raw": 0.6052478724234363,
-        "market_prob_over_1p_1_5_consensus": 0.4876536759178418,
-        "market_book_count": 8,
-        "market_dampening_weight": 0.85
+        "market_prob_over_1p_1_5_consensus": null,
+        "market_book_count": 0,
+        "market_dampening_weight": 0.0
       },
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 3/5 2+ (60.0%) | L10: 5/10 2+ (50.0%) | L15: 8/15 2+ (53.3%) | L20: 11/20 2+ (55.0%)",
@@ -66,31 +66,17 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025030126,
-        "state_code": "PRE",
-        "state_label": "Scheduled",
-        "period": 0,
-        "clock": null,
+        "state_code": "LIVE",
+        "state_label": "Live",
+        "period": 2,
+        "clock": "15:39",
         "in_intermission": false,
         "away_score": 0,
         "home_score": 0,
         "first_period_goals": 0,
-        "first_period_complete": false,
-        "first_period_total_result": null,
+        "first_period_complete": true,
+        "first_period_total_result": "UNDER",
         "source_url": "https://api-web.nhle.com/v1/score/2026-05-01"
-      },
-      "market_totals_p1": {
-        "book_count": 8,
-        "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.4876536759178418,
-        "fanduel": {
-          "bookmaker_key": "fanduel",
-          "bookmaker_title": "FanDuel",
-          "point": 1.5,
-          "over_price": -106.0,
-          "under_price": -120.0,
-          "over_no_vig_prob": 0.48542880932556204,
-          "last_update": "2026-05-01T21:09:40Z"
-        }
       }
     },
     {
@@ -101,8 +87,8 @@
       "away": {
         "team_name_feed": "Buffalo Sabres",
         "goalie_name_feed": "Alex Lyon",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-05-01T23:04:31.380Z",
         "team_id": 7,
         "team_abbrev": "BUF",
         "team_name": "Buffalo Sabres",
@@ -131,15 +117,15 @@
         "team_combined_pg": 1.7777777777777777
       },
       "projection": {
-        "prob_over_1p_1_5": 0.49677572798552794,
-        "prob_under_1p_1_5": 0.5032242720144721,
-        "over_american_odds": 101,
-        "under_american_odds": -101,
+        "prob_over_1p_1_5": 0.5358597790128308,
+        "prob_under_1p_1_5": 0.4641402209871692,
+        "over_american_odds": -115,
+        "under_american_odds": 115,
         "lambda_total": 1.7767706943581991,
         "model_prob_over_1p_1_5_raw": 0.5358597790128308,
-        "market_prob_over_1p_1_5_consensus": 0.48987854251012153,
-        "market_book_count": 8,
-        "market_dampening_weight": 0.85
+        "market_prob_over_1p_1_5_consensus": null,
+        "market_book_count": 0,
+        "market_dampening_weight": 0.0
       },
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 3/5 2+ (60.0%) | L10: 5/10 2+ (50.0%) | L15: 7/15 2+ (46.7%) | L20: 10/20 2+ (50.0%)",
@@ -156,31 +142,17 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025030116,
-        "state_code": "FUT",
-        "state_label": "Scheduled",
-        "period": 0,
-        "clock": null,
+        "state_code": "LIVE",
+        "state_label": "Live",
+        "period": 1,
+        "clock": "02:44",
         "in_intermission": false,
-        "away_score": 0,
+        "away_score": 2,
         "home_score": 0,
-        "first_period_goals": 0,
+        "first_period_goals": 2,
         "first_period_complete": false,
         "first_period_total_result": null,
         "source_url": "https://api-web.nhle.com/v1/score/2026-05-01"
-      },
-      "market_totals_p1": {
-        "book_count": 8,
-        "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.48987854251012153,
-        "fanduel": {
-          "bookmaker_key": "fanduel",
-          "bookmaker_title": "FanDuel",
-          "point": 1.5,
-          "over_price": -110.0,
-          "under_price": -116.0,
-          "over_no_vig_prob": 0.4937655860349127,
-          "last_update": "2026-05-01T21:09:22Z"
-        }
       }
     },
     {
@@ -221,13 +193,13 @@
         "team_combined_pg": 1.63013698630137
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5011234273038818,
-        "prob_under_1p_1_5": 0.4988765726961182,
-        "over_american_odds": -100,
-        "under_american_odds": 100,
+        "prob_over_1p_1_5": 0.5037730532390439,
+        "prob_under_1p_1_5": 0.49622694676095613,
+        "over_american_odds": -102,
+        "under_american_odds": 102,
         "lambda_total": 1.6300848739649678,
         "model_prob_over_1p_1_5_raw": 0.507489515359212,
-        "market_prob_over_1p_1_5_consensus": 0.5,
+        "market_prob_over_1p_1_5_consensus": 0.5031172069825436,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
       },
@@ -261,15 +233,15 @@
       "market_totals_p1": {
         "book_count": 8,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5,
+        "consensus_over_no_vig_prob": 0.5031172069825436,
         "fanduel": {
           "bookmaker_key": "fanduel",
           "bookmaker_title": "FanDuel",
           "point": 1.5,
-          "over_price": -112.0,
-          "under_price": -112.0,
-          "over_no_vig_prob": 0.5,
-          "last_update": "2026-05-01T21:09:53Z"
+          "over_price": -116.0,
+          "under_price": -110.0,
+          "over_no_vig_prob": 0.5062344139650873,
+          "last_update": "2026-05-02T00:15:29Z"
         }
       }
     }
@@ -280,14 +252,14 @@
     "projectable_games": 3,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 2,
+      "Confirmed": 4,
       "Likely": 1,
-      "Unconfirmed": 3
+      "Unconfirmed": 1
     },
-    "live_games": 0,
-    "first_period_graded_games": 0,
+    "live_games": 2,
+    "first_period_graded_games": 1,
     "first_period_over_games": 0,
-    "first_period_under_games": 0,
-    "market_games_with_data": 3
+    "first_period_under_games": 1,
+    "market_games_with_data": 1
   }
 }
