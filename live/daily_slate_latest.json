@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-05-03",
-  "pulled_at_utc": "2026-05-03T22:40:00+00:00",
+  "pulled_at_utc": "2026-05-03T22:45:01+00:00",
   "target_date": "2026-05-03",
   "games": [
     {
@@ -41,15 +41,15 @@
         "team_combined_pg": 2.0
       },
       "projection": {
-        "prob_over_1p_1_5": 0.4341325669040447,
-        "prob_under_1p_1_5": 0.5658674330959552,
-        "over_american_odds": 130,
-        "under_american_odds": -130,
+        "prob_over_1p_1_5": 0.6052478724234363,
+        "prob_under_1p_1_5": 0.39475212757656375,
+        "over_american_odds": -153,
+        "under_american_odds": 153,
         "lambda_total": 2.1329933562396843,
         "model_prob_over_1p_1_5_raw": 0.6052478724234363,
-        "market_prob_over_1p_1_5_consensus": 0.4039357482829756,
-        "market_book_count": 8,
-        "market_dampening_weight": 0.85
+        "market_prob_over_1p_1_5_consensus": null,
+        "market_book_count": 0,
+        "market_dampening_weight": 0.0
       },
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 4/5 2+ (80.0%) | L10: 7/10 2+ (70.0%) | L15: 11/15 2+ (73.3%) | L20: 13/20 2+ (65.0%)",
@@ -69,28 +69,14 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 1,
-        "clock": "02:31",
+        "clock": "00:52",
         "in_intermission": false,
-        "away_score": 0,
+        "away_score": 1,
         "home_score": 0,
-        "first_period_goals": 0,
+        "first_period_goals": 1,
         "first_period_complete": false,
         "first_period_total_result": null,
         "source_url": "https://api-web.nhle.com/v1/score/2026-05-03"
-      },
-      "market_totals_p1": {
-        "book_count": 8,
-        "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.4039357482829756,
-        "fanduel": {
-          "bookmaker_key": "fanduel",
-          "bookmaker_title": "FanDuel",
-          "point": 1.5,
-          "over_price": 120.0,
-          "under_price": -152.0,
-          "over_no_vig_prob": 0.4297407912687586,
-          "last_update": "2026-05-03T21:09:57Z"
-        }
       }
     },
     {
@@ -179,7 +165,7 @@
           "over_price": -112.0,
           "under_price": -112.0,
           "over_no_vig_prob": 0.5,
-          "last_update": "2026-05-03T21:09:09Z"
+          "last_update": "2026-05-03T22:44:50Z"
         }
       }
     }
@@ -197,6 +183,6 @@
     "first_period_graded_games": 0,
     "first_period_over_games": 0,
     "first_period_under_games": 0,
-    "market_games_with_data": 2
+    "market_games_with_data": 1
   }
 }
