@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-05-03",
-  "pulled_at_utc": "2026-05-03T21:30:00+00:00",
+  "pulled_at_utc": "2026-05-03T21:35:00+00:00",
   "target_date": "2026-05-03",
   "games": [
     {
@@ -11,8 +11,8 @@
       "away": {
         "team_name_feed": "Montreal Canadiens",
         "goalie_name_feed": "Jakub Dobes",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-05-03T21:32:42.369Z",
         "team_id": 8,
         "team_abbrev": "MTL",
         "team_name": "Montr\u00e9al Canadiens",
@@ -27,8 +27,8 @@
       "home": {
         "team_name_feed": "Tampa Bay Lightning",
         "goalie_name_feed": "Andrei Vasilevskiy",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-05-03T21:31:42.866Z",
         "team_id": 14,
         "team_abbrev": "TBL",
         "team_name": "Tampa Bay Lightning",
@@ -190,8 +190,8 @@
     "projectable_games": 2,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 1,
-      "Unconfirmed": 3
+      "Confirmed": 3,
+      "Unconfirmed": 1
     },
     "live_games": 0,
     "first_period_graded_games": 0,
