@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-05-04",
-  "pulled_at_utc": "2026-05-04T16:40:48+00:00",
+  "pulled_at_utc": "2026-05-04T16:52:34+00:00",
   "target_date": "2026-05-04",
   "games": [
     {
@@ -157,7 +157,7 @@
     }
   ],
   "warnings": [
-    "Odds API market pull unavailable: HTTPSConnectionPool(host='api.the-odds-api.com', port=443): Read timed out. (read timeout=30)"
+    "Odds API market pull unavailable: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"
   ],
   "meta": {
     "total_games": 2,
