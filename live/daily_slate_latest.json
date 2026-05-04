@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-05-04",
-  "pulled_at_utc": "2026-05-04T18:35:00+00:00",
+  "pulled_at_utc": "2026-05-04T18:40:00+00:00",
   "target_date": "2026-05-04",
   "games": [
     {
@@ -41,13 +41,13 @@
         "team_combined_pg": 1.9014084507042253
       },
       "projection": {
-        "prob_over_1p_1_5": 0.4690990340263237,
-        "prob_under_1p_1_5": 0.5309009659736763,
-        "over_american_odds": 113,
-        "under_american_odds": -113,
+        "prob_over_1p_1_5": 0.46477289223594853,
+        "prob_under_1p_1_5": 0.5352271077640515,
+        "over_american_odds": 115,
+        "under_american_odds": -115,
         "lambda_total": 1.5090801685050628,
         "model_prob_over_1p_1_5_raw": 0.47448248331275256,
-        "market_prob_over_1p_1_5_consensus": 0.46814901356401273,
+        "market_prob_over_1p_1_5_consensus": 0.4630594349871008,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
       },
@@ -81,7 +81,7 @@
       "market_totals_p1": {
         "book_count": 8,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.46814901356401273,
+        "consensus_over_no_vig_prob": 0.4630594349871008,
         "fanduel": {
           "bookmaker_key": "fanduel",
           "bookmaker_title": "FanDuel",
@@ -89,7 +89,7 @@
           "over_price": 102.0,
           "under_price": -130.0,
           "over_no_vig_prob": 0.4669102720259846,
-          "last_update": "2026-05-04T17:04:10Z"
+          "last_update": "2026-05-04T18:39:28Z"
         }
       }
     },
@@ -176,10 +176,10 @@
           "bookmaker_key": "fanduel",
           "bookmaker_title": "FanDuel",
           "point": 1.5,
-          "over_price": -144.0,
-          "under_price": 112.0,
-          "over_no_vig_prob": 0.5557821147684242,
-          "last_update": "2026-05-04T17:04:28Z"
+          "over_price": -138.0,
+          "under_price": 108.0,
+          "over_no_vig_prob": 0.5467012037178121,
+          "last_update": "2026-05-04T18:39:12Z"
         }
       }
     }
