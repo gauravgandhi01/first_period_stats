@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-05-05",
-  "pulled_at_utc": "2026-05-05T03:25:01+00:00",
+  "pulled_at_utc": "2026-05-05T13:00:00+00:00",
   "target_date": "2026-05-05",
   "games": [
     {
@@ -41,14 +41,14 @@
         "team_combined_pg": 1.943661971830986
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5371146978685407,
-        "prob_under_1p_1_5": 0.4628853021314593,
-        "over_american_odds": -116,
-        "under_american_odds": 116,
+        "prob_over_1p_1_5": 0.5429668531828549,
+        "prob_under_1p_1_5": 0.45703314681714513,
+        "over_american_odds": -119,
+        "under_american_odds": 119,
         "lambda_total": 1.7104623112416573,
         "model_prob_over_1p_1_5_raw": 0.5162800408301669,
-        "market_prob_over_1p_1_5_consensus": 0.5407914020517831,
-        "market_book_count": 7,
+        "market_prob_over_1p_1_5_consensus": 0.5476762906568586,
+        "market_book_count": 8,
         "market_dampening_weight": 0.85
       },
       "trends": {
@@ -79,10 +79,18 @@
         "source_url": "https://api-web.nhle.com/v1/score/2026-05-05"
       },
       "market_totals_p1": {
-        "book_count": 7,
+        "book_count": 8,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5407914020517831,
-        "fanduel": null
+        "consensus_over_no_vig_prob": 0.5476762906568586,
+        "fanduel": {
+          "bookmaker_key": "fanduel",
+          "bookmaker_title": "FanDuel",
+          "point": 1.5,
+          "over_price": -134.0,
+          "under_price": 106.0,
+          "over_no_vig_prob": 0.5412124539251824,
+          "last_update": "2026-05-05T12:59:13Z"
+        }
       }
     }
   ],
