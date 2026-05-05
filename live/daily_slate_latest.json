@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-05-04",
-  "pulled_at_utc": "2026-05-05T00:55:01+00:00",
+  "pulled_at_utc": "2026-05-05T01:00:01+00:00",
   "target_date": "2026-05-04",
   "games": [
     {
@@ -69,7 +69,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "08:36",
+        "clock": "03:37",
         "in_intermission": true,
         "away_score": 2,
         "home_score": 1,
@@ -117,13 +117,13 @@
         "team_combined_pg": 1.8493150684931507
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5379737370992164,
-        "prob_under_1p_1_5": 0.46202626290078364,
-        "over_american_odds": -116,
-        "under_american_odds": 116,
+        "prob_over_1p_1_5": 0.5437669077370261,
+        "prob_under_1p_1_5": 0.4562330922629739,
+        "over_american_odds": -119,
+        "under_american_odds": 119,
         "lambda_total": 1.675132452521698,
         "model_prob_over_1p_1_5_raw": 0.5052625309809229,
-        "market_prob_over_1p_1_5_consensus": 0.5437463028847975,
+        "market_prob_over_1p_1_5_consensus": 0.550561797752809,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
       },
@@ -142,7 +142,7 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025030241,
-        "state_code": "FUT",
+        "state_code": "PRE",
         "state_label": "Scheduled",
         "period": 0,
         "clock": null,
@@ -157,15 +157,15 @@
       "market_totals_p1": {
         "book_count": 8,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5437463028847975,
+        "consensus_over_no_vig_prob": 0.550561797752809,
         "fanduel": {
           "bookmaker_key": "fanduel",
           "bookmaker_title": "FanDuel",
           "point": 1.5,
-          "over_price": -138.0,
-          "under_price": 108.0,
-          "over_no_vig_prob": 0.5467012037178121,
-          "last_update": "2026-05-04T23:24:01Z"
+          "over_price": -140.0,
+          "under_price": 110.0,
+          "over_no_vig_prob": 0.550561797752809,
+          "last_update": "2026-05-05T00:59:15Z"
         }
       }
     }
