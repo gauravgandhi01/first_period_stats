@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-05-05",
-  "pulled_at_utc": "2026-05-05T23:30:00+00:00",
+  "pulled_at_utc": "2026-05-05T23:35:01+00:00",
   "target_date": "2026-05-05",
   "games": [
     {
@@ -27,8 +27,8 @@
       "home": {
         "team_name_feed": "Colorado Avalanche",
         "goalie_name_feed": "Scott Wedgewood",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-05-05T23:33:15.837Z",
         "team_id": 21,
         "team_abbrev": "COL",
         "team_name": "Colorado Avalanche",
@@ -100,8 +100,7 @@
     "projectable_games": 1,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 1,
-      "Unconfirmed": 1
+      "Confirmed": 2
     },
     "live_games": 0,
     "first_period_graded_games": 0,
