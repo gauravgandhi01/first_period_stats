@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-05-06",
-  "pulled_at_utc": "2026-05-06T05:25:00+00:00",
+  "pulled_at_utc": "2026-05-06T16:00:01+00:00",
   "target_date": "2026-05-06",
   "games": [
     {
@@ -27,8 +27,8 @@
       "home": {
         "team_name_feed": "Buffalo Sabres",
         "goalie_name_feed": "Alex Lyon",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Likely",
+        "status_updated_at_utc": "2026-05-06T14:48:08.590Z",
         "team_id": 7,
         "team_abbrev": "BUF",
         "team_name": "Buffalo Sabres",
@@ -41,14 +41,14 @@
         "team_combined_pg": 1.9589041095890412
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5231385634092371,
-        "prob_under_1p_1_5": 0.47686143659076285,
-        "over_american_odds": -110,
-        "under_american_odds": 110,
+        "prob_over_1p_1_5": 0.517616931604638,
+        "prob_under_1p_1_5": 0.48238306839536205,
+        "over_american_odds": -107,
+        "under_american_odds": 107,
         "lambda_total": 2.2018468855335014,
         "model_prob_over_1p_1_5_raw": 0.6174462106975864,
-        "market_prob_over_1p_1_5_consensus": 0.5064960374171755,
-        "market_book_count": 7,
+        "market_prob_over_1p_1_5_consensus": 0.5,
+        "market_book_count": 8,
         "market_dampening_weight": 0.85
       },
       "trends": {
@@ -79,10 +79,18 @@
         "source_url": "https://api-web.nhle.com/v1/score/2026-05-06"
       },
       "market_totals_p1": {
-        "book_count": 7,
+        "book_count": 8,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5064960374171755,
-        "fanduel": null
+        "consensus_over_no_vig_prob": 0.5,
+        "fanduel": {
+          "bookmaker_key": "fanduel",
+          "bookmaker_title": "FanDuel",
+          "point": 1.5,
+          "over_price": -116.0,
+          "under_price": -110.0,
+          "over_no_vig_prob": 0.5062344139650873,
+          "last_update": "2026-05-06T15:59:53Z"
+        }
       }
     },
     {
@@ -123,14 +131,14 @@
         "team_combined_pg": 1.8493150684931507
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5249868569529834,
-        "prob_under_1p_1_5": 0.4750131430470166,
+        "prob_over_1p_1_5": 0.5260929721585232,
+        "prob_under_1p_1_5": 0.47390702784147676,
         "over_american_odds": -111,
         "under_american_odds": 111,
         "lambda_total": 1.675132452521698,
         "model_prob_over_1p_1_5_raw": 0.5052625309809229,
-        "market_prob_over_1p_1_5_consensus": 0.5284676203598176,
-        "market_book_count": 6,
+        "market_prob_over_1p_1_5_consensus": 0.529768932366335,
+        "market_book_count": 8,
         "market_dampening_weight": 0.85
       },
       "trends": {
@@ -161,10 +169,18 @@
         "source_url": "https://api-web.nhle.com/v1/score/2026-05-06"
       },
       "market_totals_p1": {
-        "book_count": 6,
+        "book_count": 8,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5284676203598176,
-        "fanduel": null
+        "consensus_over_no_vig_prob": 0.529768932366335,
+        "fanduel": {
+          "bookmaker_key": "fanduel",
+          "bookmaker_title": "FanDuel",
+          "point": 1.5,
+          "over_price": -128.0,
+          "under_price": 100.0,
+          "over_no_vig_prob": 0.5289256198347108,
+          "last_update": "2026-05-06T15:59:41Z"
+        }
       }
     }
   ],
@@ -174,7 +190,8 @@
     "projectable_games": 2,
     "failed_games": 0,
     "status_counts": {
-      "Unconfirmed": 4
+      "Likely": 1,
+      "Unconfirmed": 3
     },
     "live_games": 0,
     "first_period_graded_games": 0,
