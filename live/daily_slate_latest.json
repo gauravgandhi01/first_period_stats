@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-05-06",
-  "pulled_at_utc": "2026-05-07T00:55:01+00:00",
+  "pulled_at_utc": "2026-05-07T01:00:01+00:00",
   "target_date": "2026-05-06",
   "games": [
     {
@@ -68,9 +68,9 @@
         "nhl_game_id": 2025030211,
         "state_code": "LIVE",
         "state_label": "Live",
-        "period": 2,
-        "clock": "06:49",
-        "in_intermission": true,
+        "period": 3,
+        "clock": "20:00",
+        "in_intermission": false,
         "away_score": 2,
         "home_score": 4,
         "first_period_goals": 3,
@@ -142,7 +142,7 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025030242,
-        "state_code": "FUT",
+        "state_code": "PRE",
         "state_label": "Scheduled",
         "period": 0,
         "clock": null,
