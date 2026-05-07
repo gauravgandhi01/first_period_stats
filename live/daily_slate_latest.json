@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-05-06",
-  "pulled_at_utc": "2026-05-07T01:25:01+00:00",
+  "pulled_at_utc": "2026-05-07T01:30:01+00:00",
   "target_date": "2026-05-06",
   "games": [
     {
@@ -66,10 +66,10 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025030211,
-        "state_code": "LIVE",
+        "state_code": "CRIT",
         "state_label": "Live",
         "period": 3,
-        "clock": "06:14",
+        "clock": "02:47",
         "in_intermission": false,
         "away_score": 2,
         "home_score": 4,
@@ -117,13 +117,13 @@
         "team_combined_pg": 1.8493150684931507
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5286508037583699,
-        "prob_under_1p_1_5": 0.4713491962416301,
-        "over_american_odds": -112,
-        "under_american_odds": 112,
+        "prob_over_1p_1_5": 0.5224290253531367,
+        "prob_under_1p_1_5": 0.47757097464686327,
+        "over_american_odds": -109,
+        "under_american_odds": 109,
         "lambda_total": 1.675132452521698,
         "model_prob_over_1p_1_5_raw": 0.5052625309809229,
-        "market_prob_over_1p_1_5_consensus": 0.5327781460132136,
+        "market_prob_over_1p_1_5_consensus": 0.5254584067129391,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
       },
@@ -157,15 +157,15 @@
       "market_totals_p1": {
         "book_count": 8,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5327781460132136,
+        "consensus_over_no_vig_prob": 0.5254584067129391,
         "fanduel": {
           "bookmaker_key": "fanduel",
           "bookmaker_title": "FanDuel",
           "point": 1.5,
-          "over_price": -128.0,
-          "under_price": 100.0,
-          "over_no_vig_prob": 0.5289256198347108,
-          "last_update": "2026-05-06T23:54:55Z"
+          "over_price": -132.0,
+          "under_price": 104.0,
+          "over_no_vig_prob": 0.5371848068943506,
+          "last_update": "2026-05-07T01:29:12Z"
         }
       }
     }
