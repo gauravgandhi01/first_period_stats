@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-05-07",
-  "pulled_at_utc": "2026-05-07T21:30:01+00:00",
+  "pulled_at_utc": "2026-05-07T21:35:00+00:00",
   "target_date": "2026-05-07",
   "games": [
     {
@@ -87,9 +87,9 @@
           "bookmaker_title": "FanDuel",
           "point": 1.5,
           "over_price": 112.0,
-          "under_price": -142.0,
-          "over_no_vig_prob": 0.4456393635827931,
-          "last_update": "2026-05-07T19:59:52Z"
+          "under_price": -144.0,
+          "over_no_vig_prob": 0.44421788523157596,
+          "last_update": "2026-05-07T21:33:55Z"
         }
       }
     }
