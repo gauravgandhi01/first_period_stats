@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-05-07",
-  "pulled_at_utc": "2026-05-07T14:50:00+00:00",
+  "pulled_at_utc": "2026-05-07T16:05:18+00:00",
   "target_date": "2026-05-07",
   "games": [
     {
@@ -11,8 +11,8 @@
       "away": {
         "team_name_feed": "Carolina Hurricanes",
         "goalie_name_feed": "Frederik Andersen",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Likely",
+        "status_updated_at_utc": "2026-05-07T15:43:38.461Z",
         "team_id": 12,
         "team_abbrev": "CAR",
         "team_name": "Carolina Hurricanes",
@@ -27,8 +27,8 @@
       "home": {
         "team_name_feed": "Philadelphia Flyers",
         "goalie_name_feed": "Dan Vladar",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Likely",
+        "status_updated_at_utc": "2026-05-07T15:12:13.589Z",
         "team_id": 4,
         "team_abbrev": "PHI",
         "team_name": "Philadelphia Flyers",
@@ -41,13 +41,13 @@
         "team_combined_pg": 1.591549295774648
       },
       "projection": {
-        "prob_over_1p_1_5": 0.4589593596473801,
-        "prob_under_1p_1_5": 0.5410406403526199,
-        "over_american_odds": 118,
-        "under_american_odds": -118,
+        "prob_over_1p_1_5": 0.4525964050912697,
+        "prob_under_1p_1_5": 0.5474035949087304,
+        "over_american_odds": 121,
+        "under_american_odds": -121,
         "lambda_total": 1.5090801685050628,
         "model_prob_over_1p_1_5_raw": 0.47448248331275256,
-        "market_prob_over_1p_1_5_consensus": 0.4562199848829026,
+        "market_prob_over_1p_1_5_consensus": 0.448734155993361,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
       },
@@ -81,7 +81,7 @@
       "market_totals_p1": {
         "book_count": 8,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.4562199848829026,
+        "consensus_over_no_vig_prob": 0.448734155993361,
         "fanduel": {
           "bookmaker_key": "fanduel",
           "bookmaker_title": "FanDuel",
@@ -89,7 +89,7 @@
           "over_price": 114.0,
           "under_price": -144.0,
           "over_no_vig_prob": 0.4419008982903506,
-          "last_update": "2026-05-07T13:37:33Z"
+          "last_update": "2026-05-07T16:04:19Z"
         }
       }
     }
@@ -100,7 +100,7 @@
     "projectable_games": 1,
     "failed_games": 0,
     "status_counts": {
-      "Unconfirmed": 2
+      "Likely": 2
     },
     "live_games": 0,
     "first_period_graded_games": 0,
