@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-05-06",
-  "pulled_at_utc": "2026-05-07T00:20:01+00:00",
+  "pulled_at_utc": "2026-05-07T00:25:01+00:00",
   "target_date": "2026-05-06",
   "games": [
     {
@@ -69,10 +69,10 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "12:47",
+        "clock": "10:49",
         "in_intermission": false,
         "away_score": 1,
-        "home_score": 3,
+        "home_score": 4,
         "first_period_goals": 3,
         "first_period_complete": true,
         "first_period_total_result": "OVER",
