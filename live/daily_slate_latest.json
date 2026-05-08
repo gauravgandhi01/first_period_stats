@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-05-08",
-  "pulled_at_utc": "2026-05-08T17:45:01+00:00",
+  "pulled_at_utc": "2026-05-08T17:50:00+00:00",
   "target_date": "2026-05-08",
   "games": [
     {
@@ -117,8 +117,8 @@
       "home": {
         "team_name_feed": "Anaheim Ducks",
         "goalie_name_feed": "Lukas Dostal",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-05-08T17:43:27.621Z",
         "team_id": 24,
         "team_abbrev": "ANA",
         "team_name": "Anaheim Ducks",
@@ -190,8 +190,9 @@
     "projectable_games": 2,
     "failed_games": 0,
     "status_counts": {
+      "Confirmed": 1,
       "Likely": 2,
-      "Unconfirmed": 2
+      "Unconfirmed": 1
     },
     "live_games": 0,
     "first_period_graded_games": 0,
