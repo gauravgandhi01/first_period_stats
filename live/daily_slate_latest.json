@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-05-08",
-  "pulled_at_utc": "2026-05-08T22:35:01+00:00",
+  "pulled_at_utc": "2026-05-08T22:40:01+00:00",
   "target_date": "2026-05-08",
   "games": [
     {
@@ -11,8 +11,8 @@
       "away": {
         "team_name_feed": "Montreal Canadiens",
         "goalie_name_feed": "Jakub Dobes",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-05-08T22:32:45.311Z",
         "team_id": 8,
         "team_abbrev": "MTL",
         "team_name": "Montr\u00e9al Canadiens",
@@ -27,8 +27,8 @@
       "home": {
         "team_name_feed": "Buffalo Sabres",
         "goalie_name_feed": "Alex Lyon",
-        "status": "Likely",
-        "status_updated_at_utc": "2026-05-08T14:43:07.288Z",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-05-08T22:32:40.364Z",
         "team_id": 7,
         "team_abbrev": "BUF",
         "team_name": "Buffalo Sabres",
@@ -190,8 +190,8 @@
     "projectable_games": 2,
     "failed_games": 0,
     "status_counts": {
-      "Likely": 3,
-      "Unconfirmed": 1
+      "Confirmed": 2,
+      "Likely": 2
     },
     "live_games": 0,
     "first_period_graded_games": 0,
