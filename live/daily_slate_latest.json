@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-05-09",
-  "pulled_at_utc": "2026-05-09T04:20:00+00:00",
+  "pulled_at_utc": "2026-05-09T11:25:01+00:00",
   "target_date": "2026-05-09",
   "games": [
     {
@@ -41,15 +41,15 @@
         "team_combined_pg": 1.591549295774648
       },
       "projection": {
-        "prob_over_1p_1_5": 0.4614996807528972,
-        "prob_under_1p_1_5": 0.5385003192471027,
-        "over_american_odds": 117,
-        "under_american_odds": -117,
+        "prob_over_1p_1_5": 0.47448248331275256,
+        "prob_under_1p_1_5": 0.5255175166872474,
+        "over_american_odds": 111,
+        "under_american_odds": -111,
         "lambda_total": 1.5090801685050628,
         "model_prob_over_1p_1_5_raw": 0.47448248331275256,
-        "market_prob_over_1p_1_5_consensus": 0.4592085979482169,
-        "market_book_count": 7,
-        "market_dampening_weight": 0.85
+        "market_prob_over_1p_1_5_consensus": null,
+        "market_book_count": 0,
+        "market_dampening_weight": 0.0
       },
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 5/10 2+ (50.0%) | L15: 8/15 2+ (53.3%) | L20: 11/20 2+ (55.0%)",
@@ -77,12 +77,6 @@
         "first_period_complete": false,
         "first_period_total_result": null,
         "source_url": "https://api-web.nhle.com/v1/score/2026-05-09"
-      },
-      "market_totals_p1": {
-        "book_count": 7,
-        "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.4592085979482169,
-        "fanduel": null
       }
     },
     {
@@ -123,15 +117,15 @@
         "team_combined_pg": 1.6575342465753424
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5371146978685407,
-        "prob_under_1p_1_5": 0.4628853021314593,
-        "over_american_odds": -116,
-        "under_american_odds": 116,
+        "prob_over_1p_1_5": 0.5162800408301669,
+        "prob_under_1p_1_5": 0.4837199591698331,
+        "over_american_odds": -107,
+        "under_american_odds": 107,
         "lambda_total": 1.7104623112416573,
         "model_prob_over_1p_1_5_raw": 0.5162800408301669,
-        "market_prob_over_1p_1_5_consensus": 0.5407914020517831,
-        "market_book_count": 7,
-        "market_dampening_weight": 0.85
+        "market_prob_over_1p_1_5_consensus": null,
+        "market_book_count": 0,
+        "market_dampening_weight": 0.0
       },
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 3/5 2+ (60.0%) | L10: 6/10 2+ (60.0%) | L15: 9/15 2+ (60.0%) | L20: 11/20 2+ (55.0%)",
@@ -159,16 +153,12 @@
         "first_period_complete": false,
         "first_period_total_result": null,
         "source_url": "https://api-web.nhle.com/v1/score/2026-05-09"
-      },
-      "market_totals_p1": {
-        "book_count": 7,
-        "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5407914020517831,
-        "fanduel": null
       }
     }
   ],
-  "warnings": [],
+  "warnings": [
+    "Odds API market pull unavailable: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"
+  ],
   "meta": {
     "total_games": 2,
     "projectable_games": 2,
@@ -180,6 +170,6 @@
     "first_period_graded_games": 0,
     "first_period_over_games": 0,
     "first_period_under_games": 0,
-    "market_games_with_data": 2
+    "market_games_with_data": 0
   }
 }
