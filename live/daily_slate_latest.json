@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-05-09",
-  "pulled_at_utc": "2026-05-09T23:15:01+00:00",
+  "pulled_at_utc": "2026-05-09T23:20:01+00:00",
   "target_date": "2026-05-09",
   "games": [
     {
@@ -41,15 +41,15 @@
         "team_combined_pg": 1.591549295774648
       },
       "projection": {
-        "prob_over_1p_1_5": 0.44817407353416705,
-        "prob_under_1p_1_5": 0.551825926465833,
-        "over_american_odds": 123,
-        "under_american_odds": -123,
+        "prob_over_1p_1_5": 0.47448248331275256,
+        "prob_under_1p_1_5": 0.5255175166872474,
+        "over_american_odds": 111,
+        "under_american_odds": -111,
         "lambda_total": 1.5090801685050628,
         "model_prob_over_1p_1_5_raw": 0.47448248331275256,
-        "market_prob_over_1p_1_5_consensus": 0.4435314129850049,
-        "market_book_count": 8,
-        "market_dampening_weight": 0.85
+        "market_prob_over_1p_1_5_consensus": null,
+        "market_book_count": 0,
+        "market_dampening_weight": 0.0
       },
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 5/10 2+ (50.0%) | L15: 8/15 2+ (53.3%) | L20: 11/20 2+ (55.0%)",
@@ -69,7 +69,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "17:57",
+        "clock": "14:07",
         "in_intermission": false,
         "away_score": 0,
         "home_score": 1,
@@ -77,20 +77,6 @@
         "first_period_complete": true,
         "first_period_total_result": "UNDER",
         "source_url": "https://api-web.nhle.com/v1/score/2026-05-09"
-      },
-      "market_totals_p1": {
-        "book_count": 8,
-        "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.4435314129850049,
-        "fanduel": {
-          "bookmaker_key": "fanduel",
-          "bookmaker_title": "FanDuel",
-          "point": 1.5,
-          "over_price": 108.0,
-          "under_price": -136.0,
-          "over_no_vig_prob": 0.4548257786000616,
-          "last_update": "2026-05-09T21:44:15Z"
-        }
       }
     },
     {
@@ -177,9 +163,9 @@
           "bookmaker_title": "FanDuel",
           "point": 1.5,
           "over_price": -128.0,
-          "under_price": 102.0,
-          "over_no_vig_prob": 0.5314041433738902,
-          "last_update": "2026-05-09T21:44:32Z"
+          "under_price": 100.0,
+          "over_no_vig_prob": 0.5289256198347108,
+          "last_update": "2026-05-09T23:19:23Z"
         }
       }
     }
@@ -197,6 +183,6 @@
     "first_period_graded_games": 1,
     "first_period_over_games": 0,
     "first_period_under_games": 1,
-    "market_games_with_data": 2
+    "market_games_with_data": 1
   }
 }
