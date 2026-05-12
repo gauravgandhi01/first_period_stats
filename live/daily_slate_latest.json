@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-05-12",
-  "pulled_at_utc": "2026-05-12T07:45:01+00:00",
+  "pulled_at_utc": "2026-05-12T11:15:03+00:00",
   "target_date": "2026-05-12",
   "games": [
     {
@@ -41,13 +41,13 @@
         "team_combined_pg": 1.8732394366197183
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5504997415755023,
-        "prob_under_1p_1_5": 0.4495002584244977,
-        "over_american_odds": -122,
-        "under_american_odds": 122,
+        "prob_over_1p_1_5": 0.5436373397679033,
+        "prob_under_1p_1_5": 0.4563626602320967,
+        "over_american_odds": -119,
+        "under_american_odds": 119,
         "lambda_total": 2.2018468855335014,
         "model_prob_over_1p_1_5_raw": 0.6174462106975864,
-        "market_prob_over_1p_1_5_consensus": 0.5386856587892521,
+        "market_prob_over_1p_1_5_consensus": 0.5306122448979592,
         "market_book_count": 7,
         "market_dampening_weight": 0.85
       },
@@ -81,8 +81,16 @@
       "market_totals_p1": {
         "book_count": 7,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5386856587892521,
-        "fanduel": null
+        "consensus_over_no_vig_prob": 0.5306122448979592,
+        "fanduel": {
+          "bookmaker_key": "fanduel",
+          "bookmaker_title": "FanDuel",
+          "point": 1.5,
+          "over_price": -126.0,
+          "under_price": -102.0,
+          "over_no_vig_prob": 0.524740227610094,
+          "last_update": "2026-05-12T11:15:11Z"
+        }
       }
     },
     {
@@ -164,7 +172,15 @@
         "book_count": 7,
         "consensus_point": 1.5,
         "consensus_over_no_vig_prob": 0.5407914020517831,
-        "fanduel": null
+        "fanduel": {
+          "bookmaker_key": "fanduel",
+          "bookmaker_title": "FanDuel",
+          "point": 1.5,
+          "over_price": -126.0,
+          "under_price": -102.0,
+          "over_no_vig_prob": 0.524740227610094,
+          "last_update": "2026-05-12T11:14:28Z"
+        }
       }
     }
   ],
