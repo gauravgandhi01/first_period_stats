@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-05-12",
-  "pulled_at_utc": "2026-05-13T01:10:11+00:00",
+  "pulled_at_utc": "2026-05-13T01:15:04+00:00",
   "target_date": "2026-05-12",
   "games": [
     {
@@ -69,7 +69,7 @@
         "state_code": "LIVE",
         "state_label": "Live",
         "period": 2,
-        "clock": "13:45",
+        "clock": "08:46",
         "in_intermission": true,
         "away_score": 2,
         "home_score": 2,
@@ -87,8 +87,8 @@
       "away": {
         "team_name_feed": "Anaheim Ducks",
         "goalie_name_feed": "Lukas Dostal",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-05-13T01:13:37.290Z",
         "team_id": 24,
         "team_abbrev": "ANA",
         "team_name": "Anaheim Ducks",
@@ -103,8 +103,8 @@
       "home": {
         "team_name_feed": "Vegas Golden Knights",
         "goalie_name_feed": "Carter Hart",
-        "status": "Likely",
-        "status_updated_at_utc": "2026-05-12T18:08:30.904Z",
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-05-13T01:13:44.357Z",
         "team_id": 54,
         "team_abbrev": "VGK",
         "team_name": "Vegas Golden Knights",
@@ -176,9 +176,7 @@
     "projectable_games": 2,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 2,
-      "Likely": 1,
-      "Unconfirmed": 1
+      "Confirmed": 4
     },
     "live_games": 1,
     "first_period_graded_games": 1,
