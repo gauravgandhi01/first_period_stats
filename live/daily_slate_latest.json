@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-05-15",
-  "pulled_at_utc": "2026-05-15T16:09:40+00:00",
+  "pulled_at_utc": "2026-05-15T16:15:23+00:00",
   "target_date": "2026-05-15",
   "games": [
     {
@@ -67,9 +67,7 @@
       "game_status": null
     }
   ],
-  "warnings": [
-    "Odds API market pull unavailable: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"
-  ],
+  "warnings": [],
   "meta": {
     "total_games": 1,
     "projectable_games": 1,
