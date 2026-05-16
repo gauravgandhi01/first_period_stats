@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-05-16",
-  "pulled_at_utc": "2026-05-16T08:55:01+00:00",
+  "pulled_at_utc": "2026-05-16T09:45:01+00:00",
   "target_date": "2026-05-16",
   "games": [
     {
@@ -89,7 +89,7 @@
           "over_price": -132.0,
           "under_price": 104.0,
           "over_no_vig_prob": 0.5371848068943506,
-          "last_update": "2026-05-16T07:49:53Z"
+          "last_update": "2026-05-16T09:44:59Z"
         }
       }
     }
