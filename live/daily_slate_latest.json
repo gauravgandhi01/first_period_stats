@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-05-18",
-  "pulled_at_utc": "2026-05-18T23:05:01+00:00",
+  "pulled_at_utc": "2026-05-18T23:10:01+00:00",
   "target_date": "2026-05-18",
   "games": [
     {
@@ -11,8 +11,8 @@
       "away": {
         "team_name_feed": "Montreal Canadiens",
         "goalie_name_feed": "Jakub Dobes",
-        "status": "Unconfirmed",
-        "status_updated_at_utc": null,
+        "status": "Confirmed",
+        "status_updated_at_utc": "2026-05-18T23:04:23.326Z",
         "team_id": 8,
         "team_abbrev": "MTL",
         "team_name": "Montr\u00e9al Canadiens",
@@ -100,8 +100,7 @@
     "projectable_games": 1,
     "failed_games": 0,
     "status_counts": {
-      "Confirmed": 1,
-      "Unconfirmed": 1
+      "Confirmed": 2
     },
     "live_games": 0,
     "first_period_graded_games": 0,
