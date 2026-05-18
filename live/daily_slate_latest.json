@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-05-18",
-  "pulled_at_utc": "2026-05-18T22:55:01+00:00",
+  "pulled_at_utc": "2026-05-18T23:00:01+00:00",
   "target_date": "2026-05-18",
   "games": [
     {
@@ -41,13 +41,13 @@
         "team_combined_pg": 1.9589041095890412
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5075046521776617,
-        "prob_under_1p_1_5": 0.4924953478223383,
-        "over_american_odds": -103,
-        "under_american_odds": 103,
+        "prob_over_1p_1_5": 0.5092470267266942,
+        "prob_under_1p_1_5": 0.4907529732733058,
+        "over_american_odds": -104,
+        "under_american_odds": 104,
         "lambda_total": 1.8612883181417295,
         "model_prob_over_1p_1_5_raw": 0.5616468448446277,
-        "market_prob_over_1p_1_5_consensus": 0.49795014758937356,
+        "market_prob_over_1p_1_5_consensus": 0.5,
         "market_book_count": 8,
         "market_dampening_weight": 0.85
       },
@@ -66,7 +66,7 @@
       "error": null,
       "game_status": {
         "nhl_game_id": 2025030217,
-        "state_code": "FUT",
+        "state_code": "PRE",
         "state_label": "Scheduled",
         "period": 0,
         "clock": null,
@@ -81,15 +81,15 @@
       "market_totals_p1": {
         "book_count": 8,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.49795014758937356,
+        "consensus_over_no_vig_prob": 0.5,
         "fanduel": {
           "bookmaker_key": "fanduel",
           "bookmaker_title": "FanDuel",
           "point": 1.5,
-          "over_price": -112.0,
-          "under_price": -116.0,
-          "over_no_vig_prob": 0.4959002951787471,
-          "last_update": "2026-05-18T21:24:11Z"
+          "over_price": -116.0,
+          "under_price": -110.0,
+          "over_no_vig_prob": 0.5062344139650873,
+          "last_update": "2026-05-18T22:59:54Z"
         }
       }
     }
