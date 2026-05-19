@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-05-20",
-  "pulled_at_utc": "2026-05-19T19:04:15+00:00",
+  "pulled_at_utc": "2026-05-19T22:15:05+00:00",
   "target_date": "2026-05-20",
   "games": [
     {
@@ -41,13 +41,13 @@
         "team_combined_pg": 1.943661971830986
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5351014557000695,
-        "prob_under_1p_1_5": 0.4648985442999305,
-        "over_american_odds": -115,
-        "under_american_odds": 115,
+        "prob_over_1p_1_5": 0.5370185994482596,
+        "prob_under_1p_1_5": 0.4629814005517404,
+        "over_american_odds": -116,
+        "under_american_odds": 116,
         "lambda_total": 1.9320906394089077,
         "model_prob_over_1p_1_5_raw": 0.5628079790057129,
-        "market_prob_over_1p_1_5_consensus": 0.5302120692343677,
+        "market_prob_over_1p_1_5_consensus": 0.5324675324675325,
         "market_book_count": 7,
         "market_dampening_weight": 0.85
       },
@@ -81,7 +81,7 @@
       "market_totals_p1": {
         "book_count": 7,
         "consensus_point": 1.5,
-        "consensus_over_no_vig_prob": 0.5302120692343677,
+        "consensus_over_no_vig_prob": 0.5324675324675325,
         "fanduel": null
       }
     }
