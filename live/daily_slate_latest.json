@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-05-20",
-  "pulled_at_utc": "2026-05-19T09:46:52+00:00",
+  "pulled_at_utc": "2026-05-19T10:10:57+00:00",
   "target_date": "2026-05-20",
   "games": [
     {
@@ -64,20 +64,7 @@
       },
       "notes": [],
       "error": null,
-      "game_status": {
-        "nhl_game_id": 2025030321,
-        "state_code": "FUT",
-        "state_label": "Scheduled",
-        "period": 0,
-        "clock": null,
-        "in_intermission": false,
-        "away_score": 0,
-        "home_score": 0,
-        "first_period_goals": 0,
-        "first_period_complete": false,
-        "first_period_total_result": null,
-        "source_url": "https://api-web.nhle.com/v1/score/2026-05-20"
-      },
+      "game_status": null,
       "market_totals_p1": {
         "book_count": 7,
         "consensus_point": 1.5,
@@ -86,7 +73,9 @@
       }
     }
   ],
-  "warnings": [],
+  "warnings": [
+    "NHL live status unavailable: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"
+  ],
   "meta": {
     "total_games": 1,
     "projectable_games": 1,
