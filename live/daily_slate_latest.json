@@ -1,16 +1,95 @@
 {
-  "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-05-19",
-  "pulled_at_utc": "2026-05-19T04:36:25+00:00",
-  "target_date": "2026-05-19",
-  "games": [],
+  "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-05-20",
+  "pulled_at_utc": "2026-05-19T05:35:21+00:00",
+  "target_date": "2026-05-20",
+  "games": [
+    {
+      "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-05-20",
+      "game_date": "2026-05-20",
+      "game_time_utc": "2026-05-21T00:00:00+00:00",
+      "game_time_et": "2026-05-20 08:00 PM ET",
+      "away": {
+        "team_name_feed": "Vegas Golden Knights",
+        "goalie_name_feed": "Carter Hart",
+        "status": "Unconfirmed",
+        "status_updated_at_utc": null,
+        "team_id": 54,
+        "team_abbrev": "VGK",
+        "team_name": "Vegas Golden Knights",
+        "goalie_id": 8479394,
+        "goalie_name": "Carter Hart",
+        "goalie_games": 12,
+        "goalie_ga_pg": 0.8333333333333334,
+        "goalie_save_pct": 88.23529411764706,
+        "team_o15_pct": 0.547945205479452,
+        "team_combined_pg": 1.8493150684931507
+      },
+      "home": {
+        "team_name_feed": "Colorado Avalanche",
+        "goalie_name_feed": "Mackenzie Blackwood",
+        "status": "Unconfirmed",
+        "status_updated_at_utc": null,
+        "team_id": 21,
+        "team_abbrev": "COL",
+        "team_name": "Colorado Avalanche",
+        "goalie_id": 8478406,
+        "goalie_name": "Mackenzie Blackwood",
+        "goalie_games": 31,
+        "goalie_ga_pg": 0.7419354838709677,
+        "goalie_save_pct": 91.05058365758755,
+        "team_o15_pct": 0.5915492957746479,
+        "team_combined_pg": 1.943661971830986
+      },
+      "projection": {
+        "prob_over_1p_1_5": 0.5628079790057129,
+        "prob_under_1p_1_5": 0.4371920209942871,
+        "over_american_odds": -129,
+        "under_american_odds": 129,
+        "lambda_total": 1.9320906394089077,
+        "model_prob_over_1p_1_5_raw": 0.5628079790057129,
+        "market_prob_over_1p_1_5_consensus": null,
+        "market_book_count": 0,
+        "market_dampening_weight": 0.0
+      },
+      "trends": {
+        "away_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 3/10 2+ (30.0%) | L15: 4/15 2+ (26.7%) | L20: 7/20 2+ (35.0%)",
+        "home_team_l5_l10_l15_o15": "L5: 3/5 2+ (60.0%) | L10: 6/10 2+ (60.0%) | L15: 9/15 2+ (60.0%) | L20: 11/20 2+ (55.0%)",
+        "away_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 2/10 allow 2+ (20.0%) | L15: 2/12 allow 2+ (16.7%) | L20: 2/12 allow 2+ (16.7%)",
+        "home_goalie_l5_l10_l15_allow2": "L5: 0/5 allow 2+ (0.0%) | L10: 2/10 allow 2+ (20.0%) | L15: 2/15 allow 2+ (13.3%) | L20: 4/20 allow 2+ (20.0%)",
+        "h2h_games": 2,
+        "h2h_o15_hits": 0,
+        "h2h_o15_pct": 0.0,
+        "h2h_avg_combined_1p": 1.0,
+        "h2h_recent_scores": "2025-12-27: VGK 1-0 COL (1P total 1) | 2025-10-31: VGK 0-1 COL (1P total 1)"
+      },
+      "notes": [],
+      "error": null,
+      "game_status": {
+        "nhl_game_id": 2025030321,
+        "state_code": "FUT",
+        "state_label": "Scheduled",
+        "period": 0,
+        "clock": null,
+        "in_intermission": false,
+        "away_score": 0,
+        "home_score": 0,
+        "first_period_goals": 0,
+        "first_period_complete": false,
+        "first_period_total_result": null,
+        "source_url": "https://api-web.nhle.com/v1/score/2026-05-20"
+      }
+    }
+  ],
   "warnings": [
     "Odds API market pull unavailable: HTTPSConnectionPool(host='api.the-odds-api.com', port=443): Read timed out. (read timeout=30)"
   ],
   "meta": {
-    "total_games": 0,
-    "projectable_games": 0,
+    "total_games": 1,
+    "projectable_games": 1,
     "failed_games": 0,
-    "status_counts": {},
+    "status_counts": {
+      "Unconfirmed": 2
+    },
     "live_games": 0,
     "first_period_graded_games": 0,
     "first_period_over_games": 0,
