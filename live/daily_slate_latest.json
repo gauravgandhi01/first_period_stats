@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-05-20",
-  "pulled_at_utc": "2026-05-19T05:35:21+00:00",
+  "pulled_at_utc": "2026-05-19T09:46:52+00:00",
   "target_date": "2026-05-20",
   "games": [
     {
@@ -41,15 +41,15 @@
         "team_combined_pg": 1.943661971830986
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5628079790057129,
-        "prob_under_1p_1_5": 0.4371920209942871,
-        "over_american_odds": -129,
-        "under_american_odds": 129,
+        "prob_over_1p_1_5": 0.5351014557000695,
+        "prob_under_1p_1_5": 0.4648985442999305,
+        "over_american_odds": -115,
+        "under_american_odds": 115,
         "lambda_total": 1.9320906394089077,
         "model_prob_over_1p_1_5_raw": 0.5628079790057129,
-        "market_prob_over_1p_1_5_consensus": null,
-        "market_book_count": 0,
-        "market_dampening_weight": 0.0
+        "market_prob_over_1p_1_5_consensus": 0.5302120692343677,
+        "market_book_count": 7,
+        "market_dampening_weight": 0.85
       },
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 3/10 2+ (30.0%) | L15: 4/15 2+ (26.7%) | L20: 7/20 2+ (35.0%)",
@@ -77,12 +77,16 @@
         "first_period_complete": false,
         "first_period_total_result": null,
         "source_url": "https://api-web.nhle.com/v1/score/2026-05-20"
+      },
+      "market_totals_p1": {
+        "book_count": 7,
+        "consensus_point": 1.5,
+        "consensus_over_no_vig_prob": 0.5302120692343677,
+        "fanduel": null
       }
     }
   ],
-  "warnings": [
-    "Odds API market pull unavailable: HTTPSConnectionPool(host='api.the-odds-api.com', port=443): Read timed out. (read timeout=30)"
-  ],
+  "warnings": [],
   "meta": {
     "total_games": 1,
     "projectable_games": 1,
@@ -94,6 +98,6 @@
     "first_period_graded_games": 0,
     "first_period_over_games": 0,
     "first_period_under_games": 0,
-    "market_games_with_data": 0
+    "market_games_with_data": 1
   }
 }
