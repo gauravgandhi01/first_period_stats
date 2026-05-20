@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.dailyfaceoff.com/starting-goalies/2026-05-20",
-  "pulled_at_utc": "2026-05-20T15:00:09+00:00",
+  "pulled_at_utc": "2026-05-20T16:01:47+00:00",
   "target_date": "2026-05-20",
   "games": [
     {
@@ -26,36 +26,36 @@
       },
       "home": {
         "team_name_feed": "Colorado Avalanche",
-        "goalie_name_feed": "Mackenzie Blackwood",
+        "goalie_name_feed": "Scott Wedgewood",
         "status": "Unconfirmed",
         "status_updated_at_utc": null,
         "team_id": 21,
         "team_abbrev": "COL",
         "team_name": "Colorado Avalanche",
-        "goalie_id": 8478406,
-        "goalie_name": "Mackenzie Blackwood",
-        "goalie_games": 31,
-        "goalie_ga_pg": 0.7419354838709677,
-        "goalie_save_pct": 91.05058365758755,
+        "goalie_id": 8475809,
+        "goalie_name": "Scott Wedgewood",
+        "goalie_games": 38,
+        "goalie_ga_pg": 0.7631578947368421,
+        "goalie_save_pct": 91.47058823529412,
         "team_o15_pct": 0.5915492957746479,
         "team_combined_pg": 1.943661971830986
       },
       "projection": {
-        "prob_over_1p_1_5": 0.5628079790057129,
-        "prob_under_1p_1_5": 0.4371920209942871,
-        "over_american_odds": -129,
-        "under_american_odds": 129,
-        "lambda_total": 1.9320906394089077,
-        "model_prob_over_1p_1_5_raw": 0.5628079790057129,
-        "market_prob_over_1p_1_5_consensus": null,
-        "market_book_count": 0,
-        "market_dampening_weight": 0.0
+        "prob_over_1p_1_5": 0.5417266440600638,
+        "prob_under_1p_1_5": 0.45827335593993623,
+        "over_american_odds": -118,
+        "under_american_odds": 118,
+        "lambda_total": 1.8423331849255091,
+        "model_prob_over_1p_1_5_raw": 0.5470263487736537,
+        "market_prob_over_1p_1_5_consensus": 0.5407914020517831,
+        "market_book_count": 8,
+        "market_dampening_weight": 0.85
       },
       "trends": {
         "away_team_l5_l10_l15_o15": "L5: 2/5 2+ (40.0%) | L10: 3/10 2+ (30.0%) | L15: 4/15 2+ (26.7%) | L20: 7/20 2+ (35.0%)",
         "home_team_l5_l10_l15_o15": "L5: 3/5 2+ (60.0%) | L10: 6/10 2+ (60.0%) | L15: 9/15 2+ (60.0%) | L20: 11/20 2+ (55.0%)",
         "away_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 2/10 allow 2+ (20.0%) | L15: 2/12 allow 2+ (16.7%) | L20: 2/12 allow 2+ (16.7%)",
-        "home_goalie_l5_l10_l15_allow2": "L5: 0/5 allow 2+ (0.0%) | L10: 2/10 allow 2+ (20.0%) | L15: 2/15 allow 2+ (13.3%) | L20: 4/20 allow 2+ (20.0%)",
+        "home_goalie_l5_l10_l15_allow2": "L5: 1/5 allow 2+ (20.0%) | L10: 2/10 allow 2+ (20.0%) | L15: 2/15 allow 2+ (13.3%) | L20: 3/20 allow 2+ (15.0%)",
         "h2h_games": 2,
         "h2h_o15_hits": 0,
         "h2h_o15_pct": 0.0,
@@ -77,12 +77,24 @@
         "first_period_complete": false,
         "first_period_total_result": null,
         "source_url": "https://api-web.nhle.com/v1/score/2026-05-20"
+      },
+      "market_totals_p1": {
+        "book_count": 8,
+        "consensus_point": 1.5,
+        "consensus_over_no_vig_prob": 0.5407914020517831,
+        "fanduel": {
+          "bookmaker_key": "fanduel",
+          "bookmaker_title": "FanDuel",
+          "point": 1.5,
+          "over_price": -128.0,
+          "under_price": 102.0,
+          "over_no_vig_prob": 0.5314041433738902,
+          "last_update": "2026-05-20T16:01:26Z"
+        }
       }
     }
   ],
-  "warnings": [
-    "Odds API market pull unavailable: HTTPSConnectionPool(host='api.the-odds-api.com', port=443): Read timed out. (read timeout=30)"
-  ],
+  "warnings": [],
   "meta": {
     "total_games": 1,
     "projectable_games": 1,
@@ -94,6 +106,6 @@
     "first_period_graded_games": 0,
     "first_period_over_games": 0,
     "first_period_under_games": 0,
-    "market_games_with_data": 0
+    "market_games_with_data": 1
   }
 }
